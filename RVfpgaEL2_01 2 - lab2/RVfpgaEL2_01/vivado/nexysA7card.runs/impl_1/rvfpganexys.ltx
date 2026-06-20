@@ -1,0 +1,635 @@
+{
+    "ltx_root": {
+        "version": 4,
+        "minor": 0,
+        "ltx_data": [
+            {
+                "name": "EDA_PROBESET",
+                "active": true,
+                "debug_cores": [
+                    {
+                        "type": "XSDB_V3",
+                        "name": "dbg_hub",
+                        "spec": "labtools_xsdbm_v3"
+                    },
+                    {
+                        "type": "ILA_V3",
+                        "name": "swervolf/accelerator_top/ila_accelerator",
+                        "spec": "labtools_ila_v6",
+                        "ipName": "ila",
+                        "core_location": {
+                            "user_chain": 1,
+                            "slave_index": 0,
+                            "bscan_switch_index": 0
+                        },
+                        "uuid": "7DB51235595150AD84A92698AB2304C3",
+                        "pins": [
+                            {
+                                "name": "probe0",
+                                "id": 0,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 0,
+                                "nets": [
+                                    {
+                                        "name": "swervolf/accelerator_top/go",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe1",
+                                "id": 1,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 1,
+                                "nets": [
+                                    {
+                                        "name": "swervolf/accelerator_top/done",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe2",
+                                "id": 2,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 31,
+                                "portIndex": 2,
+                                "nets": [
+                                    {
+                                        "name": "swervolf/accelerator_top/reg_a",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_a[31]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_a[30]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_a[29]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_a[28]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_a[27]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_a[26]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_a[25]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_a[24]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_a[23]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_a[22]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_a[21]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_a[20]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_a[19]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_a[18]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_a[17]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_a[16]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_a[15]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_a[14]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_a[13]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_a[12]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_a[11]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_a[10]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_a[9]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_a[8]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_a[7]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_a[6]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_a[5]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_a[4]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_a[3]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_a[2]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_a[1]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_a[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe3",
+                                "id": 3,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 31,
+                                "portIndex": 3,
+                                "nets": [
+                                    {
+                                        "name": "swervolf/accelerator_top/reg_b",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_b[31]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_b[30]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_b[29]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_b[28]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_b[27]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_b[26]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_b[25]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_b[24]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_b[23]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_b[22]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_b[21]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_b[20]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_b[19]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_b[18]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_b[17]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_b[16]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_b[15]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_b[14]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_b[13]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_b[12]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_b[11]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_b[10]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_b[9]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_b[8]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_b[7]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_b[6]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_b[5]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_b[4]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_b[3]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_b[2]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_b[1]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_b[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe4",
+                                "id": 4,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 31,
+                                "portIndex": 4,
+                                "nets": [
+                                    {
+                                        "name": "swervolf/accelerator_top/reg_c",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_c[31]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_c[30]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_c[29]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_c[28]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_c[27]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_c[26]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_c[25]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_c[24]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_c[23]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_c[22]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_c[21]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_c[20]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_c[19]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_c[18]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_c[17]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_c[16]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_c[15]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_c[14]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_c[13]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_c[12]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_c[11]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_c[10]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_c[9]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_c[8]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_c[7]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_c[6]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_c[5]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_c[4]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_c[3]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_c[2]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_c[1]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_c[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe5",
+                                "id": 5,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 31,
+                                "portIndex": 5,
+                                "nets": [
+                                    {
+                                        "name": "swervolf/accelerator_top/reg_d",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_d[31]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_d[30]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_d[29]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_d[28]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_d[27]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_d[26]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_d[25]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_d[24]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_d[23]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_d[22]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_d[21]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_d[20]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_d[19]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_d[18]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_d[17]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_d[16]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_d[15]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_d[14]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_d[13]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_d[12]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_d[11]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_d[10]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_d[9]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_d[8]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_d[7]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_d[6]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_d[5]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_d[4]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_d[3]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_d[2]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_d[1]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_d[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe6",
+                                "id": 6,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 31,
+                                "portIndex": 6,
+                                "nets": [
+                                    {
+                                        "name": "swervolf/accelerator_top/reg_result",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_result[31]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_result[30]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_result[29]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_result[28]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_result[27]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_result[26]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_result[25]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_result[24]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_result[23]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_result[22]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_result[21]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_result[20]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_result[19]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_result[18]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_result[17]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_result[16]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_result[15]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_result[14]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_result[13]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_result[12]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_result[11]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_result[10]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_result[9]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_result[8]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_result[7]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_result[6]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_result[5]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_result[4]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_result[3]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_result[2]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_result[1]"
+                                            },
+                                            {
+                                                "name": "swervolf/accelerator_top/reg_result[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

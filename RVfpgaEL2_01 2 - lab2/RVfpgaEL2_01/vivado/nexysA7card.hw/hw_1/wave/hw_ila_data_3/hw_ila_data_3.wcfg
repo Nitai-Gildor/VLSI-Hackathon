@@ -1,0 +1,154 @@
+<?xml version="1.0"?>
+<wave_config>
+	<wave_state>
+	</wave_state>
+	<db_ref_list>
+		<db_ref path="C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/vivado/nexysA7card.hw/hw_1/wave/hw_ila_data_3/hw_ila_data_3.wdb" id="1" type="auto">
+			<top_modules>
+				<top_module name="top">
+				</top_module>
+			</top_modules>
+		</db_ref>
+	</db_ref_list>
+	<WVObjectSize size="23">
+	</WVObjectSize>
+	<wvobject fp_name="swervolf/syscon/n_0_1" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">swervolf/syscon/n_0_1</obj_property>
+		<obj_property name="ObjectShortName">n_0_1</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="swervolf/syscon/n_0_0" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">swervolf/syscon/n_0_0</obj_property>
+		<obj_property name="ObjectShortName">n_0_0</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="swervolf/syscon/i_wb_adr" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">swervolf/syscon/i_wb_adr[5:2]</obj_property>
+		<obj_property name="ObjectShortName">i_wb_adr[5:2]</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="swervolf/syscon/i_wb_dat" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">swervolf/syscon/i_wb_dat[31:0]</obj_property>
+		<obj_property name="ObjectShortName">i_wb_dat[31:0]</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="swervolf/syscon/i_wb_sel" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">swervolf/syscon/i_wb_sel[3:0]</obj_property>
+		<obj_property name="ObjectShortName">i_wb_sel[3:0]</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="swervolf/syscon/i_wb_we" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">swervolf/syscon/i_wb_we</obj_property>
+		<obj_property name="ObjectShortName">i_wb_we</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="swervolf/syscon/i_wb_cyc" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">swervolf/syscon/i_wb_cyc</obj_property>
+		<obj_property name="ObjectShortName">i_wb_cyc</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="swervolf/syscon/i_wb_stb" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">swervolf/syscon/i_wb_stb</obj_property>
+		<obj_property name="ObjectShortName">i_wb_stb</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="swervolf/syscon/o_wb_rdt" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">swervolf/syscon/o_wb_rdt[31:0]</obj_property>
+		<obj_property name="ObjectShortName">o_wb_rdt[31:0]</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="swervolf/syscon/o_wb_ack" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">swervolf/syscon/o_wb_ack</obj_property>
+		<obj_property name="ObjectShortName">o_wb_ack</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="swervolf/syscon/AN" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">swervolf/syscon/AN[7:0]</obj_property>
+		<obj_property name="ObjectShortName">AN[7:0]</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="swervolf/syscon/Digits_Bits" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">swervolf/syscon/Digits_Bits[6:0]</obj_property>
+		<obj_property name="ObjectShortName">Digits_Bits[6:0]</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="swervolf/syscon/CharEn" type="logic" db_ref_id="1">
+		<obj_property name="ElementShortName">swervolf/syscon/CharEn</obj_property>
+		<obj_property name="ObjectShortName">CharEn</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="swervolf/syscon/DecNumber" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">swervolf/syscon/DecNumber[3:0]</obj_property>
+		<obj_property name="ObjectShortName">DecNumber[3:0]</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="swervolf/syscon/Char_letter" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">swervolf/syscon/Char_letter[7:0]</obj_property>
+		<obj_property name="ObjectShortName">Char_letter[7:0]</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="swervolf/syscon/char_concat[0]" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">swervolf/syscon/char_concat[0][7:0]</obj_property>
+		<obj_property name="ObjectShortName">char_concat[0][7:0]</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="swervolf/syscon/char_concat[1]" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">swervolf/syscon/char_concat[1][7:0]</obj_property>
+		<obj_property name="ObjectShortName">char_concat[1][7:0]</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="swervolf/syscon/char_concat[2]" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">swervolf/syscon/char_concat[2][7:0]</obj_property>
+		<obj_property name="ObjectShortName">char_concat[2][7:0]</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="swervolf/syscon/char_concat[3]" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">swervolf/syscon/char_concat[3][7:0]</obj_property>
+		<obj_property name="ObjectShortName">char_concat[3][7:0]</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="swervolf/syscon/char_concat[4]" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">swervolf/syscon/char_concat[4][7:0]</obj_property>
+		<obj_property name="ObjectShortName">char_concat[4][7:0]</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="swervolf/syscon/char_concat[5]" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">swervolf/syscon/char_concat[5][7:0]</obj_property>
+		<obj_property name="ObjectShortName">char_concat[5][7:0]</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="swervolf/syscon/char_concat[6]" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">swervolf/syscon/char_concat[6][7:0]</obj_property>
+		<obj_property name="ObjectShortName">char_concat[6][7:0]</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+	<wvobject fp_name="swervolf/syscon/char_concat[7]" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">swervolf/syscon/char_concat[7][7:0]</obj_property>
+		<obj_property name="ObjectShortName">char_concat[7][7:0]</obj_property>
+		<obj_property name="DisplayName">FullPathName</obj_property>
+		<obj_property name="Radix">HEXRADIX</obj_property>
+	</wvobject>
+</wave_config>
+

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="wishbone_accelerator_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="wishbone_accelerator_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="2,603.834 ns"></ZoomStartTime>
+      <ZoomEndTime time="3,414.335 ns"></ZoomEndTime>
+      <Cursor1Time time="2,738.917 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="634"></NameColumnWidth>
+      <ValueColumnWidth column_width="231"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="11" />
+   <wvobject fp_name="/wishbone_accelerator_tb/wb_clk" type="logic">
+      <obj_property name="ElementShortName">wb_clk</obj_property>
+      <obj_property name="ObjectShortName">wb_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/wishbone_accelerator_tb/wb_rst" type="logic">
+      <obj_property name="ElementShortName">wb_rst</obj_property>
+      <obj_property name="ObjectShortName">wb_rst</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider42">
+      <obj_property name="label">ACCELERATOR_TOP</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/wishbone_accelerator_tb/accelerator_top/regs/go" type="logic">
+      <obj_property name="ElementShortName">go</obj_property>
+      <obj_property name="ObjectShortName">go</obj_property>
+   </wvobject>
+   <wvobject fp_name="/wishbone_accelerator_tb/accelerator_top/regs/done" type="logic">
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/wishbone_accelerator_tb/accelerator_top/regs/reg_a" type="array">
+      <obj_property name="ElementShortName">reg_a[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_a[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/wishbone_accelerator_tb/accelerator_top/regs/reg_b" type="array">
+      <obj_property name="ElementShortName">reg_b[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_b[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/wishbone_accelerator_tb/accelerator_top/regs/reg_c" type="array">
+      <obj_property name="ElementShortName">reg_c[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_c[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/wishbone_accelerator_tb/accelerator_top/regs/reg_d" type="array">
+      <obj_property name="ElementShortName">reg_d[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_d[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/wishbone_accelerator_tb/accelerator_top/regs/reg_result" type="array">
+      <obj_property name="ElementShortName">reg_result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_result[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/wishbone_accelerator_tb/accelerator_top/accelerator/state" type="array">
+      <obj_property name="ElementShortName">state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">state[1:0]</obj_property>
+   </wvobject>
+</wave_config>

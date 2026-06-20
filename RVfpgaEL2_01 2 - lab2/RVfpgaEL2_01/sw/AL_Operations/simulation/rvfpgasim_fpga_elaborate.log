@@ -1,0 +1,428 @@
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -d JTAG_EXTERNAL=1 -d XSIM=1 -d SIMULATION=1 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot rvfpgasim_fpga_behav xil_defaultlib.rvfpgasim_fpga xil_defaultlib.glbl -log C:\Users\HP\Documents\HUJI\RVfpgaEL2_01\RVfpgaEL2_01\sw\AL_Operations\simulation\rvfpgasim_fpga_elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 32 for port 'io_data' [C:/Users/HP/Documents/HUJI/RVfpgaEL2_01/RVfpgaEL2_01/rtl/rvfpganexys.sv:437]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 8 for port 'i_wb_adr' [C:/Users/HP/Documents/HUJI/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/veerwolf_core.v:404]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 6 for port 'wb_adr_i' [C:/Users/HP/Documents/HUJI/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/SystemController/veerwolf_syscon.sv:94]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 6 for port 'wb_adr_reg' [C:/Users/HP/Documents/HUJI/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/SystemController/veerwolf_syscon.sv:99]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 6 for port 'wb_adr_reg' [C:/Users/HP/Documents/HUJI/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/SystemController/veerwolf_syscon.sv:123]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 3 for port 'd_i' [C:/Users/HP/Documents/HUJI/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/SystemController/SevSegDisplays_Controller.sv:74]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 24 for port 'd_i' [C:/Users/HP/Documents/HUJI/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/SystemController/SevSegDisplays_Controller.sv:88]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 17 for port 'adr_i' [C:/Users/HP/Documents/HUJI/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/veerwolf_core.v:424]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 32 for port 'ext_pad_i' [C:/Users/HP/Documents/HUJI/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/veerwolf_core.v:564]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 32 for port 'ext_pad_o' [C:/Users/HP/Documents/HUJI/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/veerwolf_core.v:565]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 32 for port 'ext_padoe_o' [C:/Users/HP/Documents/HUJI/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/veerwolf_core.v:568]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 16 for port 'wb_adr_i' [C:/Users/HP/Documents/HUJI/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/veerwolf_core.v:577]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 16 for port 'wb_adr_i' [C:/Users/HP/Documents/HUJI/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/veerwolf_core.v:599]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 17 for port 'wb_adr_i' [C:/Users/HP/Documents/HUJI/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/timer/timer_top.v:114]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 16 for port 'wb_adr_i' [C:/Users/HP/Documents/HUJI/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/veerwolf_core.v:620]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 16 for port 'wb_adr_i' [C:/Users/HP/Documents/HUJI/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/veerwolf_core.v:641]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 17 for port 'adr_i' [C:/Users/HP/Documents/HUJI/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/veerwolf_core.v:665]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'wb_adr_i' [C:/Users/HP/Documents/HUJI/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/veerwolf_core.v:721]
+WARNING: [VRFC 10-3091] actual bit length 64 differs from formal bit length 32 for port 'trace_rv_i_address_ip' [C:/Users/HP/Documents/HUJI/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/veerwolf_core.v:852]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'trace_rv_i_valid_ip' [C:/Users/HP/Documents/HUJI/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/veerwolf_core.v:853]
+WARNING: [VRFC 10-3091] actual bit length 31 differs from formal bit length 8 for port 'extintsrc_req' [C:/Users/HP/Documents/HUJI/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/veerwolf_core.v:1035]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 1 for port 'trace_rv_i_valid_ip' [C:/Users/HP/Documents/HUJI/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/veer_el2_wrapper.sv:518]
+WARNING: [VRFC 10-5021] port 'scan_mode' is not connected on this instance [C:/Users/HP/Documents/HUJI/RVfpgaEL2_01/RVfpgaEL2_01/rtl/rvfpganexys.sv:302]
+WARNING: [VRFC 10-5021] port 'wb_cti_i' is not connected on this instance [C:/Users/HP/Documents/HUJI/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/veerwolf_core.v:717]
+WARNING: [VRFC 10-5021] port 'wb_err_i' is not connected on this instance [C:/Users/HP/Documents/HUJI/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/SystemController/veerwolf_syscon.sv:85]
+Completed static elaboration
+WARNING: [XSIM 43-4455] File "C:/Users/HP/Documents/HUJI/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_id_prepend.sv" Line 121 : Unsupported feature in assertion/property/sequence 'Deferred Assertion is not supported'. It will be ignored.
+WARNING: [XSIM 43-4455] File "C:/Users/HP/Documents/HUJI/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_id_prepend.sv" Line 124 : Unsupported feature in assertion/property/sequence 'Deferred Assertion is not supported'. It will be ignored.
+WARNING: [XSIM 43-4455] File "C:/Users/HP/Documents/HUJI/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_id_prepend.sv" Line 126 : Unsupported feature in assertion/property/sequence 'Deferred Assertion is not supported'. It will be ignored.
+WARNING: [XSIM 43-4455] File "C:/Users/HP/Documents/HUJI/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_id_prepend.sv" Line 128 : Unsupported feature in assertion/property/sequence 'Deferred Assertion is not supported'. It will be ignored.
+WARNING: [XSIM 43-4455] File "C:/Users/HP/Documents/HUJI/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_id_prepend.sv" Line 130 : Unsupported feature in assertion/property/sequence 'Deferred Assertion is not supported'. It will be ignored.
+WARNING: [XSIM 43-4455] File "C:/Users/HP/Documents/HUJI/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_id_prepend.sv" Line 133 : Unsupported feature in assertion/property/sequence 'Deferred Assertion is not supported'. It will be ignored.
+WARNING: [XSIM 43-4455] File "C:/Users/HP/Documents/HUJI/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_id_prepend.sv" Line 136 : Unsupported feature in assertion/property/sequence 'Deferred Assertion is not supported'. It will be ignored.
+WARNING: [XSIM 43-4455] File "C:/Users/HP/Documents/HUJI/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_id_prepend.sv" Line 139 : Unsupported feature in assertion/property/sequence 'Deferred Assertion is not supported'. It will be ignored.
+WARNING: [XSIM 43-4455] File "C:/Users/HP/Documents/HUJI/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_id_prepend.sv" Line 142 : Unsupported feature in assertion/property/sequence 'Deferred Assertion is not supported'. It will be ignored.
+WARNING: [XSIM 43-4455] File "C:/Users/HP/Documents/HUJI/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_id_prepend.sv" Line 144 : Unsupported feature in assertion/property/sequence 'Deferred Assertion is not supported'. It will be ignored.
+WARNING: [XSIM 43-4455] File "C:/Users/HP/Documents/HUJI/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_id_prepend.sv" Line 146 : Unsupported feature in assertion/property/sequence 'Deferred Assertion is not supported'. It will be ignored.
+WARNING: [XSIM 43-4455] File "C:/Users/HP/Documents/HUJI/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_id_prepend.sv" Line 148 : Unsupported feature in assertion/property/sequence 'Deferred Assertion is not supported'. It will be ignored.
+WARNING: [XSIM 43-4455] File "C:/Users/HP/Documents/HUJI/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_id_prepend.sv" Line 151 : Unsupported feature in assertion/property/sequence 'Deferred Assertion is not supported'. It will be ignored.
+WARNING: [XSIM 43-4455] File "C:/Users/HP/Documents/HUJI/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_id_prepend.sv" Line 153 : Unsupported feature in assertion/property/sequence 'Deferred Assertion is not supported'. It will be ignored.
+WARNING: [XSIM 43-4455] File "C:/Users/HP/Documents/HUJI/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_id_prepend.sv" Line 155 : Unsupported feature in assertion/property/sequence 'Deferred Assertion is not supported'. It will be ignored.
+WARNING: [XSIM 43-4127] File "C:/Users/HP/Documents/HUJI/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/rr_arb_tree.sv" Line 173 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "C:/Users/HP/Documents/HUJI/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/rr_arb_tree.sv" Line 180 : The "System Verilog Assume" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "C:/Users/HP/Documents/HUJI/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/fifo_v3.sv" Line 144 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "C:/Users/HP/Documents/HUJI/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/fifo_v3.sv" Line 148 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "C:/Users/HP/Documents/HUJI/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/rr_arb_tree.sv" Line 173 : The "System Verilog Assertion" is not supported yet for simulation. The statement will be ignored.
+WARNING: [XSIM 43-4127] File "C:/Users/HP/Documents/HUJI/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/rr_arb_tree.sv" Line 180 : The "System Verilog Assume" is not supported yet for simulation. The statement will be ignored.
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "/wrk/ci/prod/2023.2/rdi_builds/continuous/2023_10_13_4029153/data/verilog/src/unisims/BUFG.v" Line 27. Module BUFG has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/ci/prod/2023.2/rdi_builds/continuous/2023_10_13_4029153/data/verilog/src/unisims/PLLE2_BASE.v" Line 25. Module PLLE2_BASE(CLKFBOUT_MULT=16,CLKIN1_PERIOD=10.0,CLKOUT0_DIVIDE=128) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/ci/prod/2023.2/rdi_builds/continuous/2023_10_13_4029153/data/verilog/src/unisims/PLLE2_ADV.v" Line 49. Module PLLE2_ADV(CLKFBOUT_MULT=16,CLKIN1_PERIOD=10.0,CLKIN2_PERIOD=10.0,CLKOUT0_DIVIDE=128) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/ci/prod/2023.2/rdi_builds/continuous/2023_10_13_4029153/data/verilog/src/unisims/STARTUPE2.v" Line 34. Module STARTUPE2 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/ci/prod/2023.2/rdi_builds/continuous/2023_10_13_4029153/data/verilog/src/unisims/BUFG.v" Line 27. Module BUFG has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/ci/prod/2023.2/rdi_builds/continuous/2023_10_13_4029153/data/verilog/src/unisims/PLLE2_BASE.v" Line 25. Module PLLE2_BASE(CLKFBOUT_MULT=16,CLKIN1_PERIOD=10.0,CLKOUT0_DIVIDE=128) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/ci/prod/2023.2/rdi_builds/continuous/2023_10_13_4029153/data/verilog/src/unisims/PLLE2_ADV.v" Line 49. Module PLLE2_ADV(CLKFBOUT_MULT=16,CLKIN1_PERIOD=10.0,CLKIN2_PERIOD=10.0,CLKOUT0_DIVIDE=128) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/ci/prod/2023.2/rdi_builds/continuous/2023_10_13_4029153/data/verilog/src/unisims/STARTUPE2.v" Line 34. Module STARTUPE2 has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/HP/Documents/HUJI/RVfpgaEL2_01/RVfpgaEL2_01/vivado/nexysA7card.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/HP/Documents/HUJI/RVfpgaEL2_01/RVfpgaEL2_01/vivado/nexysA7card.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+WARNING: [VRFC 10-2649] an enum variable may only be assigned the same enum typed variable or one of its values [C:/Users/HP/Documents/HUJI/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_decoder.sv:183]
+WARNING: [VRFC 10-2649] an enum variable may only be assigned the same enum typed variable or one of its values [C:/Users/HP/Documents/HUJI/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_decoder.sv:184]
+WARNING: [VRFC 10-2649] an enum variable may only be assigned the same enum typed variable or one of its values [C:/Users/HP/Documents/HUJI/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_decoder.sv:185]
+WARNING: [VRFC 10-2649] an enum variable may only be assigned the same enum typed variable or one of its values [C:/Users/HP/Documents/HUJI/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_decoder.sv:186]
+WARNING: [VRFC 10-2649] an enum variable may only be assigned the same enum typed variable or one of its values [C:/Users/HP/Documents/HUJI/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_decoder.sv:224]
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.axi_pkg
+Compiling package xil_defaultlib.el2_pkg
+Compiling package xil_defaultlib.ibex_pkg
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=16,CLKIN...
+Compiling module unisims_ver.PLLE2_BASE(CLKFBOUT_MULT=16,CLKI...
+Compiling module xil_defaultlib.clk_gen_nexys
+Compiling module xil_defaultlib.axi_ram(DATA_WIDTH=64,ADDR_WIDTH...
+Compiling module unisims_ver.STARTUPE2
+Compiling module xil_defaultlib.axi2mem(ID_WIDTH=32'b0110,AXI_AD...
+Compiling module xil_defaultlib.dpram64(SIZE=32'b01000000000000)
+Compiling module xil_defaultlib.axi_mem(ID_WIDTH=6)
+Compiling module xil_defaultlib.rvjtag_tap_default
+Compiling module xil_defaultlib.dmi_jtag_to_core_sync
+Compiling module xil_defaultlib.dmi_wrapper
+Compiling module xil_defaultlib.addr_decode(NoIndices=32'b011,No...
+Compiling module xil_defaultlib.spill_register(T=aw_chan_select_...
+Compiling module xil_defaultlib.delta_counter(WIDTH=32'b0100)
+Compiling module xil_defaultlib.axi_demux_id_counters(AxiIdBits=...
+Compiling module xil_defaultlib.fifo_v3(DEPTH=32'b01010,dtype=lo...
+Compiling module xil_defaultlib.spill_register(T=w_chan_t_axi_de...
+Compiling module xil_defaultlib.spill_register(T=b_chan_mst_t_ax...
+Compiling module xil_defaultlib.lzc(WIDTH=32'b0100)
+Compiling module xil_defaultlib.rr_arb_tree(NumIn=32'b0100,DataT...
+Compiling module xil_defaultlib.spill_register(T=ar_chan_select_...
+Compiling module xil_defaultlib.spill_register(T=r_chan_mst_t_ax...
+Compiling module xil_defaultlib.rr_arb_tree(NumIn=32'b0100,DataT...
+Compiling module xil_defaultlib.axi_demux(AxiIdWidth=32'b0100,aw...
+Compiling module xil_defaultlib.fifo_v3(FALL_THROUGH=1'b1,DEPTH=...
+Compiling module xil_defaultlib.fifo_v3(DEPTH=32'b010,dtype=id_t...
+Compiling module xil_defaultlib.fifo_v3(DEPTH=32'b0100,dtype=r_d...
+Compiling module xil_defaultlib.delta_counter(WIDTH=32'b01000)
+Compiling module xil_defaultlib.counter(WIDTH=32'b01000)
+Compiling module xil_defaultlib.axi_err_slv(AxiIdWidth=32'b0100,...
+Compiling module xil_defaultlib.fifo_v3(FALL_THROUGH=1'b1,DEPTH=...
+Compiling module xil_defaultlib.fifo_v3(DEPTH=32'b010,dtype=id_t...
+Compiling module xil_defaultlib.fifo_v3(DEPTH=32'b0100,dtype=r_d...
+Compiling module xil_defaultlib.axi_err_slv(AxiIdWidth=32'b0100,...
+Compiling module xil_defaultlib.fifo_v3(FALL_THROUGH=1'b1,DEPTH=...
+Compiling module xil_defaultlib.fifo_v3(DEPTH=32'b010,dtype=id_t...
+Compiling module xil_defaultlib.fifo_v3(DEPTH=32'b0100,dtype=r_d...
+Compiling module xil_defaultlib.axi_err_slv(AxiIdWidth=32'b0100,...
+Compiling module xil_defaultlib.axi_id_prepend(AxiIdWidthSlvPort...
+Compiling module xil_defaultlib.lzc(WIDTH=32'b011)
+Compiling module xil_defaultlib.rr_arb_tree(NumIn=32'b011,DataTy...
+Compiling module xil_defaultlib.fifo_v3(DEPTH=32'b0110,dtype=gen...
+Compiling module xil_defaultlib.spill_register(T=aw_chan_slv_t_a...
+Compiling module xil_defaultlib.spill_register(T=w_chan_t_axi_mu...
+Compiling module xil_defaultlib.spill_register(T=b_chan_slv_t_ax...
+Compiling module xil_defaultlib.rr_arb_tree(NumIn=32'b011,DataTy...
+Compiling module xil_defaultlib.spill_register(T=ar_chan_slv_t_a...
+Compiling module xil_defaultlib.spill_register(T=r_chan_slv_t_ax...
+Compiling module xil_defaultlib.axi_mux(SlvAxiIDWidth=32'b0100,s...
+Compiling module xil_defaultlib.axi_xbar(Cfg='{32'b011,32'b011,3...
+Compiling module xil_defaultlib.axi_intercon_default
+Compiling module xil_defaultlib.wb_mux(num_slaves=12,MATCH_ADDR=...
+Compiling module xil_defaultlib.wb_intercon
+Compiling module xil_defaultlib.axi2wb(AW=16,IW=6)
+Compiling module xil_defaultlib.wb_mem_wrapper(MEM_SIZE=32'b0100...
+Compiling module xil_defaultlib.wb_module
+Compiling module xil_defaultlib.SystemControllerMisc(clk_freq_hz...
+Compiling module xil_defaultlib.SevenSegDecoder
+Compiling module xil_defaultlib.delta_counter(WIDTH=32'b011)
+Compiling module xil_defaultlib.counter(WIDTH=32'b011)
+Compiling module xil_defaultlib.delta_counter(WIDTH=32'b011000)
+Compiling module xil_defaultlib.counter(WIDTH=32'b011000)
+Compiling module xil_defaultlib.SevSegDisplays_Controller
+Compiling module xil_defaultlib.veerwolf_syscon(clk_freq_hz=32'b...
+Compiling module xil_defaultlib.fifo4
+Compiling module xil_defaultlib.spi_master
+Compiling module xil_defaultlib.bidirec
+Compiling module xil_defaultlib.gpio_top
+Compiling module xil_defaultlib.ptc_top
+Compiling module xil_defaultlib.wb_module_timer
+Compiling module xil_defaultlib.timer_top
+Compiling module xil_defaultlib.accelerator_wb
+Compiling module xil_defaultlib.accelerator_regs
+Compiling module xil_defaultlib.accelerator
+Compiling module xil_defaultlib.accelerator_top
+Compiling module xil_defaultlib.uart_wb
+Compiling module xil_defaultlib.raminfr
+Compiling module xil_defaultlib.uart_tfifo
+Compiling module xil_defaultlib.uart_transmitter
+Compiling module xil_defaultlib.uart_sync_flops(width=1,init_val...
+Compiling module xil_defaultlib.uart_rfifo(fifo_width=11)
+Compiling module xil_defaultlib.uart_receiver
+Compiling module xil_defaultlib.uart_regs
+Compiling module xil_defaultlib.uart_top
+Compiling module xil_defaultlib.rvoclkhdr
+Compiling module xil_defaultlib.rvdff_default
+Compiling module xil_defaultlib.rvsyncss(WIDTH=1)
+Compiling module xil_defaultlib.rvdffs_default
+Compiling module xil_defaultlib.rvdff(WIDTH=5)
+Compiling module xil_defaultlib.rvdffs(WIDTH=5)
+Compiling module xil_defaultlib.rvdff(WIDTH=3)
+Compiling module xil_defaultlib.rvdffs(WIDTH=3)
+Compiling module xil_defaultlib.rvdff(WIDTH=32)
+Compiling module xil_defaultlib.rvdffs(WIDTH=32)
+Compiling module xil_defaultlib.rvdffe(WIDTH=32)
+Compiling module xil_defaultlib.rvdff(WIDTH=4)
+Compiling module xil_defaultlib.rvdffs(WIDTH=4)
+Compiling module xil_defaultlib.rvdff(WIDTH=2)
+Compiling module xil_defaultlib.rvdffs(WIDTH=2)
+Compiling module xil_defaultlib.rvdff(WIDTH=16)
+Compiling module xil_defaultlib.rvdffs(WIDTH=16)
+Compiling module xil_defaultlib.rvdffe(WIDTH=16)
+Compiling module xil_defaultlib.el2_dbg
+Compiling module xil_defaultlib.rvdff(WIDTH=10)
+Compiling module xil_defaultlib.rvdffs(WIDTH=10)
+Compiling module xil_defaultlib.rvdffie(WIDTH=10)
+Compiling module xil_defaultlib.rvdff(WIDTH=31)
+Compiling module xil_defaultlib.rvdffs(WIDTH=31)
+Compiling module xil_defaultlib.rvdffpcie_default
+Compiling module xil_defaultlib.rvrangecheck(CCM_SIZE=14'b0100)
+Compiling module xil_defaultlib.el2_ifu_ifc_ctl_default
+Compiling module xil_defaultlib.el2_btb_addr_hash_default
+Compiling module xil_defaultlib.rvdff(WIDTH=32'b0111)
+Compiling module xil_defaultlib.rvdffs(WIDTH=32'b0111)
+Compiling module xil_defaultlib.rvdffie(WIDTH=32'b0111,OVERRIDE=...
+Compiling module xil_defaultlib.rvdff(WIDTH=30)
+Compiling module xil_defaultlib.rvdffs(WIDTH=30)
+Compiling module xil_defaultlib.rvdfflie(WIDTH=30,LEFT=19)
+Compiling module xil_defaultlib.rvbradder
+Compiling module xil_defaultlib.el2_btb_ghr_hash_default
+Compiling module xil_defaultlib.rvdff(WIDTH=32'b0110000)
+Compiling module xil_defaultlib.rvdffs(WIDTH=32'b0110000)
+Compiling module xil_defaultlib.rvdffe(WIDTH=32'b0110000)
+Compiling module xil_defaultlib.rvdff(WIDTH=14'b01000)
+Compiling module xil_defaultlib.rvdffs(WIDTH=14'b01000)
+Compiling module xil_defaultlib.rvdffe(WIDTH=14'b01000)
+Compiling module xil_defaultlib.rvdffs_fpga(WIDTH=2)
+Compiling module xil_defaultlib.el2_ifu_bp_ctl_default
+Compiling module xil_defaultlib.rvdff(WIDTH=7)
+Compiling module xil_defaultlib.rvdffs(WIDTH=7)
+Compiling module xil_defaultlib.rvdffie(WIDTH=7,OVERRIDE=1)
+Compiling module xil_defaultlib.rvdff(WIDTH=32'b010110)
+Compiling module xil_defaultlib.rvdffs(WIDTH=32'b010110)
+Compiling module xil_defaultlib.rvdffe(WIDTH=32'b010110)
+Compiling module xil_defaultlib.rvdff(WIDTH=32'b0110001)
+Compiling module xil_defaultlib.rvdffs(WIDTH=32'b0110001)
+Compiling module xil_defaultlib.rvdffe(WIDTH=32'b0110001)
+Compiling module xil_defaultlib.rvdffe(WIDTH=31)
+Compiling module xil_defaultlib.el2_ifu_compress_ctl
+Compiling module xil_defaultlib.el2_ifu_aln_ctl_default
+Compiling module xil_defaultlib.rvdff_fpga_default
+Compiling module xil_defaultlib.rvdff(WIDTH=7'b01)
+Compiling module xil_defaultlib.rvdffs(WIDTH=7'b01)
+Compiling module xil_defaultlib.rvdff_fpga(WIDTH=7'b01)
+Compiling module xil_defaultlib.rvdff(WIDTH=7'b010)
+Compiling module xil_defaultlib.rvdffs(WIDTH=7'b010)
+Compiling module xil_defaultlib.rvdff_fpga(WIDTH=7'b010)
+Compiling module xil_defaultlib.rvdff(WIDTH=32'b011010)
+Compiling module xil_defaultlib.rvdffs(WIDTH=32'b011010)
+Compiling module xil_defaultlib.rvdfflie(WIDTH=32'b011010,LEFT=3...
+Compiling module xil_defaultlib.rveven_paritygen
+Compiling module xil_defaultlib.rvdff(WIDTH=71)
+Compiling module xil_defaultlib.rvdffs(WIDTH=71)
+Compiling module xil_defaultlib.rvdffe(WIDTH=71)
+Compiling module xil_defaultlib.rvdff(WIDTH=32'b0110)
+Compiling module xil_defaultlib.rvdffs(WIDTH=32'b0110)
+Compiling module xil_defaultlib.rvdffe(WIDTH=32'b0110,OVERRIDE=1...
+Compiling module xil_defaultlib.rvdff_fpga(WIDTH=2)
+Compiling module xil_defaultlib.rvdff(WIDTH=8'b011)
+Compiling module xil_defaultlib.rvdffs(WIDTH=8'b011)
+Compiling module xil_defaultlib.rvdff_fpga(WIDTH=8'b011)
+Compiling module xil_defaultlib.rvdff(WIDTH=64)
+Compiling module xil_defaultlib.rvdffs(WIDTH=64)
+Compiling module xil_defaultlib.rvdffe(WIDTH=64)
+Compiling module xil_defaultlib.rvdffs_fpga(WIDTH=8'b011)
+Compiling module xil_defaultlib.rvdff(WIDTH=32'b01000)
+Compiling module xil_defaultlib.rvdffs(WIDTH=32'b01000)
+Compiling module xil_defaultlib.rvdffie(WIDTH=32'b01000,OVERRIDE...
+Compiling module xil_defaultlib.rvecc_encode
+Compiling module xil_defaultlib.rvdff(WIDTH=11)
+Compiling module xil_defaultlib.rvdffs(WIDTH=11)
+Compiling module xil_defaultlib.rvdffie(WIDTH=11)
+Compiling module xil_defaultlib.rvecc_decode
+Compiling module xil_defaultlib.rvdff(WIDTH=32'b01011)
+Compiling module xil_defaultlib.rvdffs(WIDTH=32'b01011)
+Compiling module xil_defaultlib.rvdffie(WIDTH=32'b01011)
+Compiling module xil_defaultlib.rvdffs_fpga(WIDTH=7'b01)
+Compiling module xil_defaultlib.rvdff(WIDTH=32'b01001)
+Compiling module xil_defaultlib.rvdffs(WIDTH=32'b01001)
+Compiling module xil_defaultlib.rvdffie(WIDTH=32'b01001)
+Compiling module xil_defaultlib.rvdffs_fpga_default
+Compiling module xil_defaultlib.rvdff(WIDTH=9)
+Compiling module xil_defaultlib.rvdffs(WIDTH=9)
+Compiling module xil_defaultlib.rvdffie(WIDTH=9)
+Compiling module xil_defaultlib.rvdff(WIDTH=32'b011)
+Compiling module xil_defaultlib.rvdffs(WIDTH=32'b011)
+Compiling module xil_defaultlib.rvdff_fpga(WIDTH=32'b011)
+Compiling module xil_defaultlib.el2_ifu_mem_ctl_default
+Compiling module xil_defaultlib.el2_ifu_default
+Compiling module xil_defaultlib.el2_dec_ib_ctl
+Compiling module xil_defaultlib.ibex_decoder_default
+Compiling module xil_defaultlib.rvdff(WIDTH=8)
+Compiling module xil_defaultlib.rvdffs(WIDTH=8)
+Compiling module xil_defaultlib.rvdffie(WIDTH=8)
+Compiling module xil_defaultlib.el2_dec_dec_ctl
+Compiling module xil_defaultlib.rvdff(WIDTH=37)
+Compiling module xil_defaultlib.rvdffs(WIDTH=37)
+Compiling module xil_defaultlib.rvdffe(WIDTH=37)
+Compiling module xil_defaultlib.rvdff(WIDTH=17)
+Compiling module xil_defaultlib.rvdffs(WIDTH=17)
+Compiling module xil_defaultlib.rvdfflie(WIDTH=17,LEFT=9)
+Compiling module xil_defaultlib.rvdff(WIDTH=24)
+Compiling module xil_defaultlib.rvdffs(WIDTH=24)
+Compiling module xil_defaultlib.rvdfflie(WIDTH=24,LEFT=15)
+Compiling module xil_defaultlib.rvdff(WIDTH=12)
+Compiling module xil_defaultlib.rvdffs(WIDTH=12)
+Compiling module xil_defaultlib.rvdffe(WIDTH=12)
+Compiling module xil_defaultlib.rvdffe(WIDTH=5,OVERRIDE=1)
+Compiling module xil_defaultlib.el2_dec_decode_ctl_default
+Compiling module xil_defaultlib.rvdffe(WIDTH=24)
+Compiling module xil_defaultlib.rvdffe(WIDTH=8)
+Compiling module xil_defaultlib.el2_dec_timer_ctl
+Compiling module xil_defaultlib.rvsyncss(WIDTH=7)
+Compiling module xil_defaultlib.rvdffie(WIDTH=16)
+Compiling module xil_defaultlib.rvdff(WIDTH=18)
+Compiling module xil_defaultlib.rvdffs(WIDTH=18)
+Compiling module xil_defaultlib.rvdffie(WIDTH=18)
+Compiling module xil_defaultlib.rvdffie(WIDTH=12)
+Compiling module xil_defaultlib.rvdff(WIDTH=6)
+Compiling module xil_defaultlib.rvdffe(WIDTH=10)
+Compiling module xil_defaultlib.rvdffs(WIDTH=6)
+Compiling module xil_defaultlib.rvdff(WIDTH=22)
+Compiling module xil_defaultlib.rvdffs(WIDTH=22)
+Compiling module xil_defaultlib.rvdffe(WIDTH=22)
+Compiling module xil_defaultlib.rvdff(WIDTH=14)
+Compiling module xil_defaultlib.rvdffs(WIDTH=14)
+Compiling module xil_defaultlib.rvdffe(WIDTH=14)
+Compiling module xil_defaultlib.rvdffe(WIDTH=17)
+Compiling module xil_defaultlib.rvdff(WIDTH=27)
+Compiling module xil_defaultlib.rvdffs(WIDTH=27)
+Compiling module xil_defaultlib.rvdffie(WIDTH=27)
+Compiling module xil_defaultlib.rvdffie(WIDTH=6,OVERRIDE=1)
+Compiling module xil_defaultlib.el2_dec_tlu_ctl_default
+Compiling module xil_defaultlib.el2_dec_gpr_ctl_default
+Compiling module xil_defaultlib.rvmaskandmatch_default
+Compiling module xil_defaultlib.el2_dec_trigger_default
+Compiling module xil_defaultlib.el2_dec
+Compiling module xil_defaultlib.rvdff(WIDTH=56)
+Compiling module xil_defaultlib.rvdffs(WIDTH=56)
+Compiling module xil_defaultlib.rvdffppe(WIDTH=56)
+Compiling module xil_defaultlib.rvdff(WIDTH=32'b0100111)
+Compiling module xil_defaultlib.rvdffs(WIDTH=32'b0100111)
+Compiling module xil_defaultlib.rvdffe(WIDTH=32'b0100111)
+Compiling module xil_defaultlib.rvdffe(WIDTH=32'b01000)
+Compiling module xil_defaultlib.rvdff(WIDTH=57)
+Compiling module xil_defaultlib.rvdffs(WIDTH=57)
+Compiling module xil_defaultlib.rvdffppe(WIDTH=57)
+Compiling module xil_defaultlib.rvdffie(WIDTH=32'b0110,OVERRIDE=...
+Compiling module xil_defaultlib.el2_exu_alu_ctl_default
+Compiling module xil_defaultlib.rvdff(WIDTH=34)
+Compiling module xil_defaultlib.rvdffs(WIDTH=34)
+Compiling module xil_defaultlib.rvdffe(WIDTH=34)
+Compiling module xil_defaultlib.rvdff(WIDTH=33)
+Compiling module xil_defaultlib.rvdffs(WIDTH=33)
+Compiling module xil_defaultlib.rvdffe(WIDTH=33)
+Compiling module xil_defaultlib.el2_exu_mul_ctl_default
+Compiling module xil_defaultlib.rvdff(WIDTH=19)
+Compiling module xil_defaultlib.rvdffs(WIDTH=19)
+Compiling module xil_defaultlib.rvdffe(WIDTH=19)
+Compiling module xil_defaultlib.rvtwoscomp_default
+Compiling module xil_defaultlib.el2_exu_div_cls
+Compiling module xil_defaultlib.el2_exu_div_new_4bit_fullshortq
+Compiling module xil_defaultlib.el2_exu_div_ctl_default
+Compiling module xil_defaultlib.el2_exu_default
+Compiling module xil_defaultlib.rvlsadder
+Compiling module xil_defaultlib.rvrangecheck(CCM_SIZE=14'b010000...
+Compiling module xil_defaultlib.rvrangecheck(CCM_SIZE=13'b010000...
+Compiling module xil_defaultlib.el2_lsu_addrcheck_default
+Compiling module xil_defaultlib.rvdff(WIDTH=38)
+Compiling module xil_defaultlib.rvdffs(WIDTH=38)
+Compiling module xil_defaultlib.rvdffe(WIDTH=38)
+Compiling module xil_defaultlib.rvdff(WIDTH=13)
+Compiling module xil_defaultlib.rvdff(WIDTH=29)
+Compiling module xil_defaultlib.rvdffs(WIDTH=29)
+Compiling module xil_defaultlib.rvdffe(WIDTH=29)
+Compiling module xil_defaultlib.el2_lsu_lsc_ctl_default
+Compiling module xil_defaultlib.rvdff(WIDTH=10'b0100000)
+Compiling module xil_defaultlib.rvdffs(WIDTH=10'b0100000)
+Compiling module xil_defaultlib.rvdffe(WIDTH=10'b0100000)
+Compiling module xil_defaultlib.rvdff(WIDTH=9'b01110)
+Compiling module xil_defaultlib.rvdffs(WIDTH=9'b01110)
+Compiling module xil_defaultlib.rvdffe(WIDTH=9'b01110)
+Compiling module xil_defaultlib.el2_lsu_dccm_ctl_default
+Compiling module xil_defaultlib.rvdffsc_default
+Compiling module xil_defaultlib.rvdff(WIDTH=7'b0100)
+Compiling module xil_defaultlib.rvdffsc(WIDTH=7'b0100)
+Compiling module xil_defaultlib.el2_lsu_stbuf_default
+Compiling module xil_defaultlib.el2_lsu_ecc_default
+Compiling module xil_defaultlib.el2_lsu_trigger_default
+Compiling module xil_defaultlib.el2_lsu_clkdomain
+Compiling module xil_defaultlib.rvdffs_fpga(WIDTH=8)
+Compiling module xil_defaultlib.rvdff_fpga(WIDTH=3)
+Compiling module xil_defaultlib.rvdff(WIDTH=9'b0100)
+Compiling module xil_defaultlib.el2_lsu_bus_buffer_default
+Compiling module xil_defaultlib.el2_lsu_bus_intf
+Compiling module xil_defaultlib.el2_lsu
+Compiling module xil_defaultlib.rvsyncss_fpga(WIDTH=1)
+Compiling module xil_defaultlib.el2_configurable_gw
+Compiling module xil_defaultlib.el2_cmp_and_mux
+Compiling module xil_defaultlib.el2_pic_ctrl_default
+Compiling module xil_defaultlib.rvdffsc(WIDTH=2)
+Compiling module xil_defaultlib.rvdff(WIDTH=8'b01)
+Compiling module xil_defaultlib.rvdffs(WIDTH=8'b01)
+Compiling module xil_defaultlib.rvdff(WIDTH=9'b01)
+Compiling module xil_defaultlib.rvdffs(WIDTH=9'b01)
+Compiling module xil_defaultlib.rvdff(WIDTH=6'b010)
+Compiling module xil_defaultlib.rvdffs(WIDTH=6'b010)
+Compiling module xil_defaultlib.rvdffsc_fpga_default
+Compiling module xil_defaultlib.rvdffs_fpga(WIDTH=8'b01)
+Compiling module xil_defaultlib.rvdffs_fpga(WIDTH=3)
+Compiling module xil_defaultlib.el2_dma_ctrl_default
+Compiling module xil_defaultlib.el2_veer_default
+Compiling module xil_defaultlib.ram_1024x39
+Compiling module xil_defaultlib.el2_lsu_dccm_mem_default
+Compiling module xil_defaultlib.rvdff(WIDTH=32'b010100)
+Compiling module xil_defaultlib.rvdffs(WIDTH=32'b010100)
+Compiling module xil_defaultlib.rvdffie(WIDTH=32'b010100)
+Compiling module xil_defaultlib.rveven_paritygen(WIDTH=32'b01010...
+Compiling module xil_defaultlib.ram_be_64x44
+Compiling module xil_defaultlib.rvdff(WIDTH=8'b010)
+Compiling module xil_defaultlib.rvdffs(WIDTH=8'b010)
+Compiling module xil_defaultlib.rvdff(WIDTH=44)
+Compiling module xil_defaultlib.rvdffs(WIDTH=44)
+Compiling module xil_defaultlib.rvdffe(WIDTH=44)
+Compiling module xil_defaultlib.rveven_paritycheck(WIDTH=32'b010...
+Compiling module xil_defaultlib.EL2_IC_TAG_default
+Compiling module xil_defaultlib.rvdffie(WIDTH=10,OVERRIDE=1)
+Compiling module xil_defaultlib.ram_be_256x136
+Compiling module xil_defaultlib.rvdff(WIDTH=32'b011100)
+Compiling module xil_defaultlib.rvdffs(WIDTH=32'b011100)
+Compiling module xil_defaultlib.rvdffe(WIDTH=32'b011100)
+Compiling module xil_defaultlib.rvdff(WIDTH=32'b010001000)
+Compiling module xil_defaultlib.rvdffs(WIDTH=32'b010001000)
+Compiling module xil_defaultlib.rvdffe(WIDTH=32'b010001000)
+Compiling module xil_defaultlib.rveven_paritycheck
+Compiling module xil_defaultlib.EL2_IC_DATA_default
+Compiling module xil_defaultlib.el2_ifu_ic_mem
+Compiling module xil_defaultlib.ram_256x39
+Compiling module xil_defaultlib.rvdff(WIDTH=32'b01010)
+Compiling module xil_defaultlib.rvdffs(WIDTH=32'b01010)
+Compiling module xil_defaultlib.rvdff(WIDTH=39)
+Compiling module xil_defaultlib.rvdffs(WIDTH=39)
+Compiling module xil_defaultlib.rvdff(WIDTH=9'b011)
+Compiling module xil_defaultlib.rvdffs(WIDTH=9'b011)
+Compiling module xil_defaultlib.el2_ifu_iccm_mem_default
+Compiling module xil_defaultlib.el2_mem_default
+Compiling module xil_defaultlib.veer_wrapper_dmi
+Compiling module xil_defaultlib.veerwolf_core(clk_freq_hz=32'b01...
+Compiling module xil_defaultlib.rvfpganexys
+Compiling module xil_defaultlib.rvfpgasim_fpga
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot rvfpgasim_fpga_behav

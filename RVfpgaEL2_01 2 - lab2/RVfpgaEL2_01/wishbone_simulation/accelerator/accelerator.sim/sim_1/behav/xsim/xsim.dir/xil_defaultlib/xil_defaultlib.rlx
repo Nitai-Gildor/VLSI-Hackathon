@@ -1,0 +1,11 @@
+0.7
+2020.2
+Oct 13 2023
+20:47:58
+C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/accelerator_hackaton/accelerator.sv,1778334314,systemVerilog,,C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/accelerator_hackaton/accelerator_regs.sv,,accelerator,,uvm,,XSIM=1,,,,
+C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/accelerator_hackaton/accelerator_regs.sv,1778323954,systemVerilog,,C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/accelerator_hackaton/accelerator_top.sv,,accelerator_regs,,uvm,,XSIM=1,,,,
+C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/accelerator_hackaton/accelerator_top.sv,1778334572,systemVerilog,,C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/accelerator_hackaton/accelerator_wb.sv,,accelerator_top,,uvm,,XSIM=1,,,,
+C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/accelerator_hackaton/accelerator_wb.sv,1777097085,systemVerilog,,C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/wishbone_simulation/accelerator/tb/wishbone_accelerator_tb.sv,,accelerator_wb,,uvm,,XSIM=1,,,,
+C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/wishbone_simulation/accelerator/accelerator.sim/sim_1/behav/xsim/glbl.v,1777097084,verilog,,,,glbl,,uvm,,,,,,
+C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/wishbone_simulation/accelerator/tb/wishbone_accelerator_tb.sv,1778337528,systemVerilog,,,C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/wishbone_simulation/accelerator/tb/wishbone_accelerator_tb_include.svh,wishbone_accelerator_tb,,uvm,,XSIM=1,,,,
+C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/wishbone_simulation/accelerator/tb/wishbone_accelerator_tb_include.svh,1777097084,verilog,,,,,,,,,,,,

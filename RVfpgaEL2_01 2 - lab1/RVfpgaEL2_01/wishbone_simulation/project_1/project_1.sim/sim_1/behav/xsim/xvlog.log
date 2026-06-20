@@ -1,0 +1,12 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Documents/HUJI/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/accelerator_hackaton/accelerator.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module accelerator
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Documents/HUJI/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/accelerator_hackaton/accelerator_regs.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module accelerator_regs
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Documents/HUJI/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/accelerator_hackaton/accelerator_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module accelerator_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Documents/HUJI/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/accelerator_hackaton/accelerator_wb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module accelerator_wb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Documents/HUJI/RVfpgaEL2_01/RVfpgaEL2_01/wishbone_simulation/accelerator/tb/wishbone_accelerator_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wishbone_accelerator_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Documents/HUJI/RVfpgaEL2_01/RVfpgaEL2_01/wishbone_simulation/project_1/project_1.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

@@ -1,0 +1,635 @@
+***********************************************************************************************
+***                                                                                         ***
+***                                    LINK INFORMATION                                     ***
+***                                                                                         ***
+***********************************************************************************************
+
+Linker version:
+
+  SEGGER RISC-V Linker 4.44.1 compiled Dec 19 2024 18:37:45
+  Copyright (c) 2017-2024 SEGGER Microcontroller GmbH    www.segger.com
+
+
+***********************************************************************************************
+***                                                                                         ***
+***                                     MODULE SUMMARY                                      ***
+***                                                                                         ***
+***********************************************************************************************
+
+Memory use by input file:
+
+  Object File                                       RX Code     RO Data     RW Data     ZI Data
+  ---------------------------------------------  ----------  ----------  ----------  ----------
+  accelerator.o                                         728         168                        
+  psp_performance_monitor_el2.o                         744         256                        
+  SEGGER_RV32_crt0.o                                     88                                    
+  ---------------------------------------------  ----------  ----------  ----------  ----------
+  Subtotal (3 objects)                                1 560         424                        
+  ---------------------------------------------  ----------  ----------  ----------  ----------
+  libc_rv32i_balanced.a                               4 064         195                        
+  mbops_timeops_rv32i_balanced.a                        280         549          20           4
+  prinops_semihost_rv32i_balanced.a                     244                     284            
+  SEGGER_RV32_crtinit_rv32i_balanced.a                  304                                    
+  ---------------------------------------------  ----------  ----------  ----------  ----------
+  Subtotal (4 archives)                               4 892         744         304           4
+  ---------------------------------------------  ----------  ----------  ----------  ----------
+  Linker created (shared data, fills, blocks):                       80                   1 024
+  =============================================  ==========  ==========  ==========  ==========
+  Total:                                              6 452       1 248         304       1 028
+  =============================================  ==========  ==========  ==========  ==========
+
+Memory use by archive member:
+
+  Archive member                                    RX Code     RO Data     RW Data     ZI Data
+  ---------------------------------------------  ----------  ----------  ----------  ----------
+  __SEGGER_RTL_vfprintf_int.o (libc_rv32i_balanced.a)
+                                                      1 968         163                        
+  fileops.o (libc_rv32i_balanced.a)                     124                                    
+  fileops_semi.o (prinops_semihost_rv32i_balanced.a)
+                                                        192                     284            
+  intasmops_rv.o (libc_rv32i_balanced.a)                128                                    
+  intops.o (libc_rv32i_balanced.a)                      544                                    
+  mbops.o (mbops_timeops_rv32i_balanced.a)              280         549          20           4
+  prinops.o (libc_rv32i_balanced.a)                     780          32                        
+  SEGGER_RV32_crtinit.o (SEGGER_RV32_crtinit_rv32i_balanced.a)
+                                                        304                                    
+  SEGGER_SEMIHOST.o (prinops_semihost_rv32i_balanced.a)
+                                                         48                                    
+  SEGGER_SEMIHOST_Generic.o (prinops_semihost_rv32i_balanced.a)
+                                                          4                                    
+  strasmops_rv.o (libc_rv32i_balanced.a)                316                                    
+  strops.o (libc_rv32i_balanced.a)                      204                                    
+  ---------------------------------------------  ----------  ----------  ----------  ----------
+  Subtotal (12 members from 4 archives)               4 892         744         304           4
+  Objects (3 files)                                   1 560         424                        
+  Linker created (shared data, fills, blocks):                       80                   1 024
+  =============================================  ==========  ==========  ==========  ==========
+  Total:                                              6 452       1 248         304       1 028
+  =============================================  ==========  ==========  ==========  ==========
+
+Memory use by linker:
+
+  Description                                       RX Code     RO Data     RW Data     ZI Data
+  ---------------------------------------------  ----------  ----------  ----------  ----------
+  Initialization table                                               80                        
+  Memory for block 'stack'                                                                1 024
+  ---------------------------------------------  ----------  ----------  ----------  ----------
+  Subtotal (linker created):                                         80                   1 024
+  ---------------------------------------------  ----------  ----------  ----------  ----------
+  Objects (3 files)                                   1 560         424                        
+  Archives (4 files)                                  4 892         744         304           4
+  =============================================  ==========  ==========  ==========  ==========
+  Total:                                              6 452       1 248         304       1 028
+  =============================================  ==========  ==========  ==========  ==========
+
+
+***********************************************************************************************
+***                                                                                         ***
+***                                     SECTION DETAIL                                      ***
+***                                                                                         ***
+***********************************************************************************************
+
+Sections by address:
+
+  Range              Symbol or [section] Name         Size  Al  Init  Ac  Object File
+  -----------------  -------------------------  ----------  --  ----  --  -----------
+  00000000-00000057  _start                             88   4  Code  RX  SEGGER_RV32_crt0.o
+  00000058-0000033f  $x.0                              744   4  Code  RX  psp_performance_monitor_el2.o
+  00000340-0000043f  [.rodata.pspMachinePerfCounterGet]
+                                                       256   4  Cnst  RO  psp_performance_monitor_el2.o
+  00000440-00000483  $x.0                               68   4  Code  RX  accelerator.o
+  00000484-00000717  $x.1                              660   4  Code  RX  accelerator.o
+  00000718-00000793  fwrite                            124   4  Code  RX  fileops.o (libc_rv32i_balanced.a)
+  00000794-000007cb  __mulsi3                           56   4  Code  RX  intasmops_rv.o (libc_rv32i_balanced.a)
+  000007cc-00000813  __udivsi3                          72   4  Code  RX  intasmops_rv.o (libc_rv32i_balanced.a)
+  00000814-0000092f  __udivdi3                         284   4  Code  RX  intops.o (libc_rv32i_balanced.a)
+  00000930-00000a33  __umoddi3                         260   4  Code  RX  intops.o (libc_rv32i_balanced.a)
+  00000a34-00000ad7  memset                            164   4  Code  RX  strasmops_rv.o (libc_rv32i_balanced.a)
+  00000ad8-00000b6f  strlen                            152   4  Code  RX  strasmops_rv.o (libc_rv32i_balanced.a)
+  00000b70-00000c3b  strnlen                           204   4  Code  RX  strops.o (libc_rv32i_balanced.a)
+  00000c3c-00000c4f  __SEGGER_RTL_stream_write          20   4  Code  RX  prinops.o (libc_rv32i_balanced.a)
+  00000c50-00000c8f  __SEGGER_RTL_prin_flush            64   4  Code  RX  prinops.o (libc_rv32i_balanced.a)
+  00000c90-00000d77  __SEGGER_RTL_putc                 232   4  Code  RX  prinops.o (libc_rv32i_balanced.a)
+  00000d78-00000dc7  __SEGGER_RTL_print_padding
+                                                        80   4  Code  RX  prinops.o (libc_rv32i_balanced.a)
+  00000dc8-00000de7  __SEGGER_RTL_pre_padding           32   4  Code  RX  prinops.o (libc_rv32i_balanced.a)
+  00000de8-00000e23  __SEGGER_RTL_init_prin_l           60   4  Code  RX  prinops.o (libc_rv32i_balanced.a)
+  00000e24-00000ebf  vfprintf_l                        156   4  Code  RX  prinops.o (libc_rv32i_balanced.a)
+  00000ec0-00000f03  vfprintf                           68   4  Code  RX  prinops.o (libc_rv32i_balanced.a)
+  00000f04-00000f47  printf                             68   4  Code  RX  prinops.o (libc_rv32i_balanced.a)
+  00000f48-00000f57  __SEGGER_RTL_hex_lc                16   4  Cnst  RO  prinops.o (libc_rv32i_balanced.a)
+  00000f58-00000f67  __SEGGER_RTL_hex_uc                16   4  Cnst  RO  prinops.o (libc_rv32i_balanced.a)
+  00000f68-00001717  __SEGGER_RTL_vfprintf_int       1 968   4  Code  RX  __SEGGER_RTL_vfprintf_int.o (libc_rv32i_balanced.a)
+  00001718-000017b3  [.rodata.libc.__SEGGER_RTL_vfprintf_int]
+                                                       156   4  Cnst  RO  __SEGGER_RTL_vfprintf_int.o (libc_rv32i_balanced.a)
+  000017b4-00001853  trap_entry                        160   4  Code  RX  SEGGER_RV32_crtinit.o (SEGGER_RV32_crtinit_rv32i_balanced.a)
+  00001854-00001857  handle_trap                         4   4  Code  RX  SEGGER_RV32_crtinit.o (SEGGER_RV32_crtinit_rv32i_balanced.a)
+  00001858-0000185b  _init                               4   4  Code  RX  SEGGER_RV32_crtinit.o (SEGGER_RV32_crtinit_rv32i_balanced.a)
+  0000185c-0000188b  __SEGGER_RTL_X_file_stat           48   4  Code  RX  fileops_semi.o (prinops_semihost_rv32i_balanced.a)
+  0000188c-00001893  __SEGGER_RTL_X_file_bufsize
+                                                         8   4  Code  RX  fileops_semi.o (prinops_semihost_rv32i_balanced.a)
+  00001894-0000191b  __SEGGER_RTL_X_file_write         136   4  Code  RX  fileops_semi.o (prinops_semihost_rv32i_balanced.a)
+  0000191c-00001947  SEGGER_SEMIHOST_Write              44   4  Code  RX  SEGGER_SEMIHOST.o (prinops_semihost_rv32i_balanced.a)
+  00001948-0000194b  SEGGER_SEMIHOST_DebugHalt           4   4  Code  RX  SEGGER_SEMIHOST.o (prinops_semihost_rv32i_balanced.a)
+  0000194c-0000194f  SEGGER_SEMIHOST_X_Request           4   4  Code  RX  SEGGER_SEMIHOST_Generic.o (prinops_semihost_rv32i_balanced.a)
+  00001950-0000197f  __SEGGER_RTL_ascii_isctype
+                                                        48   4  Code  RX  mbops.o (mbops_timeops_rv32i_balanced.a)
+  00001980-00001993  __SEGGER_RTL_ascii_toupper
+                                                        20   4  Code  RX  mbops.o (mbops_timeops_rv32i_balanced.a)
+  00001994-000019a7  __SEGGER_RTL_ascii_tolower
+                                                        20   4  Code  RX  mbops.o (mbops_timeops_rv32i_balanced.a)
+  000019a8-000019d7  __SEGGER_RTL_ascii_iswctype
+                                                        48   4  Code  RX  mbops.o (mbops_timeops_rv32i_balanced.a)
+  000019d8-000019eb  __SEGGER_RTL_ascii_towupper
+                                                        20   4  Code  RX  mbops.o (mbops_timeops_rv32i_balanced.a)
+  000019ec-000019ff  __SEGGER_RTL_ascii_towlower
+                                                        20   4  Code  RX  mbops.o (mbops_timeops_rv32i_balanced.a)
+  00001a00-00001a3b  __SEGGER_RTL_ascii_mbtowc          60   4  Code  RX  mbops.o (mbops_timeops_rv32i_balanced.a)
+  00001a3c-00001a57  __SEGGER_RTL_ascii_wctomb          28   4  Code  RX  mbops.o (mbops_timeops_rv32i_balanced.a)
+  00001a58-00001a67  __SEGGER_RTL_current_locale
+                                                        16   4  Code  RX  mbops.o (mbops_timeops_rv32i_balanced.a)
+  00001a68-00001a73  __SEGGER_RTL_c_locale              12   4  Cnst  RO  mbops.o (mbops_timeops_rv32i_balanced.a)
+  00001a74-00001acb  __SEGGER_RTL_c_locale_data
+                                                        88   4  Cnst  RO  mbops.o (mbops_timeops_rv32i_balanced.a)
+  00001acc-00001aeb  __SEGGER_RTL_codeset_ascii
+                                                        32   4  Cnst  RO  mbops.o (mbops_timeops_rv32i_balanced.a)
+  00001aec-00001b6b  __SEGGER_RTL_ascii_ctype_map
+                                                       128   4  Cnst  RO  mbops.o (mbops_timeops_rv32i_balanced.a)
+  00001b6c-00001b72  [.rodata.libc.__SEGGER_RTL_vfprintf_int.str1.4]
+                                                         7   4  Cnst  RO  __SEGGER_RTL_vfprintf_int.o (libc_rv32i_balanced.a)
+  00001b73-00001b83  [.rodata..L.str.1]                 17   1  Cnst  RO  accelerator.o
+  00001b84-00001b8d  [.rodata.libc.__SEGGER_RTL_find_locale.str1.4]
+                                                        10   4  Cnst  RO  mbops.o (mbops_timeops_rv32i_balanced.a)
+  00001b8e-00001b8f  [.rodata..L.str.2]                  2   1  Cnst  RO  accelerator.o
+  00001b90-00001b90  __SEGGER_RTL_data_empty_string
+                                                         1   4  Cnst  RO  mbops.o (mbops_timeops_rv32i_balanced.a)
+  00001b91-00001b93  [.rodata..L.str.3]                  3   1  Cnst  RO  accelerator.o
+  00001b94-00001bc4  __SEGGER_RTL_c_locale_abbrev_month_names
+                                                        49   4  Cnst  RO  mbops.o (mbops_timeops_rv32i_balanced.a)
+  00001bc5-00001bc7  [.rodata..L.str.4]                  3   1  Cnst  RO  accelerator.o
+  00001bc8-00001be4  __SEGGER_RTL_c_locale_abbrev_day_names
+                                                        29   4  Cnst  RO  mbops.o (mbops_timeops_rv32i_balanced.a)
+  00001be5-00001be7  [.rodata..L.str.5]                  3   1  Cnst  RO  accelerator.o
+  00001be8-00001be9  __SEGGER_RTL_data_utf8_period
+                                                         2   4  Cnst  RO  mbops.o (mbops_timeops_rv32i_balanced.a)
+  00001bea-00001beb  ( ALIGN .=.+2 )                     2   -  ----  -   -
+  00001bec-00001bf8  __SEGGER_RTL_ascii_ctype_mask
+                                                        13   4  Cnst  RO  mbops.o (mbops_timeops_rv32i_balanced.a)
+  00001bf9-00001bfb  ( ALIGN .=.+3 )                     3   -  ----  -   -
+  00001bfc-00001c0a  __SEGGER_RTL_c_locale_date_time_format
+                                                        15   4  Cnst  RO  mbops.o (mbops_timeops_rv32i_balanced.a)
+  00001c0b-00001c0b  ( ALIGN .=.+1 )                     1   -  ----  -   -
+  00001c0c-00001c14  __SEGGER_RTL_c_locale_time_format
+                                                         9   4  Cnst  RO  mbops.o (mbops_timeops_rv32i_balanced.a)
+  00001c15-00001c17  ( ALIGN .=.+3 )                     3   -  ----  -   -
+  00001c18-00001c20  __SEGGER_RTL_c_locale_date_format
+                                                         9   4  Cnst  RO  mbops.o (mbops_timeops_rv32i_balanced.a)
+  00001c21-00001c23  ( ALIGN .=.+3 )                     3   -  ----  -   -
+  00001c24-00001c2a  __SEGGER_RTL_c_locale_am_pm_indicator
+                                                         7   4  Cnst  RO  mbops.o (mbops_timeops_rv32i_balanced.a)
+  00001c2b-00001c2b  ( ALIGN .=.+1 )                     1   -  ----  -   -
+  00001c2c-00001c82  __SEGGER_RTL_c_locale_month_names
+                                                        87   4  Cnst  RO  mbops.o (mbops_timeops_rv32i_balanced.a)
+  00001c83-00001c83  ( ALIGN .=.+1 )                     1   -  ----  -   -
+  00001c84-00001cbd  __SEGGER_RTL_c_locale_day_names
+                                                        58   4  Cnst  RO  mbops.o (mbops_timeops_rv32i_balanced.a)
+  00001cbe-00001cfd  MATRIX1                            64   1  Cnst  RO  accelerator.o
+  00001cfe-00001d3d  MATRIX2                            64   1  Cnst  RO  accelerator.o
+  00001d3e-00001d49  [.rodata..L.str]                   12   1  Cnst  RO  accelerator.o
+  00001d4a-00001d4b  ( UNUSED .=.+2 )                    2   -  ----  -   -
+  00001d4c-00001d4f  __SEGGER_RTL_locale_ptr             4   4  Zero  ZI  mbops.o (mbops_timeops_rv32i_balanced.a)
+  00001d50-00001e67  _aFileTable                       280   4  Init  RW  fileops_semi.o (prinops_semihost_rv32i_balanced.a)
+  00001e68-00001e7b  __SEGGER_RTL_global_locale
+                                                        20   4  Init  RW  mbops.o (mbops_timeops_rv32i_balanced.a)
+  00001e7c-00001e7f  stdout                              4   4  Init  RW  fileops_semi.o (prinops_semihost_rv32i_balanced.a)
+  00001e80-00001ea3  __SEGGER_init_zero                 36   4  Code  RX  SEGGER_RV32_crtinit.o (SEGGER_RV32_crtinit_rv32i_balanced.a)
+  00001ea4-00001f07  __SEGGER_init_pack                100   4  Code  RX  SEGGER_RV32_crtinit.o (SEGGER_RV32_crtinit_rv32i_balanced.a)
+  00001f08-00001f23  __SEGGER_init_table__              28   4  Cnst  RO  [ Linker created ]
+  00001f24-00001f57  __SEGGER_init_data__               52   4  Cnst  RO  [ Linker created ]
+  00001f58-03fffbff  ( UNUSED .=.+67099816 )    67 099 816   -  ----  -   -
+  03fffc00-03ffffff  [.bss.block.stack]              1 024   8  None  ZI  [ Linker created ]
+
+
+***********************************************************************************************
+***                                                                                         ***
+***                                       SYMBOL LIST                                       ***
+***                                                                                         ***
+***********************************************************************************************
+
+Function symbols by name:
+
+  Symbol name                   Address        Size  Align  Type  Bd  Object File
+  -------------------------  ----------  ----------  -----  ----  --  -----------
+  SEGGER_SEMIHOST_DebugHalt  0x00001948           4      4  Code  Gb  SEGGER_SEMIHOST.o (prinops_semihost_rv32i_balanced.a)
+  SEGGER_SEMIHOST_Write      0x0000191C          48      4  Code  Gb  SEGGER_SEMIHOST.o (prinops_semihost_rv32i_balanced.a)
+  SEGGER_SEMIHOST_X_Request  0x0000194C           8      4  Code  Gb  SEGGER_SEMIHOST_Generic.o (prinops_semihost_rv32i_balanced.a)
+  __SEGGER_RTL_X_file_bufsize
+                             0x0000188C           8      4  Code  Gb  fileops_semi.o (prinops_semihost_rv32i_balanced.a)
+  __SEGGER_RTL_X_file_stat   0x0000185C          56      4  Code  Gb  fileops_semi.o (prinops_semihost_rv32i_balanced.a)
+  __SEGGER_RTL_X_file_write  0x00001894         144      4  Code  Gb  fileops_semi.o (prinops_semihost_rv32i_balanced.a)
+  __SEGGER_RTL_ascii_isctype
+                             0x00001950          56      4  Code  Lc  mbops.o (mbops_timeops_rv32i_balanced.a)
+  __SEGGER_RTL_ascii_iswctype
+                             0x000019A8          56      4  Code  Lc  mbops.o (mbops_timeops_rv32i_balanced.a)
+  __SEGGER_RTL_ascii_mbtowc  0x00001A00          60      4  Code  Gb  mbops.o (mbops_timeops_rv32i_balanced.a)
+  __SEGGER_RTL_ascii_tolower
+                             0x00001994          20      4  Code  Lc  mbops.o (mbops_timeops_rv32i_balanced.a)
+  __SEGGER_RTL_ascii_toupper
+                             0x00001980          20      4  Code  Lc  mbops.o (mbops_timeops_rv32i_balanced.a)
+  __SEGGER_RTL_ascii_towlower
+                             0x000019EC          20      4  Code  Lc  mbops.o (mbops_timeops_rv32i_balanced.a)
+  __SEGGER_RTL_ascii_towupper
+                             0x000019D8          20      4  Code  Lc  mbops.o (mbops_timeops_rv32i_balanced.a)
+  __SEGGER_RTL_ascii_wctomb  0x00001A3C          28      4  Code  Gb  mbops.o (mbops_timeops_rv32i_balanced.a)
+  __SEGGER_RTL_current_locale
+                             0x00001A58          24      4  Code  Gb  mbops.o (mbops_timeops_rv32i_balanced.a)
+  __SEGGER_RTL_init_prin_l   0x00000DE8          64      4  Code  Gb  prinops.o (libc_rv32i_balanced.a)
+  __SEGGER_RTL_pre_padding   0x00000DC8          36      4  Code  Gb  prinops.o (libc_rv32i_balanced.a)
+  __SEGGER_RTL_prin_flush    0x00000C50          64      4  Code  Gb  prinops.o (libc_rv32i_balanced.a)
+  __SEGGER_RTL_print_padding
+                             0x00000D78          84      4  Code  Gb  prinops.o (libc_rv32i_balanced.a)
+  __SEGGER_RTL_putc          0x00000C90         236      4  Code  Gb  prinops.o (libc_rv32i_balanced.a)
+  __SEGGER_RTL_stream_write  0x00000C3C          24      4  Code  Lc  prinops.o (libc_rv32i_balanced.a)
+  __SEGGER_RTL_vfprintf      0x00000F68       2 060      4  Code  Gb  __SEGGER_RTL_vfprintf_int.o (libc_rv32i_balanced.a)
+  __SEGGER_RTL_vfprintf_int  0x00000F68       2 060      4  Code  Gb  __SEGGER_RTL_vfprintf_int.o (libc_rv32i_balanced.a)
+  __SEGGER_init_done         0x00000040                  4  Code  Gb  SEGGER_RV32_crt0.o
+  __SEGGER_init_pack         0x00001EA4         100      4  Code  Wk  SEGGER_RV32_crtinit.o (SEGGER_RV32_crtinit_rv32i_balanced.a)
+  __SEGGER_init_zero         0x00001E80          36      4  Code  Wk  SEGGER_RV32_crtinit.o (SEGGER_RV32_crtinit_rv32i_balanced.a)
+  __mulsi3                   0x00000794          56      4  Code  Gb  intasmops_rv.o (libc_rv32i_balanced.a)
+  __startup_complete         0x00000040                  4  Code  Gb  SEGGER_RV32_crt0.o
+  __udivdi3                  0x00000814         284      4  Code  Wk  intops.o (libc_rv32i_balanced.a)
+  __udivsi3                  0x000007CC          72      4  Code  Gb  intasmops_rv.o (libc_rv32i_balanced.a)
+  __umoddi3                  0x00000930         260      4  Code  Wk  intops.o (libc_rv32i_balanced.a)
+  _init                      0x00001858         [4]      4  Code  Wk  SEGGER_RV32_crtinit.o (SEGGER_RV32_crtinit_rv32i_balanced.a)
+  _start                     0x00000000         100      4  Code  Gb  SEGGER_RV32_crt0.o
+  exit                       0x00000054           4      4  Code  Gb  SEGGER_RV32_crt0.o
+  fwrite                     0x00000718         140      4  Code  Wk  fileops.o (libc_rv32i_balanced.a)
+  handle_trap                0x00001854         [4]      4  Code  Wk  SEGGER_RV32_crtinit.o (SEGGER_RV32_crtinit_rv32i_balanced.a)
+  main                       0x00000484         740      4  Code  Gb  accelerator.o
+  memset                     0x00000A34         164      4  Code  Gb  strasmops_rv.o (libc_rv32i_balanced.a)
+  pack_col                   0x00000440          68      4  Code  Gb  accelerator.o
+  printf                     0x00000F04          76      4  Code  Wk  prinops.o (libc_rv32i_balanced.a)
+  pspMachinePerfCounterGet   0x0000011C         548      4  Code  Gb  psp_performance_monitor_el2.o
+  pspMachinePerfCounterSet   0x000000A0         124      4  Code  Gb  psp_performance_monitor_el2.o
+  pspMachinePerfMonitorDisableAll
+                             0x00000058          12      4  Code  Gb  psp_performance_monitor_el2.o
+  pspMachinePerfMonitorDisableCounter
+                             0x00000070          24      4  Code  Gb  psp_performance_monitor_el2.o
+  pspMachinePerfMonitorEnableAll
+                             0x00000064          12      4  Code  Gb  psp_performance_monitor_el2.o
+  pspMachinePerfMonitorEnableCounter
+                             0x00000088          24      4  Code  Gb  psp_performance_monitor_el2.o
+  strlen                     0x00000AD8         152      4  Code  Gb  strasmops_rv.o (libc_rv32i_balanced.a)
+  strnlen                    0x00000B70         204      4  Code  Wk  strops.o (libc_rv32i_balanced.a)
+  trap_entry                 0x000017B4       [160]      4  Code  Wk  SEGGER_RV32_crtinit.o (SEGGER_RV32_crtinit_rv32i_balanced.a)
+  vfprintf                   0x00000EC0          76      4  Code  Wk  prinops.o (libc_rv32i_balanced.a)
+  vfprintf_l                 0x00000E24         172      4  Code  Wk  prinops.o (libc_rv32i_balanced.a)
+
+Function symbols by address:
+
+     Address  Symbol name                      Size  Align  Type  Bd  Object File
+  ----------  -------------------------  ----------  -----  ----  --  -----------
+  0x00000000  _start                            100      4  Code  Gb  SEGGER_RV32_crt0.o
+  0x00000040  __startup_complete                         4  Code  Gb  SEGGER_RV32_crt0.o
+  0x00000040  __SEGGER_init_done                         4  Code  Gb  SEGGER_RV32_crt0.o
+  0x00000054  exit                                4      4  Code  Gb  SEGGER_RV32_crt0.o
+  0x00000058  pspMachinePerfMonitorDisableAll
+                                                 12      4  Code  Gb  psp_performance_monitor_el2.o
+  0x00000064  pspMachinePerfMonitorEnableAll
+                                                 12      4  Code  Gb  psp_performance_monitor_el2.o
+  0x00000070  pspMachinePerfMonitorDisableCounter
+                                                 24      4  Code  Gb  psp_performance_monitor_el2.o
+  0x00000088  pspMachinePerfMonitorEnableCounter
+                                                 24      4  Code  Gb  psp_performance_monitor_el2.o
+  0x000000A0  pspMachinePerfCounterSet          124      4  Code  Gb  psp_performance_monitor_el2.o
+  0x0000011C  pspMachinePerfCounterGet          548      4  Code  Gb  psp_performance_monitor_el2.o
+  0x00000440  pack_col                           68      4  Code  Gb  accelerator.o
+  0x00000484  main                              740      4  Code  Gb  accelerator.o
+  0x00000718  fwrite                            140      4  Code  Wk  fileops.o (libc_rv32i_balanced.a)
+  0x00000794  __mulsi3                           56      4  Code  Gb  intasmops_rv.o (libc_rv32i_balanced.a)
+  0x000007CC  __udivsi3                          72      4  Code  Gb  intasmops_rv.o (libc_rv32i_balanced.a)
+  0x00000814  __udivdi3                         284      4  Code  Wk  intops.o (libc_rv32i_balanced.a)
+  0x00000930  __umoddi3                         260      4  Code  Wk  intops.o (libc_rv32i_balanced.a)
+  0x00000A34  memset                            164      4  Code  Gb  strasmops_rv.o (libc_rv32i_balanced.a)
+  0x00000AD8  strlen                            152      4  Code  Gb  strasmops_rv.o (libc_rv32i_balanced.a)
+  0x00000B70  strnlen                           204      4  Code  Wk  strops.o (libc_rv32i_balanced.a)
+  0x00000C3C  __SEGGER_RTL_stream_write          24      4  Code  Lc  prinops.o (libc_rv32i_balanced.a)
+  0x00000C50  __SEGGER_RTL_prin_flush            64      4  Code  Gb  prinops.o (libc_rv32i_balanced.a)
+  0x00000C90  __SEGGER_RTL_putc                 236      4  Code  Gb  prinops.o (libc_rv32i_balanced.a)
+  0x00000D78  __SEGGER_RTL_print_padding
+                                                 84      4  Code  Gb  prinops.o (libc_rv32i_balanced.a)
+  0x00000DC8  __SEGGER_RTL_pre_padding           36      4  Code  Gb  prinops.o (libc_rv32i_balanced.a)
+  0x00000DE8  __SEGGER_RTL_init_prin_l           64      4  Code  Gb  prinops.o (libc_rv32i_balanced.a)
+  0x00000E24  vfprintf_l                        172      4  Code  Wk  prinops.o (libc_rv32i_balanced.a)
+  0x00000EC0  vfprintf                           76      4  Code  Wk  prinops.o (libc_rv32i_balanced.a)
+  0x00000F04  printf                             76      4  Code  Wk  prinops.o (libc_rv32i_balanced.a)
+  0x00000F68  __SEGGER_RTL_vfprintf_int       2 060      4  Code  Gb  __SEGGER_RTL_vfprintf_int.o (libc_rv32i_balanced.a)
+  0x00000F68  __SEGGER_RTL_vfprintf           2 060      4  Code  Gb  __SEGGER_RTL_vfprintf_int.o (libc_rv32i_balanced.a)
+  0x000017B4  trap_entry                      [160]      4  Code  Wk  SEGGER_RV32_crtinit.o (SEGGER_RV32_crtinit_rv32i_balanced.a)
+  0x00001854  handle_trap                       [4]      4  Code  Wk  SEGGER_RV32_crtinit.o (SEGGER_RV32_crtinit_rv32i_balanced.a)
+  0x00001858  _init                             [4]      4  Code  Wk  SEGGER_RV32_crtinit.o (SEGGER_RV32_crtinit_rv32i_balanced.a)
+  0x0000185C  __SEGGER_RTL_X_file_stat           56      4  Code  Gb  fileops_semi.o (prinops_semihost_rv32i_balanced.a)
+  0x0000188C  __SEGGER_RTL_X_file_bufsize
+                                                  8      4  Code  Gb  fileops_semi.o (prinops_semihost_rv32i_balanced.a)
+  0x00001894  __SEGGER_RTL_X_file_write         144      4  Code  Gb  fileops_semi.o (prinops_semihost_rv32i_balanced.a)
+  0x0000191C  SEGGER_SEMIHOST_Write              48      4  Code  Gb  SEGGER_SEMIHOST.o (prinops_semihost_rv32i_balanced.a)
+  0x00001948  SEGGER_SEMIHOST_DebugHalt           4      4  Code  Gb  SEGGER_SEMIHOST.o (prinops_semihost_rv32i_balanced.a)
+  0x0000194C  SEGGER_SEMIHOST_X_Request           8      4  Code  Gb  SEGGER_SEMIHOST_Generic.o (prinops_semihost_rv32i_balanced.a)
+  0x00001950  __SEGGER_RTL_ascii_isctype
+                                                 56      4  Code  Lc  mbops.o (mbops_timeops_rv32i_balanced.a)
+  0x00001980  __SEGGER_RTL_ascii_toupper
+                                                 20      4  Code  Lc  mbops.o (mbops_timeops_rv32i_balanced.a)
+  0x00001994  __SEGGER_RTL_ascii_tolower
+                                                 20      4  Code  Lc  mbops.o (mbops_timeops_rv32i_balanced.a)
+  0x000019A8  __SEGGER_RTL_ascii_iswctype
+                                                 56      4  Code  Lc  mbops.o (mbops_timeops_rv32i_balanced.a)
+  0x000019D8  __SEGGER_RTL_ascii_towupper
+                                                 20      4  Code  Lc  mbops.o (mbops_timeops_rv32i_balanced.a)
+  0x000019EC  __SEGGER_RTL_ascii_towlower
+                                                 20      4  Code  Lc  mbops.o (mbops_timeops_rv32i_balanced.a)
+  0x00001A00  __SEGGER_RTL_ascii_mbtowc          60      4  Code  Gb  mbops.o (mbops_timeops_rv32i_balanced.a)
+  0x00001A3C  __SEGGER_RTL_ascii_wctomb          28      4  Code  Gb  mbops.o (mbops_timeops_rv32i_balanced.a)
+  0x00001A58  __SEGGER_RTL_current_locale
+                                                 24      4  Code  Gb  mbops.o (mbops_timeops_rv32i_balanced.a)
+  0x00001E80  __SEGGER_init_zero                 36      4  Code  Wk  SEGGER_RV32_crtinit.o (SEGGER_RV32_crtinit_rv32i_balanced.a)
+  0x00001EA4  __SEGGER_init_pack                100      4  Code  Wk  SEGGER_RV32_crtinit.o (SEGGER_RV32_crtinit_rv32i_balanced.a)
+
+Function symbols by descending size:
+
+  Symbol name                      Size  Align  Type  Bd  Object File
+  -------------------------  ----------  -----  ----  --  -----------
+  __SEGGER_RTL_vfprintf           2 060      4  Code  Gb  __SEGGER_RTL_vfprintf_int.o (libc_rv32i_balanced.a)
+  __SEGGER_RTL_vfprintf_int       2 060      4  Code  Gb  __SEGGER_RTL_vfprintf_int.o (libc_rv32i_balanced.a)
+  main                              740      4  Code  Gb  accelerator.o
+  pspMachinePerfCounterGet          548      4  Code  Gb  psp_performance_monitor_el2.o
+  __udivdi3                         284      4  Code  Wk  intops.o (libc_rv32i_balanced.a)
+  __umoddi3                         260      4  Code  Wk  intops.o (libc_rv32i_balanced.a)
+  __SEGGER_RTL_putc                 236      4  Code  Gb  prinops.o (libc_rv32i_balanced.a)
+  strnlen                           204      4  Code  Wk  strops.o (libc_rv32i_balanced.a)
+  vfprintf_l                        172      4  Code  Wk  prinops.o (libc_rv32i_balanced.a)
+  memset                            164      4  Code  Gb  strasmops_rv.o (libc_rv32i_balanced.a)
+  strlen                            152      4  Code  Gb  strasmops_rv.o (libc_rv32i_balanced.a)
+  __SEGGER_RTL_X_file_write         144      4  Code  Gb  fileops_semi.o (prinops_semihost_rv32i_balanced.a)
+  fwrite                            140      4  Code  Wk  fileops.o (libc_rv32i_balanced.a)
+  pspMachinePerfCounterSet          124      4  Code  Gb  psp_performance_monitor_el2.o
+  __SEGGER_init_pack                100      4  Code  Wk  SEGGER_RV32_crtinit.o (SEGGER_RV32_crtinit_rv32i_balanced.a)
+  _start                            100      4  Code  Gb  SEGGER_RV32_crt0.o
+  __SEGGER_RTL_print_padding
+                                     84      4  Code  Gb  prinops.o (libc_rv32i_balanced.a)
+  printf                             76      4  Code  Wk  prinops.o (libc_rv32i_balanced.a)
+  vfprintf                           76      4  Code  Wk  prinops.o (libc_rv32i_balanced.a)
+  __udivsi3                          72      4  Code  Gb  intasmops_rv.o (libc_rv32i_balanced.a)
+  pack_col                           68      4  Code  Gb  accelerator.o
+  __SEGGER_RTL_init_prin_l           64      4  Code  Gb  prinops.o (libc_rv32i_balanced.a)
+  __SEGGER_RTL_prin_flush            64      4  Code  Gb  prinops.o (libc_rv32i_balanced.a)
+  __SEGGER_RTL_ascii_mbtowc          60      4  Code  Gb  mbops.o (mbops_timeops_rv32i_balanced.a)
+  __SEGGER_RTL_X_file_stat           56      4  Code  Gb  fileops_semi.o (prinops_semihost_rv32i_balanced.a)
+  __SEGGER_RTL_ascii_isctype
+                                     56      4  Code  Lc  mbops.o (mbops_timeops_rv32i_balanced.a)
+  __SEGGER_RTL_ascii_iswctype
+                                     56      4  Code  Lc  mbops.o (mbops_timeops_rv32i_balanced.a)
+  __mulsi3                           56      4  Code  Gb  intasmops_rv.o (libc_rv32i_balanced.a)
+  SEGGER_SEMIHOST_Write              48      4  Code  Gb  SEGGER_SEMIHOST.o (prinops_semihost_rv32i_balanced.a)
+  __SEGGER_RTL_pre_padding           36      4  Code  Gb  prinops.o (libc_rv32i_balanced.a)
+  __SEGGER_init_zero                 36      4  Code  Wk  SEGGER_RV32_crtinit.o (SEGGER_RV32_crtinit_rv32i_balanced.a)
+  __SEGGER_RTL_ascii_wctomb          28      4  Code  Gb  mbops.o (mbops_timeops_rv32i_balanced.a)
+  __SEGGER_RTL_current_locale
+                                     24      4  Code  Gb  mbops.o (mbops_timeops_rv32i_balanced.a)
+  __SEGGER_RTL_stream_write          24      4  Code  Lc  prinops.o (libc_rv32i_balanced.a)
+  pspMachinePerfMonitorDisableCounter
+                                     24      4  Code  Gb  psp_performance_monitor_el2.o
+  pspMachinePerfMonitorEnableCounter
+                                     24      4  Code  Gb  psp_performance_monitor_el2.o
+  __SEGGER_RTL_ascii_tolower
+                                     20      4  Code  Lc  mbops.o (mbops_timeops_rv32i_balanced.a)
+  __SEGGER_RTL_ascii_toupper
+                                     20      4  Code  Lc  mbops.o (mbops_timeops_rv32i_balanced.a)
+  __SEGGER_RTL_ascii_towlower
+                                     20      4  Code  Lc  mbops.o (mbops_timeops_rv32i_balanced.a)
+  __SEGGER_RTL_ascii_towupper
+                                     20      4  Code  Lc  mbops.o (mbops_timeops_rv32i_balanced.a)
+  pspMachinePerfMonitorDisableAll
+                                     12      4  Code  Gb  psp_performance_monitor_el2.o
+  pspMachinePerfMonitorEnableAll
+                                     12      4  Code  Gb  psp_performance_monitor_el2.o
+  SEGGER_SEMIHOST_X_Request           8      4  Code  Gb  SEGGER_SEMIHOST_Generic.o (prinops_semihost_rv32i_balanced.a)
+  __SEGGER_RTL_X_file_bufsize
+                                      8      4  Code  Gb  fileops_semi.o (prinops_semihost_rv32i_balanced.a)
+  SEGGER_SEMIHOST_DebugHalt           4      4  Code  Gb  SEGGER_SEMIHOST.o (prinops_semihost_rv32i_balanced.a)
+  exit                                4      4  Code  Gb  SEGGER_RV32_crt0.o
+  __SEGGER_init_done                         4  Code  Gb  SEGGER_RV32_crt0.o
+  __startup_complete                         4  Code  Gb  SEGGER_RV32_crt0.o
+  _init                             [4]      4  Code  Wk  SEGGER_RV32_crtinit.o (SEGGER_RV32_crtinit_rv32i_balanced.a)
+  handle_trap                       [4]      4  Code  Wk  SEGGER_RV32_crtinit.o (SEGGER_RV32_crtinit_rv32i_balanced.a)
+  trap_entry                      [160]      4  Code  Wk  SEGGER_RV32_crtinit.o (SEGGER_RV32_crtinit_rv32i_balanced.a)
+
+Read-write data symbols by name:
+
+  Global base (gp) at 0x000017EC
+  Thread base (tp) at 0x00000B50
+  
+  Symbol name                   Address     Access        Size  Align  Type  Bd  Object File
+  -------------------------  ----------  ---------  ----------  -----  ----  --  -----------
+  __RAL_global_locale        0x00001E68  gp+0x067C          20      4  Init  Gb  mbops.o (mbops_timeops_rv32i_balanced.a)
+  __SEGGER_RTL_global_locale
+                             0x00001E68  gp+0x067C          20      4  Init  Gb  mbops.o (mbops_timeops_rv32i_balanced.a)
+  __SEGGER_RTL_locale_ptr    0x00001D4C  gp+0x0560           4      4  Zero  Gb  mbops.o (mbops_timeops_rv32i_balanced.a)
+  _aFileTable                0x00001D50  gp+0x0564         280      4  Init  Lc  fileops_semi.o (prinops_semihost_rv32i_balanced.a)
+  stdout                     0x00001E7C  gp+0x0690           4      4  Init  Gb  fileops_semi.o (prinops_semihost_rv32i_balanced.a)
+
+Read-write data symbols by address:
+
+  Global base (gp) at 0x000017EC
+  Thread base (tp) at 0x00000B50
+  
+     Address     Access  Symbol name                      Size  Align  Type  Bd  Object File
+  ----------  ---------  -------------------------  ----------  -----  ----  --  -----------
+  0x00001D4C  gp+0x0560  __SEGGER_RTL_locale_ptr             4      4  Zero  Gb  mbops.o (mbops_timeops_rv32i_balanced.a)
+  0x00001D50  gp+0x0564  _aFileTable                       280      4  Init  Lc  fileops_semi.o (prinops_semihost_rv32i_balanced.a)
+  0x00001E68  gp+0x067C  __SEGGER_RTL_global_locale
+                                                            20      4  Init  Gb  mbops.o (mbops_timeops_rv32i_balanced.a)
+  0x00001E68  gp+0x067C  __RAL_global_locale                20      4  Init  Gb  mbops.o (mbops_timeops_rv32i_balanced.a)
+  0x00001E7C  gp+0x0690  stdout                              4      4  Init  Gb  fileops_semi.o (prinops_semihost_rv32i_balanced.a)
+
+Read-write data symbols by descending size:
+
+  Global base (gp) at 0x000017EC
+  Thread base (tp) at 0x00000B50
+  
+  Symbol name                      Size  Align  Type  Bd  Object File
+  -------------------------  ----------  -----  ----  --  -----------
+  _aFileTable                       280      4  Init  Lc  fileops_semi.o (prinops_semihost_rv32i_balanced.a)
+  __RAL_global_locale                20      4  Init  Gb  mbops.o (mbops_timeops_rv32i_balanced.a)
+  __SEGGER_RTL_global_locale
+                                     20      4  Init  Gb  mbops.o (mbops_timeops_rv32i_balanced.a)
+  __SEGGER_RTL_locale_ptr             4      4  Zero  Gb  mbops.o (mbops_timeops_rv32i_balanced.a)
+  stdout                              4      4  Init  Gb  fileops_semi.o (prinops_semihost_rv32i_balanced.a)
+
+Read-only data symbols by name:
+
+  Global base (gp) at 0x000017EC
+  Thread base (tp) at 0x00000B50
+  
+  Symbol name                   Address     Access        Size  Align  Type  Bd  Object File
+  -------------------------  ----------  ---------  ----------  -----  ----  --  -----------
+  MATRIX1                    0x00001CBE  gp+0x04D2          64         Cnst  Gb  accelerator.o
+  MATRIX2                    0x00001CFE  gp+0x0512          64         Cnst  Gb  accelerator.o
+  __SEGGER_RTL_ascii_ctype_map
+                             0x00001AEC  gp+0x0300         128      4  Cnst  Lc  mbops.o (mbops_timeops_rv32i_balanced.a)
+  __SEGGER_RTL_ascii_ctype_mask
+                             0x00001BEC  gp+0x0400          13      4  Cnst  Lc  mbops.o (mbops_timeops_rv32i_balanced.a)
+  __SEGGER_RTL_c_locale      0x00001A68  gp+0x027C          12      4  Cnst  Gb  mbops.o (mbops_timeops_rv32i_balanced.a)
+  __SEGGER_RTL_c_locale_abbrev_day_names
+                             0x00001BC8  gp+0x03DC          29      4  Cnst  Gb  mbops.o (mbops_timeops_rv32i_balanced.a)
+  __SEGGER_RTL_c_locale_abbrev_month_names
+                             0x00001B94  gp+0x03A8          49      4  Cnst  Gb  mbops.o (mbops_timeops_rv32i_balanced.a)
+  __SEGGER_RTL_c_locale_am_pm_indicator
+                             0x00001C24  gp+0x0438           7      4  Cnst  Gb  mbops.o (mbops_timeops_rv32i_balanced.a)
+  __SEGGER_RTL_c_locale_data
+                             0x00001A74  gp+0x0288          88      4  Cnst  Gb  mbops.o (mbops_timeops_rv32i_balanced.a)
+  __SEGGER_RTL_c_locale_date_format
+                             0x00001C18  gp+0x042C           9      4  Cnst  Gb  mbops.o (mbops_timeops_rv32i_balanced.a)
+  __SEGGER_RTL_c_locale_date_time_format
+                             0x00001BFC  gp+0x0410          15      4  Cnst  Gb  mbops.o (mbops_timeops_rv32i_balanced.a)
+  __SEGGER_RTL_c_locale_day_names
+                             0x00001C84  gp+0x0498          58      4  Cnst  Gb  mbops.o (mbops_timeops_rv32i_balanced.a)
+  __SEGGER_RTL_c_locale_month_names
+                             0x00001C2C  gp+0x0440          87      4  Cnst  Gb  mbops.o (mbops_timeops_rv32i_balanced.a)
+  __SEGGER_RTL_c_locale_time_format
+                             0x00001C0C  gp+0x0420           9      4  Cnst  Gb  mbops.o (mbops_timeops_rv32i_balanced.a)
+  __SEGGER_RTL_codeset_ascii
+                             0x00001ACC  gp+0x02E0          32      4  Cnst  Gb  mbops.o (mbops_timeops_rv32i_balanced.a)
+  __SEGGER_RTL_data_empty_string
+                             0x00001B90  gp+0x03A4           1      4  Cnst  Gb  mbops.o (mbops_timeops_rv32i_balanced.a)
+  __SEGGER_RTL_data_utf8_period
+                             0x00001BE8  gp+0x03FC           2      4  Cnst  Gb  mbops.o (mbops_timeops_rv32i_balanced.a)
+  __SEGGER_RTL_hex_lc        0x00000F48  tp+0x03F8          16      4  Cnst  Gb  prinops.o (libc_rv32i_balanced.a)
+  __SEGGER_RTL_hex_uc        0x00000F58  tp+0x0408          16      4  Cnst  Gb  prinops.o (libc_rv32i_balanced.a)
+  __SEGGER_init_data__       0x00001F24  gp+0x0738        [52]      4  Cnst  Lc  [ Linker created ]
+  __SEGGER_init_table__      0x00001F08  gp+0x071C        [28]      4  Cnst  Lc  [ Linker created ]
+
+Read-only data symbols by address:
+
+  Global base (gp) at 0x000017EC
+  Thread base (tp) at 0x00000B50
+  
+     Address     Access  Symbol name                      Size  Align  Type  Bd  Object File
+  ----------  ---------  -------------------------  ----------  -----  ----  --  -----------
+  0x00000F48  tp+0x03F8  __SEGGER_RTL_hex_lc                16      4  Cnst  Gb  prinops.o (libc_rv32i_balanced.a)
+  0x00000F58  tp+0x0408  __SEGGER_RTL_hex_uc                16      4  Cnst  Gb  prinops.o (libc_rv32i_balanced.a)
+  0x00001A68  gp+0x027C  __SEGGER_RTL_c_locale              12      4  Cnst  Gb  mbops.o (mbops_timeops_rv32i_balanced.a)
+  0x00001A74  gp+0x0288  __SEGGER_RTL_c_locale_data
+                                                            88      4  Cnst  Gb  mbops.o (mbops_timeops_rv32i_balanced.a)
+  0x00001ACC  gp+0x02E0  __SEGGER_RTL_codeset_ascii
+                                                            32      4  Cnst  Gb  mbops.o (mbops_timeops_rv32i_balanced.a)
+  0x00001AEC  gp+0x0300  __SEGGER_RTL_ascii_ctype_map
+                                                           128      4  Cnst  Lc  mbops.o (mbops_timeops_rv32i_balanced.a)
+  0x00001B90  gp+0x03A4  __SEGGER_RTL_data_empty_string
+                                                             1      4  Cnst  Gb  mbops.o (mbops_timeops_rv32i_balanced.a)
+  0x00001B94  gp+0x03A8  __SEGGER_RTL_c_locale_abbrev_month_names
+                                                            49      4  Cnst  Gb  mbops.o (mbops_timeops_rv32i_balanced.a)
+  0x00001BC8  gp+0x03DC  __SEGGER_RTL_c_locale_abbrev_day_names
+                                                            29      4  Cnst  Gb  mbops.o (mbops_timeops_rv32i_balanced.a)
+  0x00001BE8  gp+0x03FC  __SEGGER_RTL_data_utf8_period
+                                                             2      4  Cnst  Gb  mbops.o (mbops_timeops_rv32i_balanced.a)
+  0x00001BEC  gp+0x0400  __SEGGER_RTL_ascii_ctype_mask
+                                                            13      4  Cnst  Lc  mbops.o (mbops_timeops_rv32i_balanced.a)
+  0x00001BFC  gp+0x0410  __SEGGER_RTL_c_locale_date_time_format
+                                                            15      4  Cnst  Gb  mbops.o (mbops_timeops_rv32i_balanced.a)
+  0x00001C0C  gp+0x0420  __SEGGER_RTL_c_locale_time_format
+                                                             9      4  Cnst  Gb  mbops.o (mbops_timeops_rv32i_balanced.a)
+  0x00001C18  gp+0x042C  __SEGGER_RTL_c_locale_date_format
+                                                             9      4  Cnst  Gb  mbops.o (mbops_timeops_rv32i_balanced.a)
+  0x00001C24  gp+0x0438  __SEGGER_RTL_c_locale_am_pm_indicator
+                                                             7      4  Cnst  Gb  mbops.o (mbops_timeops_rv32i_balanced.a)
+  0x00001C2C  gp+0x0440  __SEGGER_RTL_c_locale_month_names
+                                                            87      4  Cnst  Gb  mbops.o (mbops_timeops_rv32i_balanced.a)
+  0x00001C84  gp+0x0498  __SEGGER_RTL_c_locale_day_names
+                                                            58      4  Cnst  Gb  mbops.o (mbops_timeops_rv32i_balanced.a)
+  0x00001CBE  gp+0x04D2  MATRIX1                            64         Cnst  Gb  accelerator.o
+  0x00001CFE  gp+0x0512  MATRIX2                            64         Cnst  Gb  accelerator.o
+  0x00001F08  gp+0x071C  __SEGGER_init_table__            [28]      4  Cnst  Lc  [ Linker created ]
+  0x00001F24  gp+0x0738  __SEGGER_init_data__             [52]      4  Cnst  Lc  [ Linker created ]
+
+Untyped symbols by name:
+
+  Global base (gp) at 0x000017EC
+  Thread base (tp) at 0x00000B50
+  
+  Symbol name                     Value     Access        Size  Align  Type  Bd  Object File
+  -------------------------  ----------  ---------  ----------  -----  ----  --  -----------
+  $x.0                       0x00000058                  [744]      4  Code  Lc  psp_performance_monitor_el2.o
+  $x.0                       0x00000440  tp-0x0710        [68]      4  Code  Lc  accelerator.o
+  $x.1                       0x00000484  tp-0x06CC       [660]      4  Code  Lc  accelerator.o
+  __HEAPSIZE__               0x00000400  tp-0x0750                     ----  Gb  [ Linker created ]
+  __RAM1_segment_end__       0x04000000                                ----  Gb  [ Linker created ]
+  __RAM1_segment_size__      0x04000000                                ----  Gb  [ Linker created ]
+  __RAM1_segment_start__     0x00000000                                ----  Gb  [ Linker created ]
+  __RAM1_segment_used_end__  0x04000000                                ----  Gb  [ Linker created ]
+  __RAM1_segment_used_size__
+                             0x04000000                                ----  Gb  [ Linker created ]
+  __RAM1_segment_used_start__
+                             0x00000000                                ----  Gb  [ Linker created ]
+  __RAM_segment_end__        0x04000000                                ----  Gb  [ Linker created ]
+  __RAM_segment_size__       0x04000000                                ----  Gb  [ Linker created ]
+  __RAM_segment_start__      0x00000000                                ----  Gb  [ Linker created ]
+  __RAM_segment_used_end__   0x04000000                                ----  Gb  [ Linker created ]
+  __RAM_segment_used_size__  0x04000000                                ----  Gb  [ Linker created ]
+  __RAM_segment_used_start__
+                             0x00000000                                ----  Gb  [ Linker created ]
+  __STACKSIZE__              0x00000400  tp-0x0750                     ----  Gb  [ Linker created ]
+  __global_pointer$          0x000017EC  gp+0x0000                     ----  Gb  [ Linker created ]
+  __stack_end__              0x04000000                                ----  Gb  [ Linker created ]
+  __thread_pointer$          0x00000B50  tp+0x0000                     ----  Gb  [ Linker created ]
+
+Untyped symbols by address:
+
+  Global base (gp) at 0x000017EC
+  Thread base (tp) at 0x00000B50
+  
+       Value     Access  Symbol name                      Size  Align  Type  Bd  Object File
+  ----------  ---------  -------------------------  ----------  -----  ----  --  -----------
+  0x00000000             __RAM_segment_used_start__
+                                                                       ----  Gb  [ Linker created ]
+  0x00000000             __RAM_segment_start__                         ----  Gb  [ Linker created ]
+  0x00000000             __RAM1_segment_used_start__
+                                                                       ----  Gb  [ Linker created ]
+  0x00000000             __RAM1_segment_start__                        ----  Gb  [ Linker created ]
+  0x00000058             $x.0                            [744]      4  Code  Lc  psp_performance_monitor_el2.o
+  0x00000400  tp-0x0750  __STACKSIZE__                                 ----  Gb  [ Linker created ]
+  0x00000400  tp-0x0750  __HEAPSIZE__                                  ----  Gb  [ Linker created ]
+  0x00000440  tp-0x0710  $x.0                             [68]      4  Code  Lc  accelerator.o
+  0x00000484  tp-0x06CC  $x.1                            [660]      4  Code  Lc  accelerator.o
+  0x00000B50  tp+0x0000  __thread_pointer$                             ----  Gb  [ Linker created ]
+  0x000017EC  gp+0x0000  __global_pointer$                             ----  Gb  [ Linker created ]
+  0x04000000             __stack_end__                                 ----  Gb  [ Linker created ]
+  0x04000000             __RAM_segment_used_size__                     ----  Gb  [ Linker created ]
+  0x04000000             __RAM_segment_used_end__                      ----  Gb  [ Linker created ]
+  0x04000000             __RAM_segment_size__                          ----  Gb  [ Linker created ]
+  0x04000000             __RAM_segment_end__                           ----  Gb  [ Linker created ]
+  0x04000000             __RAM1_segment_used_size__
+                                                                       ----  Gb  [ Linker created ]
+  0x04000000             __RAM1_segment_used_end__                     ----  Gb  [ Linker created ]
+  0x04000000             __RAM1_segment_size__                         ----  Gb  [ Linker created ]
+  0x04000000             __RAM1_segment_end__                          ----  Gb  [ Linker created ]
+
+
+***********************************************************************************************
+***                                                                                         ***
+***                                      LINK SUMMARY                                       ***
+***                                                                                         ***
+***********************************************************************************************
+
+Memory breakdown:
+
+    6 452 bytes read-only  code    + 
+    1 248 bytes read-only  data    =   7 700 bytes read-only (total)
+    1 332 bytes read-write data
+
+Region summary:
+
+  Name        Range                     Size                 Used               Unused       Alignment Loss
+  ----------  -----------------  -----------  -------------------  -------------------  -------------------
+  RAM         00000000-03ffffff   67 108 864        9 032   0.01%   67 099 818  99.99%           14   0.00%
+
+Link complete: 0 errors, 0 warnings, 0 remarks

@@ -1,0 +1,17 @@
+item name <DirEntry 'LedsSwitches_C-Lang.emProject'>
+project {'Name': 'LedsSwitches_C-Lang'}
+bin file name LedsSwitches_C-Lang
+bin file name ..\Output\Debug\Exe\LedsSwitches_C-Lang.bin
+Binfile timestamp 1714576015.250427
+*****************
+BinFileTimeStamp Date (Local time): 2024-05-01 18:06:55.250427
+LedsSwitches_C-Lang.c
+File Name:  LedsSwitches_C-Lang
+File Extension:  .c
+add and sort LedsSwitches_C-Lang.c
+LedsSwitches_C-Lang.c ..\Source\LedsSwitches_C-Lang.c 511 1701828449.8345
+*****************
+SourceFilesOldestTimeStamp: 1714575956
+source_time_list: [<DirEntry 'LedsSwitches_C-Lang.c'>]
+SourceFilesOldestTimeStamp Date (Local time): 2023-12-06 04:07:29.834500
+vhFile ===>  LedsSwitches_C-Lang.vh

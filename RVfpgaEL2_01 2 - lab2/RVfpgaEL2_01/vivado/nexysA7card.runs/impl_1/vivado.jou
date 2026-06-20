@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Sat May  9 19:28:28 2026
+# Process ID: 31556
+# Current directory: C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/vivado/nexysA7card.runs/impl_1
+# Command line: vivado.exe -log rvfpganexys.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source rvfpganexys.tcl -notrace
+# Log file: C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/vivado/nexysA7card.runs/impl_1/rvfpganexys.vdi
+# Journal file: C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/vivado/nexysA7card.runs/impl_1\vivado.jou
+# Running On: Nitais_Laptop, OS: Windows, CPU Frequency: 2189 MHz, CPU Physical cores: 12, Host memory: 16780 MB
+#-----------------------------------------------------------
+source rvfpganexys.tcl -notrace

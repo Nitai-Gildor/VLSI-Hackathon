@@ -1,0 +1,1740 @@
+
+*** Running vivado
+    with args -log rvfpganexys.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source rvfpganexys.tcl
+
+
+ECHO is off.
+ECHO is off.
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source rvfpganexys.tcl -notrace
+Command: synth_design -top rvfpganexys -part xc7a100tcsg324-1 -flatten_hierarchy none -directive RuntimeOptimized -fsm_extraction off
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 37680
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1349.438 ; gain = 439.094
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-11067] parameter 'pt' declared inside package 'el2_pkg' shall be treated as localparam [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/include/el2_def.sv:581]
+INFO: [Synth 8-11241] undeclared symbol 'vga_arready', assumed default net type 'wire' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/rvfpganexys.sv:264]
+INFO: [Synth 8-11241] undeclared symbol 'rst_n', assumed default net type 'wire' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/accelerator_hackaton/accelerator.sv:20]
+WARNING: [Synth 8-11067] parameter 'ADDR_W' declared inside package 'ibex_pkg' shall be treated as localparam [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_pkg.sv:480]
+WARNING: [Synth 8-11067] parameter 'BUS_SIZE' declared inside package 'ibex_pkg' shall be treated as localparam [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_pkg.sv:481]
+WARNING: [Synth 8-11067] parameter 'BUS_BYTES' declared inside package 'ibex_pkg' shall be treated as localparam [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_pkg.sv:482]
+WARNING: [Synth 8-11067] parameter 'BUS_W' declared inside package 'ibex_pkg' shall be treated as localparam [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_pkg.sv:483]
+WARNING: [Synth 8-11067] parameter 'IC_SIZE_BYTES' declared inside package 'ibex_pkg' shall be treated as localparam [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_pkg.sv:484]
+WARNING: [Synth 8-11067] parameter 'IC_NUM_WAYS' declared inside package 'ibex_pkg' shall be treated as localparam [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_pkg.sv:485]
+WARNING: [Synth 8-11067] parameter 'IC_LINE_SIZE' declared inside package 'ibex_pkg' shall be treated as localparam [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_pkg.sv:486]
+WARNING: [Synth 8-11067] parameter 'IC_LINE_BYTES' declared inside package 'ibex_pkg' shall be treated as localparam [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_pkg.sv:487]
+WARNING: [Synth 8-11067] parameter 'IC_LINE_W' declared inside package 'ibex_pkg' shall be treated as localparam [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_pkg.sv:488]
+WARNING: [Synth 8-11067] parameter 'IC_NUM_LINES' declared inside package 'ibex_pkg' shall be treated as localparam [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_pkg.sv:489]
+WARNING: [Synth 8-11067] parameter 'IC_LINE_BEATS' declared inside package 'ibex_pkg' shall be treated as localparam [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_pkg.sv:490]
+WARNING: [Synth 8-11067] parameter 'IC_LINE_BEATS_W' declared inside package 'ibex_pkg' shall be treated as localparam [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_pkg.sv:491]
+WARNING: [Synth 8-11067] parameter 'IC_INDEX_W' declared inside package 'ibex_pkg' shall be treated as localparam [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_pkg.sv:492]
+WARNING: [Synth 8-11067] parameter 'IC_INDEX_HI' declared inside package 'ibex_pkg' shall be treated as localparam [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_pkg.sv:493]
+WARNING: [Synth 8-11067] parameter 'IC_TAG_SIZE' declared inside package 'ibex_pkg' shall be treated as localparam [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_pkg.sv:494]
+WARNING: [Synth 8-11067] parameter 'IC_OUTPUT_BEATS' declared inside package 'ibex_pkg' shall be treated as localparam [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_pkg.sv:495]
+WARNING: [Synth 8-11067] parameter 'SCRAMBLE_KEY_W' declared inside package 'ibex_pkg' shall be treated as localparam [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_pkg.sv:497]
+WARNING: [Synth 8-11067] parameter 'SCRAMBLE_NONCE_W' declared inside package 'ibex_pkg' shall be treated as localparam [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_pkg.sv:498]
+WARNING: [Synth 8-11067] parameter 'PMP_MAX_REGIONS' declared inside package 'ibex_pkg' shall be treated as localparam [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_pkg.sv:501]
+WARNING: [Synth 8-11067] parameter 'PMP_CFG_W' declared inside package 'ibex_pkg' shall be treated as localparam [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_pkg.sv:502]
+WARNING: [Synth 8-11067] parameter 'PMP_I' declared inside package 'ibex_pkg' shall be treated as localparam [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_pkg.sv:505]
+WARNING: [Synth 8-11067] parameter 'PMP_I2' declared inside package 'ibex_pkg' shall be treated as localparam [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_pkg.sv:506]
+WARNING: [Synth 8-11067] parameter 'PMP_D' declared inside package 'ibex_pkg' shall be treated as localparam [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_pkg.sv:507]
+WARNING: [Synth 8-11067] parameter 'CSR_OFF_PMP_CFG' declared inside package 'ibex_pkg' shall be treated as localparam [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_pkg.sv:707]
+WARNING: [Synth 8-11067] parameter 'CSR_OFF_PMP_ADDR' declared inside package 'ibex_pkg' shall be treated as localparam [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_pkg.sv:708]
+WARNING: [Synth 8-11067] parameter 'CSR_MSTATUS_MIE_BIT' declared inside package 'ibex_pkg' shall be treated as localparam [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_pkg.sv:711]
+WARNING: [Synth 8-11067] parameter 'CSR_MSTATUS_MPIE_BIT' declared inside package 'ibex_pkg' shall be treated as localparam [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_pkg.sv:712]
+WARNING: [Synth 8-11067] parameter 'CSR_MSTATUS_MPP_BIT_LOW' declared inside package 'ibex_pkg' shall be treated as localparam [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_pkg.sv:713]
+WARNING: [Synth 8-11067] parameter 'CSR_MSTATUS_MPP_BIT_HIGH' declared inside package 'ibex_pkg' shall be treated as localparam [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_pkg.sv:714]
+WARNING: [Synth 8-11067] parameter 'CSR_MSTATUS_MPRV_BIT' declared inside package 'ibex_pkg' shall be treated as localparam [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_pkg.sv:715]
+WARNING: [Synth 8-11067] parameter 'CSR_MSTATUS_TW_BIT' declared inside package 'ibex_pkg' shall be treated as localparam [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_pkg.sv:716]
+WARNING: [Synth 8-11067] parameter 'CSR_MISA_MXL' declared inside package 'ibex_pkg' shall be treated as localparam [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_pkg.sv:719]
+WARNING: [Synth 8-11067] parameter 'CSR_MSIX_BIT' declared inside package 'ibex_pkg' shall be treated as localparam [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_pkg.sv:722]
+WARNING: [Synth 8-11067] parameter 'CSR_MTIX_BIT' declared inside package 'ibex_pkg' shall be treated as localparam [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_pkg.sv:723]
+WARNING: [Synth 8-11067] parameter 'CSR_MEIX_BIT' declared inside package 'ibex_pkg' shall be treated as localparam [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_pkg.sv:724]
+WARNING: [Synth 8-11067] parameter 'CSR_MFIX_BIT_LOW' declared inside package 'ibex_pkg' shall be treated as localparam [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_pkg.sv:725]
+WARNING: [Synth 8-11067] parameter 'CSR_MFIX_BIT_HIGH' declared inside package 'ibex_pkg' shall be treated as localparam [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_pkg.sv:726]
+WARNING: [Synth 8-11067] parameter 'CSR_MSECCFG_MML_BIT' declared inside package 'ibex_pkg' shall be treated as localparam [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_pkg.sv:729]
+WARNING: [Synth 8-11067] parameter 'CSR_MSECCFG_MMWP_BIT' declared inside package 'ibex_pkg' shall be treated as localparam [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_pkg.sv:730]
+WARNING: [Synth 8-11067] parameter 'CSR_MSECCFG_RLB_BIT' declared inside package 'ibex_pkg' shall be treated as localparam [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_pkg.sv:731]
+WARNING: [Synth 8-11067] parameter 'LfsrWidth' declared inside package 'ibex_pkg' shall be treated as localparam [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_pkg.sv:757]
+WARNING: [Synth 8-11067] parameter 'RndCnstLfsrSeedDefault' declared inside package 'ibex_pkg' shall be treated as localparam [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_pkg.sv:760]
+WARNING: [Synth 8-11067] parameter 'RndCnstLfsrPermDefault' declared inside package 'ibex_pkg' shall be treated as localparam [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_pkg.sv:761]
+WARNING: [Synth 8-11067] parameter 'RndCnstIbexKeyDefault' declared inside package 'ibex_pkg' shall be treated as localparam [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_pkg.sv:764]
+WARNING: [Synth 8-11067] parameter 'RndCnstIbexNonceDefault' declared inside package 'ibex_pkg' shall be treated as localparam [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_pkg.sv:766]
+WARNING: [Synth 8-11067] parameter 'IbexMuBiWidth' declared inside package 'ibex_pkg' shall be treated as localparam [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_pkg.sv:771]
+WARNING: [Synth 8-11067] parameter 'IbexMuBiOn' declared inside package 'ibex_pkg' shall be treated as localparam [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_pkg.sv:778]
+WARNING: [Synth 8-11067] parameter 'IbexMuBiOff' declared inside package 'ibex_pkg' shall be treated as localparam [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_pkg.sv:779]
+WARNING: [Synth 8-11065] parameter 'STATESIZE' becomes localparam in 'axi2wb' with formal parameter declaration list [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiToWb/axi2wb.v:83]
+WARNING: [Synth 8-11065] parameter 'IDLE' becomes localparam in 'axi2wb' with formal parameter declaration list [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiToWb/axi2wb.v:86]
+WARNING: [Synth 8-11065] parameter 'AWACK' becomes localparam in 'axi2wb' with formal parameter declaration list [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiToWb/axi2wb.v:87]
+WARNING: [Synth 8-11065] parameter 'WBWACK' becomes localparam in 'axi2wb' with formal parameter declaration list [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiToWb/axi2wb.v:88]
+WARNING: [Synth 8-11065] parameter 'WBRACK1' becomes localparam in 'axi2wb' with formal parameter declaration list [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiToWb/axi2wb.v:89]
+WARNING: [Synth 8-11065] parameter 'WBR2' becomes localparam in 'axi2wb' with formal parameter declaration list [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiToWb/axi2wb.v:90]
+WARNING: [Synth 8-11065] parameter 'WBRACK2' becomes localparam in 'axi2wb' with formal parameter declaration list [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiToWb/axi2wb.v:91]
+WARNING: [Synth 8-11065] parameter 'BAXI' becomes localparam in 'axi2wb' with formal parameter declaration list [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiToWb/axi2wb.v:92]
+WARNING: [Synth 8-11065] parameter 'RRAXI' becomes localparam in 'axi2wb' with formal parameter declaration list [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiToWb/axi2wb.v:93]
+WARNING: [Synth 8-11065] parameter 'VALID_ADDR_WIDTH' becomes localparam in 'axi_ram' with formal parameter declaration list [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/axi_ram.v:87]
+WARNING: [Synth 8-11065] parameter 'WORD_WIDTH' becomes localparam in 'axi_ram' with formal parameter declaration list [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/axi_ram.v:88]
+WARNING: [Synth 8-11065] parameter 'WORD_SIZE' becomes localparam in 'axi_ram' with formal parameter declaration list [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/axi_ram.v:89]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'i_vga_awready' is not allowed [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/axi_intercon.vh:194]
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'i_vga_arready' is not allowed [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/axi_intercon.vh:206]
+WARNING: [Synth 8-11065] parameter 'master_sel_bits' becomes localparam in 'wb_arbiter' with formal parameter declaration list [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/WishboneInterconnect/wb_intercon_1.2.2-r1/rtl/verilog/wb_arbiter.v:81]
+WARNING: [Synth 8-11065] parameter 'slave_sel_bits' becomes localparam in 'wb_mux' with formal parameter declaration list [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/WishboneInterconnect/wb_intercon_1.2.2-r1/rtl/verilog/wb_mux.v:87]
+INFO: [Synth 8-6157] synthesizing module 'rvfpganexys' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/rvfpganexys.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'clk_gen_nexys' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/clk_gen_nexys.v:24]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:1951]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:1951]
+INFO: [Synth 8-6157] synthesizing module 'PLLE2_BASE' [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:111430]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT bound to: 16 - type: integer 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: double 
+	Parameter CLKOUT0_DIVIDE bound to: 128 - type: integer 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'PLLE2_BASE' (0#1) [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:111430]
+INFO: [Synth 8-6155] done synthesizing module 'clk_gen_nexys' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/clk_gen_nexys.v:24]
+INFO: [Synth 8-6157] synthesizing module 'axi_ram' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/axi_ram.v:33]
+	Parameter DATA_WIDTH bound to: 64 - type: integer 
+	Parameter ADDR_WIDTH bound to: 17 - type: integer 
+	Parameter ID_WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/axi_ram.v:194]
+INFO: [Synth 8-6155] done synthesizing module 'axi_ram' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/axi_ram.v:33]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/rvfpganexys.sv:219]
+INFO: [Synth 8-6157] synthesizing module 'STARTUPE2' [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:133907]
+INFO: [Synth 8-6155] done synthesizing module 'STARTUPE2' (0#1) [C:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:133907]
+INFO: [Synth 8-6157] synthesizing module 'axi_mem' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/axi_mem.v:25]
+	Parameter ID_WIDTH bound to: 6 - type: integer 
+	Parameter MEM_SIZE bound to: 4096 - type: integer 
+	Parameter mem_clear bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'axi2mem' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/axi2mem.sv:21]
+	Parameter ID_WIDTH bound to: 6 - type: integer 
+	Parameter AXI_ADDR_WIDTH bound to: 32'b00000000000000000000000000100000 
+	Parameter AXI_DATA_WIDTH bound to: 32'b00000000000000000000000001000000 
+	Parameter AXI_USER_WIDTH bound to: 32'b00000000000000000000000000000000 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/axi2mem.sv:221]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/axi2mem.sv:263]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/axi2mem.sv:152]
+INFO: [Synth 8-6155] done synthesizing module 'axi2mem' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/axi2mem.sv:21]
+INFO: [Synth 8-6157] synthesizing module 'dpram64' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/BootROM/dpram64.v:24]
+	Parameter SIZE bound to: 4096 - type: integer 
+	Parameter mem_clear bound to: 0 - type: integer 
+	Parameter memfile bound to: (null) - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'dpram64' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/BootROM/dpram64.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'axi_mem' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/axi_mem.v:25]
+INFO: [Synth 8-6157] synthesizing module 'dmi_wrapper' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/dmi/dmi_wrapper.v:24]
+INFO: [Synth 8-6157] synthesizing module 'rvjtag_tap' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/dmi/rvjtag_tap.sv:16]
+INFO: [Synth 8-226] default block is never used [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/dmi/rvjtag_tap.sv:95]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/dmi/rvjtag_tap.sv:177]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/dmi/rvjtag_tap.sv:165]
+INFO: [Synth 8-6155] done synthesizing module 'rvjtag_tap' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/dmi/rvjtag_tap.sv:16]
+INFO: [Synth 8-6157] synthesizing module 'dmi_jtag_to_core_sync' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/dmi/dmi_jtag_to_core_sync.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'dmi_jtag_to_core_sync' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/dmi/dmi_jtag_to_core_sync.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'dmi_wrapper' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/dmi/dmi_wrapper.v:24]
+WARNING: [Synth 8-7071] port 'scan_mode' of module 'dmi_wrapper' is unconnected for instance 'dmi_wrapper' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/rvfpganexys.sv:302]
+WARNING: [Synth 8-7023] instance 'dmi_wrapper' of module 'dmi_wrapper' has 16 connections declared, but only 15 given [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/rvfpganexys.sv:302]
+INFO: [Synth 8-6157] synthesizing module 'veerwolf_core' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/veerwolf_core.v:25]
+	Parameter bootrom_file bound to: boot_main.mem - type: string 
+	Parameter clk_freq_hz bound to: 12500000 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'axi_intercon' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/axi_intercon.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'axi_xbar' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_xbar.sv:15]
+	Parameter Cfg[NoSlvPorts] bound to: 32'b00000000000000000000000000000011 
+	Parameter Cfg[NoMstPorts] bound to: 32'b00000000000000000000000000000011 
+	Parameter Cfg[MaxMstTrans] bound to: 32'b00000000000000000000000000001010 
+	Parameter Cfg[MaxSlvTrans] bound to: 32'b00000000000000000000000000000110 
+	Parameter Cfg[FallThrough] bound to: 1'b0 
+	Parameter Cfg[LatencyMode] bound to: 10'b1001010010 
+	Parameter Cfg[AxiIdWidthSlvPorts] bound to: 32'b00000000000000000000000000000100 
+	Parameter Cfg[AxiIdUsedSlvPorts] bound to: 32'b00000000000000000000000000000100 
+	Parameter Cfg[AxiAddrWidth] bound to: 32'b00000000000000000000000000100000 
+	Parameter Cfg[AxiDataWidth] bound to: 32'b00000000000000000000000001000000 
+	Parameter Cfg[NoAddrRules] bound to: 32'b00000000000000000000000000000011 
+	Parameter ATOPs bound to: 1'b0 
+INFO: [Synth 8-6157] synthesizing module 'addr_decode' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/addr_decode.sv:30]
+	Parameter NoIndices bound to: 32'b00000000000000000000000000000011 
+	Parameter NoRules bound to: 32'b00000000000000000000000000000011 
+INFO: [Synth 8-6155] done synthesizing module 'addr_decode' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/addr_decode.sv:30]
+INFO: [Synth 8-6157] synthesizing module 'axi_demux' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_demux.sv:17]
+	Parameter AxiIdWidth bound to: 32'b00000000000000000000000000000100 
+	Parameter NoMstPorts bound to: 32'b00000000000000000000000000000100 
+	Parameter MaxTrans bound to: 32'b00000000000000000000000000001010 
+	Parameter AxiLookBits bound to: 32'b00000000000000000000000000000100 
+	Parameter FallThrough bound to: 1'b0 
+	Parameter SpillAw bound to: 1'b1 
+	Parameter SpillW bound to: 1'b0 
+	Parameter SpillB bound to: 1'b0 
+	Parameter SpillAr bound to: 1'b1 
+	Parameter SpillR bound to: 1'b0 
+INFO: [Synth 8-6157] synthesizing module 'spill_register' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/spill_register.sv:17]
+	Parameter Bypass bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'spill_register' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/spill_register.sv:17]
+INFO: [Synth 8-6157] synthesizing module 'axi_demux_id_counters' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_demux.sv:538]
+	Parameter AxiIdBits bound to: 32'b00000000000000000000000000000100 
+	Parameter CounterWidth bound to: 32'b00000000000000000000000000000100 
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_demux.sv:588]
+INFO: [Synth 8-6157] synthesizing module 'delta_counter' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/delta_counter.sv:13]
+	Parameter WIDTH bound to: 32'b00000000000000000000000000000100 
+	Parameter STICKY_OVERFLOW bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'delta_counter' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/delta_counter.sv:13]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_demux.sv:588]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_demux.sv:588]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_demux.sv:588]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_demux.sv:588]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_demux.sv:588]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_demux.sv:588]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_demux.sv:588]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_demux.sv:588]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_demux.sv:588]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_demux.sv:588]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_demux.sv:588]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_demux.sv:588]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_demux.sv:588]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_demux.sv:588]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_demux.sv:588]
+INFO: [Synth 8-6155] done synthesizing module 'axi_demux_id_counters' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_demux.sv:538]
+INFO: [Synth 8-6157] synthesizing module 'fifo_v3' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/fifo_v3.sv:13]
+	Parameter FALL_THROUGH bound to: 1'b0 
+	Parameter DEPTH bound to: 32'b00000000000000000000000000001010 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_v3' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/fifo_v3.sv:13]
+INFO: [Synth 8-6157] synthesizing module 'spill_register__parameterized0' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/spill_register.sv:17]
+	Parameter Bypass bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'spill_register__parameterized0' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/spill_register.sv:17]
+INFO: [Synth 8-6157] synthesizing module 'spill_register__parameterized1' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/spill_register.sv:17]
+	Parameter Bypass bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'spill_register__parameterized1' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/spill_register.sv:17]
+INFO: [Synth 8-6157] synthesizing module 'rr_arb_tree' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/rr_arb_tree.sv:47]
+	Parameter NumIn bound to: 32'b00000000000000000000000000000100 
+	Parameter AxiVldRdy bound to: 1'b1 
+	Parameter LockIn bound to: 1'b1 
+INFO: [Synth 8-6157] synthesizing module 'lzc' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/lzc.sv:25]
+	Parameter WIDTH bound to: 32'b00000000000000000000000000000100 
+	Parameter MODE bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'lzc' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/lzc.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'rr_arb_tree' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/rr_arb_tree.sv:47]
+INFO: [Synth 8-6157] synthesizing module 'spill_register__parameterized2' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/spill_register.sv:17]
+	Parameter Bypass bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'spill_register__parameterized2' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/spill_register.sv:17]
+INFO: [Synth 8-6157] synthesizing module 'spill_register__parameterized3' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/spill_register.sv:17]
+	Parameter Bypass bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'spill_register__parameterized3' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/spill_register.sv:17]
+INFO: [Synth 8-6157] synthesizing module 'rr_arb_tree__parameterized0' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/rr_arb_tree.sv:47]
+	Parameter NumIn bound to: 32'b00000000000000000000000000000100 
+	Parameter AxiVldRdy bound to: 1'b1 
+	Parameter LockIn bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'rr_arb_tree__parameterized0' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/rr_arb_tree.sv:47]
+INFO: [Synth 8-6155] done synthesizing module 'axi_demux' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_demux.sv:17]
+INFO: [Synth 8-6157] synthesizing module 'axi_err_slv' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_err_slv.sv:16]
+	Parameter AxiIdWidth bound to: 32'b00000000000000000000000000000100 
+	Parameter Resp bound to: 2'b11 
+	Parameter ATOPs bound to: 1'b0 
+	Parameter MaxTrans bound to: 32'b00000000000000000000000000000100 
+INFO: [Synth 8-6157] synthesizing module 'fifo_v3__parameterized0' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/fifo_v3.sv:13]
+	Parameter FALL_THROUGH bound to: 1'b1 
+	Parameter DEPTH bound to: 32'b00000000000000000000000000000100 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_v3__parameterized0' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/fifo_v3.sv:13]
+INFO: [Synth 8-6157] synthesizing module 'fifo_v3__parameterized1' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/fifo_v3.sv:13]
+	Parameter FALL_THROUGH bound to: 1'b0 
+	Parameter DEPTH bound to: 32'b00000000000000000000000000000010 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_v3__parameterized1' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/fifo_v3.sv:13]
+INFO: [Synth 8-6157] synthesizing module 'fifo_v3__parameterized2' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/fifo_v3.sv:13]
+	Parameter FALL_THROUGH bound to: 1'b0 
+	Parameter DEPTH bound to: 32'b00000000000000000000000000000100 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_v3__parameterized2' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/fifo_v3.sv:13]
+INFO: [Synth 8-6157] synthesizing module 'counter' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/counter.sv:16]
+	Parameter WIDTH bound to: 32'b00000000000000000000000000001000 
+INFO: [Synth 8-6157] synthesizing module 'delta_counter__parameterized0' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/delta_counter.sv:13]
+	Parameter WIDTH bound to: 32'b00000000000000000000000000001000 
+	Parameter STICKY_OVERFLOW bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'delta_counter__parameterized0' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/delta_counter.sv:13]
+INFO: [Synth 8-6155] done synthesizing module 'counter' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/counter.sv:16]
+INFO: [Synth 8-6155] done synthesizing module 'axi_err_slv' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_err_slv.sv:16]
+INFO: [Synth 8-6157] synthesizing module 'axi_mux' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_mux.sv:25]
+	Parameter SlvAxiIDWidth bound to: 32'b00000000000000000000000000000100 
+	Parameter NoSlvPorts bound to: 32'b00000000000000000000000000000011 
+	Parameter MaxWTrans bound to: 32'b00000000000000000000000000000110 
+	Parameter FallThrough bound to: 1'b0 
+	Parameter SpillAw bound to: 1'b1 
+	Parameter SpillW bound to: 1'b0 
+	Parameter SpillB bound to: 1'b0 
+	Parameter SpillAr bound to: 1'b1 
+	Parameter SpillR bound to: 1'b0 
+INFO: [Synth 8-6157] synthesizing module 'axi_id_prepend' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_id_prepend.sv:16]
+	Parameter NoBus bound to: 1 - type: integer 
+	Parameter AxiIdWidthSlvPort bound to: 32'b00000000000000000000000000000100 
+	Parameter AxiIdWidthMstPort bound to: 32'b00000000000000000000000000000110 
+INFO: [Synth 8-6155] done synthesizing module 'axi_id_prepend' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_id_prepend.sv:16]
+INFO: [Synth 8-6157] synthesizing module 'rr_arb_tree__parameterized1' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/rr_arb_tree.sv:47]
+	Parameter NumIn bound to: 32'b00000000000000000000000000000011 
+	Parameter AxiVldRdy bound to: 1'b1 
+	Parameter LockIn bound to: 1'b1 
+INFO: [Synth 8-6157] synthesizing module 'lzc__parameterized0' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/lzc.sv:25]
+	Parameter WIDTH bound to: 32'b00000000000000000000000000000011 
+	Parameter MODE bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'lzc__parameterized0' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/lzc.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'rr_arb_tree__parameterized1' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/rr_arb_tree.sv:47]
+INFO: [Synth 8-6157] synthesizing module 'fifo_v3__parameterized3' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/fifo_v3.sv:13]
+	Parameter FALL_THROUGH bound to: 1'b0 
+	Parameter DEPTH bound to: 32'b00000000000000000000000000000110 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_v3__parameterized3' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/fifo_v3.sv:13]
+INFO: [Synth 8-6157] synthesizing module 'spill_register__parameterized4' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/spill_register.sv:17]
+	Parameter Bypass bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'spill_register__parameterized4' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/spill_register.sv:17]
+INFO: [Synth 8-6157] synthesizing module 'spill_register__parameterized5' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/spill_register.sv:17]
+	Parameter Bypass bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'spill_register__parameterized5' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/spill_register.sv:17]
+INFO: [Synth 8-6157] synthesizing module 'rr_arb_tree__parameterized2' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/rr_arb_tree.sv:47]
+	Parameter NumIn bound to: 32'b00000000000000000000000000000011 
+	Parameter AxiVldRdy bound to: 1'b1 
+	Parameter LockIn bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'rr_arb_tree__parameterized2' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/rr_arb_tree.sv:47]
+INFO: [Synth 8-6157] synthesizing module 'spill_register__parameterized6' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/spill_register.sv:17]
+	Parameter Bypass bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'spill_register__parameterized6' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/spill_register.sv:17]
+INFO: [Synth 8-6157] synthesizing module 'spill_register__parameterized7' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/spill_register.sv:17]
+	Parameter Bypass bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'spill_register__parameterized7' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/spill_register.sv:17]
+INFO: [Synth 8-6155] done synthesizing module 'axi_mux' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_mux.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'axi_xbar' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_xbar.sv:15]
+INFO: [Synth 8-6155] done synthesizing module 'axi_intercon' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/axi_intercon.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'wb_intercon' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/WishboneInterconnect/wb_intercon.v:6]
+INFO: [Synth 8-6157] synthesizing module 'wb_mux' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/WishboneInterconnect/wb_intercon_1.2.2-r1/rtl/verilog/wb_mux.v:45]
+	Parameter num_slaves bound to: 12 - type: integer 
+	Parameter MATCH_ADDR bound to: 384'b000000000000000000000000000000000000000000000000000100000000000000000000000000000001000001000000000000000000000000010001000000000000000000000000000100100000000000000000000000000001001001000000000000000000000000010010100000000000000000000000000100101100000000000000000000000001010000000000000000000000000000011000000000000000000000000000001000000000000000000000000000000001001100000000 
+	Parameter MATCH_MASK bound to: 384'b111111111111111111110000000000001111111111111111111111111100000011111111111111111111111111000000111111111111111111111111110000001111111111111111111111111100000011111111111111111111111111000000111111111111111111111111110000001111111111111111111111111100000011111111111111111111111111000000111111111111111111111111110000001111111111111111111100000000000011111111111111111111111100000000 
+INFO: [Synth 8-6155] done synthesizing module 'wb_mux' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/WishboneInterconnect/wb_intercon_1.2.2-r1/rtl/verilog/wb_mux.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'wb_intercon' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/WishboneInterconnect/wb_intercon.v:6]
+INFO: [Synth 8-6157] synthesizing module 'axi2wb' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiToWb/axi2wb.v:25]
+	Parameter AW bound to: 16 - type: integer 
+	Parameter IW bound to: 6 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi2wb' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiToWb/axi2wb.v:25]
+INFO: [Synth 8-6157] synthesizing module 'wb_mem_wrapper' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/BootROM/wb_mem_wrapper.v:25]
+	Parameter MEM_SIZE bound to: 4096 - type: integer 
+	Parameter INIT_FILE bound to: boot_main.mem - type: string 
+INFO: [Synth 8-6157] synthesizing module 'dpram64__parameterized0' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/BootROM/dpram64.v:24]
+	Parameter SIZE bound to: 4096 - type: integer 
+	Parameter mem_clear bound to: 0 - type: integer 
+	Parameter memfile bound to: boot_main.mem - type: string 
+INFO: [Synth 8-251] Preloading  from boot_main.mem [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/BootROM/dpram64.v:70]
+INFO: [Synth 8-3876] $readmem data file 'boot_main.mem' is read successfully [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/BootROM/dpram64.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'dpram64__parameterized0' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/BootROM/dpram64.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'wb_mem_wrapper' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/BootROM/wb_mem_wrapper.v:25]
+INFO: [Synth 8-6157] synthesizing module 'veerwolf_syscon' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/SystemController/veerwolf_syscon.sv:26]
+	Parameter clk_freq_hz bound to: 12500000 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'wb_module' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/SystemController/wb_module.sv:139]
+INFO: [Synth 8-6155] done synthesizing module 'wb_module' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/SystemController/wb_module.sv:139]
+WARNING: [Synth 8-689] width (8) of port connection 'wb_adr_i' does not match port width (6) of module 'wb_module' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/SystemController/veerwolf_syscon.sv:94]
+WARNING: [Synth 8-689] width (8) of port connection 'wb_adr_reg' does not match port width (6) of module 'wb_module' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/SystemController/veerwolf_syscon.sv:99]
+WARNING: [Synth 8-7071] port 'wb_inta_o' of module 'wb_module' is unconnected for instance 'wb_module' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/SystemController/veerwolf_syscon.sv:85]
+WARNING: [Synth 8-7071] port 'wb_err_o' of module 'wb_module' is unconnected for instance 'wb_module' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/SystemController/veerwolf_syscon.sv:85]
+WARNING: [Synth 8-7071] port 'wb_inta_i' of module 'wb_module' is unconnected for instance 'wb_module' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/SystemController/veerwolf_syscon.sv:85]
+WARNING: [Synth 8-7071] port 'wb_err_i' of module 'wb_module' is unconnected for instance 'wb_module' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/SystemController/veerwolf_syscon.sv:85]
+WARNING: [Synth 8-7023] instance 'wb_module' of module 'wb_module' has 20 connections declared, but only 16 given [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/SystemController/veerwolf_syscon.sv:85]
+INFO: [Synth 8-6157] synthesizing module 'SystemControllerMisc' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/SystemController/SystemControllerMisc.sv:47]
+	Parameter clk_freq_hz bound to: 12500000 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/SystemController/SystemControllerMisc.sv:161]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/SystemController/SystemControllerMisc.sv:259]
+INFO: [Synth 8-6155] done synthesizing module 'SystemControllerMisc' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/SystemController/SystemControllerMisc.sv:47]
+WARNING: [Synth 8-689] width (8) of port connection 'wb_adr_reg' does not match port width (6) of module 'SystemControllerMisc' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/SystemController/veerwolf_syscon.sv:123]
+INFO: [Synth 8-6157] synthesizing module 'SevSegDisplays_Controller' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/SystemController/SevSegDisplays_Controller.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'SevenSegDecoder' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/SystemController/SevenSegDecoder.sv:26]
+INFO: [Synth 8-226] default block is never used [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/SystemController/SevenSegDecoder.sv:35]
+INFO: [Synth 8-6155] done synthesizing module 'SevenSegDecoder' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/SystemController/SevenSegDecoder.sv:26]
+INFO: [Synth 8-6157] synthesizing module 'counter__parameterized0' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/counter.sv:16]
+	Parameter WIDTH bound to: 18 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'delta_counter__parameterized1' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/delta_counter.sv:13]
+	Parameter WIDTH bound to: 18 - type: integer 
+	Parameter STICKY_OVERFLOW bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'delta_counter__parameterized1' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/delta_counter.sv:13]
+INFO: [Synth 8-6155] done synthesizing module 'counter__parameterized0' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/counter.sv:16]
+INFO: [Synth 8-6157] synthesizing module 'counter__parameterized1' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/counter.sv:16]
+	Parameter WIDTH bound to: 32'b00000000000000000000000000011000 
+INFO: [Synth 8-6157] synthesizing module 'delta_counter__parameterized2' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/delta_counter.sv:13]
+	Parameter WIDTH bound to: 32'b00000000000000000000000000011000 
+	Parameter STICKY_OVERFLOW bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'delta_counter__parameterized2' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/delta_counter.sv:13]
+INFO: [Synth 8-6155] done synthesizing module 'counter__parameterized1' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/counter.sv:16]
+INFO: [Synth 8-6155] done synthesizing module 'SevSegDisplays_Controller' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/SystemController/SevSegDisplays_Controller.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'veerwolf_syscon' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/SystemController/veerwolf_syscon.sv:26]
+INFO: [Synth 8-6157] synthesizing module 'spi_master' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/spi_master/spi_master.sv:69]
+INFO: [Synth 8-6157] synthesizing module 'fifo4' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/spi/fifo4.v:54]
+	Parameter dw bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'fifo4' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/spi/fifo4.v:54]
+INFO: [Synth 8-6155] done synthesizing module 'spi_master' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/spi_master/spi_master.sv:69]
+INFO: [Synth 8-6157] synthesizing module 'bidirec' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/veerwolf_core.v:1070]
+INFO: [Synth 8-6155] done synthesizing module 'bidirec' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/veerwolf_core.v:1070]
+INFO: [Synth 8-6157] synthesizing module 'gpio_top' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/gpio/gpio_top.v:115]
+INFO: [Synth 8-6155] done synthesizing module 'gpio_top' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/gpio/gpio_top.v:115]
+WARNING: [Synth 8-7071] port 'aux_i' of module 'gpio_top' is unconnected for instance 'gpio_module' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/veerwolf_core.v:489]
+WARNING: [Synth 8-7071] port 'clk_pad_i' of module 'gpio_top' is unconnected for instance 'gpio_module' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/veerwolf_core.v:489]
+WARNING: [Synth 8-7023] instance 'gpio_module' of module 'gpio_top' has 17 connections declared, but only 15 given [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/veerwolf_core.v:489]
+WARNING: [Synth 8-689] width (5) of port connection 'ext_pad_o' does not match port width (32) of module 'gpio_top' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/veerwolf_core.v:565]
+WARNING: [Synth 8-689] width (5) of port connection 'ext_padoe_o' does not match port width (32) of module 'gpio_top' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/veerwolf_core.v:568]
+WARNING: [Synth 8-7071] port 'aux_i' of module 'gpio_top' is unconnected for instance 'gpio2_module' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/veerwolf_core.v:542]
+WARNING: [Synth 8-7071] port 'clk_pad_i' of module 'gpio_top' is unconnected for instance 'gpio2_module' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/veerwolf_core.v:542]
+WARNING: [Synth 8-7023] instance 'gpio2_module' of module 'gpio_top' has 17 connections declared, but only 15 given [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/veerwolf_core.v:542]
+INFO: [Synth 8-6157] synthesizing module 'ptc_top' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/ptc/ptc_top.v:67]
+WARNING: [Synth 8-693] zero replication count - replication ignored [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/ptc/ptc_top.v:312]
+WARNING: [Synth 8-693] zero replication count - replication ignored [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/ptc/ptc_top.v:313]
+WARNING: [Synth 8-693] zero replication count - replication ignored [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/ptc/ptc_top.v:316]
+INFO: [Synth 8-6155] done synthesizing module 'ptc_top' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/ptc/ptc_top.v:67]
+INFO: [Synth 8-6157] synthesizing module 'timer_top' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/timer/timer_top.v:67]
+INFO: [Synth 8-6157] synthesizing module 'wb_module_timer' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/timer/wb_module_timer.sv:139]
+INFO: [Synth 8-6155] done synthesizing module 'wb_module_timer' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/timer/wb_module_timer.sv:139]
+INFO: [Synth 8-6155] done synthesizing module 'timer_top' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/timer/timer_top.v:67]
+INFO: [Synth 8-6157] synthesizing module 'accelerator_top' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/accelerator_hackaton/accelerator_top.sv:6]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/accelerator_hackaton/accelerator_top.sv:51]
+INFO: [Synth 8-6157] synthesizing module 'ila_accelerator' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/vivado/nexysA7card.runs/synth_1/.Xil/Vivado-46584-Nitais_Laptop/realtime/ila_accelerator_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila_accelerator' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/vivado/nexysA7card.runs/synth_1/.Xil/Vivado-46584-Nitais_Laptop/realtime/ila_accelerator_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'accelerator_wb' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/accelerator_hackaton/accelerator_wb.sv:140]
+INFO: [Synth 8-6155] done synthesizing module 'accelerator_wb' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/accelerator_hackaton/accelerator_wb.sv:140]
+INFO: [Synth 8-6157] synthesizing module 'accelerator_regs' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/accelerator_hackaton/accelerator_regs.sv:13]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/accelerator_hackaton/accelerator_regs.sv:60]
+INFO: [Synth 8-6155] done synthesizing module 'accelerator_regs' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/accelerator_hackaton/accelerator_regs.sv:13]
+INFO: [Synth 8-6157] synthesizing module 'accelerator' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/accelerator_hackaton/accelerator.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'accelerator' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/accelerator_hackaton/accelerator.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'accelerator_top' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/accelerator_hackaton/accelerator_top.sv:6]
+WARNING: [Synth 8-689] width (32) of port connection 'wb_adr_i' does not match port width (8) of module 'accelerator_top' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/veerwolf_core.v:721]
+WARNING: [Synth 8-7071] port 'wb_cti_i' of module 'accelerator_top' is unconnected for instance 'accelerator_top' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/veerwolf_core.v:717]
+WARNING: [Synth 8-7071] port 'wb_bte_i' of module 'accelerator_top' is unconnected for instance 'accelerator_top' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/veerwolf_core.v:717]
+WARNING: [Synth 8-7071] port 'wb_err_o' of module 'accelerator_top' is unconnected for instance 'accelerator_top' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/veerwolf_core.v:717]
+WARNING: [Synth 8-7071] port 'wb_rty_o' of module 'accelerator_top' is unconnected for instance 'accelerator_top' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/veerwolf_core.v:717]
+WARNING: [Synth 8-7023] instance 'accelerator_top' of module 'accelerator_top' has 15 connections declared, but only 11 given [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/veerwolf_core.v:717]
+INFO: [Synth 8-6157] synthesizing module 'uart_top' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/uart/uart_top.v:137]
+INFO: [Synth 8-6157] synthesizing module 'uart_wb' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/uart/uart_wb.v:139]
+INFO: [Synth 8-6155] done synthesizing module 'uart_wb' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/uart/uart_wb.v:139]
+INFO: [Synth 8-6157] synthesizing module 'uart_regs' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/uart/uart_regs.v:227]
+	Parameter SIM bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'uart_transmitter' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/uart/uart_transmitter.v:150]
+	Parameter SIM bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'uart_tfifo' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/uart/uart_tfifo.v:140]
+INFO: [Synth 8-6157] synthesizing module 'raminfr' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/uart/raminfr.v:83]
+	Parameter addr_width bound to: 4 - type: integer 
+	Parameter data_width bound to: 8 - type: integer 
+	Parameter depth bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'raminfr' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/uart/raminfr.v:83]
+INFO: [Synth 8-6155] done synthesizing module 'uart_tfifo' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/uart/uart_tfifo.v:140]
+INFO: [Synth 8-6155] done synthesizing module 'uart_transmitter' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/uart/uart_transmitter.v:150]
+INFO: [Synth 8-6157] synthesizing module 'uart_sync_flops' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/uart/uart_sync_flops.v:67]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_value bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'uart_sync_flops' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/uart/uart_sync_flops.v:67]
+INFO: [Synth 8-6157] synthesizing module 'uart_receiver' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/uart/uart_receiver.v:194]
+INFO: [Synth 8-6157] synthesizing module 'uart_rfifo' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/uart/uart_rfifo.v:146]
+	Parameter fifo_width bound to: 11 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'uart_rfifo' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/uart/uart_rfifo.v:146]
+INFO: [Synth 8-6155] done synthesizing module 'uart_receiver' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/uart/uart_receiver.v:194]
+INFO: [Synth 8-6155] done synthesizing module 'uart_regs' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/uart/uart_regs.v:227]
+INFO: [Synth 8-6155] done synthesizing module 'uart_top' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/uart/uart_top.v:137]
+INFO: [Synth 8-6157] synthesizing module 'veer_wrapper_dmi' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/veer_el2_wrapper.sv:24]
+INFO: [Synth 8-6157] synthesizing module 'el2_veer' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/el2_veer.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'rvoclkhdr' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/lib/beh_lib.sv:795]
+INFO: [Synth 8-6155] done synthesizing module 'rvoclkhdr' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/lib/beh_lib.sv:795]
+INFO: [Synth 8-6157] synthesizing module 'el2_dbg' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/dbg/el2_dbg.sv:24]
+INFO: [Synth 8-6157] synthesizing module 'rvsyncss' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/lib/beh_lib.sv:417]
+	Parameter WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'rvdff' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/lib/beh_lib.sv:20]
+	Parameter WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'rvdff' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/lib/beh_lib.sv:20]
+INFO: [Synth 8-6155] done synthesizing module 'rvsyncss' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/lib/beh_lib.sv:417]
+INFO: [Synth 8-6157] synthesizing module 'rvdffs' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/lib/beh_lib.sv:50]
+	Parameter WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'rvdffs' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/lib/beh_lib.sv:50]
+INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized0' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/lib/beh_lib.sv:50]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized0' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/lib/beh_lib.sv:20]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized0' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/lib/beh_lib.sv:20]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized0' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/lib/beh_lib.sv:50]
+INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized1' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/lib/beh_lib.sv:50]
+	Parameter WIDTH bound to: 3 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized1' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/lib/beh_lib.sv:20]
+	Parameter WIDTH bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized1' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/lib/beh_lib.sv:20]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized1' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/lib/beh_lib.sv:50]
+INFO: [Synth 8-6157] synthesizing module 'rvdffe' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/lib/beh_lib.sv:167]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized2' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/lib/beh_lib.sv:50]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized2' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/lib/beh_lib.sv:20]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized2' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/lib/beh_lib.sv:20]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized2' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/lib/beh_lib.sv:50]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffe' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/lib/beh_lib.sv:167]
+INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized3' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/lib/beh_lib.sv:50]
+	Parameter WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized3' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/lib/beh_lib.sv:20]
+	Parameter WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized3' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/lib/beh_lib.sv:20]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized3' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/lib/beh_lib.sv:50]
+INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized4' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/lib/beh_lib.sv:50]
+	Parameter WIDTH bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized4' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/lib/beh_lib.sv:20]
+	Parameter WIDTH bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized4' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/lib/beh_lib.sv:20]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized4' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/lib/beh_lib.sv:50]
+INFO: [Synth 8-6157] synthesizing module 'rvdffe__parameterized0' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/lib/beh_lib.sv:167]
+	Parameter WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'rvdffs__parameterized5' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/lib/beh_lib.sv:50]
+	Parameter WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'rvdff__parameterized5' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/lib/beh_lib.sv:20]
+INFO: [Common 17-14] Message 'Synth 8-6157' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+	Parameter WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized5' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/lib/beh_lib.sv:20]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized5' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/lib/beh_lib.sv:50]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffe__parameterized0' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/lib/beh_lib.sv:167]
+INFO: [Synth 8-6155] done synthesizing module 'el2_dbg' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/dbg/el2_dbg.sv:24]
+	Parameter WIDTH bound to: 48 - type: integer 
+	Parameter WIDTH bound to: 48 - type: integer 
+	Parameter WIDTH bound to: 48 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized6' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/lib/beh_lib.sv:20]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffs__parameterized6' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/lib/beh_lib.sv:50]
+INFO: [Synth 8-6155] done synthesizing module 'rvdffe__parameterized1' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/lib/beh_lib.sv:167]
+	Parameter WIDTH bound to: 14'b00000000001000 
+	Parameter WIDTH bound to: 14'b00000000001000 
+	Parameter WIDTH bound to: 14'b00000000001000 
+INFO: [Synth 8-6155] done synthesizing module 'rvdff__parameterized7' (0#1) [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/lib/beh_lib.sv:20]
+INFO: [Common 17-14] Message 'Synth 8-6155' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+	Parameter WIDTH bound to: 2 - type: integer 
+	Parameter WIDTH bound to: 7 - type: integer 
+	Parameter OVERRIDE bound to: 1 - type: integer 
+	Parameter WIDTH bound to: 7 - type: integer 
+	Parameter WIDTH bound to: 7 - type: integer 
+	Parameter WIDTH bound to: 30 - type: integer 
+	Parameter LEFT bound to: 19 - type: integer 
+	Parameter WIDTH bound to: 30 - type: integer 
+	Parameter WIDTH bound to: 30 - type: integer 
+	Parameter CCM_SADR bound to: 36'b000010101111111111111111000000000000 
+	Parameter CCM_SIZE bound to: 14'b00000000000100 
+	Parameter WIDTH bound to: 10 - type: integer 
+	Parameter WIDTH bound to: 10 - type: integer 
+	Parameter WIDTH bound to: 10 - type: integer 
+	Parameter WIDTH bound to: 31 - type: integer 
+	Parameter WIDTH bound to: 31 - type: integer 
+	Parameter WIDTH bound to: 31 - type: integer 
+	Parameter WIDTH bound to: 22 - type: integer 
+	Parameter WIDTH bound to: 22 - type: integer 
+	Parameter WIDTH bound to: 22 - type: integer 
+	Parameter WIDTH bound to: 49 - type: integer 
+	Parameter WIDTH bound to: 49 - type: integer 
+	Parameter WIDTH bound to: 49 - type: integer 
+	Parameter WIDTH bound to: 7 - type: integer 
+	Parameter WIDTH bound to: 7 - type: integer 
+	Parameter OVERRIDE bound to: 1 - type: integer 
+	Parameter WIDTH bound to: 7 - type: integer 
+	Parameter WIDTH bound to: 31 - type: integer 
+	Parameter WIDTH bound to: 16 - type: integer 
+	Parameter WIDTH bound to: 71 - type: integer 
+	Parameter WIDTH bound to: 71 - type: integer 
+	Parameter WIDTH bound to: 71 - type: integer 
+	Parameter WIDTH bound to: 64 - type: integer 
+	Parameter WIDTH bound to: 64 - type: integer 
+	Parameter WIDTH bound to: 64 - type: integer 
+	Parameter WIDTH bound to: 11 - type: integer 
+	Parameter WIDTH bound to: 11 - type: integer 
+	Parameter WIDTH bound to: 11 - type: integer 
+	Parameter WIDTH bound to: 11 - type: integer 
+	Parameter WIDTH bound to: 11 - type: integer 
+	Parameter WIDTH bound to: 11 - type: integer 
+	Parameter WIDTH bound to: 7'b0000001 
+	Parameter WIDTH bound to: 7'b0000001 
+	Parameter WIDTH bound to: 7'b0000001 
+	Parameter WIDTH bound to: 1 - type: integer 
+	Parameter WIDTH bound to: 8 - type: integer 
+	Parameter OVERRIDE bound to: 1 - type: integer 
+	Parameter WIDTH bound to: 8 - type: integer 
+	Parameter WIDTH bound to: 8 - type: integer 
+	Parameter WIDTH bound to: 9 - type: integer 
+	Parameter WIDTH bound to: 9 - type: integer 
+	Parameter WIDTH bound to: 9 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/ifu/el2_ifu_mem_ctl.sv:486]
+	Parameter WIDTH bound to: 1 - type: integer 
+	Parameter WIDTH bound to: 7'b0000001 
+	Parameter WIDTH bound to: 7'b0000010 
+	Parameter WIDTH bound to: 7'b0000010 
+	Parameter WIDTH bound to: 7'b0000010 
+	Parameter WIDTH bound to: 26 - type: integer 
+	Parameter LEFT bound to: 18 - type: integer 
+	Parameter WIDTH bound to: 26 - type: integer 
+	Parameter WIDTH bound to: 26 - type: integer 
+	Parameter WIDTH bound to: 6 - type: integer 
+	Parameter OVERRIDE bound to: 1 - type: integer 
+	Parameter WIDTH bound to: 6 - type: integer 
+	Parameter WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/ifu/el2_ifu_mem_ctl.sv:993]
+	Parameter WIDTH bound to: 2 - type: integer 
+	Parameter WIDTH bound to: 8'b00000011 
+	Parameter WIDTH bound to: 8'b00000011 
+	Parameter WIDTH bound to: 8'b00000011 
+	Parameter WIDTH bound to: 8'b00000011 
+	Parameter WIDTH bound to: 9 - type: integer 
+	Parameter WIDTH bound to: 9 - type: integer 
+	Parameter WIDTH bound to: 9 - type: integer 
+	Parameter WIDTH bound to: 3 - type: integer 
+	Parameter WIDTH bound to: 3 - type: integer 
+	Parameter WIDTH bound to: 3 - type: integer 
+	Parameter WIDTH bound to: 8 - type: integer 
+	Parameter WIDTH bound to: 8 - type: integer 
+	Parameter WIDTH bound to: 8 - type: integer 
+	Parameter WIDTH bound to: 37 - type: integer 
+	Parameter WIDTH bound to: 37 - type: integer 
+	Parameter WIDTH bound to: 37 - type: integer 
+	Parameter WIDTH bound to: 17 - type: integer 
+	Parameter LEFT bound to: 9 - type: integer 
+	Parameter WIDTH bound to: 17 - type: integer 
+	Parameter WIDTH bound to: 17 - type: integer 
+	Parameter WIDTH bound to: 24 - type: integer 
+	Parameter LEFT bound to: 15 - type: integer 
+	Parameter WIDTH bound to: 24 - type: integer 
+	Parameter WIDTH bound to: 24 - type: integer 
+	Parameter WIDTH bound to: 12 - type: integer 
+	Parameter WIDTH bound to: 12 - type: integer 
+	Parameter WIDTH bound to: 12 - type: integer 
+	Parameter WIDTH bound to: 5 - type: integer 
+	Parameter OVERRIDE bound to: 1 - type: integer 
+	Parameter WIDTH bound to: 27 - type: integer 
+	Parameter WIDTH bound to: 27 - type: integer 
+	Parameter WIDTH bound to: 27 - type: integer 
+	Parameter WIDTH bound to: 24 - type: integer 
+	Parameter WIDTH bound to: 8 - type: integer 
+	Parameter WIDTH bound to: 7 - type: integer 
+	Parameter WIDTH bound to: 16 - type: integer 
+	Parameter WIDTH bound to: 18 - type: integer 
+	Parameter WIDTH bound to: 18 - type: integer 
+	Parameter WIDTH bound to: 18 - type: integer 
+	Parameter WIDTH bound to: 12 - type: integer 
+	Parameter WIDTH bound to: 6 - type: integer 
+	Parameter WIDTH bound to: 10 - type: integer 
+	Parameter WIDTH bound to: 6 - type: integer 
+	Parameter WIDTH bound to: 22 - type: integer 
+	Parameter WIDTH bound to: 22 - type: integer 
+	Parameter WIDTH bound to: 22 - type: integer 
+	Parameter WIDTH bound to: 14 - type: integer 
+	Parameter WIDTH bound to: 14 - type: integer 
+	Parameter WIDTH bound to: 14 - type: integer 
+	Parameter WIDTH bound to: 17 - type: integer 
+	Parameter WIDTH bound to: 6 - type: integer 
+	Parameter OVERRIDE bound to: 1 - type: integer 
+	Parameter WIDTH bound to: 56 - type: integer 
+	Parameter WIDTH bound to: 56 - type: integer 
+	Parameter WIDTH bound to: 56 - type: integer 
+	Parameter WIDTH bound to: 39 - type: integer 
+	Parameter WIDTH bound to: 39 - type: integer 
+	Parameter WIDTH bound to: 39 - type: integer 
+	Parameter WIDTH bound to: 8 - type: integer 
+	Parameter WIDTH bound to: 57 - type: integer 
+	Parameter WIDTH bound to: 57 - type: integer 
+	Parameter WIDTH bound to: 57 - type: integer 
+	Parameter WIDTH bound to: 6 - type: integer 
+	Parameter OVERRIDE bound to: 1 - type: integer 
+	Parameter WIDTH bound to: 34 - type: integer 
+	Parameter WIDTH bound to: 34 - type: integer 
+	Parameter WIDTH bound to: 34 - type: integer 
+	Parameter WIDTH bound to: 33 - type: integer 
+	Parameter WIDTH bound to: 33 - type: integer 
+	Parameter WIDTH bound to: 33 - type: integer 
+	Parameter WIDTH bound to: 19 - type: integer 
+	Parameter WIDTH bound to: 19 - type: integer 
+	Parameter WIDTH bound to: 19 - type: integer 
+	Parameter WIDTH bound to: 32 - type: integer 
+	Parameter WIDTH bound to: 38 - type: integer 
+	Parameter WIDTH bound to: 38 - type: integer 
+	Parameter WIDTH bound to: 38 - type: integer 
+	Parameter CCM_SADR bound to: 36'b000011110000000001000000000000000000 
+	Parameter CCM_SIZE bound to: 14'b00000000010000 
+	Parameter CCM_SADR bound to: 36'b000011110000000011000000000000000000 
+	Parameter CCM_SIZE bound to: 13'b0000000100000 
+	Parameter WIDTH bound to: 13 - type: integer 
+	Parameter WIDTH bound to: 29 - type: integer 
+	Parameter WIDTH bound to: 29 - type: integer 
+	Parameter WIDTH bound to: 29 - type: integer 
+	Parameter WIDTH bound to: 10'b0000100000 
+	Parameter WIDTH bound to: 10'b0000100000 
+	Parameter WIDTH bound to: 10'b0000100000 
+	Parameter WIDTH bound to: 9'b000001110 
+	Parameter WIDTH bound to: 9'b000001110 
+	Parameter WIDTH bound to: 9'b000001110 
+	Parameter WIDTH bound to: 1 - type: integer 
+	Parameter WIDTH bound to: 7'b0000100 
+	Parameter WIDTH bound to: 7'b0000100 
+	Parameter WIDTH bound to: 9'b000000100 
+	Parameter WIDTH bound to: 8 - type: integer 
+	Parameter WIDTH bound to: 3 - type: integer 
+	Parameter WIDTH bound to: 1 - type: integer 
+	Parameter ID_BITS bound to: 8 - type: integer 
+	Parameter INTPRIORITY_BITS bound to: 4 - type: integer 
+	Parameter WIDTH bound to: 2 - type: integer 
+	Parameter WIDTH bound to: 8'b00000001 
+	Parameter WIDTH bound to: 8'b00000001 
+	Parameter WIDTH bound to: 9'b000000001 
+	Parameter WIDTH bound to: 9'b000000001 
+	Parameter WIDTH bound to: 6'b000010 
+	Parameter WIDTH bound to: 6'b000010 
+	Parameter WIDTH bound to: 1 - type: integer 
+	Parameter WIDTH bound to: 8'b00000001 
+	Parameter WIDTH bound to: 3 - type: integer 
+WARNING: [Synth 8-689] width (2) of port connection 'trace_rv_i_valid_ip' does not match port width (1) of module 'el2_veer' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/veer_el2_wrapper.sv:515]
+WARNING: [Synth 8-689] width (2) of port connection 'trace_rv_i_exception_ip' does not match port width (1) of module 'el2_veer' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/veer_el2_wrapper.sv:515]
+WARNING: [Synth 8-689] width (2) of port connection 'trace_rv_i_interrupt_ip' does not match port width (1) of module 'el2_veer' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/veer_el2_wrapper.sv:515]
+	Parameter WIDTH bound to: 20 - type: integer 
+	Parameter WIDTH bound to: 44 - type: integer 
+	Parameter WIDTH bound to: 44 - type: integer 
+	Parameter WIDTH bound to: 44 - type: integer 
+	Parameter WIDTH bound to: 8'b00000010 
+	Parameter WIDTH bound to: 8'b00000010 
+	Parameter WIDTH bound to: 20 - type: integer 
+	Parameter WIDTH bound to: 20 - type: integer 
+	Parameter WIDTH bound to: 20 - type: integer 
+	Parameter WIDTH bound to: 20 - type: integer 
+	Parameter WIDTH bound to: 28 - type: integer 
+	Parameter WIDTH bound to: 28 - type: integer 
+	Parameter WIDTH bound to: 28 - type: integer 
+	Parameter WIDTH bound to: 136 - type: integer 
+	Parameter WIDTH bound to: 136 - type: integer 
+	Parameter WIDTH bound to: 136 - type: integer 
+	Parameter WIDTH bound to: 10 - type: integer 
+	Parameter OVERRIDE bound to: 1 - type: integer 
+	Parameter WIDTH bound to: 10 - type: integer 
+	Parameter WIDTH bound to: 10 - type: integer 
+	Parameter WIDTH bound to: 39 - type: integer 
+	Parameter WIDTH bound to: 39 - type: integer 
+	Parameter WIDTH bound to: 9'b000000011 
+	Parameter WIDTH bound to: 9'b000000011 
+WARNING: [Synth 8-689] width (64) of port connection 'trace_rv_i_address_ip' does not match port width (32) of module 'veer_wrapper_dmi' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/veerwolf_core.v:852]
+WARNING: [Synth 8-689] width (3) of port connection 'trace_rv_i_valid_ip' does not match port width (2) of module 'veer_wrapper_dmi' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/veerwolf_core.v:853]
+WARNING: [Synth 8-689] width (31) of port connection 'extintsrc_req' does not match port width (8) of module 'veer_wrapper_dmi' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/veerwolf_core.v:1035]
+WARNING: [Synth 8-6014] Unused sequential element s_axi_rid_pipe_reg_reg was removed.  [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/axi_ram.v:356]
+WARNING: [Synth 8-6014] Unused sequential element s_axi_rdata_pipe_reg_reg was removed.  [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/axi_ram.v:357]
+WARNING: [Synth 8-6014] Unused sequential element s_axi_rlast_pipe_reg_reg was removed.  [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/axi_ram.v:358]
+WARNING: [Synth 8-6014] Unused sequential element s_axi_rvalid_pipe_reg_reg was removed.  [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/axi_ram.v:355]
+WARNING: [Synth 8-6014] Unused sequential element ax_req_q_reg[size] was removed.  [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/OtherSources/axi2mem.sv:318]
+WARNING: [Synth 8-3848] Net masters_req[2][aw][user] in module/entity axi_intercon does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/axi_intercon.sv:282]
+WARNING: [Synth 8-3848] Net masters_req[2][w][user] in module/entity axi_intercon does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/axi_intercon.sv:282]
+WARNING: [Synth 8-3848] Net masters_req[2][ar][user] in module/entity axi_intercon does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/axi_intercon.sv:282]
+WARNING: [Synth 8-3848] Net masters_req[1][aw][user] in module/entity axi_intercon does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/axi_intercon.sv:282]
+WARNING: [Synth 8-3848] Net masters_req[1][w][user] in module/entity axi_intercon does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/axi_intercon.sv:282]
+WARNING: [Synth 8-3848] Net masters_req[1][ar][user] in module/entity axi_intercon does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/axi_intercon.sv:282]
+WARNING: [Synth 8-3848] Net masters_req[0][aw][user] in module/entity axi_intercon does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/axi_intercon.sv:282]
+WARNING: [Synth 8-3848] Net masters_req[0][w][user] in module/entity axi_intercon does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/axi_intercon.sv:282]
+WARNING: [Synth 8-3848] Net masters_req[0][ar][user] in module/entity axi_intercon does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/axi_intercon.sv:282]
+WARNING: [Synth 8-3848] Net slaves_resp[2][b][user] in module/entity axi_intercon does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/axi_intercon.sv:285]
+WARNING: [Synth 8-3848] Net slaves_resp[2][r][user] in module/entity axi_intercon does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/axi_intercon.sv:285]
+WARNING: [Synth 8-3848] Net slaves_resp[1][b][user] in module/entity axi_intercon does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/axi_intercon.sv:285]
+WARNING: [Synth 8-3848] Net slaves_resp[1][r][user] in module/entity axi_intercon does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/axi_intercon.sv:285]
+WARNING: [Synth 8-3848] Net slaves_resp[0][b][user] in module/entity axi_intercon does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/axi_intercon.sv:285]
+WARNING: [Synth 8-3848] Net slaves_resp[0][r][user] in module/entity axi_intercon does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/axi_intercon.sv:285]
+WARNING: [Synth 8-6014] Unused sequential element aw_req_reg was removed.  [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiToWb/axi2wb.v:130]
+WARNING: [Synth 8-6014] Unused sequential element w_req_reg was removed.  [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiToWb/axi2wb.v:131]
+WARNING: [Synth 8-6014] Unused sequential element ar_req_reg was removed.  [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiToWb/axi2wb.v:132]
+WARNING: [Synth 8-6014] Unused sequential element hi_32b_w_reg was removed.  [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiToWb/axi2wb.v:171]
+WARNING: [Synth 8-87] always_comb on 'wb_data_reg_in_reg' did not result in combinational logic [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/SystemController/SystemControllerMisc.sv:162]
+WARNING: [Synth 8-3848] Net o_timer_irq in module/entity SystemControllerMisc does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/SystemController/SystemControllerMisc.sv:54]
+WARNING: [Synth 8-3848] Net pwm_pad_o in module/entity timer_top does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/timer/timer_top.v:102]
+WARNING: [Synth 8-3848] Net oen_padoen_o in module/entity timer_top does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/timer/timer_top.v:103]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'regs'. This will prevent further optimization [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/accelerator_hackaton/accelerator_top.sv:94]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'accelerator'. This will prevent further optimization [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/accelerator_hackaton/accelerator_top.sv:116]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_accelerator'. This will prevent further optimization [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/accelerator_hackaton/accelerator_top.sv:51]
+WARNING: [Synth 8-3848] Net int_o in module/entity accelerator_top does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/accelerator_hackaton/accelerator_top.sv:27]
+WARNING: [Synth 8-3848] Net bht_bank_clk[0] in module/entity el2_ifu_bp_ctl does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/ifu/el2_ifu_bp_ctl.sv:833]
+WARNING: [Synth 8-3848] Net bht_bank_clk[1] in module/entity el2_ifu_bp_ctl does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/ifu/el2_ifu_bp_ctl.sv:833]
+WARNING: [Synth 8-3936] Found unconnected internal register 'cam_array[3].cam_reg[3][tag]' and it is trimmed from '3' to '2' bits. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/dec/el2_dec_decode_ctl.sv:787]
+WARNING: [Synth 8-3936] Found unconnected internal register 'cam_array[2].cam_reg[2][tag]' and it is trimmed from '3' to '2' bits. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/dec/el2_dec_decode_ctl.sv:787]
+WARNING: [Synth 8-3936] Found unconnected internal register 'cam_array[1].cam_reg[1][tag]' and it is trimmed from '3' to '2' bits. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/dec/el2_dec_decode_ctl.sv:787]
+WARNING: [Synth 8-3936] Found unconnected internal register 'cam_array[0].cam_reg[0][tag]' and it is trimmed from '3' to '2' bits. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/dec/el2_dec_decode_ctl.sv:787]
+WARNING: [Synth 8-3848] Net exu_mp_pkt[br_error] in module/entity el2_exu does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/exu/el2_exu.sv:123]
+WARNING: [Synth 8-3848] Net exu_mp_pkt[br_start_error] in module/entity el2_exu does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/exu/el2_exu.sv:123]
+WARNING: [Synth 8-3848] Net exu_mp_pkt[prett] in module/entity el2_exu does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/exu/el2_exu.sv:123]
+WARNING: [Synth 8-3848] Net dccm_rdata_hi_r in module/entity el2_lsu_dccm_ctl does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/lsu/el2_lsu_dccm_ctl.sv:78]
+WARNING: [Synth 8-3848] Net dccm_rdata_lo_r in module/entity el2_lsu_dccm_ctl does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/lsu/el2_lsu_dccm_ctl.sv:79]
+WARNING: [Synth 8-3848] Net dccm_data_ecc_hi_r in module/entity el2_lsu_dccm_ctl does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/lsu/el2_lsu_dccm_ctl.sv:80]
+WARNING: [Synth 8-3848] Net dccm_data_ecc_lo_r in module/entity el2_lsu_dccm_ctl does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/lsu/el2_lsu_dccm_ctl.sv:81]
+WARNING: [Synth 8-3848] Net lsu_ld_data_r in module/entity el2_lsu_dccm_ctl does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/lsu/el2_lsu_dccm_ctl.sv:82]
+WARNING: [Synth 8-3936] Found unconnected internal register 'lsu_imprecise_error_store_tag_reg' and it is trimmed from '3' to '2' bits. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/lsu/el2_lsu_bus_buffer.sv:881]
+WARNING: [Synth 8-3848] Net IO_CLK_GRP[0].grp_clk in module/entity el2_pic_ctrl does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/el2_pic_ctrl.sv:227]
+WARNING: [Synth 8-3848] Net IO_CLK_GRP[1].grp_clk in module/entity el2_pic_ctrl does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/el2_pic_ctrl.sv:227]
+WARNING: [Synth 8-3848] Net IO_CLK_GRP[2].grp_clk in module/entity el2_pic_ctrl does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/el2_pic_ctrl.sv:227]
+WARNING: [Synth 8-3848] Net haddr in module/entity el2_veer does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/el2_veer.sv:404]
+WARNING: [Synth 8-3848] Net hburst in module/entity el2_veer does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/el2_veer.sv:405]
+WARNING: [Synth 8-3848] Net hmastlock in module/entity el2_veer does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/el2_veer.sv:406]
+WARNING: [Synth 8-3848] Net hprot in module/entity el2_veer does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/el2_veer.sv:407]
+WARNING: [Synth 8-3848] Net hsize in module/entity el2_veer does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/el2_veer.sv:408]
+WARNING: [Synth 8-3848] Net htrans in module/entity el2_veer does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/el2_veer.sv:409]
+WARNING: [Synth 8-3848] Net hwrite in module/entity el2_veer does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/el2_veer.sv:410]
+WARNING: [Synth 8-3848] Net lsu_haddr in module/entity el2_veer does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/el2_veer.sv:417]
+WARNING: [Synth 8-3848] Net lsu_hburst in module/entity el2_veer does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/el2_veer.sv:418]
+WARNING: [Synth 8-3848] Net lsu_hmastlock in module/entity el2_veer does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/el2_veer.sv:419]
+WARNING: [Synth 8-3848] Net lsu_hprot in module/entity el2_veer does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/el2_veer.sv:420]
+WARNING: [Synth 8-3848] Net lsu_hsize in module/entity el2_veer does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/el2_veer.sv:421]
+WARNING: [Synth 8-3848] Net lsu_htrans in module/entity el2_veer does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/el2_veer.sv:422]
+WARNING: [Synth 8-3848] Net lsu_hwrite in module/entity el2_veer does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/el2_veer.sv:423]
+WARNING: [Synth 8-3848] Net lsu_hwdata in module/entity el2_veer does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/el2_veer.sv:424]
+WARNING: [Synth 8-3848] Net sb_haddr in module/entity el2_veer does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/el2_veer.sv:431]
+WARNING: [Synth 8-3848] Net sb_hburst in module/entity el2_veer does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/el2_veer.sv:432]
+WARNING: [Synth 8-3848] Net sb_hmastlock in module/entity el2_veer does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/el2_veer.sv:433]
+WARNING: [Synth 8-3848] Net sb_hprot in module/entity el2_veer does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/el2_veer.sv:434]
+WARNING: [Synth 8-3848] Net sb_hsize in module/entity el2_veer does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/el2_veer.sv:435]
+WARNING: [Synth 8-3848] Net sb_htrans in module/entity el2_veer does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/el2_veer.sv:436]
+WARNING: [Synth 8-3848] Net sb_hwrite in module/entity el2_veer does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/el2_veer.sv:437]
+WARNING: [Synth 8-3848] Net sb_hwdata in module/entity el2_veer does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/el2_veer.sv:438]
+WARNING: [Synth 8-3848] Net dma_hrdata in module/entity el2_veer does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/el2_veer.sv:456]
+WARNING: [Synth 8-3848] Net dma_hreadyout in module/entity el2_veer does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/el2_veer.sv:457]
+WARNING: [Synth 8-3848] Net dma_hresp in module/entity el2_veer does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/el2_veer.sv:458]
+WARNING: [Synth 8-3936] Found unconnected internal register 'PACKED_1.ECC0.size_64.WAYS.sel_bypass_data_reg' and it is trimmed from '52' to '44' bits. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/ifu/el2_ifu_ic_mem.sv:1369]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ECC0_MUX.wb_dout_way_pre_reg[1]' and it is trimmed from '142' to '136' bits. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/ifu/el2_ifu_ic_mem.sv:733]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ECC0_MUX.wb_dout_way_pre_reg[0]' and it is trimmed from '142' to '136' bits. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/ifu/el2_ifu_ic_mem.sv:733]
+WARNING: [Synth 8-3936] Found unconnected internal register 'PACKED_1.BANKS_WAY[1].ECC0.size_256.WAYS.sel_bypass_data_reg[1]' and it is trimmed from '142' to '136' bits. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/ifu/el2_ifu_ic_mem.sv:642]
+WARNING: [Synth 8-3936] Found unconnected internal register 'PACKED_1.BANKS_WAY[0].ECC0.size_256.WAYS.sel_bypass_data_reg[0]' and it is trimmed from '142' to '136' bits. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/ifu/el2_ifu_ic_mem.sv:642]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ic_sb_wr_data_reg[1]' and it is trimmed from '71' to '68' bits. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/ifu/el2_ifu_ic_mem.sv:204]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ic_sb_wr_data_reg[0]' and it is trimmed from '71' to '68' bits. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/ifu/el2_ifu_ic_mem.sv:204]
+WARNING: [Synth 8-3848] Net dccm_ext_in_pkt[3][TEST1] in module/entity veer_wrapper_dmi does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/veer_el2_wrapper.sv:360]
+WARNING: [Synth 8-3848] Net dccm_ext_in_pkt[3][RME] in module/entity veer_wrapper_dmi does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/veer_el2_wrapper.sv:360]
+WARNING: [Synth 8-3848] Net dccm_ext_in_pkt[3][RM] in module/entity veer_wrapper_dmi does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/veer_el2_wrapper.sv:360]
+WARNING: [Synth 8-3848] Net dccm_ext_in_pkt[3][LS] in module/entity veer_wrapper_dmi does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/veer_el2_wrapper.sv:360]
+WARNING: [Synth 8-3848] Net dccm_ext_in_pkt[3][DS] in module/entity veer_wrapper_dmi does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/veer_el2_wrapper.sv:360]
+WARNING: [Synth 8-3848] Net dccm_ext_in_pkt[3][SD] in module/entity veer_wrapper_dmi does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/veer_el2_wrapper.sv:360]
+WARNING: [Synth 8-3848] Net dccm_ext_in_pkt[3][TEST_RNM] in module/entity veer_wrapper_dmi does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/veer_el2_wrapper.sv:360]
+WARNING: [Synth 8-3848] Net dccm_ext_in_pkt[3][BC1] in module/entity veer_wrapper_dmi does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/veer_el2_wrapper.sv:360]
+WARNING: [Synth 8-3848] Net dccm_ext_in_pkt[3][BC2] in module/entity veer_wrapper_dmi does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/veer_el2_wrapper.sv:360]
+WARNING: [Synth 8-3848] Net dccm_ext_in_pkt[2][TEST1] in module/entity veer_wrapper_dmi does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/veer_el2_wrapper.sv:360]
+WARNING: [Synth 8-3848] Net dccm_ext_in_pkt[2][RME] in module/entity veer_wrapper_dmi does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/veer_el2_wrapper.sv:360]
+WARNING: [Synth 8-3848] Net dccm_ext_in_pkt[2][RM] in module/entity veer_wrapper_dmi does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/veer_el2_wrapper.sv:360]
+WARNING: [Synth 8-3848] Net dccm_ext_in_pkt[2][LS] in module/entity veer_wrapper_dmi does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/veer_el2_wrapper.sv:360]
+WARNING: [Synth 8-3848] Net dccm_ext_in_pkt[2][DS] in module/entity veer_wrapper_dmi does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/veer_el2_wrapper.sv:360]
+WARNING: [Synth 8-3848] Net dccm_ext_in_pkt[2][SD] in module/entity veer_wrapper_dmi does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/veer_el2_wrapper.sv:360]
+WARNING: [Synth 8-3848] Net dccm_ext_in_pkt[2][TEST_RNM] in module/entity veer_wrapper_dmi does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/veer_el2_wrapper.sv:360]
+WARNING: [Synth 8-3848] Net dccm_ext_in_pkt[2][BC1] in module/entity veer_wrapper_dmi does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/veer_el2_wrapper.sv:360]
+WARNING: [Synth 8-3848] Net dccm_ext_in_pkt[2][BC2] in module/entity veer_wrapper_dmi does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/veer_el2_wrapper.sv:360]
+WARNING: [Synth 8-3848] Net dccm_ext_in_pkt[1][TEST1] in module/entity veer_wrapper_dmi does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/veer_el2_wrapper.sv:360]
+WARNING: [Synth 8-3848] Net dccm_ext_in_pkt[1][RME] in module/entity veer_wrapper_dmi does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/veer_el2_wrapper.sv:360]
+WARNING: [Synth 8-3848] Net dccm_ext_in_pkt[1][RM] in module/entity veer_wrapper_dmi does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/veer_el2_wrapper.sv:360]
+WARNING: [Synth 8-3848] Net dccm_ext_in_pkt[1][LS] in module/entity veer_wrapper_dmi does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/veer_el2_wrapper.sv:360]
+WARNING: [Synth 8-3848] Net dccm_ext_in_pkt[1][DS] in module/entity veer_wrapper_dmi does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/veer_el2_wrapper.sv:360]
+WARNING: [Synth 8-3848] Net dccm_ext_in_pkt[1][SD] in module/entity veer_wrapper_dmi does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/veer_el2_wrapper.sv:360]
+WARNING: [Synth 8-3848] Net dccm_ext_in_pkt[1][TEST_RNM] in module/entity veer_wrapper_dmi does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/veer_el2_wrapper.sv:360]
+WARNING: [Synth 8-3848] Net dccm_ext_in_pkt[1][BC1] in module/entity veer_wrapper_dmi does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/veer_el2_wrapper.sv:360]
+WARNING: [Synth 8-3848] Net dccm_ext_in_pkt[1][BC2] in module/entity veer_wrapper_dmi does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/veer_el2_wrapper.sv:360]
+WARNING: [Synth 8-3848] Net dccm_ext_in_pkt[0][TEST1] in module/entity veer_wrapper_dmi does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/veer_el2_wrapper.sv:360]
+WARNING: [Synth 8-3848] Net dccm_ext_in_pkt[0][RME] in module/entity veer_wrapper_dmi does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/veer_el2_wrapper.sv:360]
+WARNING: [Synth 8-3848] Net dccm_ext_in_pkt[0][RM] in module/entity veer_wrapper_dmi does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/veer_el2_wrapper.sv:360]
+WARNING: [Synth 8-3848] Net dccm_ext_in_pkt[0][LS] in module/entity veer_wrapper_dmi does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/veer_el2_wrapper.sv:360]
+WARNING: [Synth 8-3848] Net dccm_ext_in_pkt[0][DS] in module/entity veer_wrapper_dmi does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/veer_el2_wrapper.sv:360]
+WARNING: [Synth 8-3848] Net dccm_ext_in_pkt[0][SD] in module/entity veer_wrapper_dmi does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/veer_el2_wrapper.sv:360]
+WARNING: [Synth 8-3848] Net dccm_ext_in_pkt[0][TEST_RNM] in module/entity veer_wrapper_dmi does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/veer_el2_wrapper.sv:360]
+WARNING: [Synth 8-3848] Net dccm_ext_in_pkt[0][BC1] in module/entity veer_wrapper_dmi does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/veer_el2_wrapper.sv:360]
+WARNING: [Synth 8-3848] Net dccm_ext_in_pkt[0][BC2] in module/entity veer_wrapper_dmi does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/veer_el2_wrapper.sv:360]
+WARNING: [Synth 8-3848] Net iccm_ext_in_pkt[3][TEST1] in module/entity veer_wrapper_dmi does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/veer_el2_wrapper.sv:361]
+WARNING: [Synth 8-3848] Net iccm_ext_in_pkt[3][RME] in module/entity veer_wrapper_dmi does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/veer_el2_wrapper.sv:361]
+WARNING: [Synth 8-3848] Net iccm_ext_in_pkt[3][RM] in module/entity veer_wrapper_dmi does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/veer_el2_wrapper.sv:361]
+WARNING: [Synth 8-3848] Net iccm_ext_in_pkt[3][LS] in module/entity veer_wrapper_dmi does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/veer_el2_wrapper.sv:361]
+WARNING: [Synth 8-3848] Net iccm_ext_in_pkt[3][DS] in module/entity veer_wrapper_dmi does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/veer_el2_wrapper.sv:361]
+WARNING: [Synth 8-3848] Net iccm_ext_in_pkt[3][SD] in module/entity veer_wrapper_dmi does not have driver. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/veer_el2_wrapper.sv:361]
+INFO: [Common 17-14] Message 'Synth 8-3848' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-7129] Port en in module rvoclkhdr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port scan_mode in module rvoclkhdr is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TEST1 in module ram_256x39 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RME in module ram_256x39 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RM[3] in module ram_256x39 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RM[2] in module ram_256x39 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RM[1] in module ram_256x39 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RM[0] in module ram_256x39 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LS in module ram_256x39 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DS in module ram_256x39 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SD in module ram_256x39 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TEST_RNM in module ram_256x39 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port BC1 in module ram_256x39 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port BC2 in module ram_256x39 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port iccm_wr_size[2] in module el2_ifu_iccm_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port scan_mode in module el2_ifu_iccm_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port scan_mode in module rvdffie__parameterized15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TEST1 in module ram_be_256x136 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RME in module ram_be_256x136 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RM[3] in module ram_be_256x136 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RM[2] in module ram_be_256x136 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RM[1] in module ram_be_256x136 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RM[0] in module ram_be_256x136 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LS in module ram_be_256x136 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DS in module ram_be_256x136 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SD in module ram_be_256x136 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TEST_RNM in module ram_be_256x136 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port BC1 in module ram_be_256x136 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port BC2 in module ram_be_256x136 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port scan_mode in module rvdffe__parameterized29 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port scan_mode in module rvdffe__parameterized28 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ic_wr_data[1][70] in module EL2_IC_DATA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ic_wr_data[1][69] in module EL2_IC_DATA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ic_wr_data[1][68] in module EL2_IC_DATA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ic_wr_data[0][70] in module EL2_IC_DATA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ic_wr_data[0][69] in module EL2_IC_DATA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ic_wr_data[0][68] in module EL2_IC_DATA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ic_debug_wr_data[70] in module EL2_IC_DATA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ic_debug_wr_data[69] in module EL2_IC_DATA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ic_debug_wr_data[68] in module EL2_IC_DATA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ic_data_ext_in_pkt[1][1][TEST1] in module EL2_IC_DATA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ic_data_ext_in_pkt[1][1][RME] in module EL2_IC_DATA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ic_data_ext_in_pkt[1][1][RM][3] in module EL2_IC_DATA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ic_data_ext_in_pkt[1][1][RM][2] in module EL2_IC_DATA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ic_data_ext_in_pkt[1][1][RM][1] in module EL2_IC_DATA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ic_data_ext_in_pkt[1][1][RM][0] in module EL2_IC_DATA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ic_data_ext_in_pkt[1][1][LS] in module EL2_IC_DATA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ic_data_ext_in_pkt[1][1][DS] in module EL2_IC_DATA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ic_data_ext_in_pkt[1][1][SD] in module EL2_IC_DATA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ic_data_ext_in_pkt[1][1][TEST_RNM] in module EL2_IC_DATA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ic_data_ext_in_pkt[1][1][BC1] in module EL2_IC_DATA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ic_data_ext_in_pkt[1][1][BC2] in module EL2_IC_DATA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ic_data_ext_in_pkt[1][0][TEST1] in module EL2_IC_DATA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ic_data_ext_in_pkt[1][0][RME] in module EL2_IC_DATA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ic_data_ext_in_pkt[1][0][RM][3] in module EL2_IC_DATA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ic_data_ext_in_pkt[1][0][RM][2] in module EL2_IC_DATA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ic_data_ext_in_pkt[1][0][RM][1] in module EL2_IC_DATA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ic_data_ext_in_pkt[1][0][RM][0] in module EL2_IC_DATA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ic_data_ext_in_pkt[1][0][LS] in module EL2_IC_DATA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ic_data_ext_in_pkt[1][0][DS] in module EL2_IC_DATA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ic_data_ext_in_pkt[1][0][SD] in module EL2_IC_DATA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ic_data_ext_in_pkt[1][0][TEST_RNM] in module EL2_IC_DATA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ic_data_ext_in_pkt[1][0][BC1] in module EL2_IC_DATA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ic_data_ext_in_pkt[1][0][BC2] in module EL2_IC_DATA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port scan_mode in module rvdffie__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TEST1 in module ram_be_64x44 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RME in module ram_be_64x44 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RM[3] in module ram_be_64x44 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RM[2] in module ram_be_64x44 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RM[1] in module ram_be_64x44 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RM[0] in module ram_be_64x44 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LS in module ram_be_64x44 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DS in module ram_be_64x44 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SD in module ram_be_64x44 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port TEST_RNM in module ram_be_64x44 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port BC1 in module ram_be_64x44 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port BC2 in module ram_be_64x44 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port scan_mode in module rvdffe__parameterized27 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port scan_mode in module rvdffe__parameterized8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dec_tlu_core_ecc_disable in module EL2_IC_TAG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ic_rw_addr[3] in module EL2_IC_TAG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ic_debug_addr[5] in module EL2_IC_TAG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ic_debug_addr[4] in module EL2_IC_TAG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ic_debug_addr[3] in module EL2_IC_TAG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ic_tag_ext_in_pkt[1][TEST1] in module EL2_IC_TAG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ic_tag_ext_in_pkt[1][RME] in module EL2_IC_TAG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ic_tag_ext_in_pkt[1][RM][3] in module EL2_IC_TAG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ic_tag_ext_in_pkt[1][RM][2] in module EL2_IC_TAG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ic_tag_ext_in_pkt[1][RM][1] in module EL2_IC_TAG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ic_tag_ext_in_pkt[1][RM][0] in module EL2_IC_TAG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ic_tag_ext_in_pkt[1][LS] in module EL2_IC_TAG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ic_tag_ext_in_pkt[1][DS] in module EL2_IC_TAG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ic_tag_ext_in_pkt[1][SD] in module EL2_IC_TAG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ic_tag_ext_in_pkt[1][TEST_RNM] in module EL2_IC_TAG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ic_tag_ext_in_pkt[1][BC1] in module EL2_IC_TAG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ic_tag_ext_in_pkt[1][BC2] in module EL2_IC_TAG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ic_debug_wr_data[70] in module EL2_IC_TAG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ic_debug_wr_data[69] in module EL2_IC_TAG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ic_debug_wr_data[68] in module EL2_IC_TAG is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ic_debug_wr_data[67] in module EL2_IC_TAG is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1829.359 ; gain = 919.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1829.359 ; gain = 919.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1829.359 ; gain = 919.016
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.904 . Memory (MB): peak = 1829.359 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/vivado/nexysA7card.gen/sources_1/ip/ila_accelerator/ila_accelerator/ila_accelerator_in_context.xdc] for cell 'swervolf/accelerator_top/ila_accelerator'
+Finished Parsing XDC File [c:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/vivado/nexysA7card.gen/sources_1/ip/ila_accelerator/ila_accelerator/ila_accelerator_in_context.xdc] for cell 'swervolf/accelerator_top/ila_accelerator'
+Parsing XDC File [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/rvfpganexys.xdc]
+INFO: [Timing 38-2] Deriving generated clocks [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/rvfpganexys.xdc:13]
+INFO: [Vivado 12-2286] Implicit search of objects for pattern 'j_trst_n' matched to 'port' objects. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/rvfpganexys.xdc:16]
+Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
+INFO: [Vivado 12-2286] Implicit search of objects for pattern 'j_tms' matched to 'port' objects. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/rvfpganexys.xdc:17]
+Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
+INFO: [Vivado 12-2286] Implicit search of objects for pattern 'j_tdi' matched to 'port' objects. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/rvfpganexys.xdc:18]
+Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
+WARNING: [Vivado 12-507] No nets matched 'swervolf/timer_ptc3/rptc_cntr[31]_i_4_n_0'. [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/rvfpganexys.xdc:222]
+Finished Parsing XDC File [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/rvfpganexys.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/rvfpganexys.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/rvfpganexys_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/rvfpganexys.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/rvfpganexys_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/rvfpganexys_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1989.645 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  PLLE2_BASE => PLLE2_ADV: 1 instance 
+
+The system cannot find the path specified.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.191 . Memory (MB): peak = 1989.645 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1989.645 ; gain = 1079.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1989.645 ; gain = 1079.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6841] Block RAM (mem_reg) originally specified as a Byte Wide Write Enable RAM cannot take advantage of ByteWide feature and is implemented with single write enable per RAM due to following reason.
+(address width (14) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired.)
+WARNING: [Synth 8-327] inferring latch for variable 'wb_data_reg_in_reg' [C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/SystemController/SystemControllerMisc.sv:162]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:49 ; elapsed = 00:00:52 . Memory (MB): peak = 1989.645 ; gain = 1079.301
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'swervolf/rvtop/veer/ifu/mem_ctl/ifu_iccm_reg_acc_ff' (rvdff_fpga) to 'swervolf/rvtop/veer/ifu/mem_ctl/rgn_acc_ff'
+INFO: [Synth 8-223] decloning instance 'swervolf/rvtop/veer/lsu/bus_intf/bus_buffer/lsu_axi_bready_ff' (rvdff_fpga) to 'swervolf/rvtop/veer/lsu/bus_intf/bus_buffer/lsu_axi_rready_ff'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   64 Bit       Adders := 5     
+	   2 Input   38 Bit       Adders := 12    
+	   3 Input   37 Bit       Adders := 1     
+	   2 Input   36 Bit       Adders := 1     
+	   2 Input   35 Bit       Adders := 1     
+	   3 Input   33 Bit       Adders := 1     
+	   2 Input   32 Bit       Adders := 14    
+	   8 Input   32 Bit       Adders := 1     
+	   3 Input   32 Bit       Adders := 1     
+	   2 Input   31 Bit       Adders := 3     
+	   2 Input   30 Bit       Adders := 2     
+	   2 Input   27 Bit       Adders := 3     
+	   2 Input   25 Bit       Adders := 2     
+	   3 Input   25 Bit       Adders := 1     
+	   2 Input   24 Bit       Adders := 2     
+	   2 Input   20 Bit       Adders := 2     
+	   2 Input   19 Bit       Adders := 8     
+	   3 Input   19 Bit       Adders := 1     
+	   2 Input   17 Bit       Adders := 2     
+	   2 Input   13 Bit       Adders := 6     
+	   2 Input   11 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 2     
+	   2 Input    9 Bit       Adders := 5     
+	   3 Input    9 Bit       Adders := 3     
+	   2 Input    8 Bit       Adders := 5     
+	   3 Input    7 Bit       Adders := 2     
+	   8 Input    6 Bit       Adders := 1     
+	   7 Input    6 Bit       Adders := 4     
+	   2 Input    6 Bit       Adders := 21    
+	   3 Input    6 Bit       Adders := 5     
+	   6 Input    6 Bit       Adders := 4     
+	   5 Input    6 Bit       Adders := 4     
+	   4 Input    6 Bit       Adders := 4     
+	  32 Input    6 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 17    
+	   3 Input    5 Bit       Adders := 96    
+	   2 Input    4 Bit       Adders := 19    
+	   6 Input    4 Bit       Adders := 1     
+	   7 Input    4 Bit       Adders := 1     
+	   5 Input    4 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 29    
+	   4 Input    3 Bit       Adders := 4     
+	   2 Input    2 Bit       Adders := 34    
+	   2 Input    1 Bit       Adders := 9     
++---XORs : 
+	  32 Input     63 Bit         XORs := 1     
+	   2 Input     39 Bit         XORs := 4     
+	   2 Input     32 Bit         XORs := 71    
+	   2 Input     27 Bit         XORs := 1     
+	   2 Input     20 Bit         XORs := 1     
+	   2 Input     18 Bit         XORs := 1     
+	   2 Input     16 Bit         XORs := 1     
+	   2 Input     12 Bit         XORs := 1     
+	   2 Input     11 Bit         XORs := 3     
+	   2 Input     10 Bit         XORs := 8     
+	   2 Input      9 Bit         XORs := 2     
+	   2 Input      8 Bit         XORs := 4     
+	   2 Input      7 Bit         XORs := 2     
+	   2 Input      6 Bit         XORs := 2     
+	   3 Input      4 Bit         XORs := 4     
+	   2 Input      4 Bit         XORs := 5     
+	   2 Input      1 Bit         XORs := 76    
+	   4 Input      1 Bit         XORs := 8     
+	  16 Input      1 Bit         XORs := 12    
+	  19 Input      1 Bit         XORs := 4     
+	   6 Input      1 Bit         XORs := 8     
+	  10 Input      1 Bit         XORs := 16    
+	   7 Input      1 Bit         XORs := 4     
+	  17 Input      1 Bit         XORs := 4     
+	  18 Input      1 Bit         XORs := 4     
++---XORs : 
+	               32 Bit    Wide XORs := 8     
+	               20 Bit    Wide XORs := 3     
+	               16 Bit    Wide XORs := 16    
+	                9 Bit    Wide XORs := 1     
+	                8 Bit    Wide XORs := 1     
+	                7 Bit    Wide XORs := 5     
+	                6 Bit    Wide XORs := 5     
+	                5 Bit    Wide XORs := 1     
++---Registers : 
+	              136 Bit    Registers := 6     
+	               71 Bit    Registers := 1     
+	               64 Bit    Registers := 14    
+	               57 Bit    Registers := 1     
+	               56 Bit    Registers := 1     
+	               49 Bit    Registers := 4     
+	               48 Bit    Registers := 8     
+	               44 Bit    Registers := 3     
+	               41 Bit    Registers := 2     
+	               39 Bit    Registers := 12    
+	               38 Bit    Registers := 1     
+	               37 Bit    Registers := 1     
+	               34 Bit    Registers := 1     
+	               33 Bit    Registers := 4     
+	               32 Bit    Registers := 205   
+	               31 Bit    Registers := 19    
+	               30 Bit    Registers := 1     
+	               29 Bit    Registers := 2     
+	               28 Bit    Registers := 4     
+	               27 Bit    Registers := 1     
+	               26 Bit    Registers := 1     
+	               25 Bit    Registers := 1     
+	               24 Bit    Registers := 7     
+	               22 Bit    Registers := 4     
+	               20 Bit    Registers := 1     
+	               19 Bit    Registers := 2     
+	               18 Bit    Registers := 1     
+	               17 Bit    Registers := 4     
+	               16 Bit    Registers := 6     
+	               14 Bit    Registers := 8     
+	               13 Bit    Registers := 2     
+	               12 Bit    Registers := 2     
+	               11 Bit    Registers := 4     
+	               10 Bit    Registers := 20    
+	                9 Bit    Registers := 6     
+	                8 Bit    Registers := 76    
+	                7 Bit    Registers := 6     
+	                6 Bit    Registers := 43    
+	                5 Bit    Registers := 107   
+	                4 Bit    Registers := 181   
+	                3 Bit    Registers := 126   
+	                2 Bit    Registers := 307   
+	                1 Bit    Registers := 687   
++---Multipliers : 
+	                8x8  Multipliers := 8     
++---RAMs : 
+	            1024K Bit	(16384 X 64 bit)          RAMs := 1     
+	              39K Bit	(1024 X 39 bit)          RAMs := 4     
+	              34K Bit	(256 X 136 bit)          RAMs := 2     
+	              32K Bit	(512 X 64 bit)          RAMs := 2     
+	               9K Bit	(256 X 39 bit)          RAMs := 4     
+	               2K Bit	(64 X 44 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input  136 Bit        Muxes := 11    
+	   2 Input   80 Bit        Muxes := 1     
+	   2 Input   78 Bit        Muxes := 1     
+	   2 Input   71 Bit        Muxes := 2     
+	   2 Input   68 Bit        Muxes := 2     
+	   2 Input   64 Bit        Muxes := 82    
+	   4 Input   64 Bit        Muxes := 2     
+	  12 Input   64 Bit        Muxes := 2     
+	   3 Input   64 Bit        Muxes := 3     
+	   2 Input   57 Bit        Muxes := 1     
+	   2 Input   56 Bit        Muxes := 1     
+	   2 Input   49 Bit        Muxes := 4     
+	   2 Input   48 Bit        Muxes := 8     
+	   2 Input   44 Bit        Muxes := 5     
+	   5 Input   41 Bit        Muxes := 1     
+	   4 Input   41 Bit        Muxes := 2     
+	   3 Input   41 Bit        Muxes := 1     
+	   2 Input   41 Bit        Muxes := 1     
+	   2 Input   39 Bit        Muxes := 20    
+	   4 Input   39 Bit        Muxes := 4     
+	   2 Input   38 Bit        Muxes := 1     
+	   2 Input   37 Bit        Muxes := 1     
+	   2 Input   34 Bit        Muxes := 1     
+	   2 Input   33 Bit        Muxes := 5     
+	   2 Input   32 Bit        Muxes := 373   
+	   4 Input   32 Bit        Muxes := 10    
+	   8 Input   32 Bit        Muxes := 4     
+	  12 Input   32 Bit        Muxes := 3     
+	   5 Input   32 Bit        Muxes := 1     
+	   3 Input   32 Bit        Muxes := 2     
+	   6 Input   32 Bit        Muxes := 1     
+	   2 Input   31 Bit        Muxes := 31    
+	   2 Input   30 Bit        Muxes := 1     
+	   2 Input   29 Bit        Muxes := 4     
+	   2 Input   28 Bit        Muxes := 4     
+	   2 Input   27 Bit        Muxes := 1     
+	   2 Input   26 Bit        Muxes := 3     
+	   2 Input   25 Bit        Muxes := 3     
+	   2 Input   24 Bit        Muxes := 7     
+	   2 Input   22 Bit        Muxes := 5     
+	   2 Input   20 Bit        Muxes := 1     
+	   2 Input   19 Bit        Muxes := 4     
+	   2 Input   18 Bit        Muxes := 1     
+	   2 Input   17 Bit        Muxes := 22    
+	   4 Input   17 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 7     
+	   2 Input   15 Bit        Muxes := 1     
+	   2 Input   14 Bit        Muxes := 22    
+	   4 Input   14 Bit        Muxes := 1     
+	   8 Input   14 Bit        Muxes := 2     
+	   2 Input   12 Bit        Muxes := 8     
+	   2 Input   11 Bit        Muxes := 9     
+	  12 Input   11 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 37    
+	   8 Input   10 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 13    
+	   2 Input    8 Bit        Muxes := 238   
+	   4 Input    8 Bit        Muxes := 7     
+	  16 Input    8 Bit        Muxes := 1     
+	  12 Input    8 Bit        Muxes := 1     
+	   9 Input    8 Bit        Muxes := 1     
+	   3 Input    8 Bit        Muxes := 3     
+	   6 Input    8 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 6     
+	  16 Input    7 Bit        Muxes := 1     
+	   7 Input    7 Bit        Muxes := 2     
+	   2 Input    6 Bit        Muxes := 76    
+	   6 Input    6 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 316   
+	   7 Input    5 Bit        Muxes := 1     
+	   4 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 237   
+	  11 Input    4 Bit        Muxes := 2     
+	   4 Input    4 Bit        Muxes := 10    
+	  12 Input    4 Bit        Muxes := 2     
+	  16 Input    4 Bit        Muxes := 1     
+	   6 Input    4 Bit        Muxes := 1     
+	   8 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 186   
+	   8 Input    3 Bit        Muxes := 3     
+	   6 Input    3 Bit        Muxes := 2     
+	  11 Input    3 Bit        Muxes := 1     
+	   5 Input    3 Bit        Muxes := 1     
+	   4 Input    3 Bit        Muxes := 12    
+	   3 Input    3 Bit        Muxes := 7     
+	  10 Input    3 Bit        Muxes := 1     
+	  15 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 325   
+	   3 Input    2 Bit        Muxes := 15    
+	   7 Input    2 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 19    
+	   8 Input    2 Bit        Muxes := 4     
+	  95 Input    2 Bit        Muxes := 1     
+	   6 Input    2 Bit        Muxes := 96    
+	   2 Input    1 Bit        Muxes := 1547  
+	   4 Input    1 Bit        Muxes := 76    
+	   6 Input    1 Bit        Muxes := 211   
+	   3 Input    1 Bit        Muxes := 7     
+	  11 Input    1 Bit        Muxes := 13    
+	   8 Input    1 Bit        Muxes := 40    
+	  12 Input    1 Bit        Muxes := 20    
+	  16 Input    1 Bit        Muxes := 1     
+	   7 Input    1 Bit        Muxes := 9     
+	  13 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6841] Block RAM (mem_reg) originally specified as a Byte Wide Write Enable RAM cannot take advantage of ByteWide feature and is implemented with single write enable per RAM due to following reason.
+(address width (14) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired.)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (lsu/lsu_lsc_ctl/exc_mscause_mff/\dout_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (pic_ctrl_inst/claimid_ff/\dout_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (pic_ctrl_inst/picm_wadd_flop/\dout_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (pic_ctrl_inst/picm_radd_flop/\dout_reg[17] )
+INFO: [Synth 8-3886] merging instance 'gpio_module/sync_clk_reg' (FDC) to 'gpio_module/wb_err_o_reg'
+INFO: [Synth 8-3886] merging instance 'gpio2_module/sync_clk_reg' (FDC) to 'gpio2_module/sync_reg[31]'
+INFO: [Synth 8-3886] merging instance 'gpio2_module/sync_reg[30]' (FDC) to 'gpio2_module/sync_reg[31]'
+INFO: [Synth 8-3886] merging instance 'gpio2_module/sync_reg[14]' (FDC) to 'gpio2_module/sync_reg[31]'
+INFO: [Synth 8-3886] merging instance 'gpio2_module/sync_reg[22]' (FDC) to 'gpio2_module/sync_reg[31]'
+INFO: [Synth 8-3886] merging instance 'gpio2_module/sync_reg[6]' (FDC) to 'gpio2_module/sync_reg[31]'
+INFO: [Synth 8-3886] merging instance 'gpio2_module/sync_reg[26]' (FDC) to 'gpio2_module/sync_reg[31]'
+INFO: [Synth 8-3886] merging instance 'gpio2_module/sync_reg[10]' (FDC) to 'gpio2_module/sync_reg[31]'
+INFO: [Synth 8-3886] merging instance 'gpio2_module/sync_reg[18]' (FDC) to 'gpio2_module/sync_reg[31]'
+INFO: [Synth 8-3886] merging instance 'gpio2_module/sync_reg[28]' (FDC) to 'gpio2_module/sync_reg[31]'
+INFO: [Synth 8-3886] merging instance 'gpio2_module/sync_reg[12]' (FDC) to 'gpio2_module/sync_reg[31]'
+INFO: [Synth 8-3886] merging instance 'gpio2_module/sync_reg[20]' (FDC) to 'gpio2_module/sync_reg[31]'
+INFO: [Synth 8-3886] merging instance 'gpio2_module/sync_reg[24]' (FDC) to 'gpio2_module/sync_reg[31]'
+INFO: [Synth 8-3886] merging instance 'gpio2_module/sync_reg[8]' (FDC) to 'gpio2_module/sync_reg[31]'
+INFO: [Synth 8-3886] merging instance 'gpio2_module/sync_reg[16]' (FDC) to 'gpio2_module/sync_reg[31]'
+INFO: [Synth 8-3886] merging instance 'gpio2_module/sync_reg[29]' (FDC) to 'gpio2_module/sync_reg[31]'
+INFO: [Synth 8-3886] merging instance 'gpio2_module/sync_reg[13]' (FDC) to 'gpio2_module/sync_reg[31]'
+INFO: [Synth 8-3886] merging instance 'gpio2_module/sync_reg[21]' (FDC) to 'gpio2_module/sync_reg[31]'
+INFO: [Synth 8-3886] merging instance 'gpio2_module/sync_reg[5]' (FDC) to 'gpio2_module/sync_reg[31]'
+INFO: [Synth 8-3886] merging instance 'gpio2_module/sync_reg[25]' (FDC) to 'gpio2_module/sync_reg[31]'
+INFO: [Synth 8-3886] merging instance 'gpio2_module/sync_reg[9]' (FDC) to 'gpio2_module/sync_reg[31]'
+INFO: [Synth 8-3886] merging instance 'gpio2_module/sync_reg[17]' (FDC) to 'gpio2_module/sync_reg[31]'
+INFO: [Synth 8-3886] merging instance 'gpio2_module/sync_reg[27]' (FDC) to 'gpio2_module/sync_reg[31]'
+INFO: [Synth 8-3886] merging instance 'gpio2_module/sync_reg[11]' (FDC) to 'gpio2_module/sync_reg[31]'
+INFO: [Synth 8-3886] merging instance 'gpio2_module/sync_reg[19]' (FDC) to 'gpio2_module/sync_reg[31]'
+INFO: [Synth 8-3886] merging instance 'gpio2_module/sync_reg[23]' (FDC) to 'gpio2_module/sync_reg[31]'
+INFO: [Synth 8-3886] merging instance 'gpio2_module/sync_reg[7]' (FDC) to 'gpio2_module/sync_reg[31]'
+INFO: [Synth 8-3886] merging instance 'gpio2_module/sync_reg[15]' (FDC) to 'gpio2_module/sync_reg[31]'
+INFO: [Synth 8-3886] merging instance 'gpio2_module/clk_s_reg' (FDC) to 'gpio2_module/ext_pad_s_reg[15]'
+INFO: [Synth 8-3886] merging instance 'gpio2_module/sync_reg[31]' (FDC) to 'gpio2_module/wb_err_o_reg'
+INFO: [Synth 8-3886] merging instance 'syscon/SystemControllerMisc/mtime_reg[30]' (FDRE) to 'syscon/SystemControllerMisc/mtime_reg[0]'
+INFO: [Synth 8-3886] merging instance 'syscon/SystemControllerMisc/mtime_reg[32]' (FDRE) to 'syscon/SystemControllerMisc/mtime_reg[0]'
+INFO: [Synth 8-3886] merging instance 'syscon/SystemControllerMisc/mtime_reg[33]' (FDRE) to 'syscon/SystemControllerMisc/mtime_reg[0]'
+INFO: [Synth 8-3886] merging instance 'syscon/SystemControllerMisc/mtime_reg[34]' (FDRE) to 'syscon/SystemControllerMisc/mtime_reg[0]'
+INFO: [Synth 8-3886] merging instance 'syscon/SystemControllerMisc/mtime_reg[35]' (FDRE) to 'syscon/SystemControllerMisc/mtime_reg[0]'
+INFO: [Synth 8-3886] merging instance 'syscon/SystemControllerMisc/mtime_reg[36]' (FDRE) to 'syscon/SystemControllerMisc/mtime_reg[0]'
+INFO: [Synth 8-3886] merging instance 'syscon/SystemControllerMisc/mtime_reg[37]' (FDRE) to 'syscon/SystemControllerMisc/mtime_reg[0]'
+INFO: [Synth 8-3886] merging instance 'syscon/SystemControllerMisc/mtime_reg[38]' (FDRE) to 'syscon/SystemControllerMisc/mtime_reg[0]'
+INFO: [Synth 8-3886] merging instance 'syscon/SystemControllerMisc/mtime_reg[39]' (FDRE) to 'syscon/SystemControllerMisc/mtime_reg[0]'
+INFO: [Synth 8-3886] merging instance 'syscon/SystemControllerMisc/mtime_reg[40]' (FDRE) to 'syscon/SystemControllerMisc/mtime_reg[0]'
+INFO: [Synth 8-3886] merging instance 'syscon/SystemControllerMisc/mtime_reg[41]' (FDRE) to 'syscon/SystemControllerMisc/mtime_reg[0]'
+INFO: [Synth 8-3886] merging instance 'syscon/SystemControllerMisc/mtime_reg[42]' (FDRE) to 'syscon/SystemControllerMisc/mtime_reg[0]'
+INFO: [Synth 8-3886] merging instance 'syscon/SystemControllerMisc/mtime_reg[43]' (FDRE) to 'syscon/SystemControllerMisc/mtime_reg[0]'
+INFO: [Synth 8-3886] merging instance 'syscon/SystemControllerMisc/mtime_reg[44]' (FDRE) to 'syscon/SystemControllerMisc/mtime_reg[0]'
+INFO: [Synth 8-3886] merging instance 'syscon/SystemControllerMisc/mtime_reg[45]' (FDRE) to 'syscon/SystemControllerMisc/mtime_reg[0]'
+INFO: [Synth 8-3886] merging instance 'syscon/SystemControllerMisc/mtime_reg[46]' (FDRE) to 'syscon/SystemControllerMisc/mtime_reg[0]'
+INFO: [Synth 8-3886] merging instance 'syscon/SystemControllerMisc/mtime_reg[47]' (FDRE) to 'syscon/SystemControllerMisc/mtime_reg[0]'
+INFO: [Synth 8-3886] merging instance 'syscon/SystemControllerMisc/mtime_reg[48]' (FDRE) to 'syscon/SystemControllerMisc/mtime_reg[0]'
+INFO: [Synth 8-3886] merging instance 'syscon/SystemControllerMisc/mtime_reg[49]' (FDRE) to 'syscon/SystemControllerMisc/mtime_reg[0]'
+INFO: [Synth 8-3886] merging instance 'syscon/SystemControllerMisc/mtime_reg[50]' (FDRE) to 'syscon/SystemControllerMisc/mtime_reg[0]'
+INFO: [Synth 8-3886] merging instance 'syscon/SystemControllerMisc/mtime_reg[51]' (FDRE) to 'syscon/SystemControllerMisc/mtime_reg[0]'
+INFO: [Synth 8-3886] merging instance 'syscon/SystemControllerMisc/mtime_reg[52]' (FDRE) to 'syscon/SystemControllerMisc/mtime_reg[0]'
+INFO: [Synth 8-3886] merging instance 'syscon/SystemControllerMisc/mtime_reg[53]' (FDRE) to 'syscon/SystemControllerMisc/mtime_reg[0]'
+INFO: [Synth 8-3886] merging instance 'syscon/SystemControllerMisc/mtime_reg[54]' (FDRE) to 'syscon/SystemControllerMisc/mtime_reg[0]'
+INFO: [Synth 8-3886] merging instance 'syscon/SystemControllerMisc/mtime_reg[55]' (FDRE) to 'syscon/SystemControllerMisc/mtime_reg[0]'
+INFO: [Synth 8-3886] merging instance 'syscon/SystemControllerMisc/mtime_reg[56]' (FDRE) to 'syscon/SystemControllerMisc/mtime_reg[0]'
+INFO: [Synth 8-3886] merging instance 'syscon/SystemControllerMisc/mtime_reg[57]' (FDRE) to 'syscon/SystemControllerMisc/mtime_reg[0]'
+INFO: [Synth 8-3886] merging instance 'syscon/SystemControllerMisc/mtime_reg[58]' (FDRE) to 'syscon/SystemControllerMisc/mtime_reg[0]'
+INFO: [Synth 8-3886] merging instance 'syscon/SystemControllerMisc/mtime_reg[59]' (FDRE) to 'syscon/SystemControllerMisc/mtime_reg[0]'
+INFO: [Synth 8-3886] merging instance 'syscon/SystemControllerMisc/mtime_reg[60]' (FDRE) to 'syscon/SystemControllerMisc/mtime_reg[0]'
+INFO: [Synth 8-3886] merging instance 'syscon/SystemControllerMisc/mtime_reg[61]' (FDRE) to 'syscon/SystemControllerMisc/mtime_reg[0]'
+INFO: [Synth 8-3886] merging instance 'syscon/SystemControllerMisc/mtime_reg[62]' (FDRE) to 'syscon/SystemControllerMisc/mtime_reg[0]'
+INFO: [Synth 8-3886] merging instance 'syscon/SystemControllerMisc/mtime_reg[63]' (FDRE) to 'syscon/SystemControllerMisc/mtime_reg[0]'
+INFO: [Synth 8-3886] merging instance 'syscon/SystemControllerMisc/mtime_reg[14]' (FDRE) to 'syscon/SystemControllerMisc/mtime_reg[0]'
+INFO: [Synth 8-3886] merging instance 'syscon/SystemControllerMisc/mtime_reg[22]' (FDRE) to 'syscon/SystemControllerMisc/mtime_reg[0]'
+INFO: [Synth 8-3886] merging instance 'syscon/SystemControllerMisc/mtime_reg[6]' (FDRE) to 'syscon/SystemControllerMisc/mtime_reg[0]'
+INFO: [Synth 8-3886] merging instance 'syscon/SystemControllerMisc/mtime_reg[26]' (FDRE) to 'syscon/SystemControllerMisc/mtime_reg[0]'
+INFO: [Synth 8-3886] merging instance 'syscon/SystemControllerMisc/mtime_reg[10]' (FDRE) to 'syscon/SystemControllerMisc/mtime_reg[0]'
+INFO: [Synth 8-3886] merging instance 'syscon/SystemControllerMisc/mtime_reg[18]' (FDRE) to 'syscon/SystemControllerMisc/mtime_reg[0]'
+INFO: [Synth 8-3886] merging instance 'syscon/SystemControllerMisc/mtime_reg[2]' (FDRE) to 'syscon/SystemControllerMisc/mtime_reg[0]'
+INFO: [Synth 8-3886] merging instance 'syscon/SystemControllerMisc/mtime_reg[28]' (FDRE) to 'syscon/SystemControllerMisc/mtime_reg[0]'
+INFO: [Synth 8-3886] merging instance 'syscon/SystemControllerMisc/mtime_reg[12]' (FDRE) to 'syscon/SystemControllerMisc/mtime_reg[0]'
+INFO: [Synth 8-3886] merging instance 'syscon/SystemControllerMisc/mtime_reg[20]' (FDRE) to 'syscon/SystemControllerMisc/mtime_reg[0]'
+INFO: [Synth 8-3886] merging instance 'syscon/SystemControllerMisc/mtime_reg[4]' (FDRE) to 'syscon/SystemControllerMisc/mtime_reg[0]'
+INFO: [Synth 8-3886] merging instance 'syscon/SystemControllerMisc/mtime_reg[24]' (FDRE) to 'syscon/SystemControllerMisc/mtime_reg[0]'
+INFO: [Synth 8-3886] merging instance 'syscon/SystemControllerMisc/mtime_reg[8]' (FDRE) to 'syscon/SystemControllerMisc/mtime_reg[0]'
+INFO: [Synth 8-3886] merging instance 'syscon/SystemControllerMisc/mtime_reg[16]' (FDRE) to 'syscon/SystemControllerMisc/mtime_reg[0]'
+INFO: [Synth 8-3886] merging instance 'syscon/SystemControllerMisc/mtime_reg[0]' (FDRE) to 'syscon/SystemControllerMisc/mtime_reg[1]'
+INFO: [Synth 8-3886] merging instance 'syscon/SystemControllerMisc/mtime_reg[29]' (FDRE) to 'syscon/SystemControllerMisc/mtime_reg[1]'
+INFO: [Synth 8-3886] merging instance 'syscon/SystemControllerMisc/mtime_reg[13]' (FDRE) to 'syscon/SystemControllerMisc/mtime_reg[1]'
+INFO: [Synth 8-3886] merging instance 'syscon/SystemControllerMisc/mtime_reg[21]' (FDRE) to 'syscon/SystemControllerMisc/mtime_reg[1]'
+INFO: [Synth 8-3886] merging instance 'syscon/SystemControllerMisc/mtime_reg[5]' (FDRE) to 'syscon/SystemControllerMisc/mtime_reg[1]'
+INFO: [Synth 8-3886] merging instance 'syscon/SystemControllerMisc/mtime_reg[25]' (FDRE) to 'syscon/SystemControllerMisc/mtime_reg[1]'
+INFO: [Synth 8-3886] merging instance 'syscon/SystemControllerMisc/mtime_reg[9]' (FDRE) to 'syscon/SystemControllerMisc/mtime_reg[1]'
+INFO: [Synth 8-3886] merging instance 'syscon/SystemControllerMisc/mtime_reg[17]' (FDRE) to 'syscon/SystemControllerMisc/mtime_reg[1]'
+INFO: [Synth 8-3886] merging instance 'syscon/SystemControllerMisc/mtime_reg[1]' (FDRE) to 'syscon/SystemControllerMisc/mtime_reg[3]'
+INFO: [Synth 8-3886] merging instance 'syscon/SystemControllerMisc/mtime_reg[27]' (FDRE) to 'syscon/SystemControllerMisc/mtime_reg[3]'
+INFO: [Synth 8-3886] merging instance 'syscon/SystemControllerMisc/mtime_reg[11]' (FDRE) to 'syscon/SystemControllerMisc/mtime_reg[3]'
+INFO: [Synth 8-3886] merging instance 'syscon/SystemControllerMisc/mtime_reg[19]' (FDRE) to 'syscon/SystemControllerMisc/mtime_reg[3]'
+INFO: [Synth 8-3886] merging instance 'syscon/SystemControllerMisc/mtime_reg[3]' (FDRE) to 'syscon/SystemControllerMisc/mtime_reg[7]'
+INFO: [Synth 8-3886] merging instance 'syscon/SystemControllerMisc/mtime_reg[23]' (FDRE) to 'syscon/SystemControllerMisc/mtime_reg[7]'
+INFO: [Synth 8-3886] merging instance 'syscon/SystemControllerMisc/mtime_reg[7]' (FDRE) to 'syscon/SystemControllerMisc/mtime_reg[15]'
+INFO: [Synth 8-3886] merging instance 'syscon/SystemControllerMisc/mtime_reg[15]' (FDRE) to 'syscon/SystemControllerMisc/mtime_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (syscon/SystemControllerMisc/\mtime_reg[31] )
+INFO: [Synth 8-3886] merging instance 'gpio2_module/ext_pad_s_reg[30]' (FDC) to 'gpio2_module/ext_pad_s_reg[31]'
+INFO: [Synth 8-3886] merging instance 'gpio2_module/ext_pad_s_reg[14]' (FDC) to 'gpio2_module/ext_pad_s_reg[31]'
+INFO: [Synth 8-3886] merging instance 'gpio2_module/ext_pad_s_reg[22]' (FDC) to 'gpio2_module/ext_pad_s_reg[31]'
+INFO: [Synth 8-3886] merging instance 'gpio2_module/ext_pad_s_reg[6]' (FDC) to 'gpio2_module/ext_pad_s_reg[31]'
+INFO: [Synth 8-3886] merging instance 'gpio2_module/ext_pad_s_reg[26]' (FDC) to 'gpio2_module/ext_pad_s_reg[31]'
+INFO: [Synth 8-3886] merging instance 'gpio2_module/ext_pad_s_reg[10]' (FDC) to 'gpio2_module/ext_pad_s_reg[31]'
+INFO: [Synth 8-3886] merging instance 'gpio2_module/ext_pad_s_reg[18]' (FDC) to 'gpio2_module/ext_pad_s_reg[31]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (spi_master_flash/\spcr_reg[4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (spi_master_accel/\spcr_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (accelerator_top/wb_interface/\wb_adr_is_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio_module/wb_err_o_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio2_module/wb_err_o_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (timer_ptc3/wb_module_timer/\wb_dat_o_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (timer_ptc2/wb_module_timer/\wb_dat_o_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (timer_ptc4/wb_module_timer/\wb_dat_o_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio_module/clk_s_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio2_module/\ext_pad_s_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio_module/clk_r_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio2_module/clk_r_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio_module/\pextc_sampled_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio2_module/\pextc_sampled_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio_module/\pextc_sampled_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio2_module/\pextc_sampled_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio_module/\pextc_sampled_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio2_module/\pextc_sampled_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio_module/\pextc_sampled_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio2_module/\pextc_sampled_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio_module/\pextc_sampled_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio2_module/\pextc_sampled_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio_module/\pextc_sampled_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio2_module/\pextc_sampled_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio_module/\pextc_sampled_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio2_module/\pextc_sampled_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio_module/\pextc_sampled_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio2_module/\pextc_sampled_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio_module/\pextc_sampled_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio2_module/\pextc_sampled_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio_module/\pextc_sampled_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio2_module/\pextc_sampled_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio_module/\pextc_sampled_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio2_module/\pextc_sampled_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio_module/\pextc_sampled_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio2_module/\pextc_sampled_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio_module/\pextc_sampled_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio2_module/\pextc_sampled_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio_module/\pextc_sampled_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio2_module/\pextc_sampled_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio_module/\pextc_sampled_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio2_module/\pextc_sampled_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio_module/\pextc_sampled_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio2_module/\pextc_sampled_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio_module/\pextc_sampled_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio2_module/\pextc_sampled_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio_module/\pextc_sampled_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio2_module/\pextc_sampled_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio_module/\pextc_sampled_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio2_module/\pextc_sampled_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio_module/\pextc_sampled_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio2_module/\pextc_sampled_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio_module/\pextc_sampled_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio2_module/\pextc_sampled_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio_module/\pextc_sampled_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio2_module/\pextc_sampled_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio_module/\pextc_sampled_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio2_module/\pextc_sampled_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio_module/\pextc_sampled_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio2_module/\pextc_sampled_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio_module/\pextc_sampled_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio2_module/\pextc_sampled_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio_module/\pextc_sampled_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio2_module/\pextc_sampled_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio_module/\pextc_sampled_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio2_module/\pextc_sampled_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio_module/\pextc_sampled_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio2_module/\pextc_sampled_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio_module/\pextc_sampled_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio2_module/\pextc_sampled_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio_module/\pextc_sampled_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio2_module/\pextc_sampled_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio_module/\pextc_sampled_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio2_module/\pextc_sampled_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio_module/\pextc_sampled_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio2_module/\pextc_sampled_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio2_module/\rgpio_in_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (axi_intercon/axi_xbar/\gen_slv_port_demux[0].i_axi_err_slv /i_w_fifo/\read_pointer_q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (axi_intercon/axi_xbar/\gen_slv_port_demux[0].i_axi_err_slv /i_w_fifo/\read_pointer_q_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (axi_intercon/axi_xbar/\gen_slv_port_demux[0].i_axi_err_slv /i_b_fifo/\write_pointer_q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (axi_intercon/axi_xbar/\gen_slv_port_demux[0].i_axi_err_slv /i_b_fifo/\mem_q_reg[0][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (axi_intercon/axi_xbar/\gen_slv_port_demux[0].i_axi_err_slv /i_b_fifo/\mem_q_reg[0][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (axi_intercon/axi_xbar/\gen_slv_port_demux[0].i_axi_err_slv /i_b_fifo/\mem_q_reg[0][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (axi_intercon/axi_xbar/\gen_slv_port_demux[0].i_axi_err_slv /i_b_fifo/\mem_q_reg[0][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (axi_intercon/axi_xbar/\gen_slv_port_demux[0].i_axi_err_slv /i_b_fifo/\read_pointer_q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (axi_intercon/axi_xbar/\gen_slv_port_demux[0].i_axi_demux /\gen_demux.i_aw_spill_reg /\gen_spill_reg.a_data_q_reg[aw_select][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (axi_intercon/axi_xbar/\gen_slv_port_demux[0].i_axi_demux /\gen_demux.i_aw_spill_reg /\gen_spill_reg.a_data_q_reg[aw_chan][id][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (axi_intercon/axi_xbar/\gen_slv_port_demux[0].i_axi_demux /\gen_demux.i_aw_spill_reg /\gen_spill_reg.a_full_q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (axi_intercon/axi_xbar/\gen_slv_port_demux[2].i_axi_demux /\gen_demux.i_ar_spill_reg /\gen_spill_reg.a_data_q_reg[ar_chan][id][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (axi_intercon/axi_xbar/\gen_slv_port_demux[1].i_axi_demux /\gen_demux.i_ar_spill_reg /\gen_spill_reg.a_data_q_reg[ar_chan][id][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (axi_intercon/axi_xbar/\gen_slv_port_demux[0].i_axi_demux /\gen_demux.i_ar_spill_reg /\gen_spill_reg.a_data_q_reg[ar_chan][id][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (axi_intercon/axi_xbar/\gen_slv_port_demux[0].i_axi_err_slv /i_b_fifo/\status_cnt_q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (axi_intercon/axi_xbar/\gen_slv_port_demux[0].i_axi_err_slv /i_b_fifo/\status_cnt_q_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (axi_intercon/axi_xbar/\gen_slv_port_demux[0].i_axi_demux /\gen_demux.i_b_mux /\gen_arbiter.gen_int_rr.rr_q_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (axi_intercon/axi_xbar/\gen_slv_port_demux[0].i_axi_demux /\gen_demux.i_b_mux /\gen_arbiter.gen_int_rr.rr_q_reg[0] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:04:39 ; elapsed = 00:05:37 . Memory (MB): peak = 1989.645 ; gain = 1079.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++----------------+------------+---------------+----------------+
+|Module Name     | RTL Object | Depth x Width | Implemented As | 
++----------------+------------+---------------+----------------+
+|SevenSegDecoder | seg1       | 128x7         | LUT            | 
++----------------+------------+---------------+----------------+
+
+
+Block RAM: Preliminary Mapping Report (see note below)
++----------------------------------------------------+--------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                                         | RTL Object   | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++----------------------------------------------------+--------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|\Gen_dccm_enable.dccm /\mem_bank[0].dccm.dccm_bank  | ram_core_reg | 1 K x 39(NO_CHANGE)    | W | R |                        |   |   | Port A           | 1      | 1      | 
+|\Gen_dccm_enable.dccm /\mem_bank[1].dccm.dccm_bank  | ram_core_reg | 1 K x 39(NO_CHANGE)    | W | R |                        |   |   | Port A           | 1      | 1      | 
+|\Gen_dccm_enable.dccm /\mem_bank[2].dccm.dccm_bank  | ram_core_reg | 1 K x 39(NO_CHANGE)    | W | R |                        |   |   | Port A           | 1      | 1      | 
+|\Gen_dccm_enable.dccm /\mem_bank[3].dccm.dccm_bank  | ram_core_reg | 1 K x 39(NO_CHANGE)    | W | R |                        |   |   | Port A           | 1      | 1      | 
+|\iccm.iccm /\mem_bank[0].iccm.iccm_bank             | ram_core_reg | 256 x 39(NO_CHANGE)    | W | R |                        |   |   | Port A           | 2      | 0      | 
+|\iccm.iccm /\mem_bank[1].iccm.iccm_bank             | ram_core_reg | 256 x 39(NO_CHANGE)    | W | R |                        |   |   | Port A           | 2      | 0      | 
+|\iccm.iccm /\mem_bank[2].iccm.iccm_bank             | ram_core_reg | 256 x 39(NO_CHANGE)    | W | R |                        |   |   | Port A           | 2      | 0      | 
+|\iccm.iccm /\mem_bank[3].iccm.iccm_bank             | ram_core_reg | 256 x 39(NO_CHANGE)    | W | R |                        |   |   | Port A           | 2      | 0      | 
+|bootrom/ram                                         | mem_reg      | 512 x 64(READ_FIRST)   | W |   | 512 x 64(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|i_0/ram                                             | mem_reg      | 16 K x 64(READ_FIRST)  | W |   | 16 K x 64(WRITE_FIRST) |   | R | Port A and B     | 0      | 32     | 
+|i_0/vga_mem/ram                                     | mem_reg      | 512 x 64(READ_FIRST)   | W |   | 512 x 64(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
++----------------------------------------------------+--------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++-----------------------------------------------------------------------------------------+--------------+-----------+----------------------+------------------+
+|Module Name                                                                              | RTL Object   | Inference | Size (Depth x Width) | Primitives       | 
++-----------------------------------------------------------------------------------------+--------------+-----------+----------------------+------------------+
+|\icache.icm /ic_tag_inst/\PACKED_1.ECC0.size_64.WAYS.ic_way_tag                          | ram_core_reg | Implied   | 64 x 44              | RAM64X1S x 44    | 
+|\icache.icm /ic_data_inst/\PACKED_1.BANKS_WAY[0].ECC0.size_256.WAYS.ic_bank_sb_way_data  | ram_core_reg | Implied   | 256 x 136            | RAM256X1S x 136  | 
+|\icache.icm /ic_data_inst/\PACKED_1.BANKS_WAY[1].ECC0.size_256.WAYS.ic_bank_sb_way_data  | ram_core_reg | Implied   | 256 x 136            | RAM256X1S x 136  | 
+|spi_master_flash/rfifo                                                                   | mem_reg      | Implied   | 4 x 8                | RAM32M x 2       | 
+|spi_master_flash/wfifo                                                                   | mem_reg      | Implied   | 4 x 8                | RAM32M x 2       | 
+|spi_master_accel/rfifo                                                                   | mem_reg      | Implied   | 4 x 8                | RAM32M x 2       | 
+|spi_master_accel/wfifo                                                                   | mem_reg      | Implied   | 4 x 8                | RAM32M x 2       | 
+|uart16550_0/regs/transmitter/fifo_tx/tfifo                                               | ram_reg      | Implied   | 16 x 8               | RAM32M x 2       | 
+|uart16550_0/regs/receiver/fifo_rx/rfifo                                                  | ram_reg      | Implied   | 16 x 8               | RAM32M x 2       | 
++-----------------------------------------------------------------------------------------+--------------+-----------+----------------------+------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:04:47 ; elapsed = 00:05:47 . Memory (MB): peak = 1989.645 ; gain = 1079.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++----------------------------------------------------+--------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                                         | RTL Object   | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++----------------------------------------------------+--------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|\Gen_dccm_enable.dccm /\mem_bank[0].dccm.dccm_bank  | ram_core_reg | 1 K x 39(NO_CHANGE)    | W | R |                        |   |   | Port A           | 1      | 1      | 
+|\Gen_dccm_enable.dccm /\mem_bank[1].dccm.dccm_bank  | ram_core_reg | 1 K x 39(NO_CHANGE)    | W | R |                        |   |   | Port A           | 1      | 1      | 
+|\Gen_dccm_enable.dccm /\mem_bank[2].dccm.dccm_bank  | ram_core_reg | 1 K x 39(NO_CHANGE)    | W | R |                        |   |   | Port A           | 1      | 1      | 
+|\Gen_dccm_enable.dccm /\mem_bank[3].dccm.dccm_bank  | ram_core_reg | 1 K x 39(NO_CHANGE)    | W | R |                        |   |   | Port A           | 1      | 1      | 
+|\iccm.iccm /\mem_bank[0].iccm.iccm_bank             | ram_core_reg | 256 x 39(NO_CHANGE)    | W | R |                        |   |   | Port A           | 2      | 0      | 
+|\iccm.iccm /\mem_bank[1].iccm.iccm_bank             | ram_core_reg | 256 x 39(NO_CHANGE)    | W | R |                        |   |   | Port A           | 2      | 0      | 
+|\iccm.iccm /\mem_bank[2].iccm.iccm_bank             | ram_core_reg | 256 x 39(NO_CHANGE)    | W | R |                        |   |   | Port A           | 2      | 0      | 
+|\iccm.iccm /\mem_bank[3].iccm.iccm_bank             | ram_core_reg | 256 x 39(NO_CHANGE)    | W | R |                        |   |   | Port A           | 2      | 0      | 
+|bootrom/ram                                         | mem_reg      | 512 x 64(READ_FIRST)   | W |   | 512 x 64(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|i_0/ram                                             | mem_reg      | 16 K x 64(READ_FIRST)  | W |   | 16 K x 64(WRITE_FIRST) |   | R | Port A and B     | 0      | 32     | 
+|i_0/vga_mem/ram                                     | mem_reg      | 512 x 64(READ_FIRST)   | W |   | 512 x 64(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
++----------------------------------------------------+--------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+
+Distributed RAM: Final Mapping Report
++-----------------------------------------------------------------------------------------+--------------+-----------+----------------------+------------------+
+|Module Name                                                                              | RTL Object   | Inference | Size (Depth x Width) | Primitives       | 
++-----------------------------------------------------------------------------------------+--------------+-----------+----------------------+------------------+
+|\icache.icm /ic_tag_inst/\PACKED_1.ECC0.size_64.WAYS.ic_way_tag                          | ram_core_reg | Implied   | 64 x 44              | RAM64X1S x 44    | 
+|\icache.icm /ic_data_inst/\PACKED_1.BANKS_WAY[0].ECC0.size_256.WAYS.ic_bank_sb_way_data  | ram_core_reg | Implied   | 256 x 136            | RAM256X1S x 136  | 
+|\icache.icm /ic_data_inst/\PACKED_1.BANKS_WAY[1].ECC0.size_256.WAYS.ic_bank_sb_way_data  | ram_core_reg | Implied   | 256 x 136            | RAM256X1S x 136  | 
+|spi_master_flash/rfifo                                                                   | mem_reg      | Implied   | 4 x 8                | RAM32M x 2       | 
+|spi_master_flash/wfifo                                                                   | mem_reg      | Implied   | 4 x 8                | RAM32M x 2       | 
+|spi_master_accel/rfifo                                                                   | mem_reg      | Implied   | 4 x 8                | RAM32M x 2       | 
+|spi_master_accel/wfifo                                                                   | mem_reg      | Implied   | 4 x 8                | RAM32M x 2       | 
+|uart16550_0/regs/transmitter/fifo_tx/tfifo                                               | ram_reg      | Implied   | 16 x 8               | RAM32M x 2       | 
+|uart16550_0/regs/receiver/fifo_rx/rfifo                                                  | ram_reg      | Implied   | 16 x 8               | RAM32M x 2       | 
++-----------------------------------------------------------------------------------------+--------------+-----------+----------------------+------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance swervolf/i_0/bootrom/ram/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/ram/mem_reg_0_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/ram/mem_reg_0_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/ram/mem_reg_0_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/ram/mem_reg_0_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/ram/mem_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/ram/mem_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/ram/mem_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/ram/mem_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/ram/mem_reg_2_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/ram/mem_reg_2_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/ram/mem_reg_2_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/ram/mem_reg_2_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/ram/mem_reg_3_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/ram/mem_reg_3_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/ram/mem_reg_3_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/ram/mem_reg_3_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/ram/mem_reg_4_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/ram/mem_reg_4_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/ram/mem_reg_4_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/ram/mem_reg_4_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/ram/mem_reg_5_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/ram/mem_reg_5_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/ram/mem_reg_5_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/ram/mem_reg_5_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/ram/mem_reg_6_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/ram/mem_reg_6_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/ram/mem_reg_6_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/ram/mem_reg_6_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/ram/mem_reg_7_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/ram/mem_reg_7_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/ram/mem_reg_7_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/ram/mem_reg_7_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_0/vga_mem/ram/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance swervolf/rvtop/mem/Gen_dccm_enable.dccm/mem_bank[0].dccm.dccm_bank/ram_core_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance swervolf/rvtop/mem/Gen_dccm_enable.dccm/mem_bank[0].dccm.dccm_bank/ram_core_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance swervolf/rvtop/mem/Gen_dccm_enable.dccm/mem_bank[1].dccm.dccm_bank/ram_core_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance swervolf/rvtop/mem/Gen_dccm_enable.dccm/mem_bank[1].dccm.dccm_bank/ram_core_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance swervolf/rvtop/mem/Gen_dccm_enable.dccm/mem_bank[2].dccm.dccm_bank/ram_core_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance swervolf/rvtop/mem/Gen_dccm_enable.dccm/mem_bank[2].dccm.dccm_bank/ram_core_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance swervolf/rvtop/mem/Gen_dccm_enable.dccm/mem_bank[3].dccm.dccm_bank/ram_core_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance swervolf/rvtop/mem/Gen_dccm_enable.dccm/mem_bank[3].dccm.dccm_bank/ram_core_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance swervolf/rvtop/mem/iccm.iccm/mem_bank[0].iccm.iccm_bank/ram_core_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance swervolf/rvtop/mem/iccm.iccm/mem_bank[0].iccm.iccm_bank/ram_core_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance swervolf/rvtop/mem/iccm.iccm/mem_bank[0].iccm.iccm_bank/ram_core_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance swervolf/rvtop/mem/iccm.iccm/mem_bank[1].iccm.iccm_bank/ram_core_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance swervolf/rvtop/mem/iccm.iccm/mem_bank[1].iccm.iccm_bank/ram_core_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance swervolf/rvtop/mem/iccm.iccm/mem_bank[1].iccm.iccm_bank/ram_core_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance swervolf/rvtop/mem/iccm.iccm/mem_bank[2].iccm.iccm_bank/ram_core_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance swervolf/rvtop/mem/iccm.iccm/mem_bank[2].iccm.iccm_bank/ram_core_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance swervolf/rvtop/mem/iccm.iccm/mem_bank[2].iccm.iccm_bank/ram_core_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance swervolf/rvtop/mem/iccm.iccm/mem_bank[3].iccm.iccm_bank/ram_core_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance swervolf/rvtop/mem/iccm.iccm/mem_bank[3].iccm.iccm_bank/ram_core_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance swervolf/rvtop/mem/iccm.iccm/mem_bank[3].iccm.iccm_bank/ram_core_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:05:04 ; elapsed = 00:06:06 . Memory (MB): peak = 1989.645 ; gain = 1079.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:05:10 ; elapsed = 00:06:13 . Memory (MB): peak = 1989.645 ; gain = 1079.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:05:10 ; elapsed = 00:06:13 . Memory (MB): peak = 1989.645 ; gain = 1079.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:05:11 ; elapsed = 00:06:14 . Memory (MB): peak = 1989.645 ; gain = 1079.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++----------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name     | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++----------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|el2_exu_mul_ctl | A*B         | 17     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|el2_exu_mul_ctl | C+A*B       | 30     | 18     | 48     | -      | 48     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|el2_exu_mul_ctl | A*B         | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|el2_exu_mul_ctl | C+A*B       | 17     | 18     | 48     | -      | 48     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
++----------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++------+----------------+----------+
+|      |BlackBox name   |Instances |
++------+----------------+----------+
+|1     |ila_accelerator |         1|
++------+----------------+----------+
+
+Report Cell Usage: 
++------+----------------+------+
+|      |Cell            |Count |
++------+----------------+------+
+|1     |ila_accelerator |     1|
+|2     |BUFG            |     6|
+|3     |CARRY4          |   946|
+|4     |DSP48E1         |     4|
+|6     |LUT1            |  1359|
+|7     |LUT2            |  3710|
+|8     |LUT3            | 13250|
+|9     |LUT4            |  5215|
+|10    |LUT5            |  6656|
+|11    |LUT6            | 13958|
+|12    |MUXF7           |   270|
+|13    |MUXF8           |    20|
+|14    |PLLE2_BASE      |     1|
+|15    |RAM256X1S       |   272|
+|16    |RAM32M          |     6|
+|17    |RAM32X1D        |    12|
+|18    |RAM64X1S        |    44|
+|19    |RAMB18E1        |    12|
+|21    |RAMB36E1        |    38|
+|25    |STARTUPE2       |     1|
+|26    |FDCE            | 12547|
+|27    |FDPE            |    31|
+|28    |FDRE            |   955|
+|29    |FDSE            |    25|
+|30    |LD              |    32|
+|31    |IBUF            |     7|
+|32    |IOBUF           |    21|
+|33    |OBUF            |    33|
++------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:05:11 ; elapsed = 00:06:14 . Memory (MB): peak = 1989.645 ; gain = 1079.301
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:04:43 ; elapsed = 00:06:04 . Memory (MB): peak = 1989.645 ; gain = 919.016
+Synthesis Optimization Complete : Time (s): cpu = 00:05:11 ; elapsed = 00:06:15 . Memory (MB): peak = 1989.645 ; gain = 1079.301
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.726 . Memory (MB): peak = 1989.645 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1679 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1989.645 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 388 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 21 instances
+  LD => LDCE: 32 instances
+  PLLE2_BASE => PLLE2_ADV: 1 instance 
+  RAM256X1S => RAM256X1S (MUXF7(x2), MUXF8, RAMS64E(x4)): 272 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 6 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 12 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 44 instances
+
+The system cannot find the path specified.
+Synth Design complete | Checksum: eb380646
+INFO: [Common 17-83] Releasing license: Synthesis
+521 Infos, 327 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:05:25 ; elapsed = 00:06:31 . Memory (MB): peak = 1989.645 ; gain = 1478.297
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.113 . Memory (MB): peak = 1989.645 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/RVfpgaEL2_01 2 - lab2/RVfpgaEL2_01/vivado/nexysA7card.runs/synth_1/rvfpganexys.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file rvfpganexys_utilization_synth.rpt -pb rvfpganexys_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat May  9 19:28:20 2026...

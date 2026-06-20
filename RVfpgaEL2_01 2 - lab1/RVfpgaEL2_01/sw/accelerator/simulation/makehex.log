@@ -1,0 +1,17 @@
+item name <DirEntry 'accelerator.emProject'>
+project {'Name': 'HelloWorld_C-lang'}
+bin file name HelloWorld_C-lang
+bin file name ..\Output\Debug\Exe\HelloWorld_C-lang.bin
+Binfile timestamp 1717328139.8679323
+*****************
+BinFileTimeStamp Date (Local time): 2024-06-02 14:35:39.867932
+HelloWorld_C-Lang.c
+File Name:  HelloWorld_C-Lang
+File Extension:  .c
+add and sort HelloWorld_C-Lang.c
+HelloWorld_C-Lang.c ..\Source\HelloWorld_C-Lang.c 1856 1717327576.1927185
+*****************
+SourceFilesOldestTimeStamp: 1717328137
+source_time_list: [<DirEntry 'HelloWorld_C-Lang.c'>]
+SourceFilesOldestTimeStamp Date (Local time): 2024-06-02 14:26:16.192719
+vhFile ===>  HelloWorld_C-lang.vh

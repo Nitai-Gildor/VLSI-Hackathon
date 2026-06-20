@@ -1,0 +1,10 @@
+Time resolution is 1 ps
+Test start *******
+[              670000] Wishbone bus write addr 00000004 data 01020304
+[             1190000] Wishbone bus write addr 00000008 data 01010101
+[             1710000] Wishbone bus write addr 0000000c data 05060708
+[             2230000] Wishbone bus write addr 00000010 data 01010101
+[             2750000] Wishbone bus write addr 00000000 data 00000001
+[             3320000] Wishbone bus write addr 00000000 data 00000000
+[             3840000] Wishbone bus  read addr 00000014 data 00000024
+Test complete ******

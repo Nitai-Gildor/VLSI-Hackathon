@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  -d "XSIM=1" \
+"../../../../../../rtl/VeeRwolf/Peripherals/accelerator_hackaton/accelerator.sv" \
+"../../../../../../rtl/VeeRwolf/Peripherals/accelerator_hackaton/accelerator_regs.sv" \
+"../../../../../../rtl/VeeRwolf/Peripherals/accelerator_hackaton/accelerator_top.sv" \
+"../../../../../../rtl/VeeRwolf/Peripherals/accelerator_hackaton/accelerator_wb.sv" \
+"../../../../tb/wishbone_accelerator_tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

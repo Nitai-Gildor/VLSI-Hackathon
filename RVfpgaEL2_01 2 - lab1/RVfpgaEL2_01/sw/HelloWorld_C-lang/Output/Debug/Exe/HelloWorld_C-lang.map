@@ -1,0 +1,345 @@
+***********************************************************************************************
+***                                                                                         ***
+***                                    LINK INFORMATION                                     ***
+***                                                                                         ***
+***********************************************************************************************
+
+Linker version:
+
+  SEGGER RISC-V Linker 4.44.1 compiled Dec 19 2024 18:37:45
+  Copyright (c) 2017-2024 SEGGER Microcontroller GmbH    www.segger.com
+
+
+***********************************************************************************************
+***                                                                                         ***
+***                                     MODULE SUMMARY                                      ***
+***                                                                                         ***
+***********************************************************************************************
+
+Memory use by input file:
+
+  Object File                                       RX Code     RO Data     RW Data     ZI Data
+  ---------------------------------------------  ----------  ----------  ----------  ----------
+  bsp_printf.o                                        2 136         336                        
+  psp_performance_monitor_el2.o                         740         256                        
+  q2.o                                                  280         105                        
+  SEGGER_RV32_crt0.o                                     88                                    
+  ---------------------------------------------  ----------  ----------  ----------  ----------
+  Subtotal (4 objects)                                3 244         697                        
+  ---------------------------------------------  ----------  ----------  ----------  ----------
+  libc_rv32i_balanced.a                                 204                                    
+  SEGGER_RV32_crtinit_rv32i_balanced.a                  168                                    
+  ---------------------------------------------  ----------  ----------  ----------  ----------
+  Subtotal (2 archives)                                 372                                    
+  ---------------------------------------------  ----------  ----------  ----------  ----------
+  Linker created (shared data, fills, blocks):                        4                   1 024
+  =============================================  ==========  ==========  ==========  ==========
+  Total:                                              3 616         701                   1 024
+  =============================================  ==========  ==========  ==========  ==========
+
+Memory use by archive member:
+
+  Archive member                                    RX Code     RO Data     RW Data     ZI Data
+  ---------------------------------------------  ----------  ----------  ----------  ----------
+  intasmops_rv.o (libc_rv32i_balanced.a)                204                                    
+  SEGGER_RV32_crtinit.o (SEGGER_RV32_crtinit_rv32i_balanced.a)
+                                                        168                                    
+  ---------------------------------------------  ----------  ----------  ----------  ----------
+  Subtotal (2 members from 2 archives)                  372                                    
+  Objects (4 files)                                   3 244         697                        
+  Linker created (shared data, fills, blocks):                        4                   1 024
+  =============================================  ==========  ==========  ==========  ==========
+  Total:                                              3 616         701                   1 024
+  =============================================  ==========  ==========  ==========  ==========
+
+Memory use by linker:
+
+  Description                                       RX Code     RO Data     RW Data     ZI Data
+  ---------------------------------------------  ----------  ----------  ----------  ----------
+  Initialization table                                                4                        
+  Memory for block 'stack'                                                                1 024
+  ---------------------------------------------  ----------  ----------  ----------  ----------
+  Subtotal (linker created):                                          4                   1 024
+  ---------------------------------------------  ----------  ----------  ----------  ----------
+  Objects (4 files)                                   3 244         697                        
+  Archives (2 files)                                    372                                    
+  =============================================  ==========  ==========  ==========  ==========
+  Total:                                              3 616         701                   1 024
+  =============================================  ==========  ==========  ==========  ==========
+
+
+***********************************************************************************************
+***                                                                                         ***
+***                                     SECTION DETAIL                                      ***
+***                                                                                         ***
+***********************************************************************************************
+
+Sections by address:
+
+  Range              Symbol or [section] Name         Size  Al  Init  Ac  Object File
+  -----------------  -------------------------  ----------  --  ----  --  -----------
+  00000000-00000057  _start                             88   4  Code  RX  SEGGER_RV32_crt0.o
+  00000058-00000097  $x.0                               64   4  Code  RX  bsp_printf.o
+  00000098-000000e7  $x.1                               80   4  Code  RX  bsp_printf.o
+  000000e8-0000011f  $x.2                               56   4  Code  RX  bsp_printf.o
+  00000120-0000045b  $x.5                              828   4  Code  RX  bsp_printf.o
+  0000045c-000005ab  [.rodata.uart_printf]             336   4  Cnst  RO  bsp_printf.o
+  000005ac-0000064b  getnum                            160   4  Code  RX  bsp_printf.o
+  0000064c-00000877  outnum                            556   4  Code  RX  bsp_printf.o
+  00000878-0000091f  outs                              168   4  Code  RX  bsp_printf.o
+  00000920-00000987  $x.10                             104   4  Code  RX  bsp_printf.o
+  00000988-000009ff  padding                           120   4  Code  RX  bsp_printf.o
+  00000a00-00000ce3  $x.0                              740   4  Code  RX  psp_performance_monitor_el2.o
+  00000ce4-00000de3  [.rodata.pspMachinePerfCounterGet]
+                                                       256   4  Cnst  RO  psp_performance_monitor_el2.o
+  00000de4-00000e97  $x.0                              180   4  Code  RX  q2.o
+  00000e98-00000efb  $x.1                              100   4  Code  RX  q2.o
+  00000efc-00000f33  __mulsi3                           56   4  Code  RX  intasmops_rv.o (libc_rv32i_balanced.a)
+  00000f34-00000f7b  __udivsi3                          72   4  Code  RX  intasmops_rv.o (libc_rv32i_balanced.a)
+  00000f7c-00000fc7  __umodsi3                          76   4  Code  RX  intasmops_rv.o (libc_rv32i_balanced.a)
+  00000fc8-00001067  trap_entry                        160   4  Code  RX  SEGGER_RV32_crtinit.o (SEGGER_RV32_crtinit_rv32i_balanced.a)
+  00001068-0000106b  handle_trap                         4   4  Code  RX  SEGGER_RV32_crtinit.o (SEGGER_RV32_crtinit_rv32i_balanced.a)
+  0000106c-0000106f  _init                               4   4  Code  RX  SEGGER_RV32_crtinit.o (SEGGER_RV32_crtinit_rv32i_balanced.a)
+  00001070-00001086  [.rodata..L.str.1]                 23   1  Cnst  RO  q2.o
+  00001087-0000109f  [.rodata..L.str.2]                 25   1  Cnst  RO  q2.o
+  000010a0-000010b8  [.rodata..L.str.3]                 25   1  Cnst  RO  q2.o
+  000010b9-000010bc  [.rodata..L.str]                    4   1  Cnst  RO  q2.o
+  000010bd-000010d8  [.rodata..L.str.4]                 28   1  Cnst  RO  q2.o
+  000010d9-000010db  ( UNUSED .=.+3 )                    3   -  ----  -   -
+  000010dc-000010df  __SEGGER_init_table__               4   4  Cnst  RO  [ Linker created ]
+  000010e0-03fffbff  ( UNUSED .=.+67103520 )    67 103 520   -  ----  -   -
+  03fffc00-03ffffff  [.bss.block.stack]              1 024   8  None  ZI  [ Linker created ]
+
+
+***********************************************************************************************
+***                                                                                         ***
+***                                       SYMBOL LIST                                       ***
+***                                                                                         ***
+***********************************************************************************************
+
+Function symbols by name:
+
+  Symbol name                   Address        Size  Align  Type  Bd  Object File
+  -------------------------  ----------  ----------  -----  ----  --  -----------
+  __SEGGER_init_done         0x00000040                  4  Code  Gb  SEGGER_RV32_crt0.o
+  __mulsi3                   0x00000EFC          56      4  Code  Gb  intasmops_rv.o (libc_rv32i_balanced.a)
+  __startup_complete         0x00000040                  4  Code  Gb  SEGGER_RV32_crt0.o
+  __udivsi3                  0x00000F34          72      4  Code  Gb  intasmops_rv.o (libc_rv32i_balanced.a)
+  __umodsi3                  0x00000F7C          76      4  Code  Gb  intasmops_rv.o (libc_rv32i_balanced.a)
+  _init                      0x0000106C         [4]      4  Code  Wk  SEGGER_RV32_crtinit.o (SEGGER_RV32_crtinit_rv32i_balanced.a)
+  _start                     0x00000000         100      4  Code  Gb  SEGGER_RV32_crt0.o
+  bsp_strlen                 0x00000058          64      4  Code  Gb  bsp_printf.o
+  exit                       0x00000054           4      4  Code  Gb  SEGGER_RV32_crt0.o
+  fibonacci                  0x00000DE4         228      4  Code  Gb  q2.o
+  getnum                     0x000005AC         164      4  Code  Lc  bsp_printf.o
+  handle_trap                0x00001068         [4]      4  Code  Wk  SEGGER_RV32_crtinit.o (SEGGER_RV32_crtinit_rv32i_balanced.a)
+  main                       0x00000E98         128      4  Code  Gb  q2.o
+  outnum                     0x0000064C         580      4  Code  Lc  bsp_printf.o
+  outs                       0x00000878         188      4  Code  Lc  bsp_printf.o
+  padding                    0x00000988         124      4  Code  Lc  bsp_printf.o
+  printUartPutchar           0x00000098          84      4  Code  Gb  bsp_printf.o
+  printfNexys                0x00000920         112      4  Code  Gb  bsp_printf.o
+  pspMachinePerfCounterGet   0x00000AC4         548      4  Code  Gb  psp_performance_monitor_el2.o
+  pspMachinePerfCounterSet   0x00000A48         124      4  Code  Gb  psp_performance_monitor_el2.o
+  pspMachinePerfMonitorDisableAll
+                             0x00000A00          12      4  Code  Gb  psp_performance_monitor_el2.o
+  pspMachinePerfMonitorDisableCounter
+                             0x00000A18          24      4  Code  Gb  psp_performance_monitor_el2.o
+  pspMachinePerfMonitorEnableAll
+                             0x00000A0C          12      4  Code  Gb  psp_performance_monitor_el2.o
+  pspMachinePerfMonitorEnableCounter
+                             0x00000A30          24      4  Code  Gb  psp_performance_monitor_el2.o
+  trap_entry                 0x00000FC8       [160]      4  Code  Wk  SEGGER_RV32_crtinit.o (SEGGER_RV32_crtinit_rv32i_balanced.a)
+  uartInit                   0x000000E8          56      4  Code  Gb  bsp_printf.o
+  uart_printf                0x00000120         892      4  Code  Gb  bsp_printf.o
+
+Function symbols by address:
+
+     Address  Symbol name                      Size  Align  Type  Bd  Object File
+  ----------  -------------------------  ----------  -----  ----  --  -----------
+  0x00000000  _start                            100      4  Code  Gb  SEGGER_RV32_crt0.o
+  0x00000040  __startup_complete                         4  Code  Gb  SEGGER_RV32_crt0.o
+  0x00000040  __SEGGER_init_done                         4  Code  Gb  SEGGER_RV32_crt0.o
+  0x00000054  exit                                4      4  Code  Gb  SEGGER_RV32_crt0.o
+  0x00000058  bsp_strlen                         64      4  Code  Gb  bsp_printf.o
+  0x00000098  printUartPutchar                   84      4  Code  Gb  bsp_printf.o
+  0x000000E8  uartInit                           56      4  Code  Gb  bsp_printf.o
+  0x00000120  uart_printf                       892      4  Code  Gb  bsp_printf.o
+  0x000005AC  getnum                            164      4  Code  Lc  bsp_printf.o
+  0x0000064C  outnum                            580      4  Code  Lc  bsp_printf.o
+  0x00000878  outs                              188      4  Code  Lc  bsp_printf.o
+  0x00000920  printfNexys                       112      4  Code  Gb  bsp_printf.o
+  0x00000988  padding                           124      4  Code  Lc  bsp_printf.o
+  0x00000A00  pspMachinePerfMonitorDisableAll
+                                                 12      4  Code  Gb  psp_performance_monitor_el2.o
+  0x00000A0C  pspMachinePerfMonitorEnableAll
+                                                 12      4  Code  Gb  psp_performance_monitor_el2.o
+  0x00000A18  pspMachinePerfMonitorDisableCounter
+                                                 24      4  Code  Gb  psp_performance_monitor_el2.o
+  0x00000A30  pspMachinePerfMonitorEnableCounter
+                                                 24      4  Code  Gb  psp_performance_monitor_el2.o
+  0x00000A48  pspMachinePerfCounterSet          124      4  Code  Gb  psp_performance_monitor_el2.o
+  0x00000AC4  pspMachinePerfCounterGet          548      4  Code  Gb  psp_performance_monitor_el2.o
+  0x00000DE4  fibonacci                         228      4  Code  Gb  q2.o
+  0x00000E98  main                              128      4  Code  Gb  q2.o
+  0x00000EFC  __mulsi3                           56      4  Code  Gb  intasmops_rv.o (libc_rv32i_balanced.a)
+  0x00000F34  __udivsi3                          72      4  Code  Gb  intasmops_rv.o (libc_rv32i_balanced.a)
+  0x00000F7C  __umodsi3                          76      4  Code  Gb  intasmops_rv.o (libc_rv32i_balanced.a)
+  0x00000FC8  trap_entry                      [160]      4  Code  Wk  SEGGER_RV32_crtinit.o (SEGGER_RV32_crtinit_rv32i_balanced.a)
+  0x00001068  handle_trap                       [4]      4  Code  Wk  SEGGER_RV32_crtinit.o (SEGGER_RV32_crtinit_rv32i_balanced.a)
+  0x0000106C  _init                             [4]      4  Code  Wk  SEGGER_RV32_crtinit.o (SEGGER_RV32_crtinit_rv32i_balanced.a)
+
+Function symbols by descending size:
+
+  Symbol name                      Size  Align  Type  Bd  Object File
+  -------------------------  ----------  -----  ----  --  -----------
+  uart_printf                       892      4  Code  Gb  bsp_printf.o
+  outnum                            580      4  Code  Lc  bsp_printf.o
+  pspMachinePerfCounterGet          548      4  Code  Gb  psp_performance_monitor_el2.o
+  fibonacci                         228      4  Code  Gb  q2.o
+  outs                              188      4  Code  Lc  bsp_printf.o
+  getnum                            164      4  Code  Lc  bsp_printf.o
+  main                              128      4  Code  Gb  q2.o
+  padding                           124      4  Code  Lc  bsp_printf.o
+  pspMachinePerfCounterSet          124      4  Code  Gb  psp_performance_monitor_el2.o
+  printfNexys                       112      4  Code  Gb  bsp_printf.o
+  _start                            100      4  Code  Gb  SEGGER_RV32_crt0.o
+  printUartPutchar                   84      4  Code  Gb  bsp_printf.o
+  __umodsi3                          76      4  Code  Gb  intasmops_rv.o (libc_rv32i_balanced.a)
+  __udivsi3                          72      4  Code  Gb  intasmops_rv.o (libc_rv32i_balanced.a)
+  bsp_strlen                         64      4  Code  Gb  bsp_printf.o
+  __mulsi3                           56      4  Code  Gb  intasmops_rv.o (libc_rv32i_balanced.a)
+  uartInit                           56      4  Code  Gb  bsp_printf.o
+  pspMachinePerfMonitorDisableCounter
+                                     24      4  Code  Gb  psp_performance_monitor_el2.o
+  pspMachinePerfMonitorEnableCounter
+                                     24      4  Code  Gb  psp_performance_monitor_el2.o
+  pspMachinePerfMonitorDisableAll
+                                     12      4  Code  Gb  psp_performance_monitor_el2.o
+  pspMachinePerfMonitorEnableAll
+                                     12      4  Code  Gb  psp_performance_monitor_el2.o
+  exit                                4      4  Code  Gb  SEGGER_RV32_crt0.o
+  __SEGGER_init_done                         4  Code  Gb  SEGGER_RV32_crt0.o
+  __startup_complete                         4  Code  Gb  SEGGER_RV32_crt0.o
+  _init                             [4]      4  Code  Wk  SEGGER_RV32_crtinit.o (SEGGER_RV32_crtinit_rv32i_balanced.a)
+  handle_trap                       [4]      4  Code  Wk  SEGGER_RV32_crtinit.o (SEGGER_RV32_crtinit_rv32i_balanced.a)
+  trap_entry                      [160]      4  Code  Wk  SEGGER_RV32_crtinit.o (SEGGER_RV32_crtinit_rv32i_balanced.a)
+
+Read-only data symbols by name:
+
+  Global base (gp) at 0x00000CB0
+  Thread base (tp) at 0x00000800
+  
+  Symbol name                   Address     Access        Size  Align  Type  Bd  Object File
+  -------------------------  ----------  ---------  ----------  -----  ----  --  -----------
+  __SEGGER_init_table__      0x000010DC  gp+0x042C         [4]      4  Cnst  Lc  [ Linker created ]
+
+Read-only data symbols by address:
+
+  Global base (gp) at 0x00000CB0
+  Thread base (tp) at 0x00000800
+  
+     Address     Access  Symbol name                      Size  Align  Type  Bd  Object File
+  ----------  ---------  -------------------------  ----------  -----  ----  --  -----------
+  0x000010DC  gp+0x042C  __SEGGER_init_table__             [4]      4  Cnst  Lc  [ Linker created ]
+
+Untyped symbols by name:
+
+  Global base (gp) at 0x00000CB0
+  Thread base (tp) at 0x00000800
+  
+  Symbol name                     Value     Access        Size  Align  Type  Bd  Object File
+  -------------------------  ----------  ---------  ----------  -----  ----  --  -----------
+  $x.0                       0x00000058  tp-0x07A8        [64]      4  Code  Lc  bsp_printf.o
+  $x.0                       0x00000A00  gp-0x02B0       [740]      4  Code  Lc  psp_performance_monitor_el2.o
+  $x.0                       0x00000DE4  gp+0x0134       [180]      4  Code  Lc  q2.o
+  $x.1                       0x00000098  tp-0x0768        [80]      4  Code  Lc  bsp_printf.o
+  $x.1                       0x00000E98  gp+0x01E8       [100]      4  Code  Lc  q2.o
+  $x.10                      0x00000920  gp-0x0390       [104]      4  Code  Lc  bsp_printf.o
+  $x.11                      0x00000988  gp-0x0328       [120]      4  Code  Lc  bsp_printf.o
+  $x.2                       0x000000E8  tp-0x0718        [56]      4  Code  Lc  bsp_printf.o
+  $x.5                       0x00000120  tp-0x06E0       [828]      4  Code  Lc  bsp_printf.o
+  $x.7                       0x000005AC  gp-0x0704       [160]      4  Code  Lc  bsp_printf.o
+  $x.8                       0x0000064C  gp-0x0664       [556]      4  Code  Lc  bsp_printf.o
+  $x.9                       0x00000878  gp-0x0438       [168]      4  Code  Lc  bsp_printf.o
+  __HEAPSIZE__               0x00000400  tp-0x0400                     ----  Gb  [ Linker created ]
+  __RAM1_segment_end__       0x04000000                                ----  Gb  [ Linker created ]
+  __RAM1_segment_size__      0x04000000                                ----  Gb  [ Linker created ]
+  __RAM1_segment_start__     0x00000000  tp-0x0800                     ----  Gb  [ Linker created ]
+  __RAM1_segment_used_end__  0x04000000                                ----  Gb  [ Linker created ]
+  __RAM1_segment_used_size__
+                             0x04000000                                ----  Gb  [ Linker created ]
+  __RAM1_segment_used_start__
+                             0x00000000  tp-0x0800                     ----  Gb  [ Linker created ]
+  __RAM_segment_end__        0x04000000                                ----  Gb  [ Linker created ]
+  __RAM_segment_size__       0x04000000                                ----  Gb  [ Linker created ]
+  __RAM_segment_start__      0x00000000  tp-0x0800                     ----  Gb  [ Linker created ]
+  __RAM_segment_used_end__   0x04000000                                ----  Gb  [ Linker created ]
+  __RAM_segment_used_size__  0x04000000                                ----  Gb  [ Linker created ]
+  __RAM_segment_used_start__
+                             0x00000000  tp-0x0800                     ----  Gb  [ Linker created ]
+  __STACKSIZE__              0x00000400  tp-0x0400                     ----  Gb  [ Linker created ]
+  __global_pointer$          0x00000CB0  gp+0x0000                     ----  Gb  [ Linker created ]
+  __stack_end__              0x04000000                                ----  Gb  [ Linker created ]
+  __thread_pointer$          0x00000800  gp-0x04B0                     ----  Gb  [ Linker created ]
+
+Untyped symbols by address:
+
+  Global base (gp) at 0x00000CB0
+  Thread base (tp) at 0x00000800
+  
+       Value     Access  Symbol name                      Size  Align  Type  Bd  Object File
+  ----------  ---------  -------------------------  ----------  -----  ----  --  -----------
+  0x00000000  tp-0x0800  __RAM_segment_used_start__
+                                                                       ----  Gb  [ Linker created ]
+  0x00000000  tp-0x0800  __RAM_segment_start__                         ----  Gb  [ Linker created ]
+  0x00000000  tp-0x0800  __RAM1_segment_used_start__
+                                                                       ----  Gb  [ Linker created ]
+  0x00000000  tp-0x0800  __RAM1_segment_start__                        ----  Gb  [ Linker created ]
+  0x00000058  tp-0x07A8  $x.0                             [64]      4  Code  Lc  bsp_printf.o
+  0x00000098  tp-0x0768  $x.1                             [80]      4  Code  Lc  bsp_printf.o
+  0x000000E8  tp-0x0718  $x.2                             [56]      4  Code  Lc  bsp_printf.o
+  0x00000120  tp-0x06E0  $x.5                            [828]      4  Code  Lc  bsp_printf.o
+  0x00000400  tp-0x0400  __STACKSIZE__                                 ----  Gb  [ Linker created ]
+  0x00000400  tp-0x0400  __HEAPSIZE__                                  ----  Gb  [ Linker created ]
+  0x000005AC  gp-0x0704  $x.7                            [160]      4  Code  Lc  bsp_printf.o
+  0x0000064C  gp-0x0664  $x.8                            [556]      4  Code  Lc  bsp_printf.o
+  0x00000800  gp-0x04B0  __thread_pointer$                             ----  Gb  [ Linker created ]
+  0x00000878  gp-0x0438  $x.9                            [168]      4  Code  Lc  bsp_printf.o
+  0x00000920  gp-0x0390  $x.10                           [104]      4  Code  Lc  bsp_printf.o
+  0x00000988  gp-0x0328  $x.11                           [120]      4  Code  Lc  bsp_printf.o
+  0x00000A00  gp-0x02B0  $x.0                            [740]      4  Code  Lc  psp_performance_monitor_el2.o
+  0x00000CB0  gp+0x0000  __global_pointer$                             ----  Gb  [ Linker created ]
+  0x00000DE4  gp+0x0134  $x.0                            [180]      4  Code  Lc  q2.o
+  0x00000E98  gp+0x01E8  $x.1                            [100]      4  Code  Lc  q2.o
+  0x04000000             __stack_end__                                 ----  Gb  [ Linker created ]
+  0x04000000             __RAM_segment_used_size__                     ----  Gb  [ Linker created ]
+  0x04000000             __RAM_segment_used_end__                      ----  Gb  [ Linker created ]
+  0x04000000             __RAM_segment_size__                          ----  Gb  [ Linker created ]
+  0x04000000             __RAM_segment_end__                           ----  Gb  [ Linker created ]
+  0x04000000             __RAM1_segment_used_size__
+                                                                       ----  Gb  [ Linker created ]
+  0x04000000             __RAM1_segment_used_end__                     ----  Gb  [ Linker created ]
+  0x04000000             __RAM1_segment_size__                         ----  Gb  [ Linker created ]
+  0x04000000             __RAM1_segment_end__                          ----  Gb  [ Linker created ]
+
+
+***********************************************************************************************
+***                                                                                         ***
+***                                      LINK SUMMARY                                       ***
+***                                                                                         ***
+***********************************************************************************************
+
+Memory breakdown:
+
+    3 616 bytes read-only  code    + 
+      701 bytes read-only  data    =   4 317 bytes read-only (total)
+    1 024 bytes read-write data
+
+Region summary:
+
+  Name        Range                     Size                 Used               Unused       Alignment Loss
+  ----------  -----------------  -----------  -------------------  -------------------  -------------------
+  RAM         00000000-03ffffff   67 108 864        5 341   0.01%   67 103 523  99.99%            0   0.00%
+
+Link complete: 0 errors, 0 warnings, 0 remarks

@@ -1,0 +1,243 @@
+#-----------------------------------------------------------
+# xsim v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Wed May  1 18:07:52 2024
+# Process ID: 4168
+# Current directory: C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/vivado/nexysA7card.sim/sim_1/behav/xsim
+# Command line: xsim.exe -log C:\ruppin\RVFPGA\RVfpga_EL2\RVfpgaEL2_01\sw\LedsSwitches_C-Lang\simulation\rvfpgasim_fpga_simulation.log -source {xsim.dir/rvfpgasim_fpga_behav/xsim_script.tcl}
+# Log file: C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/sw/LedsSwitches_C-Lang/simulation/rvfpgasim_fpga_simulation.log
+# Journal file: C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/vivado/nexysA7card.sim/sim_1/behav/xsim\xsim.jou
+# Running On: DESKTOP-B4UMKQR, OS: Windows, CPU Frequency: 2419 MHz, CPU Physical cores: 4, Host memory: 16907 MB
+#-----------------------------------------------------------
+start_gui
+source xsim.dir/rvfpgasim_fpga_behav/xsim_script.tcl
+# set_param project.enableReportConfiguration 0
+# load_feature core
+# current_fileset
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-25:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/boards/board_files/arty-s7-25/E.0/board.xml as part xc7s25csga324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-50:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/boards/board_files/arty-s7-50/B.0/board.xml as part xc7s50csga324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cmod-s7-25:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/boards/board_files/cmod-s7-25/B.0/board.xml as part xc7s25csga225-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:gzu_3eg:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/boards/board_files/genesys-zu-3eg/B.0/board.xml as part xczu3eg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:gzu_3eg:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/boards/board_files/genesys-zu-3eg/D.0/board.xml as part xczu3eg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:gzu_5ev:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/boards/board_files/genesys-zu-5ev/C.0/board.xml as part xczu5ev-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k24c:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k24c/1.0/board.xml as part xck24-ubva530-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k24i:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k24i/1.0/board.xml as part xck24-ubva530-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.2 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26c/1.2/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.3 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26c/1.3/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.4 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26c/1.4/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.2 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26i/1.2/board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.3 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26i/1.3/board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.4 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26i/1.4/board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.4/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.5 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.5/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu1500/1.2/board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kd240_som:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kd240_som/1.0/board.xml as part xck24-ubva530-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kr260_som:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kr260_som/1.0/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kr260_som:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kr260_som/1.1/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.2 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kv260_som/1.2/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.3 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kv260_som/1.3/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.4 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kv260_som/1.4/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:sp701:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/sp701/1.0/board.xml as part xc7s100fgga676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:sp701:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/sp701/1.1/board.xml as part xc7s100fgga676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc707/1.4/board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc709/1.8/board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.2 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.0/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.3/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.4/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu128/production/1.0/board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu1525/1.3/board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_mpsoc:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_mpsoc/1.0/board.xml as part xczu19eg-ffvd1760-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_rfsoc/1.0/board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.2 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.1/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.2 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.1/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.3 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.3/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.4 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.4/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu104:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu104/1.1/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.4 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.4/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.5 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.5/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.6 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.6/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.2/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.3/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.4/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1275/1.0/board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1285/1.0/board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/production/2.0/board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/production/2.0/board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
+current_fileset: Time (s): cpu = 00:00:24 ; elapsed = 00:00:13 . Memory (MB): peak = 1452.332 ; gain = 262.371
+# xsim {rvfpgasim_fpga_behav} -testplusarg ram_init_file=LedsSwitches_C-Lang.vh -wdb {C:\ruppin\RVFPGA\RVfpga_EL2\RVfpgaEL2_01\sw\LedsSwitches_C-Lang\simulation\rvfpgasim_fpga_behav.wdb} -view {{C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/sw/LedsSwitches_C-Lang/simulation/rvfpgasim_fpga_behav.wcfg}} -tclbatch {rvfpgasim_fpga.tcl} -key {Behavioral:sim_1:Functional:rvfpgasim_fpga}
+Time resolution is 1 ps
+open_wave_config C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/sw/LedsSwitches_C-Lang/simulation/rvfpgasim_fpga_behav.wcfg
+source rvfpgasim_fpga.tcl
+## set curr_wave [current_wave_config]
+## if { [string length $curr_wave] == 0 } {
+##   if { [llength [get_objects]] > 0} {
+##     add_wave /
+##     set_property needs_save false [current_wave_config]
+##   } else {
+##      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+##   }
+## }
+## run 0ns
+Loading RAM contents from LedsSwitches_C-Lang.vh
+Loading ROM contents from 
+WARNING: 0ns : none of the conditions were true for unique case from File:C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_decoder.sv:229
+run 100 us
+WARNING: 770ns : none of the conditions were true for unique case from File:C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_decoder.sv:229
+Warning : input CLKIN1 period and attribute CLKIN1_PERIOD on PLLE2_ADV instance rvfpgasim_fpga.rvfpganexys.clk_gen.PLLE2_BASE_inst.plle2_adv_1 are not same.
+WARNING: 4130ns : none of the conditions were true for unique case from File:C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_decoder.sv:229
+WARNING: 7170ns : none of the conditions were true for unique case from File:C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_decoder.sv:229
+WARNING: 10210ns : none of the conditions were true for unique case from File:C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_decoder.sv:229
+WARNING: 12450ns : none of the conditions were true for unique case from File:C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_decoder.sv:229
+WARNING: 14050ns : none of the conditions were true for unique case from File:C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_decoder.sv:229
+WARNING: 15650ns : none of the conditions were true for unique case from File:C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_decoder.sv:229
+WARNING: 17090ns : none of the conditions were true for unique case from File:C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_decoder.sv:229
+WARNING: 18530ns : none of the conditions were true for unique case from File:C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_decoder.sv:229
+WARNING: 20130ns : none of the conditions were true for unique case from File:C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_decoder.sv:229
+WARNING: 21730ns : none of the conditions were true for unique case from File:C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_decoder.sv:229
+WARNING: 23170ns : none of the conditions were true for unique case from File:C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_decoder.sv:229
+WARNING: 24610ns : none of the conditions were true for unique case from File:C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_decoder.sv:229
+WARNING: 26210ns : none of the conditions were true for unique case from File:C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_decoder.sv:229
+WARNING: 27810ns : none of the conditions were true for unique case from File:C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_decoder.sv:229
+WARNING: 29250ns : none of the conditions were true for unique case from File:C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_decoder.sv:229
+WARNING: 30690ns : none of the conditions were true for unique case from File:C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_decoder.sv:229
+WARNING: 32130ns : none of the conditions were true for unique case from File:C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_decoder.sv:229
+WARNING: 33890ns : none of the conditions were true for unique case from File:C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_decoder.sv:229
+WARNING: 35490ns : none of the conditions were true for unique case from File:C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_decoder.sv:229
+WARNING: 36930ns : none of the conditions were true for unique case from File:C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_decoder.sv:229
+WARNING: 38530ns : none of the conditions were true for unique case from File:C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_decoder.sv:229
+WARNING: 40130ns : none of the conditions were true for unique case from File:C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_decoder.sv:229
+WARNING: 41570ns : none of the conditions were true for unique case from File:C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_decoder.sv:229
+WARNING: 47490ns : none of the conditions were true for unique case from File:C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_decoder.sv:229
+WARNING: 47810ns : none of the conditions were true for unique case from File:C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_decoder.sv:229
+WARNING: 48130ns : none of the conditions were true for unique case from File:C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_decoder.sv:229
+WARNING: 48450ns : none of the conditions were true for unique case from File:C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_decoder.sv:229
+add_bp {C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiToWb/axi2wb.v} 121
+add_bp {C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiToWb/axi2wb.v} 167
+add_bp {C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiToWb/axi2wb.v} 172
+add_bp {C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiToWb/axi2wb.v} 186
+add_bp {C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiToWb/axi2wb.v} 198
+add_bp {C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiToWb/axi2wb.v} 231
+add_bp {C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiToWb/axi2wb.v} 272
+restart
+INFO: [Wavedata 42-604] Simulation restarted
+run 100 us
+Loading RAM contents from LedsSwitches_C-Lang.vh
+Loading ROM contents from 
+WARNING: 0ns : none of the conditions were true for unique case from File:C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_decoder.sv:229
+WARNING: 770ns : none of the conditions were true for unique case from File:C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_decoder.sv:229
+Stopped at time : 930 ns : File "C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiToWb/axi2wb.v" Line 121
+run 100 us
+Warning : input CLKIN1 period and attribute CLKIN1_PERIOD on PLLE2_ADV instance rvfpgasim_fpga.rvfpganexys.clk_gen.PLLE2_BASE_inst.plle2_adv_1 are not same.
+Stopped at time : 1090 ns : File "C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiToWb/axi2wb.v" Line 121
+run 100 us
+Stopped at time : 1250 ns : File "C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiToWb/axi2wb.v" Line 121
+run 100 us
+Stopped at time : 1410 ns : File "C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiToWb/axi2wb.v" Line 121
+run 100 us
+Stopped at time : 1570 ns : File "C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiToWb/axi2wb.v" Line 121
+run 100 us
+Stopped at time : 1730 ns : File "C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiToWb/axi2wb.v" Line 121
+run 100 us
+Stopped at time : 2850 ns : File "C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiToWb/axi2wb.v" Line 186
+run 100 us
+Stopped at time : 3330 ns : File "C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiToWb/axi2wb.v" Line 231
+run 100 us
+Stopped at time : 3970 ns : File "C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiToWb/axi2wb.v" Line 186
+run 100 us
+WARNING: 4130ns : none of the conditions were true for unique case from File:C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_decoder.sv:229
+Stopped at time : 4450 ns : File "C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiToWb/axi2wb.v" Line 231
+run 100 us
+Stopped at time : 5890 ns : File "C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiToWb/axi2wb.v" Line 186
+run 100 us
+Stopped at time : 6370 ns : File "C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiToWb/axi2wb.v" Line 231
+run 100 us
+Stopped at time : 7010 ns : File "C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiToWb/axi2wb.v" Line 186
+run 100 us
+WARNING: 7170ns : none of the conditions were true for unique case from File:C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_decoder.sv:229
+Stopped at time : 7490 ns : File "C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiToWb/axi2wb.v" Line 231
+run 100 us
+Stopped at time : 8930 ns : File "C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiToWb/axi2wb.v" Line 186
+run 100 us
+Stopped at time : 9410 ns : File "C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiToWb/axi2wb.v" Line 231
+run 100 us
+Stopped at time : 10050 ns : File "C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiToWb/axi2wb.v" Line 186
+run 100 us
+WARNING: 10210ns : none of the conditions were true for unique case from File:C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_decoder.sv:229
+Stopped at time : 10530 ns : File "C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiToWb/axi2wb.v" Line 231
+run 100 us
+WARNING: 12450ns : none of the conditions were true for unique case from File:C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_decoder.sv:229
+WARNING: 14050ns : none of the conditions were true for unique case from File:C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_decoder.sv:229
+WARNING: 15650ns : none of the conditions were true for unique case from File:C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_decoder.sv:229
+WARNING: 17090ns : none of the conditions were true for unique case from File:C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_decoder.sv:229
+WARNING: 18530ns : none of the conditions were true for unique case from File:C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_decoder.sv:229
+WARNING: 20130ns : none of the conditions were true for unique case from File:C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_decoder.sv:229
+WARNING: 21730ns : none of the conditions were true for unique case from File:C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_decoder.sv:229
+WARNING: 23170ns : none of the conditions were true for unique case from File:C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_decoder.sv:229
+WARNING: 24610ns : none of the conditions were true for unique case from File:C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_decoder.sv:229
+WARNING: 26210ns : none of the conditions were true for unique case from File:C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_decoder.sv:229
+WARNING: 27810ns : none of the conditions were true for unique case from File:C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_decoder.sv:229
+WARNING: 29250ns : none of the conditions were true for unique case from File:C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_decoder.sv:229
+WARNING: 30690ns : none of the conditions were true for unique case from File:C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_decoder.sv:229
+WARNING: 32130ns : none of the conditions were true for unique case from File:C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_decoder.sv:229
+WARNING: 33890ns : none of the conditions were true for unique case from File:C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_decoder.sv:229
+WARNING: 35490ns : none of the conditions were true for unique case from File:C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_decoder.sv:229
+WARNING: 36930ns : none of the conditions were true for unique case from File:C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_decoder.sv:229
+WARNING: 38530ns : none of the conditions were true for unique case from File:C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_decoder.sv:229
+WARNING: 40130ns : none of the conditions were true for unique case from File:C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_decoder.sv:229
+WARNING: 41570ns : none of the conditions were true for unique case from File:C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_decoder.sv:229
+Stopped at time : 46050 ns : File "C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiToWb/axi2wb.v" Line 186
+run 100 us
+Stopped at time : 46530 ns : File "C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiToWb/axi2wb.v" Line 231
+run 100 us
+WARNING: 47490ns : none of the conditions were true for unique case from File:C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_decoder.sv:229
+WARNING: 47810ns : none of the conditions were true for unique case from File:C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_decoder.sv:229
+WARNING: 48130ns : none of the conditions were true for unique case from File:C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_decoder.sv:229
+WARNING: 48450ns : none of the conditions were true for unique case from File:C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_decoder.sv:229
+run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 2685.809 ; gain = 0.000
+run 100 us
+run: Time (s): cpu = 00:00:03 ; elapsed = 00:00:15 . Memory (MB): peak = 2685.809 ; gain = 0.000
+save_wave_config {C:/ruppin/RVFPGA/RVfpga_EL2/RVfpgaEL2_01/sw/LedsSwitches_C-Lang/simulation/rvfpgasim_fpga_behav.wcfg}
+close_sim
+INFO: xsimkernel Simulation Memory Usage: 112588 KB (Peak: 112588 KB), Simulation CPU Usage: 27421 ms
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting xsim at Thu May  2 03:23:04 2024...

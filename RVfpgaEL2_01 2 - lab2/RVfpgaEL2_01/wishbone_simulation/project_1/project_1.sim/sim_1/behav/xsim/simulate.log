@@ -1,0 +1,22 @@
+Time resolution is 1 ps
+Test start *****************
+[              630000] Wishbone bus write addr 00000000 data 00000001
+[             1150000] Wishbone bus write addr 00000004 data 00000002
+[             1670000] Wishbone bus  read addr 00000008 data 00000003
+[             2190000] Wishbone bus write addr 00000000 data 00000003
+[             2710000] Wishbone bus write addr 00000004 data 00000005
+[             3230000] Wishbone bus  read addr 00000008 data 00000008
+[             3750000] Wishbone bus write addr 00000000 data 00000005
+[             4270000] Wishbone bus write addr 00000004 data 00000008
+[             4790000] Wishbone bus  read addr 00000008 data 0000000d
+[             5310000] Wishbone bus write addr 00000000 data 00000007
+[             5830000] Wishbone bus write addr 00000004 data 0000000b
+[             6350000] Wishbone bus  read addr 00000008 data 00000012
+[             6870000] Wishbone bus write addr 00000000 data 00000009
+[             7390000] Wishbone bus write addr 00000004 data 0000000e
+[             7910000] Wishbone bus  read addr 00000008 data 00000017
+[             8430000] Wishbone bus write addr 00000000 data 0000000b
+[             8950000] Wishbone bus write addr 00000004 data 00000011
+[             9470000] Wishbone bus  read addr 00000008 data 0000001c
+[             9990000] Wishbone bus write addr 00000000 data 0000000d
+[            10510000] Wishbone bus write addr 00000004 data 00000014
