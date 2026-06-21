@@ -1,0 +1,731 @@
+
+*** Running vivado
+    with args -log rvfpganexys.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source rvfpganexys.tcl -notrace
+
+
+ECHO is off.
+ECHO is off.
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source rvfpganexys.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 468.418 ; gain = 184.219
+Command: link_design -top rvfpganexys -part xc7a100tcsg324-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.475 . Memory (MB): peak = 974.438 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1612 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2023.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/VLSI Hackathon/RVfpgaEL2_01 2 - Hackathon/RVfpgaEL2_01/rtl/rvfpganexys.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [C:/VLSI Hackathon/RVfpgaEL2_01 2 - Hackathon/RVfpgaEL2_01/rtl/rvfpganexys.xdc:13]
+INFO: [Timing 38-2] Deriving generated clocks [C:/VLSI Hackathon/RVfpgaEL2_01 2 - Hackathon/RVfpgaEL2_01/rtl/rvfpganexys.xdc:13]
+set_clock_groups: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1771.156 ; gain = 606.402
+INFO: [Vivado 12-2286] Implicit search of objects for pattern 'j_trst_n' matched to 'port' objects. [C:/VLSI Hackathon/RVfpgaEL2_01 2 - Hackathon/RVfpgaEL2_01/rtl/rvfpganexys.xdc:16]
+Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
+INFO: [Vivado 12-2286] Implicit search of objects for pattern 'j_tms' matched to 'port' objects. [C:/VLSI Hackathon/RVfpgaEL2_01 2 - Hackathon/RVfpgaEL2_01/rtl/rvfpganexys.xdc:17]
+Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
+INFO: [Vivado 12-2286] Implicit search of objects for pattern 'j_tdi' matched to 'port' objects. [C:/VLSI Hackathon/RVfpgaEL2_01 2 - Hackathon/RVfpgaEL2_01/rtl/rvfpganexys.xdc:18]
+Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
+WARNING: [Vivado 12-507] No nets matched 'swervolf/timer_ptc3/rptc_cntr[31]_i_4_n_0'. [C:/VLSI Hackathon/RVfpgaEL2_01 2 - Hackathon/RVfpgaEL2_01/rtl/rvfpganexys.xdc:222]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/VLSI Hackathon/RVfpgaEL2_01 2 - Hackathon/RVfpgaEL2_01/rtl/rvfpganexys.xdc:222]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-750] There are no ChipScope debug cores in this design. [C:/VLSI Hackathon/RVfpgaEL2_01 2 - Hackathon/RVfpgaEL2_01/rtl/rvfpganexys.xdc:223]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/VLSI Hackathon/RVfpgaEL2_01 2 - Hackathon/RVfpgaEL2_01/rtl/rvfpganexys.xdc:223]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-750] There are no ChipScope debug cores in this design. [C:/VLSI Hackathon/RVfpgaEL2_01 2 - Hackathon/RVfpgaEL2_01/rtl/rvfpganexys.xdc:224]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/VLSI Hackathon/RVfpgaEL2_01 2 - Hackathon/RVfpgaEL2_01/rtl/rvfpganexys.xdc:224]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-750] There are no ChipScope debug cores in this design. [C:/VLSI Hackathon/RVfpgaEL2_01 2 - Hackathon/RVfpgaEL2_01/rtl/rvfpganexys.xdc:225]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/VLSI Hackathon/RVfpgaEL2_01 2 - Hackathon/RVfpgaEL2_01/rtl/rvfpganexys.xdc:225]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'dbg_hub' was not found. [C:/VLSI Hackathon/RVfpgaEL2_01 2 - Hackathon/RVfpgaEL2_01/rtl/rvfpganexys.xdc:226]
+Finished Parsing XDC File [C:/VLSI Hackathon/RVfpgaEL2_01 2 - Hackathon/RVfpgaEL2_01/rtl/rvfpganexys.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1771.156 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 355 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 21 instances
+  RAM256X1S => RAM256X1S (MUXF7(x2), MUXF8, RAMS64E(x4)): 272 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 6 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 12 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 44 instances
+
+Access is denied.
+12 Infos, 4 Warnings, 5 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1771.156 ; gain = 1302.738
+Command: opt_design -sweep
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1771.156 ; gain = 0.000
+
+Starting Logic Optimization Task
+
+Phase 1 Initialization
+
+Phase 1.1 Core Generation And Design Setup
+Phase 1.1 Core Generation And Design Setup | Checksum: 1d5d7e9d8
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 2011.660 ; gain = 0.000
+
+Phase 1.2 Setup Constraints And Sort Netlist
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 1d5d7e9d8
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 2011.660 ; gain = 0.000
+Phase 1 Initialization | Checksum: 1d5d7e9d8
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.055 . Memory (MB): peak = 2011.660 ; gain = 0.000
+
+Phase 2 Timer Update And Timing Data Collection
+
+Phase 2.1 Timer Update
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 2.1 Timer Update | Checksum: 1d5d7e9d8
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 2121.738 ; gain = 110.078
+
+Phase 2.2 Timing Data Collection
+Phase 2.2 Timing Data Collection | Checksum: 1d5d7e9d8
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 2121.738 ; gain = 110.078
+Phase 2 Timer Update And Timing Data Collection | Checksum: 1d5d7e9d8
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 2121.738 ; gain = 110.078
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 262ee58d4
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 2121.738 ; gain = 110.078
+Sweep | Checksum: 262ee58d4
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 1590 cells
+
+Phase 4 Post Processing Netlist
+INFO: [Opt 31-1566] Pulled 102 inverters resulting in an inversion of 1831 pins
+Phase 4 Post Processing Netlist | Checksum: 1d14f38f5
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 2121.738 ; gain = 110.078
+Post Processing Netlist | Checksum: 1d14f38f5
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 287 cells
+
+Phase 5 Finalization
+
+Phase 5.1 Finalizing Design Cores and Updating Shapes
+Phase 5.1 Finalizing Design Cores and Updating Shapes | Checksum: 18592e2a3
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2121.738 ; gain = 110.078
+
+Phase 5.2 Verifying Netlist Connectivity
+Phase 5.2 Verifying Netlist Connectivity | Checksum: 18592e2a3
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2121.738 ; gain = 110.078
+Phase 5 Finalization | Checksum: 18592e2a3
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2121.738 ; gain = 110.078
+Opt_design Change Summary
+=========================
+
+
+---------------------------------------------------------------------------------------------------------------------
+|  Phase                    |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+---------------------------------------------------------------------------------------------------------------------
+|  Sweep                    |               0  |            1590  |                                              0  |
+|  Post Processing Netlist  |               0  |             287  |                                              0  |
+---------------------------------------------------------------------------------------------------------------------
+
+
+Ending Logic Optimization Task | Checksum: 18592e2a3
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2121.738 ; gain = 110.078
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 2121.738 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 2121.738 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 18592e2a3
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 2121.738 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+22 Infos, 4 Warnings, 5 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 2121.738 ; gain = 350.582
+INFO: [runtcl-4] Executing : report_drc -file rvfpganexys_drc_opted.rpt -pb rvfpganexys_drc_opted.pb -rpx rvfpganexys_drc_opted.rpx
+Command: report_drc -file rvfpganexys_drc_opted.rpt -pb rvfpganexys_drc_opted.pb -rpx rvfpganexys_drc_opted.rpx
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC 23-804] Only the first 20 REQP-1840 messages were issued by report_drc. An additional 1 messages have not been issued. Use 'set_property MAX_MESSAGES <number> [get_drc_check REQP-1840]' to change the number of messages that should be reported.
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file C:/VLSI Hackathon/RVfpgaEL2_01 2 - Hackathon/RVfpgaEL2_01/vivado/nexysA7card.runs/impl_1/rvfpganexys_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2121.738 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2121.738 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.078 . Memory (MB): peak = 2121.738 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2121.738 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2121.738 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.092 . Memory (MB): peak = 2121.738 ; gain = 0.000
+Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.112 . Memory (MB): peak = 2121.738 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/VLSI Hackathon/RVfpgaEL2_01 2 - Hackathon/RVfpgaEL2_01/vivado/nexysA7card.runs/impl_1/rvfpganexys_opt.dcp' has been generated.
+Command: place_design -directive RuntimeOptimized
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-83] Releasing license: Implementation
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC 23-803] Only the first 20 REQP-1840 messages were issued by mandatory DRC reporting. An additional 1 messages have not been issued. Use 'set_property MAX_MESSAGES <number> [get_drc_check REQP-1840]' to change the number of messages that should be reported.
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 43 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Place 46-5] The placer was invoked with the 'RuntimeOptimized' directive.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Starting Placer Task
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 2121.738 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 1549cd2f2
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 2121.738 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 2165.695 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+WARNING: [Place 30-574] Poor placement for routing between an IO pin and BUFG. This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint is set to FALSE allowing your design to continue. The use of this override is highly discouraged as it may lead to very poor timing results. It is recommended that this error condition be corrected in the design.
+
+	j_tck_IBUF_inst (IBUF.O) is locked to IOB_X1Y140
+	j_tck_IBUF_BUFG_inst (BUFG.I) is provisionally placed by clockplacer on BUFGCTRL_X0Y0
+Resolution: Poor placement of an IO pin and a BUFG has resulted in the router using a non-dedicated path between the two.  There are several things that could trigger this DRC, each of which can cause unpredictable clock insertion delays that result in poor timing.  This DRC could be caused by any of the following: (a) a clock port was placed on a pin that is not a CCIO-pin (b)the BUFG has not been placed in the same half of the device or SLR as the CCIO-pin (c) a single ended clock has been placed on the N-Side of a differential pair CCIO-pin.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 100942ce0
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2171.227 ; gain = 49.488
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 1e8ec2f72
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:13 . Memory (MB): peak = 2381.797 ; gain = 260.059
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 1e8ec2f72
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:14 . Memory (MB): peak = 2381.797 ; gain = 260.059
+Phase 1 Placer Initialization | Checksum: 1e8ec2f72
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:14 . Memory (MB): peak = 2381.797 ; gain = 260.059
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 12eb77d5e
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:17 . Memory (MB): peak = 2381.797 ; gain = 260.059
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 1dc2a6cc5
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:19 . Memory (MB): peak = 2381.797 ; gain = 260.059
+
+Phase 2.3 Post-Processing in Floorplanning
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 1dc2a6cc5
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:19 . Memory (MB): peak = 2381.797 ; gain = 260.059
+
+Phase 2.4 Global Placement Core
+Phase 2.4 Global Placement Core | Checksum: 199466c22
+
+Time (s): cpu = 00:01:03 ; elapsed = 00:00:42 . Memory (MB): peak = 2381.797 ; gain = 260.059
+Phase 2 Global Placement | Checksum: 199466c22
+
+Time (s): cpu = 00:01:03 ; elapsed = 00:00:43 . Memory (MB): peak = 2381.797 ; gain = 260.059
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: efb70dc7
+
+Time (s): cpu = 00:01:08 ; elapsed = 00:00:45 . Memory (MB): peak = 2381.797 ; gain = 260.059
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 15e00686b
+
+Time (s): cpu = 00:01:17 ; elapsed = 00:00:51 . Memory (MB): peak = 2381.797 ; gain = 260.059
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 164e63c3e
+
+Time (s): cpu = 00:01:18 ; elapsed = 00:00:52 . Memory (MB): peak = 2381.797 ; gain = 260.059
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 164e63c3e
+
+Time (s): cpu = 00:01:18 ; elapsed = 00:00:52 . Memory (MB): peak = 2381.797 ; gain = 260.059
+
+Phase 3.5 Small Shape Detail Placement
+Phase 3.5 Small Shape Detail Placement | Checksum: 1c5a518c9
+
+Time (s): cpu = 00:01:31 ; elapsed = 00:01:05 . Memory (MB): peak = 2381.797 ; gain = 260.059
+
+Phase 3.6 Re-assign LUT pins
+Phase 3.6 Re-assign LUT pins | Checksum: e067f4f3
+
+Time (s): cpu = 00:01:33 ; elapsed = 00:01:07 . Memory (MB): peak = 2381.797 ; gain = 260.059
+
+Phase 3.7 Pipeline Register Optimization
+Phase 3.7 Pipeline Register Optimization | Checksum: e067f4f3
+
+Time (s): cpu = 00:01:33 ; elapsed = 00:01:07 . Memory (MB): peak = 2381.797 ; gain = 260.059
+Phase 3 Detail Placement | Checksum: e067f4f3
+
+Time (s): cpu = 00:01:33 ; elapsed = 00:01:07 . Memory (MB): peak = 2381.797 ; gain = 260.059
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: eb28f2b6
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=8.553 | TNS=0.000 |
+Phase 1 Physical Synthesis Initialization | Checksum: 3fd55a19
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2430.441 ; gain = 26.316
+INFO: [Place 46-33] Processed net clk_gen/o_rst_core, BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-56] BUFG insertion identified 1 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 1, Skipped due to Timing Degradation: 0, Skipped due to netlist editing failed: 0.
+Ending Physical Synthesis Task | Checksum: 3fd55a19
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 2432.984 ; gain = 28.859
+Phase 4.1.1.1 BUFG Insertion | Checksum: eb28f2b6
+
+Time (s): cpu = 00:01:52 ; elapsed = 00:01:20 . Memory (MB): peak = 2432.984 ; gain = 311.246
+
+Phase 4.1.1.2 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=8.553. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 778e4773
+
+Time (s): cpu = 00:01:52 ; elapsed = 00:01:20 . Memory (MB): peak = 2432.984 ; gain = 311.246
+
+Time (s): cpu = 00:01:52 ; elapsed = 00:01:20 . Memory (MB): peak = 2432.984 ; gain = 311.246
+Phase 4.1 Post Commit Optimization | Checksum: 778e4773
+
+Time (s): cpu = 00:01:53 ; elapsed = 00:01:20 . Memory (MB): peak = 2432.984 ; gain = 311.246
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 778e4773
+
+Time (s): cpu = 00:01:53 ; elapsed = 00:01:21 . Memory (MB): peak = 2432.984 ; gain = 311.246
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ____________________________________________________
+|           | Global Congestion | Short Congestion  |
+| Direction | Region Size       | Region Size       |
+|___________|___________________|___________________|
+|      North|                1x1|                4x4|
+|___________|___________________|___________________|
+|      South|                1x1|                4x4|
+|___________|___________________|___________________|
+|       East|                1x1|                4x4|
+|___________|___________________|___________________|
+|       West|                1x1|                4x4|
+|___________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 778e4773
+
+Time (s): cpu = 00:01:53 ; elapsed = 00:01:21 . Memory (MB): peak = 2432.984 ; gain = 311.246
+Phase 4.3 Placer Reporting | Checksum: 778e4773
+
+Time (s): cpu = 00:01:54 ; elapsed = 00:01:21 . Memory (MB): peak = 2432.984 ; gain = 311.246
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 2432.984 ; gain = 0.000
+
+Time (s): cpu = 00:01:54 ; elapsed = 00:01:21 . Memory (MB): peak = 2432.984 ; gain = 311.246
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 12c20dcbb
+
+Time (s): cpu = 00:01:54 ; elapsed = 00:01:22 . Memory (MB): peak = 2432.984 ; gain = 311.246
+Ending Placer Task | Checksum: c371dfb0
+
+Time (s): cpu = 00:01:54 ; elapsed = 00:01:22 . Memory (MB): peak = 2432.984 ; gain = 311.246
+50 Infos, 7 Warnings, 5 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:01:57 ; elapsed = 00:01:24 . Memory (MB): peak = 2432.984 ; gain = 311.246
+INFO: [runtcl-4] Executing : report_io -file rvfpganexys_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 2432.984 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file rvfpganexys_utilization_placed.rpt -pb rvfpganexys_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file rvfpganexys_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.085 . Memory (MB): peak = 2432.984 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.116 . Memory (MB): peak = 2432.984 ; gain = 0.000
+Wrote PlaceDB: Time (s): cpu = 00:00:08 ; elapsed = 00:00:03 . Memory (MB): peak = 2432.984 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2432.984 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.056 . Memory (MB): peak = 2432.984 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.052 . Memory (MB): peak = 2432.984 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2432.984 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:08 ; elapsed = 00:00:04 . Memory (MB): peak = 2432.984 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/VLSI Hackathon/RVfpgaEL2_01 2 - Hackathon/RVfpgaEL2_01/vivado/nexysA7card.runs/impl_1/rvfpganexys_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 2432.984 ; gain = 0.000
+Command: route_design -directive RuntimeOptimized
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 1 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-270] Using Router directive 'RuntimeOptimized'.
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: 4efff66 ConstDB: 0 ShapeSum: be81e04a RouteDB: 0
+Post Restoration Checksum: NetGraph: ecbc88d0 | NumContArr: 3028b551 | Constraints: c2a8fa9d | Timing: c2a8fa9d
+Phase 1 Build RT Design | Checksum: 2a237335b
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:31 . Memory (MB): peak = 2591.348 ; gain = 141.363
+
+Phase 2 Router Initialization
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 2a237335b
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:31 . Memory (MB): peak = 2591.348 ; gain = 141.363
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 2a237335b
+
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:31 . Memory (MB): peak = 2591.348 ; gain = 141.363
+ Number of Nodes with overlaps = 0
+
+Phase 2.3 Update Timing
+Phase 2.3 Update Timing | Checksum: 1d75d6fbd
+
+Time (s): cpu = 00:01:25 ; elapsed = 00:00:55 . Memory (MB): peak = 2655.914 ; gain = 205.930
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=10.415 | TNS=0.000  | WHS=-1.322 | THS=-337.456|
+
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.00448274 %
+  Global Horizontal Routing Utilization  = 0.00859619 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 47508
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 47505
+  Number of Partially Routed Nets     = 3
+  Number of Node Overlaps             = 2
+
+Phase 2 Router Initialization | Checksum: 1de492d45
+
+Time (s): cpu = 00:01:52 ; elapsed = 00:01:12 . Memory (MB): peak = 2797.250 ; gain = 347.266
+
+Phase 3 Initial Routing
+
+Phase 3.1 Global Routing
+Phase 3.1 Global Routing | Checksum: 1de492d45
+
+Time (s): cpu = 00:01:52 ; elapsed = 00:01:12 . Memory (MB): peak = 2797.250 ; gain = 347.266
+
+Phase 3.2 Initial Net Routing
+Phase 3.2 Initial Net Routing | Checksum: 2ee48c286
+
+Time (s): cpu = 00:02:27 ; elapsed = 00:01:21 . Memory (MB): peak = 2815.027 ; gain = 365.043
+Phase 3 Initial Routing | Checksum: 2ee48c286
+
+Time (s): cpu = 00:02:27 ; elapsed = 00:01:21 . Memory (MB): peak = 2815.027 ; gain = 365.043
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 10481
+ Number of Nodes with overlaps = 1871
+ Number of Nodes with overlaps = 527
+ Number of Nodes with overlaps = 145
+ Number of Nodes with overlaps = 70
+ Number of Nodes with overlaps = 28
+ Number of Nodes with overlaps = 12
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=9.757  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 1d1906351
+
+Time (s): cpu = 00:03:58 ; elapsed = 00:02:17 . Memory (MB): peak = 2815.027 ; gain = 365.043
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 10
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=9.757  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 25ba4c797
+
+Time (s): cpu = 00:04:01 ; elapsed = 00:02:18 . Memory (MB): peak = 2815.027 ; gain = 365.043
+Phase 4 Rip-up And Reroute | Checksum: 25ba4c797
+
+Time (s): cpu = 00:04:01 ; elapsed = 00:02:18 . Memory (MB): peak = 2815.027 ; gain = 365.043
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+Phase 5.1 Delay CleanUp | Checksum: 25ba4c797
+
+Time (s): cpu = 00:04:01 ; elapsed = 00:02:18 . Memory (MB): peak = 2815.027 ; gain = 365.043
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 25ba4c797
+
+Time (s): cpu = 00:04:02 ; elapsed = 00:02:18 . Memory (MB): peak = 2815.027 ; gain = 365.043
+Phase 5 Delay and Skew Optimization | Checksum: 25ba4c797
+
+Time (s): cpu = 00:04:02 ; elapsed = 00:02:18 . Memory (MB): peak = 2815.027 ; gain = 365.043
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 26a14351d
+
+Time (s): cpu = 00:04:06 ; elapsed = 00:02:21 . Memory (MB): peak = 2815.027 ; gain = 365.043
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=9.764  | TNS=0.000  | WHS=0.031  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 1c50c29c8
+
+Time (s): cpu = 00:04:07 ; elapsed = 00:02:21 . Memory (MB): peak = 2815.027 ; gain = 365.043
+Phase 6 Post Hold Fix | Checksum: 1c50c29c8
+
+Time (s): cpu = 00:04:07 ; elapsed = 00:02:21 . Memory (MB): peak = 2815.027 ; gain = 365.043
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 12.4081 %
+  Global Horizontal Routing Utilization  = 14.2366 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 1c50c29c8
+
+Time (s): cpu = 00:04:07 ; elapsed = 00:02:21 . Memory (MB): peak = 2815.027 ; gain = 365.043
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 1c50c29c8
+
+Time (s): cpu = 00:04:08 ; elapsed = 00:02:21 . Memory (MB): peak = 2815.027 ; gain = 365.043
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 218781852
+
+Time (s): cpu = 00:04:13 ; elapsed = 00:02:24 . Memory (MB): peak = 2815.027 ; gain = 365.043
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=9.764  | TNS=0.000  | WHS=0.031  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 10 Post Router Timing | Checksum: 218781852
+
+Time (s): cpu = 00:04:17 ; elapsed = 00:02:27 . Memory (MB): peak = 2815.027 ; gain = 365.043
+INFO: [Route 35-16] Router Completed Successfully
+
+Phase 11 Post-Route Event Processing
+Phase 11 Post-Route Event Processing | Checksum: 23797532b
+
+Time (s): cpu = 00:04:18 ; elapsed = 00:02:28 . Memory (MB): peak = 2815.027 ; gain = 365.043
+Ending Routing Task | Checksum: 23797532b
+
+Time (s): cpu = 00:04:19 ; elapsed = 00:02:29 . Memory (MB): peak = 2815.027 ; gain = 365.043
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+69 Infos, 7 Warnings, 5 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:04:25 ; elapsed = 00:02:32 . Memory (MB): peak = 2815.027 ; gain = 382.043
+INFO: [runtcl-4] Executing : report_drc -file rvfpganexys_drc_routed.rpt -pb rvfpganexys_drc_routed.pb -rpx rvfpganexys_drc_routed.rpx
+Command: report_drc -file rvfpganexys_drc_routed.rpt -pb rvfpganexys_drc_routed.pb -rpx rvfpganexys_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC 23-804] Only the first 20 REQP-1840 messages were issued by report_drc. An additional 1 messages have not been issued. Use 'set_property MAX_MESSAGES <number> [get_drc_check REQP-1840]' to change the number of messages that should be reported.
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file C:/VLSI Hackathon/RVfpgaEL2_01 2 - Hackathon/RVfpgaEL2_01/vivado/nexysA7card.runs/impl_1/rvfpganexys_drc_routed.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 2815.027 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_methodology -file rvfpganexys_methodology_drc_routed.rpt -pb rvfpganexys_methodology_drc_routed.pb -rpx rvfpganexys_methodology_drc_routed.rpx
+Command: report_methodology -file rvfpganexys_methodology_drc_routed.rpt -pb rvfpganexys_methodology_drc_routed.pb -rpx rvfpganexys_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file C:/VLSI Hackathon/RVfpgaEL2_01 2 - Hackathon/RVfpgaEL2_01/vivado/nexysA7card.runs/impl_1/rvfpganexys_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:00:26 ; elapsed = 00:00:14 . Memory (MB): peak = 3002.371 ; gain = 187.344
+INFO: [runtcl-4] Executing : report_power -file rvfpganexys_power_routed.rpt -pb rvfpganexys_power_summary_routed.pb -rpx rvfpganexys_power_routed.rpx
+Command: report_power -file rvfpganexys_power_routed.rpt -pb rvfpganexys_power_summary_routed.pb -rpx rvfpganexys_power_routed.rpx
+INFO: [Power 33-23] Power model is not available for STARTUPE2
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+80 Infos, 9 Warnings, 5 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:24 ; elapsed = 00:00:16 . Memory (MB): peak = 3018.910 ; gain = 16.539
+INFO: [runtcl-4] Executing : report_route_status -file rvfpganexys_route_status.rpt -pb rvfpganexys_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -report_unconstrained -file rvfpganexys_timing_summary_routed.rpt -pb rvfpganexys_timing_summary_routed.pb -rpx rvfpganexys_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [runtcl-4] Executing : report_incremental_reuse -file rvfpganexys_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file rvfpganexys_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file rvfpganexys_bus_skew_routed.rpt -pb rvfpganexys_bus_skew_routed.pb -rpx rvfpganexys_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.152 . Memory (MB): peak = 3055.277 ; gain = 9.285
+Wrote PlaceDB: Time (s): cpu = 00:00:08 ; elapsed = 00:00:03 . Memory (MB): peak = 3059.945 ; gain = 13.953
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3059.945 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.521 . Memory (MB): peak = 3059.945 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.051 . Memory (MB): peak = 3059.945 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 3059.945 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:09 ; elapsed = 00:00:04 . Memory (MB): peak = 3059.945 ; gain = 13.953
+INFO: [Common 17-1381] The checkpoint 'C:/VLSI Hackathon/RVfpgaEL2_01 2 - Hackathon/RVfpgaEL2_01/vivado/nexysA7card.runs/impl_1/rvfpganexys_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 3059.945 ; gain = 31.863
+Command: write_bitstream -force rvfpganexys.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC CFGBVS-1] Missing CFGBVS and CONFIG_VOLTAGE Design Properties: Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1839 rule limit reached: 20 violations have been found.
+WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1840 rule limit reached: 20 violations have been found.
+WARNING: [DRC DPIP-1] Input pipelining: DSP swervolf/rvtop/veer/exu/i_mul/prod_x0 input swervolf/rvtop/veer/exu/i_mul/prod_x0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP swervolf/rvtop/veer/exu/i_mul/prod_x0 input swervolf/rvtop/veer/exu/i_mul/prod_x0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP swervolf/rvtop/veer/exu/i_mul/prod_x0__0 input swervolf/rvtop/veer/exu/i_mul/prod_x0__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP swervolf/rvtop/veer/exu/i_mul/prod_x0__0 input swervolf/rvtop/veer/exu/i_mul/prod_x0__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP swervolf/rvtop/veer/exu/i_mul/prod_x0__0 input swervolf/rvtop/veer/exu/i_mul/prod_x0__0/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP swervolf/rvtop/veer/exu/i_mul/prod_x0__1 input swervolf/rvtop/veer/exu/i_mul/prod_x0__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP swervolf/rvtop/veer/exu/i_mul/prod_x0__1 input swervolf/rvtop/veer/exu/i_mul/prod_x0__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP swervolf/rvtop/veer/exu/i_mul/prod_x0__2 input swervolf/rvtop/veer/exu/i_mul/prod_x0__2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP swervolf/rvtop/veer/exu/i_mul/prod_x0__2 input swervolf/rvtop/veer/exu/i_mul/prod_x0__2/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP swervolf/rvtop/veer/exu/i_mul/prod_x0__2 input swervolf/rvtop/veer/exu/i_mul/prod_x0__2/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP swervolf/rvtop/veer/exu/i_mul/prod_x0 output swervolf/rvtop/veer/exu/i_mul/prod_x0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP swervolf/rvtop/veer/exu/i_mul/prod_x0__0 output swervolf/rvtop/veer/exu/i_mul/prod_x0__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP swervolf/rvtop/veer/exu/i_mul/prod_x0__1 output swervolf/rvtop/veer/exu/i_mul/prod_x0__1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP swervolf/rvtop/veer/exu/i_mul/prod_x0__2 output swervolf/rvtop/veer/exu/i_mul/prod_x0__2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP swervolf/rvtop/veer/exu/i_mul/prod_x0 multiplier stage swervolf/rvtop/veer/exu/i_mul/prod_x0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP swervolf/rvtop/veer/exu/i_mul/prod_x0__0 multiplier stage swervolf/rvtop/veer/exu/i_mul/prod_x0__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP swervolf/rvtop/veer/exu/i_mul/prod_x0__1 multiplier stage swervolf/rvtop/veer/exu/i_mul/prod_x0__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP swervolf/rvtop/veer/exu/i_mul/prod_x0__2 multiplier stage swervolf/rvtop/veer/exu/i_mul/prod_x0__2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ram/mem_reg_0_0 has an input control pin ram/mem_reg_0_0/ENARDEN (net: ram/mem_reg_7_0_i_1_n_1) which is driven by a register (swervolf/axi_intercon/axi_xbar/gen_slv_port_demux[2].i_axi_demux/gen_demux.i_w_fifo/mem_q_reg[0][0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ram/mem_reg_0_0 has an input control pin ram/mem_reg_0_0/ENARDEN (net: ram/mem_reg_7_0_i_1_n_1) which is driven by a register (swervolf/axi_intercon/axi_xbar/gen_slv_port_demux[2].i_axi_demux/gen_demux.i_w_fifo/mem_q_reg[0][1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ram/mem_reg_0_0 has an input control pin ram/mem_reg_0_0/ENARDEN (net: ram/mem_reg_7_0_i_1_n_1) which is driven by a register (swervolf/axi_intercon/axi_xbar/gen_slv_port_demux[2].i_axi_demux/gen_demux.i_w_fifo/mem_q_reg[1][0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ram/mem_reg_0_0 has an input control pin ram/mem_reg_0_0/ENARDEN (net: ram/mem_reg_7_0_i_1_n_1) which is driven by a register (swervolf/axi_intercon/axi_xbar/gen_slv_port_demux[2].i_axi_demux/gen_demux.i_w_fifo/mem_q_reg[1][1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ram/mem_reg_0_0 has an input control pin ram/mem_reg_0_0/ENARDEN (net: ram/mem_reg_7_0_i_1_n_1) which is driven by a register (swervolf/axi_intercon/axi_xbar/gen_slv_port_demux[2].i_axi_demux/gen_demux.i_w_fifo/mem_q_reg[2][0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ram/mem_reg_0_0 has an input control pin ram/mem_reg_0_0/ENARDEN (net: ram/mem_reg_7_0_i_1_n_1) which is driven by a register (swervolf/axi_intercon/axi_xbar/gen_slv_port_demux[2].i_axi_demux/gen_demux.i_w_fifo/mem_q_reg[2][1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ram/mem_reg_0_0 has an input control pin ram/mem_reg_0_0/ENARDEN (net: ram/mem_reg_7_0_i_1_n_1) which is driven by a register (swervolf/axi_intercon/axi_xbar/gen_slv_port_demux[2].i_axi_demux/gen_demux.i_w_fifo/mem_q_reg[3][0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ram/mem_reg_0_0 has an input control pin ram/mem_reg_0_0/ENARDEN (net: ram/mem_reg_7_0_i_1_n_1) which is driven by a register (swervolf/axi_intercon/axi_xbar/gen_slv_port_demux[2].i_axi_demux/gen_demux.i_w_fifo/mem_q_reg[4][0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ram/mem_reg_0_0 has an input control pin ram/mem_reg_0_0/ENARDEN (net: ram/mem_reg_7_0_i_1_n_1) which is driven by a register (swervolf/axi_intercon/axi_xbar/gen_slv_port_demux[2].i_axi_demux/gen_demux.i_w_fifo/mem_q_reg[4][1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ram/mem_reg_0_0 has an input control pin ram/mem_reg_0_0/ENARDEN (net: ram/mem_reg_7_0_i_1_n_1) which is driven by a register (swervolf/axi_intercon/axi_xbar/gen_slv_port_demux[2].i_axi_demux/gen_demux.i_w_fifo/mem_q_reg[5][1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ram/mem_reg_0_0 has an input control pin ram/mem_reg_0_0/ENARDEN (net: ram/mem_reg_7_0_i_1_n_1) which is driven by a register (swervolf/axi_intercon/axi_xbar/gen_slv_port_demux[2].i_axi_demux/gen_demux.i_w_fifo/mem_q_reg[6][1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ram/mem_reg_0_0 has an input control pin ram/mem_reg_0_0/ENARDEN (net: ram/mem_reg_7_0_i_1_n_1) which is driven by a register (swervolf/axi_intercon/axi_xbar/gen_slv_port_demux[2].i_axi_demux/gen_demux.i_w_fifo/mem_q_reg[7][0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ram/mem_reg_0_0 has an input control pin ram/mem_reg_0_0/ENARDEN (net: ram/mem_reg_7_0_i_1_n_1) which is driven by a register (swervolf/axi_intercon/axi_xbar/gen_slv_port_demux[2].i_axi_demux/gen_demux.i_w_fifo/mem_q_reg[8][0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ram/mem_reg_0_0 has an input control pin ram/mem_reg_0_0/ENARDEN (net: ram/mem_reg_7_0_i_1_n_1) which is driven by a register (swervolf/axi_intercon/axi_xbar/gen_slv_port_demux[2].i_axi_demux/gen_demux.i_w_fifo/mem_q_reg[8][1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ram/mem_reg_0_0 has an input control pin ram/mem_reg_0_0/ENARDEN (net: ram/mem_reg_7_0_i_1_n_1) which is driven by a register (swervolf/axi_intercon/axi_xbar/gen_slv_port_demux[2].i_axi_demux/gen_demux.i_w_fifo/mem_q_reg[9][0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ram/mem_reg_0_0 has an input control pin ram/mem_reg_0_0/ENARDEN (net: ram/mem_reg_7_0_i_1_n_1) which is driven by a register (swervolf/axi_intercon/axi_xbar/gen_slv_port_demux[2].i_axi_demux/gen_demux.i_w_fifo/read_pointer_q_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ram/mem_reg_0_0 has an input control pin ram/mem_reg_0_0/ENARDEN (net: ram/mem_reg_7_0_i_1_n_1) which is driven by a register (swervolf/axi_intercon/axi_xbar/gen_slv_port_demux[2].i_axi_demux/gen_demux.i_w_fifo/read_pointer_q_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ram/mem_reg_0_0 has an input control pin ram/mem_reg_0_0/ENARDEN (net: ram/mem_reg_7_0_i_1_n_1) which is driven by a register (swervolf/axi_intercon/axi_xbar/gen_slv_port_demux[2].i_axi_demux/gen_demux.i_w_fifo/status_cnt_q_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ram/mem_reg_0_0 has an input control pin ram/mem_reg_0_0/ENARDEN (net: ram/mem_reg_7_0_i_1_n_1) which is driven by a register (swervolf/axi_intercon/axi_xbar/gen_slv_port_demux[2].i_axi_demux/gen_demux.i_w_fifo/status_cnt_q_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ram/mem_reg_0_0 has an input control pin ram/mem_reg_0_0/ENARDEN (net: ram/mem_reg_7_0_i_1_n_1) which is driven by a register (swervolf/axi_intercon/axi_xbar/gen_slv_port_demux[2].i_axi_demux/gen_demux.i_w_fifo/status_cnt_q_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 swervolf/rvtop/mem/Gen_dccm_enable.dccm/mem_bank[0].dccm.dccm_bank/ram_core_reg_1 has an input control pin swervolf/rvtop/mem/Gen_dccm_enable.dccm/mem_bank[0].dccm.dccm_bank/ram_core_reg_1/ADDRARDADDR[13] (net: swervolf/rvtop/mem/Gen_dccm_enable.dccm/mem_bank[0].dccm.dccm_bank/ADR[9]) which is driven by a register (swervolf/rvtop/mem/Gen_dccm_enable.dccm/rd_addr_hi_ff/dout_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 swervolf/rvtop/mem/Gen_dccm_enable.dccm/mem_bank[0].dccm.dccm_bank/ram_core_reg_1 has an input control pin swervolf/rvtop/mem/Gen_dccm_enable.dccm/mem_bank[0].dccm.dccm_bank/ram_core_reg_1/ADDRARDADDR[13] (net: swervolf/rvtop/mem/Gen_dccm_enable.dccm/mem_bank[0].dccm.dccm_bank/ADR[9]) which is driven by a register (swervolf/rvtop/mem/Gen_dccm_enable.dccm/rd_addr_hi_ff/dout_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 swervolf/rvtop/mem/Gen_dccm_enable.dccm/mem_bank[0].dccm.dccm_bank/ram_core_reg_1 has an input control pin swervolf/rvtop/mem/Gen_dccm_enable.dccm/mem_bank[0].dccm.dccm_bank/ram_core_reg_1/ADDRARDADDR[13] (net: swervolf/rvtop/mem/Gen_dccm_enable.dccm/mem_bank[0].dccm.dccm_bank/ADR[9]) which is driven by a register (swervolf/rvtop/mem/Gen_dccm_enable.dccm/rd_addr_lo_ff/dout_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 swervolf/rvtop/mem/Gen_dccm_enable.dccm/mem_bank[0].dccm.dccm_bank/ram_core_reg_1 has an input control pin swervolf/rvtop/mem/Gen_dccm_enable.dccm/mem_bank[0].dccm.dccm_bank/ram_core_reg_1/ADDRARDADDR[13] (net: swervolf/rvtop/mem/Gen_dccm_enable.dccm/mem_bank[0].dccm.dccm_bank/ADR[9]) which is driven by a register (swervolf/rvtop/mem/Gen_dccm_enable.dccm/rd_addr_lo_ff/dout_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 swervolf/rvtop/mem/Gen_dccm_enable.dccm/mem_bank[0].dccm.dccm_bank/ram_core_reg_1 has an input control pin swervolf/rvtop/mem/Gen_dccm_enable.dccm/mem_bank[0].dccm.dccm_bank/ram_core_reg_1/ADDRARDADDR[13] (net: swervolf/rvtop/mem/Gen_dccm_enable.dccm/mem_bank[0].dccm.dccm_bank/ADR[9]) which is driven by a register (swervolf/rvtop/veer/dbg/dbg_data0_reg/genblock.genblock.dff/genblock.dffs/dout_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 swervolf/rvtop/mem/Gen_dccm_enable.dccm/mem_bank[0].dccm.dccm_bank/ram_core_reg_1 has an input control pin swervolf/rvtop/mem/Gen_dccm_enable.dccm/mem_bank[0].dccm.dccm_bank/ram_core_reg_1/ADDRARDADDR[13] (net: swervolf/rvtop/mem/Gen_dccm_enable.dccm/mem_bank[0].dccm.dccm_bank/ADR[9]) which is driven by a register (swervolf/rvtop/veer/dbg/dbg_data0_reg/genblock.genblock.dff/genblock.dffs/dout_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 swervolf/rvtop/mem/Gen_dccm_enable.dccm/mem_bank[0].dccm.dccm_bank/ram_core_reg_1 has an input control pin swervolf/rvtop/mem/Gen_dccm_enable.dccm/mem_bank[0].dccm.dccm_bank/ram_core_reg_1/ADDRARDADDR[13] (net: swervolf/rvtop/mem/Gen_dccm_enable.dccm/mem_bank[0].dccm.dccm_bank/ADR[9]) which is driven by a register (swervolf/rvtop/veer/dbg/dbg_data1_reg/genblock.genblock.dff/genblock.dffs/dout_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 swervolf/rvtop/mem/Gen_dccm_enable.dccm/mem_bank[0].dccm.dccm_bank/ram_core_reg_1 has an input control pin swervolf/rvtop/mem/Gen_dccm_enable.dccm/mem_bank[0].dccm.dccm_bank/ram_core_reg_1/ADDRARDADDR[13] (net: swervolf/rvtop/mem/Gen_dccm_enable.dccm/mem_bank[0].dccm.dccm_bank/ADR[9]) which is driven by a register (swervolf/rvtop/veer/dbg/dbg_data1_reg/genblock.genblock.dff/genblock.dffs/dout_reg[10]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 swervolf/rvtop/mem/Gen_dccm_enable.dccm/mem_bank[0].dccm.dccm_bank/ram_core_reg_1 has an input control pin swervolf/rvtop/mem/Gen_dccm_enable.dccm/mem_bank[0].dccm.dccm_bank/ram_core_reg_1/ADDRARDADDR[13] (net: swervolf/rvtop/mem/Gen_dccm_enable.dccm/mem_bank[0].dccm.dccm_bank/ADR[9]) which is driven by a register (swervolf/rvtop/veer/dbg/dbg_data1_reg/genblock.genblock.dff/genblock.dffs/dout_reg[11]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 swervolf/rvtop/mem/Gen_dccm_enable.dccm/mem_bank[0].dccm.dccm_bank/ram_core_reg_1 has an input control pin swervolf/rvtop/mem/Gen_dccm_enable.dccm/mem_bank[0].dccm.dccm_bank/ram_core_reg_1/ADDRARDADDR[13] (net: swervolf/rvtop/mem/Gen_dccm_enable.dccm/mem_bank[0].dccm.dccm_bank/ADR[9]) which is driven by a register (swervolf/rvtop/veer/dbg/dbg_data1_reg/genblock.genblock.dff/genblock.dffs/dout_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 swervolf/rvtop/mem/Gen_dccm_enable.dccm/mem_bank[0].dccm.dccm_bank/ram_core_reg_1 has an input control pin swervolf/rvtop/mem/Gen_dccm_enable.dccm/mem_bank[0].dccm.dccm_bank/ram_core_reg_1/ADDRARDADDR[13] (net: swervolf/rvtop/mem/Gen_dccm_enable.dccm/mem_bank[0].dccm.dccm_bank/ADR[9]) which is driven by a register (swervolf/rvtop/veer/dbg/dbg_data1_reg/genblock.genblock.dff/genblock.dffs/dout_reg[28]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 swervolf/rvtop/mem/Gen_dccm_enable.dccm/mem_bank[0].dccm.dccm_bank/ram_core_reg_1 has an input control pin swervolf/rvtop/mem/Gen_dccm_enable.dccm/mem_bank[0].dccm.dccm_bank/ram_core_reg_1/ADDRARDADDR[13] (net: swervolf/rvtop/mem/Gen_dccm_enable.dccm/mem_bank[0].dccm.dccm_bank/ADR[9]) which is driven by a register (swervolf/rvtop/veer/dbg/dbg_data1_reg/genblock.genblock.dff/genblock.dffs/dout_reg[29]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 swervolf/rvtop/mem/Gen_dccm_enable.dccm/mem_bank[0].dccm.dccm_bank/ram_core_reg_1 has an input control pin swervolf/rvtop/mem/Gen_dccm_enable.dccm/mem_bank[0].dccm.dccm_bank/ram_core_reg_1/ADDRARDADDR[13] (net: swervolf/rvtop/mem/Gen_dccm_enable.dccm/mem_bank[0].dccm.dccm_bank/ADR[9]) which is driven by a register (swervolf/rvtop/veer/dbg/dbg_data1_reg/genblock.genblock.dff/genblock.dffs/dout_reg[30]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 swervolf/rvtop/mem/Gen_dccm_enable.dccm/mem_bank[0].dccm.dccm_bank/ram_core_reg_1 has an input control pin swervolf/rvtop/mem/Gen_dccm_enable.dccm/mem_bank[0].dccm.dccm_bank/ram_core_reg_1/ADDRARDADDR[13] (net: swervolf/rvtop/mem/Gen_dccm_enable.dccm/mem_bank[0].dccm.dccm_bank/ADR[9]) which is driven by a register (swervolf/rvtop/veer/dbg/dbg_data1_reg/genblock.genblock.dff/genblock.dffs/dout_reg[31]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 swervolf/rvtop/mem/Gen_dccm_enable.dccm/mem_bank[0].dccm.dccm_bank/ram_core_reg_1 has an input control pin swervolf/rvtop/mem/Gen_dccm_enable.dccm/mem_bank[0].dccm.dccm_bank/ram_core_reg_1/ADDRARDADDR[13] (net: swervolf/rvtop/mem/Gen_dccm_enable.dccm/mem_bank[0].dccm.dccm_bank/ADR[9]) which is driven by a register (swervolf/rvtop/veer/dbg/dbg_data1_reg/genblock.genblock.dff/genblock.dffs/dout_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 swervolf/rvtop/mem/Gen_dccm_enable.dccm/mem_bank[0].dccm.dccm_bank/ram_core_reg_1 has an input control pin swervolf/rvtop/mem/Gen_dccm_enable.dccm/mem_bank[0].dccm.dccm_bank/ram_core_reg_1/ADDRARDADDR[13] (net: swervolf/rvtop/mem/Gen_dccm_enable.dccm/mem_bank[0].dccm.dccm_bank/ADR[9]) which is driven by a register (swervolf/rvtop/veer/dbg/dbg_data1_reg/genblock.genblock.dff/genblock.dffs/dout_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 swervolf/rvtop/mem/Gen_dccm_enable.dccm/mem_bank[0].dccm.dccm_bank/ram_core_reg_1 has an input control pin swervolf/rvtop/mem/Gen_dccm_enable.dccm/mem_bank[0].dccm.dccm_bank/ram_core_reg_1/ADDRARDADDR[13] (net: swervolf/rvtop/mem/Gen_dccm_enable.dccm/mem_bank[0].dccm.dccm_bank/ADR[9]) which is driven by a register (swervolf/rvtop/veer/dbg/dmabstractcs_error_reg/dout_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 swervolf/rvtop/mem/Gen_dccm_enable.dccm/mem_bank[0].dccm.dccm_bank/ram_core_reg_1 has an input control pin swervolf/rvtop/mem/Gen_dccm_enable.dccm/mem_bank[0].dccm.dccm_bank/ram_core_reg_1/ADDRARDADDR[13] (net: swervolf/rvtop/mem/Gen_dccm_enable.dccm/mem_bank[0].dccm.dccm_bank/ADR[9]) which is driven by a register (swervolf/rvtop/veer/dbg/dmabstractcs_error_reg/dout_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 swervolf/rvtop/mem/Gen_dccm_enable.dccm/mem_bank[0].dccm.dccm_bank/ram_core_reg_1 has an input control pin swervolf/rvtop/mem/Gen_dccm_enable.dccm/mem_bank[0].dccm.dccm_bank/ram_core_reg_1/ADDRARDADDR[13] (net: swervolf/rvtop/mem/Gen_dccm_enable.dccm/mem_bank[0].dccm.dccm_bank/ADR[9]) which is driven by a register (swervolf/rvtop/veer/dbg/dmabstractcs_error_reg/dout_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 swervolf/rvtop/mem/Gen_dccm_enable.dccm/mem_bank[0].dccm.dccm_bank/ram_core_reg_1 has an input control pin swervolf/rvtop/mem/Gen_dccm_enable.dccm/mem_bank[0].dccm.dccm_bank/ram_core_reg_1/ADDRARDADDR[13] (net: swervolf/rvtop/mem/Gen_dccm_enable.dccm/mem_bank[0].dccm.dccm_bank/ADR[9]) which is driven by a register (swervolf/rvtop/veer/dbg/dmcontrol_wrenff/dout_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 61 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Bitstream compression saved 8702432 bits.
+Writing bitstream ./rvfpganexys.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-1876] WebTalk data collection is mandatory when using a ULT device. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+INFO: [Common 17-83] Releasing license: Implementation
+14 Infos, 61 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:40 ; elapsed = 00:00:26 . Memory (MB): peak = 3571.141 ; gain = 511.195
+INFO: [Common 17-206] Exiting Vivado at Sun Jun 21 17:04:37 2026...

@@ -2,56 +2,58 @@
 // Register addresses
 // Provided AS IS without any warranty of any kind nor EXPLICIT nor IMPLIED
 
-`define ACCELERATOR_REG_A			8'h0	// 
-`define ACCELERATOR_REG_B			8'h4	// 
-`define ACCELERATOR_REG_RESULT		8'h8	// 
-`define ACCELERATOR_REG_STATUS		8'hc	// 
+// Register addresses
+// 2-Bit Packed Architecture
+`define ACCELERATOR_REG_CTRL    8'h00   // [0] go, [31] done
+`define ACCELERATOR_REG_QUERY   8'h04   // 16 chars packed into 32 bits (2 bits/char)
+`define ACCELERATOR_REG_REF     8'h08   // 16 chars packed into 32 bits (2 bits/char)
+`define ACCELERATOR_REG_RESULT  8'h0C   // Output Best Score
 
-
-module accelerator_regs
-#(parameter SIM = 0)
- (
-	input	logic					clk,
-	input	logic					wb_rst_i,
-	input	logic	[7:0]			wb_addr_i,
-	input	logic	[31:0]			wb_dat_i,
-	output	logic	[31:0]			wb_dat_o,
-	input	logic					wb_we_i,
-	input	logic					wb_re_i,
-	input	logic					overflow,
-	output	logic	[31:0]			reg_a,
-	output	logic	[31:0]			reg_b,
-	input	logic	[31:0]			reg_result
+module accelerator_regs #(parameter SIM = 0) (
+    // Arrive from accelerator_wb (wishbone bus)
+    input  logic         clk,
+    input  logic         wb_rst_i,
+    input  logic [7:0]   wb_addr_i,
+    input  logic [31:0]  wb_dat_i,
+    output logic [31:0]  wb_dat_o,
+    input  logic         wb_we_i,
+    input  logic         wb_re_i,
+    
+    // Down to accelerator
+    output logic         go,
+    input  logic         done,
+    output logic [31:0]  reg_query,
+    output logic [31:0]  reg_ref,
+    input  logic [31:0]  reg_result
 );
 
+    logic [31:0] reg_ctrl;
+    assign go = reg_ctrl[0];
 
-// Asynchronous reading here because the outputs are sampled in uart_wb.v file 
-always_comb   // asynchrounous reading
-begin
-	case (wb_addr_i)
-		`ACCELERATOR_REG_STATUS	:	wb_dat_o = {31'h00000000,overflow};
-		`ACCELERATOR_REG_A		:	wb_dat_o = reg_a;
-		`ACCELERATOR_REG_B		:	wb_dat_o = reg_b;
-		`ACCELERATOR_REG_RESULT	:	wb_dat_o = reg_result;
-		default					:	wb_dat_o = 32'b0; // ??
-	endcase // 
-end // 
+    // Read logic
+    always_comb begin
+        case (wb_addr_i)
+            `ACCELERATOR_REG_CTRL:   wb_dat_o = {done, 30'b0, reg_ctrl[0]}; // Done is MSB
+            `ACCELERATOR_REG_QUERY:  wb_dat_o = reg_query;
+            `ACCELERATOR_REG_REF:    wb_dat_o = reg_ref;
+            `ACCELERATOR_REG_RESULT: wb_dat_o = reg_result;
+            default:                 wb_dat_o = 32'b0;
+        endcase
+    end
 
-//
-//   WRITES AND RESETS   //
-//
-	always_ff @(posedge clk or posedge wb_rst_i) begin
-		if (wb_rst_i)	begin
-			reg_a			<= '0;
-			reg_b			<= '0;
+    // Write logic
+    always_ff @(posedge clk or posedge wb_rst_i) begin
+        if (wb_rst_i) begin
+            reg_ctrl  <= '0;
+            reg_query <= '0;
+            reg_ref   <= '0;
+        end else if (wb_we_i) begin
+            case (wb_addr_i)
+                `ACCELERATOR_REG_CTRL:  reg_ctrl  <= wb_dat_i;
+                `ACCELERATOR_REG_QUERY: reg_query <= wb_dat_i;
+                `ACCELERATOR_REG_REF:   reg_ref   <= wb_dat_i;
+            endcase
         end
-		else
-			if (wb_we_i ) begin
-				case (wb_addr_i)
-				`ACCELERATOR_REG_A		:	reg_a		<= wb_dat_i[7:0];
-				`ACCELERATOR_REG_B		:	reg_b		<= wb_dat_i[7:0];
-				endcase // case(wb_addr_i)			
-			end
-	end
+     end
 
 endmodule
