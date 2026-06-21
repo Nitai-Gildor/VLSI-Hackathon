@@ -20,6 +20,8 @@
 
 #define NEG_INF  (-1000000)
 
+
+
 #define NUM_OF_REFS 8
 
 static int M[MAX_LEN][MAX_LEN];
@@ -41,9 +43,9 @@ static inline int max3(int a, int b, int c)
     return m;
 }
 
-static inline int max4(int a,int b,int c,int d)
+static inline int max4(int b,int c,int d)
 {
-    int m = a;
+    int m = 0;
 
     if(b > m) m = b;
     if(c > m) m = c;
@@ -99,6 +101,7 @@ int smith_waterman_affine(
             else
                 s = MISMATCH;
 
+
             /* -------------------------- */
             /* Insertion matrix           */
             /* -------------------------- */
@@ -107,6 +110,7 @@ int smith_waterman_affine(
                 max2(
                     M[i-1][j] + GAP_OPEN,
                     I[i-1][j] + GAP_EXT);
+
 
             /* -------------------------- */
             /* Deletion matrix            */
@@ -123,7 +127,6 @@ int smith_waterman_affine(
 
             M[i][j] =
                 max4(
-                    0,
                     M[i-1][j-1] + s,
                     I[i][j],
                     D[i][j]);
