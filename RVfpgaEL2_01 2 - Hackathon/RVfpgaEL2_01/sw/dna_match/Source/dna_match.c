@@ -63,78 +63,44 @@ int smith_waterman_affine(
 
     int best_score = 0;
 
-    //for(int i=0;i<rows;i++)
-    //{
-    //    for(int j=0;j<cols;j++)
-    //    {
-    //        M[i][j] = 0;
-    //        I[i][j] = NEG_INF;
-    //        D[i][j] = NEG_INF;
-    //    }
-    //}
+    // We only need 1D arrays for the row above us
+int M_prev[MAX_LEN] = {0};
+int I_prev[MAX_LEN] = {NEG_INF};
 
-    // Shorter init
-    for(int i = 0; i<rows; i++)
-    {
-      M[i][0] = 0;
-      I[i][0] = NEG_INF;
-      D[i][0] = NEG_INF;
-    }
+// Initialize I_prev to NEG_INF here...
+
+for(int i = 1; i < rows; i++) {
+    int m_left = 0;       // Corresponds to M[i][j-1]
+    int d_left = NEG_INF; // Corresponds to D[i][j-1]
+    int m_diag = 0;       // Corresponds to M[i-1][j-1]
     
-    for(int i=0;i<cols;i++)
-    {
-        
-        M[0][i] = 0;
-        I[0][i] = NEG_INF;
-        D[0][i] = NEG_INF; 
-    }  
+    for(int j = 1; j < cols; j++) {
+        int s = (query[i-1] == ref[j-1]) ? MATCH : MISMATCH;
 
+        // 1. Read the "up" values from our 1D row buffer ONLY ONCE
+        int m_up = M_prev[j];
+        int i_up = I_prev[j];
 
-    for(int i=1;i<rows;i++)
-    {
-        for(int j=1;j<cols;j++)
-        {
-            int s;
+        // 2. Calculate current cell using our FAST local registers
+        int i_curr = max2(m_up + GAP_OPEN, i_up + GAP_EXT);
+        int d_curr = max2(m_left + GAP_OPEN, d_left + GAP_EXT);
+        int m_curr = max4( m_diag + s, i_curr, d_curr);
 
-            if(query[i-1] == ref[j-1])
-                s = MATCH;
-            else
-                s = MISMATCH;
+        if(m_curr > best_score) best_score = m_curr;
 
+        // 3. Prepare for the NEXT column (j+1)
+        // The current cell becomes the "left" cell for the next iteration
+        m_left = m_curr;
+        d_left = d_curr;
 
-            /* -------------------------- */
-            /* Insertion matrix           */
-            /* -------------------------- */
-
-            I[i][j] =
-                max2(
-                    M[i-1][j] + GAP_OPEN,
-                    I[i-1][j] + GAP_EXT);
-
-
-            /* -------------------------- */
-            /* Deletion matrix            */
-            /* -------------------------- */
-
-            D[i][j] =
-                max2(
-                    M[i][j-1] + GAP_OPEN,
-                    D[i][j-1] + GAP_EXT);
-
-            /* -------------------------- */
-            /* Match matrix               */
-            /* -------------------------- */
-
-            M[i][j] =
-                max4(
-                    M[i-1][j-1] + s,
-                    I[i][j],
-                    D[i][j]);
-
-            if(M[i][j] > best_score)
-                best_score = M[i][j];
-        }
+        // 4. Update the 1D arrays for the NEXT row (i+1)
+        // Before we overwrite M_prev[j], we must save it to become the 
+        // diagonal for the next column!
+        m_diag = M_prev[j]; 
+        M_prev[j] = m_curr;
+        I_prev[j] = i_curr;
     }
+}
 
     return best_score;
 }
