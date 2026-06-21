@@ -35,5 +35,4 @@ Output/Debug/Obj/dna_match/dna_match.o: \
   C:\Program\ Files\SEGGER\SEGGER\ Embedded\ Studio\ 8.22a\include\__SEGGER_RTL_ConfDefaults.h \
   C:\Program\ Files\SEGGER\SEGGER\ Embedded\ Studio\ 8.22a\include\__SEGGER_RTL_Conf.h \
   C:\Program\ Files\SEGGER\SEGGER\ Embedded\ Studio\ 8.22a\include\__SEGGER_RTL_RISCV_Conf.h \
-  C:\Program\ Files\SEGGER\SEGGER\ Embedded\ Studio\ 8.22a\include\string.h \
   C:\Program\ Files\SEGGER\SEGGER\ Embedded\ Studio\ 8.22a\include\stdint.h

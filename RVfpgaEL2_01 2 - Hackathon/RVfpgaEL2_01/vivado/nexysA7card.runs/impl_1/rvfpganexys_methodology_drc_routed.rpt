@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date         : Sun Jun 21 17:03:46 2026
+| Date         : Sun Jun 21 18:06:21 2026
 | Host         : Nitais_Laptop running 64-bit major release  (build 9200)
 | Command      : report_methodology -file rvfpganexys_methodology_drc_routed.rpt -pb rvfpganexys_methodology_drc_routed.pb -rpx rvfpganexys_methodology_drc_routed.rpx
 | Design       : rvfpganexys
@@ -23,7 +23,7 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 248
+             Violations found: 249
 +-----------+------------------+------------------------------------------------------+------------+
 | Rule      | Severity         | Description                                          | Violations |
 +-----------+------------------+------------------------------------------------------+------------+
@@ -37,6 +37,7 @@ Table of Contents
 | TIMING-18 | Warning          | Missing input or output delay                        | 4          |
 | TIMING-20 | Warning          | Non-clocked latch                                    | 32         |
 | TIMING-28 | Warning          | Auto-derived clock referenced by a timing constraint | 1          |
+| ULMTCS-1  | Warning          | Control Sets use limits recommend reduction          | 1          |
 | LATCH-1   | Advisory         | Existing latches in the design                       | 1          |
 +-----------+------------------+------------------------------------------------------+------------+
 
@@ -1293,6 +1294,11 @@ Related violations: <none>
 TIMING-28#1 Warning
 Auto-derived clock referenced by a timing constraint  
 The auto-derived clock clk_core is referenced by name inside timing constraint (see constraint position 3 in the Timing Constraint window in Vivado IDE). It is recommended to reference an auto-derived clock by the pin name attached to the clock: get_clocks -of_objects [get_pins clk_gen/PLLE2_BASE_inst/CLKOUT0]
+Related violations: <none>
+
+ULMTCS-1#1 Warning
+Control Sets use limits recommend reduction  
+This design uses 1226 control sets (vs. available limit of 15850, determined by 1 control set per CLB). This exceeds the control set use guideline of 7.5 percent. This is at a level where reduction is RECOMMENDED (see UG949). Use report_control_sets to get more details.
 Related violations: <none>
 
 LATCH-1#1 Advisory

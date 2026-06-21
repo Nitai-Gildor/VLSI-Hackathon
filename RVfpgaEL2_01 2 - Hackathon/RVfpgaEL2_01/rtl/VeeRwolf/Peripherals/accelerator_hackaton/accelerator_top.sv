@@ -6,7 +6,6 @@
 module accelerator_top (
     input               wb_clk_i,
     
-    // WISHBONE interface
     input  logic        wb_rst_i,
     input  logic        wb_stb_i,
     input  logic [2:0]  wb_cti_i,
@@ -26,31 +25,18 @@ module accelerator_top (
     parameter SIM = 0;
     parameter debug = 0;
 
-    logic [31:0] wb_data_reg_out; // Internal data input
-    logic [31:0] wb_data_reg_in;  // Internal data output
+    logic [31:0] wb_data_reg_out; 
+    logic [31:0] wb_data_reg_in;  
     logic [7:0]  wb_adr_int;
-    logic        we_o;            // Write enable for registers
-    logic        re_o;            // Read enable for registers
+    logic        we_o;            
+    logic        re_o;            
 
     logic [31:0] reg_query;
-    logic [31:0] reg_ref;
+    logic [31:0] reg_ref [8];        // Array wire
+    logic [31:0] reg_result [8];     // Array wire
     logic        go;
     logic        done;
-    logic [31:0] reg_result;
 
-//`ifndef XSIM
-//    // Updated ILA probes for the 2-bit packed architecture
-//    ila_accelerator ila_accelerator (
-//        .clk    (wb_clk_i), 
-//        .probe0 (go),         
-//        .probe1 (done),       
-//        .probe2 (reg_query),      
-//        .probe3 (reg_ref),        
-//        .probe4 (reg_result)
-//    );
-//`endif
-
-    // WISHBONE interface module
     accelerator_wb wb_interface (
         .clk             (wb_clk_i),
         .wb_rst_i        (wb_rst_i),
@@ -73,7 +59,6 @@ module accelerator_top (
         .re_o            (re_o)
     );
 
-    // Registers
     accelerator_regs regs (
         .clk        (wb_clk_i),
         .wb_rst_i   (wb_rst_i),
@@ -89,7 +74,6 @@ module accelerator_top (
         .reg_result (reg_result)
     );
 
-    // Accelerator Wrapper
     accelerator accelerator (
         .clk        (wb_clk_i), 
         .wb_rst_i   (wb_rst_i), 
