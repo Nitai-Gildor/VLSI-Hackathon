@@ -61,15 +61,32 @@ int smith_waterman_affine(
 
     int best_score = 0;
 
-    for(int i=0;i<rows;i++)
+    //for(int i=0;i<rows;i++)
+    //{
+    //    for(int j=0;j<cols;j++)
+    //    {
+    //        M[i][j] = 0;
+    //        I[i][j] = NEG_INF;
+    //        D[i][j] = NEG_INF;
+    //    }
+    //}
+
+    // Shorter init
+    for(int i = 0; i<rows; i++)
     {
-        for(int j=0;j<cols;j++)
-        {
-            M[i][j] = 0;
-            I[i][j] = NEG_INF;
-            D[i][j] = NEG_INF;
-        }
+      M[i][0] = 0;
+      I[i][0] = NEG_INF;
+      D[i][0] = NEG_INF;
     }
+    
+    for(int i=0;i<cols;i++)
+    {
+        
+        M[0][i] = 0;
+        I[0][i] = NEG_INF;
+        D[0][i] = NEG_INF; 
+    }  
+
 
     for(int i=1;i<rows;i++)
     {

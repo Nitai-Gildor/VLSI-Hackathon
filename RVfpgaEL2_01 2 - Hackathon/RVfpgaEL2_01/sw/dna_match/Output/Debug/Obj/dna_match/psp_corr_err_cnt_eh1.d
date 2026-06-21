@@ -1,0 +1,29 @@
+Output/Debug/Obj/dna_match/psp_corr_err_cnt_eh1.o: \
+  C:\VLSI\ Hackathon\RVfpgaEL2_01\ 2\ -\ Hackathon\RVfpgaEL2_01\framework-wd-riscv-sdk\psp_EL2\psp_corr_err_cnt_eh1.c \
+  ..\..\framework-wd-riscv-sdk\psp_EL2\api_inc\psp_api.h \
+  ..\..\framework-wd-riscv-sdk\psp_EL2\api_inc\psp_types.h \
+  ..\..\framework-wd-riscv-sdk\psp_EL2\api_inc\psp_intrinsics.h \
+  ..\..\framework-wd-riscv-sdk\psp_EL2\api_inc\psp_defines.h \
+  ..\..\framework-wd-riscv-sdk\psp_EL2\api_inc\psp_config.h \
+  ..\..\framework-wd-riscv-sdk\psp_EL2\api_inc\psp_csrs.h \
+  ..\..\framework-wd-riscv-sdk\psp_EL2\api_inc\psp_macros.h \
+  ..\..\framework-wd-riscv-sdk\psp_EL2\api_inc\psp_pragmas.h \
+  ..\..\framework-wd-riscv-sdk\psp_EL2\api_inc\psp_attributes.h \
+  ..\..\framework-wd-riscv-sdk\psp_EL2\api_inc\psp_memory_utils.h \
+  ..\..\framework-wd-riscv-sdk\psp_EL2\api_inc\psp_int_vect.h \
+  ..\..\framework-wd-riscv-sdk\psp_EL2\api_inc\psp_version.h \
+  ..\..\framework-wd-riscv-sdk\psp_EL2\api_inc\psp_timers.h \
+  ..\..\framework-wd-riscv-sdk\psp_EL2\api_inc\psp_interrupts.h \
+  ..\..\framework-wd-riscv-sdk\psp_EL2\api_inc\psp_csrs_eh1.h \
+  ..\..\framework-wd-riscv-sdk\psp_EL2\api_inc\psp_timers_eh1.h \
+  ..\..\framework-wd-riscv-sdk\psp_EL2\api_inc\psp_interrupts_eh1.h \
+  ..\..\framework-wd-riscv-sdk\psp_EL2\api_inc\psp_ext_interrupts_eh1.h \
+  ..\..\framework-wd-riscv-sdk\psp_EL2\api_inc\psp_pmc_eh1.h \
+  ..\..\framework-wd-riscv-sdk\psp_EL2\api_inc\psp_performance_monitor_eh1.h \
+  ..\..\framework-wd-riscv-sdk\psp_EL2\api_inc\psp_nmi_eh1.h \
+  ..\..\framework-wd-riscv-sdk\psp_EL2\api_inc\psp_cache_control_eh1.h \
+  ..\..\framework-wd-riscv-sdk\psp_EL2\api_inc\psp_corr_err_cnt_eh1.h \
+  ..\..\framework-wd-riscv-sdk\psp_EL2\api_inc\psp_csrs_el2.h \
+  ..\..\framework-wd-riscv-sdk\psp_EL2\api_inc\psp_timers_el2.h \
+  ..\..\framework-wd-riscv-sdk\psp_EL2\api_inc\psp_performance_monitor_el2.h \
+  ..\..\framework-wd-riscv-sdk\psp_EL2\api_inc\psp_nmi_el2.h
