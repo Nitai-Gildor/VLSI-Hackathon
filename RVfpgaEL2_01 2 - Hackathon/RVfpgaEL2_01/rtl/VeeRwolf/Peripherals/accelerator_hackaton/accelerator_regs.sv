@@ -29,6 +29,7 @@ module accelerator_regs #(parameter SIM = 0) (
     assign go = reg_ctrl[0];
 
     // Explicit Read logic - Unrolled for Synthesis
+    // Explicit Read logic - Unrolled and Packed for Synthesis
     always_comb begin
         case (wb_addr_i)
             8'h00: wb_dat_o = {done, 30'b0, reg_ctrl[0]};
@@ -44,15 +45,24 @@ module accelerator_regs #(parameter SIM = 0) (
             8'h20: wb_dat_o = reg_ref[6];
             8'h24: wb_dat_o = reg_ref[7];
             
-            // Result Registers
-            8'h28: wb_dat_o = reg_result[0];
-            8'h2C: wb_dat_o = reg_result[1];
-            8'h30: wb_dat_o = reg_result[2];
-            8'h34: wb_dat_o = reg_result[3];
-            8'h38: wb_dat_o = reg_result[4];
-            8'h3C: wb_dat_o = reg_result[5];
-            8'h40: wb_dat_o = reg_result[6];
-            8'h44: wb_dat_o = reg_result[7];
+            // PACKED Result Registers (6 bits per score)
+            // 0x28 holds Scores 4, 3, 2, 1, 0
+            8'h28: wb_dat_o = {
+                2'b00, 
+                reg_result[4][5:0], 
+                reg_result[3][5:0], 
+                reg_result[2][5:0], 
+                reg_result[1][5:0], 
+                reg_result[0][5:0]
+            };
+            
+            // 0x2C holds Scores 7, 6, 5
+            8'h2C: wb_dat_o = {
+                14'b0, 
+                reg_result[7][5:0], 
+                reg_result[6][5:0], 
+                reg_result[5][5:0]
+            };
             
             default: wb_dat_o = 32'b0;
         endcase

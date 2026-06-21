@@ -9,45 +9,26 @@
 #include <stdio.h>
 #include <stdint.h>
 
-// Expanded Memory Map for 8-core design
+#define NUM_OF_REFS 8
+
 #define ACCELERATOR_REG_CTRL      0x80001300  
 #define ACCELERATOR_REG_QUERY     0x80001304  
-
 #define ACCELERATOR_REG_REF_BASE  0x80001308  
 #define ACCELERATOR_REG_RES_BASE  0x80001328  
 
-// Macro fix included to ensure pointer math resolves correctly
 #define READ_GPIO(dir) (*(volatile unsigned *)(dir))
 #define WRITE_GPIO(dir, value) { (*(volatile unsigned *)(dir)) = (value); }
 
-#define NUM_OF_REFS 8
-
-// OPTIMIZATION 1: Global Lookup Table 
-// Instantly returns the 2-bit value for any ASCII character
-static const uint32_t dna_lut[256] = {
-    ['A'] = 0, ['C'] = 1, ['G'] = 2, ['T'] = 3
-};
-
-// OPTIMIZATION 2: Fully Unrolled Packing
-// Forces the RISC-V compiler to execute a straight line of loads and shifts.
-// Zero branch penalties. Zero loop counters.
+// Pure CPU register bitwise extraction
 static inline uint32_t pack_sequence(const char *seq) {
-    return (dna_lut[(uint8_t)seq[0]]) |
-           (dna_lut[(uint8_t)seq[1]] << 2) |
-           (dna_lut[(uint8_t)seq[2]] << 4) |
-           (dna_lut[(uint8_t)seq[3]] << 6) |
-           (dna_lut[(uint8_t)seq[4]] << 8) |
-           (dna_lut[(uint8_t)seq[5]] << 10) |
-           (dna_lut[(uint8_t)seq[6]] << 12) |
-           (dna_lut[(uint8_t)seq[7]] << 14) |
-           (dna_lut[(uint8_t)seq[8]] << 16) |
-           (dna_lut[(uint8_t)seq[9]] << 18) |
-           (dna_lut[(uint8_t)seq[10]] << 20) |
-           (dna_lut[(uint8_t)seq[11]] << 22) |
-           (dna_lut[(uint8_t)seq[12]] << 24) |
-           (dna_lut[(uint8_t)seq[13]] << 26) |
-           (dna_lut[(uint8_t)seq[14]] << 28) |
-           (dna_lut[(uint8_t)seq[15]] << 30);
+    return (((seq[0]  >> 1) & 3))       | (((seq[1]  >> 1) & 3) << 2)  |
+           (((seq[2]  >> 1) & 3) << 4)  | (((seq[3]  >> 1) & 3) << 6)  |
+           (((seq[4]  >> 1) & 3) << 8)  | (((seq[5]  >> 1) & 3) << 10) |
+           (((seq[6]  >> 1) & 3) << 12) | (((seq[7]  >> 1) & 3) << 14) |
+           (((seq[8]  >> 1) & 3) << 16) | (((seq[9]  >> 1) & 3) << 18) |
+           (((seq[10] >> 1) & 3) << 20) | (((seq[11] >> 1) & 3) << 22) |
+           (((seq[12] >> 1) & 3) << 24) | (((seq[13] >> 1) & 3) << 26) |
+           (((seq[14] >> 1) & 3) << 28) | (((seq[15] >> 1) & 3) << 30);
 }
 
 int main(void)
@@ -57,28 +38,21 @@ int main(void)
 
     const char *references[] =
     {
-        "ACGTACGTACGTACGT",
-        "ACGTTCGTACGTACGT",
-        "ACGTACGGACGTACGT",
-        "TTTTTTTTTTTTTTTT",
-        "ACGTACGTTCGTACGT",
-        "ACGTACGTACGTACGA",
-        "ACGTTTGTACGTACGT",
-        "ACGTACGTGCGTACGT"
+        "ACGTACGTACGTACGT", "ACGTTCGTACGTACGT", "ACGTACGGACGTACGT", "TTTTTTTTTTTTTTTT",
+        "ACGTACGTTCGTACGT", "ACGTACGTACGTACGA", "ACGTTTGTACGTACGT", "ACGTACGTGCGTACGT"
     };
 
     int cyc_beg, cyc_end;
-
     pspMachinePerfMonitorEnableAll();
     pspMachinePerfCounterSet(D_PSP_COUNTER0, D_CYCLES_CLOCKS_ACTIVE);
     
-    // Start timer! (Hackathon rules usually dictate the entire workload is timed)
+    // =========================================================
+    // TIMED EXECUTION BLOCK START
+    // =========================================================
     cyc_beg = pspMachinePerfCounterGet(D_PSP_COUNTER0);
 
-    // Write the query
     WRITE_GPIO(ACCELERATOR_REG_QUERY, pack_sequence(query));
 
-    // OPTIMIZATION 3: Fully unrolled loop for writing references
     WRITE_GPIO(ACCELERATOR_REG_REF_BASE + 0x00, pack_sequence(references[0]));
     WRITE_GPIO(ACCELERATOR_REG_REF_BASE + 0x04, pack_sequence(references[1]));
     WRITE_GPIO(ACCELERATOR_REG_REF_BASE + 0x08, pack_sequence(references[2]));
@@ -88,32 +62,35 @@ int main(void)
     WRITE_GPIO(ACCELERATOR_REG_REF_BASE + 0x18, pack_sequence(references[6]));
     WRITE_GPIO(ACCELERATOR_REG_REF_BASE + 0x1C, pack_sequence(references[7]));
 
-    // Fire all 8 cores simultaneously
     WRITE_GPIO(ACCELERATOR_REG_CTRL, 1);
 
-    // Wait for them ALL to finish
     while ((READ_GPIO(ACCELERATOR_REG_CTRL) & 0x80000000) == 0);
 
-    // Fully unrolled loop for reading results
-    score[0] = READ_GPIO(ACCELERATOR_REG_RES_BASE + 0x00);
-    score[1] = READ_GPIO(ACCELERATOR_REG_RES_BASE + 0x04);
-    score[2] = READ_GPIO(ACCELERATOR_REG_RES_BASE + 0x08);
-    score[3] = READ_GPIO(ACCELERATOR_REG_RES_BASE + 0x0C);
-    score[4] = READ_GPIO(ACCELERATOR_REG_RES_BASE + 0x10);
-    score[5] = READ_GPIO(ACCELERATOR_REG_RES_BASE + 0x14);
-    score[6] = READ_GPIO(ACCELERATOR_REG_RES_BASE + 0x18);
-    score[7] = READ_GPIO(ACCELERATOR_REG_RES_BASE + 0x1C);
+    // Read only TWO registers from the Wishbone bus
+    uint32_t packed_res_0 = READ_GPIO(ACCELERATOR_REG_RES_BASE + 0x00);
+    uint32_t packed_res_1 = READ_GPIO(ACCELERATOR_REG_RES_BASE + 0x04);
 
-    // Reset state machine
+    // Unpack the 6-bit values strictly using CPU registers
+    score[0] = (packed_res_0      ) & 0x3F;
+    score[1] = (packed_res_0 >>  6) & 0x3F;
+    score[2] = (packed_res_0 >> 12) & 0x3F;
+    score[3] = (packed_res_0 >> 18) & 0x3F;
+    score[4] = (packed_res_0 >> 24) & 0x3F;
+
+    score[5] = (packed_res_1      ) & 0x3F;
+    score[6] = (packed_res_1 >>  6) & 0x3F;
+    score[7] = (packed_res_1 >> 12) & 0x3F;
+
     WRITE_GPIO(ACCELERATOR_REG_CTRL, 0);
 
     cyc_end = pspMachinePerfCounterGet(D_PSP_COUNTER0);
+    // =========================================================
+    // TIMED EXECUTION BLOCK END
+    // =========================================================
 
-    // Stop timer before printing
     printf("Cycles = %d\n", cyc_end-cyc_beg);
 
-    for(int i=0; i<NUM_OF_REFS; i++)
-    {
+    for(int i=0; i<NUM_OF_REFS; i++) {
         printf("Reference %d score = %d\n", i, score[i]);
     }
 

@@ -14,7 +14,7 @@ ECHO is off.
     ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source rvfpganexys.tcl -notrace
-create_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 469.434 ; gain = 183.883
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 469.523 ; gain = 185.703
 Command: synth_design -top rvfpganexys -part xc7a100tcsg324-1 -flatten_hierarchy none -directive RuntimeOptimized -fsm_extraction off
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
@@ -22,9 +22,9 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 31212
+INFO: [Synth 8-7075] Helper process launched with PID 40560
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1318.988 ; gain = 439.043
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1319.336 ; gain = 440.738
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-11067] parameter 'pt' declared inside package 'el2_pkg' shall be treated as localparam [C:/VLSI Hackathon/RVfpgaEL2_01 2 - Hackathon/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/include/el2_def.sv:581]
 INFO: [Synth 8-11241] undeclared symbol 'vga_arready', assumed default net type 'wire' [C:/VLSI Hackathon/RVfpgaEL2_01 2 - Hackathon/RVfpgaEL2_01/rtl/rvfpganexys.sv:264]
@@ -396,7 +396,7 @@ INFO: [Synth 8-6157] synthesizing module 'accelerator_top' [C:/VLSI Hackathon/RV
 INFO: [Synth 8-6157] synthesizing module 'accelerator_wb' [C:/VLSI Hackathon/RVfpgaEL2_01 2 - Hackathon/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/accelerator_hackaton/accelerator_wb.sv:140]
 INFO: [Synth 8-6155] done synthesizing module 'accelerator_wb' (0#1) [C:/VLSI Hackathon/RVfpgaEL2_01 2 - Hackathon/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/accelerator_hackaton/accelerator_wb.sv:140]
 INFO: [Synth 8-6157] synthesizing module 'accelerator_regs' [C:/VLSI Hackathon/RVfpgaEL2_01 2 - Hackathon/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/accelerator_hackaton/accelerator_regs.sv:12]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/VLSI Hackathon/RVfpgaEL2_01 2 - Hackathon/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/accelerator_hackaton/accelerator_regs.sv:70]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/VLSI Hackathon/RVfpgaEL2_01 2 - Hackathon/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/accelerator_hackaton/accelerator_regs.sv:80]
 INFO: [Synth 8-6155] done synthesizing module 'accelerator_regs' (0#1) [C:/VLSI Hackathon/RVfpgaEL2_01 2 - Hackathon/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/accelerator_hackaton/accelerator_regs.sv:12]
 INFO: [Synth 8-6157] synthesizing module 'accelerator' [C:/VLSI Hackathon/RVfpgaEL2_01 2 - Hackathon/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/accelerator_hackaton/accelerator.sv:3]
 INFO: [Synth 8-6157] synthesizing module 'smith_waterman_core' [C:/VLSI Hackathon/RVfpgaEL2_01 2 - Hackathon/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/accelerator_hackaton/smith_waterman_core.sv:1]
@@ -947,18 +947,18 @@ WARNING: [Synth 8-7129] Port ic_debug_wr_data[68] in module EL2_IC_TAG is either
 WARNING: [Synth 8-7129] Port ic_debug_wr_data[67] in module EL2_IC_TAG is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:42 ; elapsed = 00:00:47 . Memory (MB): peak = 1799.930 ; gain = 919.984
+Finished RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1800.836 ; gain = 922.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:42 ; elapsed = 00:00:48 . Memory (MB): peak = 1799.930 ; gain = 919.984
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1800.836 ; gain = 922.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:43 ; elapsed = 00:00:48 . Memory (MB): peak = 1799.930 ; gain = 919.984
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1800.836 ; gain = 922.238
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1801.207 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.905 . Memory (MB): peak = 1802.215 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -981,28 +981,27 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/rvfpganexys_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.058 . Memory (MB): peak = 1978.785 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1976.398 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 1 instances were transformed.
   PLLE2_BASE => PLLE2_ADV: 1 instance 
 
 Access is denied.
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.538 . Memory (MB): peak = 1978.785 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.188 . Memory (MB): peak = 1976.398 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:01:33 ; elapsed = 00:01:39 . Memory (MB): peak = 1978.785 ; gain = 1098.840
+Finished Constraint Validation : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1976.398 ; gain = 1097.801
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:01:33 ; elapsed = 00:01:39 . Memory (MB): peak = 1978.785 ; gain = 1098.840
----------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1976.398 ; gain = 1097.801
 WARNING: [Synth 8-6841] Block RAM (mem_reg) originally specified as a Byte Wide Write Enable RAM cannot take advantage of ByteWide feature and is implemented with single write enable per RAM due to following reason.
 (address width (14) is more than optimal threshold of 12. Implementing using BWWE will require more logic and timing would be suboptimal. Please use attribute ram_decomp = power if BWWE is desired.)
 WARNING: [Synth 8-327] inferring latch for variable 'wb_data_reg_in_reg' [C:/VLSI Hackathon/RVfpgaEL2_01 2 - Hackathon/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/SystemController/SystemControllerMisc.sv:162]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:53 ; elapsed = 00:02:01 . Memory (MB): peak = 1978.785 ; gain = 1098.840
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:58 ; elapsed = 00:01:00 . Memory (MB): peak = 1976.398 ; gain = 1097.801
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-223] decloning instance 'swervolf/rvtop/veer/ifu/mem_ctl/ifu_iccm_reg_acc_ff' (rvdff_fpga) to 'swervolf/rvtop/veer/ifu/mem_ctl/rgn_acc_ff'
 INFO: [Synth 8-223] decloning instance 'swervolf/rvtop/veer/lsu/bus_intf/bus_buffer/lsu_axi_bready_ff' (rvdff_fpga) to 'swervolf/rvtop/veer/lsu/bus_intf/bus_buffer/lsu_axi_rready_ff'
@@ -1468,7 +1467,7 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio2_mod
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (gpio2_module/\rgpio_in_reg[31] )
 INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:04:50 ; elapsed = 00:06:29 . Memory (MB): peak = 1978.785 ; gain = 1098.840
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:04:15 ; elapsed = 00:05:55 . Memory (MB): peak = 1976.398 ; gain = 1097.801
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -1524,7 +1523,7 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:04:59 ; elapsed = 00:06:38 . Memory (MB): peak = 1978.785 ; gain = 1098.840
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:04:25 ; elapsed = 00:06:05 . Memory (MB): peak = 1976.398 ; gain = 1097.801
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -1624,7 +1623,7 @@ INFO: [Synth 8-7052] The timing for the instance swervolf/rvtop/mem/iccm.iccm/me
 INFO: [Synth 8-7052] The timing for the instance swervolf/rvtop/mem/iccm.iccm/mem_bank[3].iccm.iccm_bank/ram_core_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7052] The timing for the instance swervolf/rvtop/mem/iccm.iccm/mem_bank[3].iccm.iccm_bank/ram_core_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:05:24 ; elapsed = 00:07:05 . Memory (MB): peak = 1978.785 ; gain = 1098.840
+Finished Technology Mapping : Time (s): cpu = 00:04:49 ; elapsed = 00:06:30 . Memory (MB): peak = 1976.398 ; gain = 1097.801
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -1636,19 +1635,19 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:05:32 ; elapsed = 00:07:12 . Memory (MB): peak = 1978.785 ; gain = 1098.840
+Finished IO Insertion : Time (s): cpu = 00:04:56 ; elapsed = 00:06:38 . Memory (MB): peak = 1976.398 ; gain = 1097.801
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:05:32 ; elapsed = 00:07:13 . Memory (MB): peak = 1978.785 ; gain = 1098.840
+Finished Renaming Generated Instances : Time (s): cpu = 00:04:56 ; elapsed = 00:06:38 . Memory (MB): peak = 1976.398 ; gain = 1097.801
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:05:33 ; elapsed = 00:07:14 . Memory (MB): peak = 1978.785 ; gain = 1098.840
+Finished Handling Custom Attributes : Time (s): cpu = 00:04:57 ; elapsed = 00:06:39 . Memory (MB): peak = 1976.398 ; gain = 1097.801
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -1679,13 +1678,13 @@ Report Cell Usage:
 |2     |CARRY4     |  1376|
 |3     |DSP48E1    |     4|
 |5     |LUT1       |  1872|
-|6     |LUT2       |  4524|
-|7     |LUT3       | 13449|
-|8     |LUT4       |  6628|
-|9     |LUT5       |  7348|
-|10    |LUT6       | 17843|
-|11    |MUXF7      |   398|
-|12    |MUXF8      |    76|
+|6     |LUT2       |  4527|
+|7     |LUT3       | 13450|
+|8     |LUT4       |  6623|
+|9     |LUT5       |  7360|
+|10    |LUT6       | 17766|
+|11    |MUXF7      |   334|
+|12    |MUXF8      |    44|
 |13    |PLLE2_BASE |     1|
 |14    |RAM256X1S  |   272|
 |15    |RAM32M     |     6|
@@ -1694,7 +1693,7 @@ Report Cell Usage:
 |18    |RAMB18E1   |    12|
 |20    |RAMB36E1   |    38|
 |24    |STARTUPE2  |     1|
-|25    |FDCE       | 13882|
+|25    |FDCE       | 13830|
 |26    |FDPE       |   223|
 |27    |FDRE       |  8635|
 |28    |FDSE       |    25|
@@ -1704,18 +1703,18 @@ Report Cell Usage:
 |32    |OBUF       |    33|
 +------+-----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:05:33 ; elapsed = 00:07:14 . Memory (MB): peak = 1978.785 ; gain = 1098.840
+Finished Writing Synthesis Report : Time (s): cpu = 00:04:57 ; elapsed = 00:06:39 . Memory (MB): peak = 1976.398 ; gain = 1097.801
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:04:17 ; elapsed = 00:06:43 . Memory (MB): peak = 1978.785 ; gain = 919.984
-Synthesis Optimization Complete : Time (s): cpu = 00:05:33 ; elapsed = 00:07:15 . Memory (MB): peak = 1978.785 ; gain = 1098.840
+Synthesis Optimization Runtime : Time (s): cpu = 00:04:28 ; elapsed = 00:06:28 . Memory (MB): peak = 1976.398 ; gain = 922.238
+Synthesis Optimization Complete : Time (s): cpu = 00:04:57 ; elapsed = 00:06:40 . Memory (MB): peak = 1976.398 ; gain = 1097.801
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.720 . Memory (MB): peak = 1978.785 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 2293 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.727 . Memory (MB): peak = 1976.398 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2197 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1978.785 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1976.398 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 388 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 21 instances
@@ -1727,14 +1726,14 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM64X1S => RAM64X1S (RAMS64E): 44 instances
 
 Access is denied.
-Synth Design complete | Checksum: a110be44
+Synth Design complete | Checksum: 41439590
 INFO: [Common 17-83] Releasing license: Synthesis
 517 Infos, 329 Warnings, 1 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:05:52 ; elapsed = 00:07:38 . Memory (MB): peak = 1978.785 ; gain = 1509.352
+synth_design: Time (s): cpu = 00:05:12 ; elapsed = 00:06:57 . Memory (MB): peak = 1976.398 ; gain = 1506.875
 INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.094 . Memory (MB): peak = 1978.785 ; gain = 0.000
+Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.085 . Memory (MB): peak = 1976.398 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/VLSI Hackathon/RVfpgaEL2_01 2 - Hackathon/RVfpgaEL2_01/vivado/nexysA7card.runs/synth_1/rvfpganexys.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 1978.785 ; gain = 0.000
+write_checkpoint: Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 1976.398 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_utilization -file rvfpganexys_utilization_synth.rpt -pb rvfpganexys_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sun Jun 21 18:00:36 2026...
+INFO: [Common 17-206] Exiting Vivado at Sun Jun 21 19:18:05 2026...
