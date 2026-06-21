@@ -1,0 +1,11 @@
+0.7
+2020.2
+Oct 13 2023
+20:47:58
+C:/Users/HP/Documents/HUJI/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/accelerator_hackaton/accelerator.sv,1731036348,systemVerilog,,C:/Users/HP/Documents/HUJI/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/accelerator_hackaton/accelerator_regs.sv,,accelerator,,uvm,,XSIM=1,,,,
+C:/Users/HP/Documents/HUJI/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/accelerator_hackaton/accelerator_regs.sv,1731036348,systemVerilog,,C:/Users/HP/Documents/HUJI/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/accelerator_hackaton/accelerator_top.sv,,accelerator_regs,,uvm,,XSIM=1,,,,
+C:/Users/HP/Documents/HUJI/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/accelerator_hackaton/accelerator_top.sv,1732217450,systemVerilog,,C:/Users/HP/Documents/HUJI/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/accelerator_hackaton/accelerator_wb.sv,,accelerator_top,,uvm,,XSIM=1,,,,
+C:/Users/HP/Documents/HUJI/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/accelerator_hackaton/accelerator_wb.sv,1731036348,systemVerilog,,C:/Users/HP/Documents/HUJI/RVfpgaEL2_01/RVfpgaEL2_01/wishbone_simulation/accelerator/tb/wishbone_accelerator_tb.sv,,accelerator_wb,,uvm,,XSIM=1,,,,
+C:/Users/HP/Documents/HUJI/RVfpgaEL2_01/RVfpgaEL2_01/wishbone_simulation/accelerator/tb/wishbone_accelerator_tb.sv,1732385272,systemVerilog,,,C:/Users/HP/Documents/HUJI/RVfpgaEL2_01/RVfpgaEL2_01/wishbone_simulation/accelerator/tb/wishbone_accelerator_tb_include.svh,wishbone_accelerator_tb,,uvm,,XSIM=1,,,,
+C:/Users/HP/Documents/HUJI/RVfpgaEL2_01/RVfpgaEL2_01/wishbone_simulation/accelerator/tb/wishbone_accelerator_tb_include.svh,1732251702,verilog,,,,,,,,,,,,
+C:/Users/HP/Documents/HUJI/RVfpgaEL2_01/RVfpgaEL2_01/wishbone_simulation/project_1/project_1.sim/sim_1/behav/xsim/glbl.v,1731036343,verilog,,,,glbl,,uvm,,,,,,

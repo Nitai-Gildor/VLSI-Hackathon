@@ -1,0 +1,1 @@
+--incr --debug typical --relax --mt 2 -d "JTAG_EXTERNAL=1" -d "XSIM=1" -d "SIMULATION=1"  -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot ila_syscon xil_defaultlib.ila_syscon xil_defaultlib.glbl -log elaborate.log

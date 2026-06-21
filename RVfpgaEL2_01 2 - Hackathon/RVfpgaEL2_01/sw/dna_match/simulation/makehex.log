@@ -1,0 +1,22 @@
+item name <DirEntry 'dna_match.emProject'>
+project {'Name': 'dna_match'}
+bin file name dna_match
+bin file name ..\Output\Debug\Exe\dna_match.bin
+Binfile timestamp 1780444820.2170594
+*****************
+BinFileTimeStamp Date (Local time): 2026-06-03 03:00:20.217059
+dna_match.c
+File Name:  dna_match
+File Extension:  .c
+add and sort dna_match.c
+dna_match.c ..\Source\dna_match.c 3621 1780418340.0
+HelloWorld_C-Lang.c
+File Name:  HelloWorld_C-Lang
+File Extension:  .c
+add and sort HelloWorld_C-Lang.c
+HelloWorld_C-Lang.c ..\Source\HelloWorld_C-Lang.c 584 1780418400.782502
+*****************
+SourceFilesOldestTimeStamp: 1780424376
+source_time_list: [<DirEntry 'dna_match.c'>, <DirEntry 'HelloWorld_C-Lang.c'>]
+SourceFilesOldestTimeStamp Date (Local time): 2026-06-02 19:40:00.782502
+vhFile ===>  dna_match.vh

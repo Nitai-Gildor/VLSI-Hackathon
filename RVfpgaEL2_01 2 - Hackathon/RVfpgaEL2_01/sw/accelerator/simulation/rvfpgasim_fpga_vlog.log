@@ -1,0 +1,605 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/include/axi/typedef.svh" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/include/axi/assign.svh" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/include/common_defines.vh" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/verilog-arbiter_0-r3/src/arbiter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module arbiter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiToWb/axi2wb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi2wb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/axi_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/WishboneInterconnect/cdc_utils_0.1-r1/rtl/verilog/cc561.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cc561
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/clk_gen_nexys.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_gen_nexys
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/BootROM/dpram64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dpram64
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/spi/fifo4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/gpio/gpio_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gpio_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/ptc/ptc_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ptc_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/spi/simple_spi_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simple_spi
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/WishboneInterconnect/cdc_utils_0.1-r1/rtl/verilog/sync2_pgen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sync2_pgen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/veerwolf_core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module veerwolf_core
+WARNING: [VRFC 10-9336] redeclaration of ANSI port 'i_vga_awready' is not allowed [../../../../../rtl/VeeRwolf/Interconnect/AxiInterconnect/axi_intercon.vh:194]
+WARNING: [VRFC 10-9336] redeclaration of ANSI port 'i_vga_arready' is not allowed [../../../../../rtl/VeeRwolf/Interconnect/AxiInterconnect/axi_intercon.vh:206]
+INFO: [VRFC 10-311] analyzing module bidirec
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/WishboneInterconnect/wb_intercon_1.2.2-r1/rtl/verilog/wb_arbiter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wb_arbiter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/WishboneInterconnect/wb_intercon_1.2.2-r1/rtl/verilog/wb_cdc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wb_cdc
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/WishboneInterconnect/wb_intercon_1.2.2-r1/rtl/verilog/wb_data_resize.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wb_data_resize
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/WishboneInterconnect/wb_intercon.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wb_intercon
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/BootROM/wb_mem_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wb_mem_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/WishboneInterconnect/wb_intercon_1.2.2-r1/rtl/verilog/wb_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wb_mux
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/include/axi/typedef.svh" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/include/axi/assign.svh" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/include/common_defines.vh" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/cf_math_pkg.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/addr_decode.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module addr_decode
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_pkg.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_atop_filter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_atop_filter
+INFO: [VRFC 10-311] analyzing module axi_atop_filter_intf
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_burst_splitter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_burst_splitter
+INFO: [VRFC 10-311] analyzing module axi_burst_splitter_ax_chan
+INFO: [VRFC 10-311] analyzing module axi_burst_splitter_counters
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_cdc.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_cdc
+INFO: [VRFC 10-311] analyzing module axi_cdc_intf
+INFO: [VRFC 10-311] analyzing module axi_lite_cdc_intf
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_cut.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_cut
+INFO: [VRFC 10-311] analyzing module axi_cut_intf
+INFO: [VRFC 10-311] analyzing module axi_lite_cut_intf
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_delayer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_delayer
+INFO: [VRFC 10-311] analyzing module axi_delayer_intf
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_demux.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_demux
+INFO: [VRFC 10-311] analyzing module axi_demux_id_counters
+INFO: [VRFC 10-311] analyzing module axi_demux_intf
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_dw_converter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_dw_converter
+INFO: [VRFC 10-311] analyzing module axi_dw_converter_intf
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_dw_downsizer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_dw_downsizer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_dw_upsizer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_dw_upsizer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_err_slv.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_err_slv
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_id_prepend.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_id_prepend
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/axi_intercon.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_intercon
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_intf.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_isolate.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_isolate
+INFO: [VRFC 10-311] analyzing module axi_isolate_intf
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_join.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_join_intf
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_lite_demux.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_lite_demux
+INFO: [VRFC 10-311] analyzing module axi_lite_demux_intf
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_lite_join.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_lite_join_intf
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_lite_mailbox.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_lite_mailbox
+INFO: [VRFC 10-311] analyzing module axi_lite_mailbox_slave
+INFO: [VRFC 10-311] analyzing module axi_lite_mailbox_intf
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_lite_mux.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_lite_mux
+INFO: [VRFC 10-311] analyzing module axi_lite_mux_intf
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_lite_regs.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_lite_regs
+INFO: [VRFC 10-311] analyzing module axi_lite_regs_intf
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_lite_to_apb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_lite_to_apb
+INFO: [VRFC 10-311] analyzing module axi_lite_to_apb_intf
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_lite_to_axi.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_lite_to_axi
+INFO: [VRFC 10-311] analyzing module axi_lite_to_axi_intf
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_lite_xbar.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_lite_xbar
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_modify_address.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_modify_address
+INFO: [VRFC 10-311] analyzing module axi_modify_address_intf
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_multicut.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_multicut
+INFO: [VRFC 10-311] analyzing module axi_multicut_intf
+INFO: [VRFC 10-311] analyzing module axi_lite_multicut_intf
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_mux.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_mux
+INFO: [VRFC 10-311] analyzing module axi_mux_intf
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_serializer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_serializer
+INFO: [VRFC 10-311] analyzing module axi_serializer_intf
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_to_axi_lite.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_to_axi_lite
+INFO: [VRFC 10-311] analyzing module axi_to_axi_lite_id_reflect
+INFO: [VRFC 10-311] analyzing module axi_to_axi_lite_intf
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/src/axi_xbar.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_xbar
+INFO: [VRFC 10-311] analyzing module axi_xbar_intf
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/lib/beh_lib.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rvdff
+INFO: [VRFC 10-311] analyzing module rvdffs
+INFO: [VRFC 10-311] analyzing module rvdffsc
+INFO: [VRFC 10-311] analyzing module rvdff_fpga
+INFO: [VRFC 10-311] analyzing module rvdffs_fpga
+INFO: [VRFC 10-311] analyzing module rvdffsc_fpga
+INFO: [VRFC 10-311] analyzing module rvdffe
+INFO: [VRFC 10-311] analyzing module rvdffpcie
+INFO: [VRFC 10-311] analyzing module rvdfflie
+INFO: [VRFC 10-311] analyzing module rvdffppe
+INFO: [VRFC 10-311] analyzing module rvdffie
+INFO: [VRFC 10-311] analyzing module rvdffiee
+INFO: [VRFC 10-311] analyzing module rvsyncss
+INFO: [VRFC 10-311] analyzing module rvsyncss_fpga
+INFO: [VRFC 10-311] analyzing module rvlsadder
+INFO: [VRFC 10-311] analyzing module rvbradder
+INFO: [VRFC 10-311] analyzing module rvtwoscomp
+INFO: [VRFC 10-311] analyzing module rvfindfirst1
+INFO: [VRFC 10-311] analyzing module rvfindfirst1hot
+INFO: [VRFC 10-311] analyzing module rvmaskandmatch
+INFO: [VRFC 10-311] analyzing module rvrangecheck
+INFO: [VRFC 10-311] analyzing module rveven_paritygen
+INFO: [VRFC 10-311] analyzing module rveven_paritycheck
+INFO: [VRFC 10-311] analyzing module rvecc_encode
+INFO: [VRFC 10-311] analyzing module rvecc_decode
+INFO: [VRFC 10-311] analyzing module rvecc_encode_64
+INFO: [VRFC 10-311] analyzing module rvecc_decode_64
+INFO: [VRFC 10-311] analyzing module clockhdr
+INFO: [VRFC 10-311] analyzing module rvoclkhdr
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/binary_to_gray.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module binary_to_gray
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/bscan_tap.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bscan_tap
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/cb_filter_pkg.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/cb_filter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cb_filter
+INFO: [VRFC 10-311] analyzing module hash_block
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/cdc_2phase.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cdc_2phase
+INFO: [VRFC 10-311] analyzing module cdc_2phase_src
+INFO: [VRFC 10-311] analyzing module cdc_2phase_dst
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/cdc_fifo_2phase.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cdc_fifo_2phase
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/cdc_fifo_gray.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cdc_fifo_gray
+INFO: [VRFC 10-311] analyzing module cdc_fifo_gray_src
+INFO: [VRFC 10-311] analyzing module cdc_fifo_gray_dst
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/clk_div.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_div
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/deprecated/clock_divider.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clock_divider
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/deprecated/clock_divider_counter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clock_divider_counter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/counter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/delta_counter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module delta_counter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/ecc_pkg.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/ecc_decode.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ecc_decode
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/ecc_encode.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ecc_encode
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/edge_detect.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module edge_detect
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/edge_propagator.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module edge_propagator
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/edge_propagator_rx.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module edge_propagator_rx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/edge_propagator_tx.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module edge_propagator_tx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/include/el2_def.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/ifu/el2_ifu_ic_mem.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module el2_ifu_ic_mem
+INFO: [VRFC 10-311] analyzing module EL2_IC_DATA
+INFO: [VRFC 10-311] analyzing module EL2_IC_TAG
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/ifu/el2_ifu_iccm_mem.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module el2_ifu_iccm_mem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/lsu/el2_lsu_dccm_mem.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module el2_lsu_dccm_mem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/el2_mem.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module el2_mem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/exp_backoff.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module exp_backoff
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/fall_through_register.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fall_through_register
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/deprecated/fifo_v1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/deprecated/fifo_v2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_v2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/fifo_v3.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_v3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/deprecated/find_first_one.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module find_first_one
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/deprecated/generic_LFSR_8bit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module generic_LFSR_8bit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/deprecated/generic_fifo.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module generic_fifo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/gray_to_binary.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gray_to_binary
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/id_queue.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module id_queue
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/isochronous_spill_register.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module isochronous_spill_register
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/lfsr.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lfsr
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/lfsr_16bit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lfsr_16bit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/lfsr_8bit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lfsr_8bit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/lzc.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lzc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/max_counter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module max_counter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/lib/mem_lib.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module el2_ram
+INFO: [VRFC 10-311] analyzing module ram_32768x39
+INFO: [VRFC 10-311] analyzing module ram_16384x39
+INFO: [VRFC 10-311] analyzing module ram_8192x39
+INFO: [VRFC 10-311] analyzing module ram_4096x39
+INFO: [VRFC 10-311] analyzing module ram_3072x39
+INFO: [VRFC 10-311] analyzing module ram_2048x39
+INFO: [VRFC 10-311] analyzing module ram_1536x39
+INFO: [VRFC 10-311] analyzing module ram_1024x39
+INFO: [VRFC 10-311] analyzing module ram_768x39
+INFO: [VRFC 10-311] analyzing module ram_512x39
+INFO: [VRFC 10-311] analyzing module ram_256x39
+INFO: [VRFC 10-311] analyzing module ram_128x39
+INFO: [VRFC 10-311] analyzing module ram_1024x20
+INFO: [VRFC 10-311] analyzing module ram_512x20
+INFO: [VRFC 10-311] analyzing module ram_256x20
+INFO: [VRFC 10-311] analyzing module ram_128x20
+INFO: [VRFC 10-311] analyzing module ram_64x20
+INFO: [VRFC 10-311] analyzing module ram_4096x34
+INFO: [VRFC 10-311] analyzing module ram_2048x34
+INFO: [VRFC 10-311] analyzing module ram_1024x34
+INFO: [VRFC 10-311] analyzing module ram_512x34
+INFO: [VRFC 10-311] analyzing module ram_256x34
+INFO: [VRFC 10-311] analyzing module ram_128x34
+INFO: [VRFC 10-311] analyzing module ram_64x34
+INFO: [VRFC 10-311] analyzing module ram_8192x68
+INFO: [VRFC 10-311] analyzing module ram_4096x68
+INFO: [VRFC 10-311] analyzing module ram_2048x68
+INFO: [VRFC 10-311] analyzing module ram_1024x68
+INFO: [VRFC 10-311] analyzing module ram_512x68
+INFO: [VRFC 10-311] analyzing module ram_256x68
+INFO: [VRFC 10-311] analyzing module ram_128x68
+INFO: [VRFC 10-311] analyzing module ram_64x68
+INFO: [VRFC 10-311] analyzing module ram_8192x71
+INFO: [VRFC 10-311] analyzing module ram_4096x71
+INFO: [VRFC 10-311] analyzing module ram_2048x71
+INFO: [VRFC 10-311] analyzing module ram_1024x71
+INFO: [VRFC 10-311] analyzing module ram_512x71
+INFO: [VRFC 10-311] analyzing module ram_256x71
+INFO: [VRFC 10-311] analyzing module ram_128x71
+INFO: [VRFC 10-311] analyzing module ram_64x71
+INFO: [VRFC 10-311] analyzing module ram_4096x42
+INFO: [VRFC 10-311] analyzing module ram_2048x42
+INFO: [VRFC 10-311] analyzing module ram_1024x42
+INFO: [VRFC 10-311] analyzing module ram_512x42
+INFO: [VRFC 10-311] analyzing module ram_256x42
+INFO: [VRFC 10-311] analyzing module ram_128x42
+INFO: [VRFC 10-311] analyzing module ram_64x42
+INFO: [VRFC 10-311] analyzing module ram_4096x22
+INFO: [VRFC 10-311] analyzing module ram_2048x22
+INFO: [VRFC 10-311] analyzing module ram_1024x22
+INFO: [VRFC 10-311] analyzing module ram_512x22
+INFO: [VRFC 10-311] analyzing module ram_256x22
+INFO: [VRFC 10-311] analyzing module ram_128x22
+INFO: [VRFC 10-311] analyzing module ram_64x22
+INFO: [VRFC 10-311] analyzing module ram_1024x26
+INFO: [VRFC 10-311] analyzing module ram_4096x26
+INFO: [VRFC 10-311] analyzing module ram_2048x26
+INFO: [VRFC 10-311] analyzing module ram_512x26
+INFO: [VRFC 10-311] analyzing module ram_256x26
+INFO: [VRFC 10-311] analyzing module ram_128x26
+INFO: [VRFC 10-311] analyzing module ram_64x26
+INFO: [VRFC 10-311] analyzing module ram_32x26
+INFO: [VRFC 10-311] analyzing module ram_32x22
+INFO: [VRFC 10-311] analyzing module ram_be_8192x142
+INFO: [VRFC 10-311] analyzing module ram_be_4096x142
+INFO: [VRFC 10-311] analyzing module ram_be_2048x142
+INFO: [VRFC 10-311] analyzing module ram_be_1024x142
+INFO: [VRFC 10-311] analyzing module ram_be_512x142
+INFO: [VRFC 10-311] analyzing module ram_be_256x142
+INFO: [VRFC 10-311] analyzing module ram_be_128x142
+INFO: [VRFC 10-311] analyzing module ram_be_64x142
+INFO: [VRFC 10-311] analyzing module ram_be_8192x284
+INFO: [VRFC 10-311] analyzing module ram_be_4096x284
+INFO: [VRFC 10-311] analyzing module ram_be_2048x284
+INFO: [VRFC 10-311] analyzing module ram_be_1024x284
+INFO: [VRFC 10-311] analyzing module ram_be_512x284
+INFO: [VRFC 10-311] analyzing module ram_be_256x284
+INFO: [VRFC 10-311] analyzing module ram_be_128x284
+INFO: [VRFC 10-311] analyzing module ram_be_64x284
+INFO: [VRFC 10-311] analyzing module ram_be_8192x136
+INFO: [VRFC 10-311] analyzing module ram_be_4096x136
+INFO: [VRFC 10-311] analyzing module ram_be_2048x136
+INFO: [VRFC 10-311] analyzing module ram_be_1024x136
+INFO: [VRFC 10-311] analyzing module ram_be_512x136
+INFO: [VRFC 10-311] analyzing module ram_be_256x136
+INFO: [VRFC 10-311] analyzing module ram_be_128x136
+INFO: [VRFC 10-311] analyzing module ram_be_64x136
+INFO: [VRFC 10-311] analyzing module ram_be_8192x272
+INFO: [VRFC 10-311] analyzing module ram_be_4096x272
+INFO: [VRFC 10-311] analyzing module ram_be_2048x272
+INFO: [VRFC 10-311] analyzing module ram_be_1024x272
+INFO: [VRFC 10-311] analyzing module ram_be_512x272
+INFO: [VRFC 10-311] analyzing module ram_be_256x272
+INFO: [VRFC 10-311] analyzing module ram_be_128x272
+INFO: [VRFC 10-311] analyzing module ram_be_64x272
+INFO: [VRFC 10-311] analyzing module ram_be_4096x52
+INFO: [VRFC 10-311] analyzing module ram_be_2048x52
+INFO: [VRFC 10-311] analyzing module ram_be_1024x52
+INFO: [VRFC 10-311] analyzing module ram_be_512x52
+INFO: [VRFC 10-311] analyzing module ram_be_256x52
+INFO: [VRFC 10-311] analyzing module ram_be_128x52
+INFO: [VRFC 10-311] analyzing module ram_be_64x52
+INFO: [VRFC 10-311] analyzing module ram_be_32x52
+INFO: [VRFC 10-311] analyzing module ram_be_4096x104
+INFO: [VRFC 10-311] analyzing module ram_be_2048x104
+INFO: [VRFC 10-311] analyzing module ram_be_1024x104
+INFO: [VRFC 10-311] analyzing module ram_be_512x104
+INFO: [VRFC 10-311] analyzing module ram_be_256x104
+INFO: [VRFC 10-311] analyzing module ram_be_128x104
+INFO: [VRFC 10-311] analyzing module ram_be_64x104
+INFO: [VRFC 10-311] analyzing module ram_be_32x104
+INFO: [VRFC 10-311] analyzing module ram_be_4096x44
+INFO: [VRFC 10-311] analyzing module ram_be_2048x44
+INFO: [VRFC 10-311] analyzing module ram_be_1024x44
+INFO: [VRFC 10-311] analyzing module ram_be_512x44
+INFO: [VRFC 10-311] analyzing module ram_be_256x44
+INFO: [VRFC 10-311] analyzing module ram_be_128x44
+INFO: [VRFC 10-311] analyzing module ram_be_64x44
+INFO: [VRFC 10-311] analyzing module ram_be_32x44
+INFO: [VRFC 10-311] analyzing module ram_be_4096x88
+INFO: [VRFC 10-311] analyzing module ram_be_2048x88
+INFO: [VRFC 10-311] analyzing module ram_be_1024x88
+INFO: [VRFC 10-311] analyzing module ram_be_512x88
+INFO: [VRFC 10-311] analyzing module ram_be_256x88
+INFO: [VRFC 10-311] analyzing module ram_be_128x88
+INFO: [VRFC 10-311] analyzing module ram_be_64x88
+INFO: [VRFC 10-311] analyzing module ram_be_32x88
+INFO: [VRFC 10-311] analyzing module ram_64x39
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/mv_filter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mv_filter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/onehot_to_bin.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module onehot_to_bin
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/plru_tree.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module plru_tree
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/popcount.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module popcount
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/deprecated/prioarbiter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module prioarbiter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/deprecated/pulp_sync.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pulp_sync
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/deprecated/pulp_sync_wedge.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pulp_sync_wedge
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/rr_arb_tree.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rr_arb_tree
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/deprecated/rrarbiter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rrarbiter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/rstgen.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rstgen
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/rstgen_bypass.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rstgen_bypass
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/serial_deglitch.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module serial_deglitch
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/shift_reg.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shift_reg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/spill_register.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spill_register
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/stream_arbiter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stream_arbiter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/stream_arbiter_flushable.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stream_arbiter_flushable
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/stream_delay.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stream_delay
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/stream_demux.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stream_demux
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/stream_fifo.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stream_fifo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/stream_filter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stream_filter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/stream_fork.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stream_fork
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/stream_fork_dynamic.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stream_fork_dynamic
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/stream_join.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stream_join
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/stream_mux.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stream_mux
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/stream_omega_net.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stream_omega_net
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/stream_register.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stream_register
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/stream_to_mem.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stream_to_mem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/stream_xbar.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stream_xbar
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/sub_per_hash.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sub_per_hash
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/sync.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sync
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/sync_wedge.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sync_wedge
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/unread.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module unread
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/veer_el2_wrapper.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module veer_wrapper_dmi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/SystemController/SevenSegDecoder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SevenSegDecoder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/SystemController/SevSegDisplays_Controller.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SevSegDisplays_Controller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/SystemController/SystemControllerMisc.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SystemControllerMisc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/SystemController/wb_module.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wb_module
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/SystemController/veerwolf_syscon.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module veerwolf_syscon
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/rvfpganexys.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rvfpganexys
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/src/stream_intf.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/WishboneInterconnect/wb_common_1.0.3/wb_common_params.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/timer/wb_module_timer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wb_module_timer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/timer/timer_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module timer_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/spi_master/wb_module_spi_master.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wb_module_spi_master
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/spi_master/spi_master.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spi_master
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/axi2mem.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi2mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/include/axi/typedef.svh" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/include/axi/assign.svh" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/include/common_defines.vh" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/axi_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_mem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/include/axi/typedef.svh" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/include/axi/assign.svh" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/include/common_defines.vh" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/dbg/el2_dbg.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module el2_dbg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_pkg.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/ibex-master/rtl/ibex_decoder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ibex_decoder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/dec/el2_dec.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module el2_dec
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/dec/el2_dec_decode_ctl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module el2_dec_decode_ctl
+INFO: [VRFC 10-311] analyzing module el2_dec_dec_ctl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/dec/el2_dec_gpr_ctl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module el2_dec_gpr_ctl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/dec/el2_dec_ib_ctl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module el2_dec_ib_ctl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/dec/el2_dec_tlu_ctl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module el2_dec_tlu_ctl
+INFO: [VRFC 10-311] analyzing module el2_dec_timer_ctl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/dec/el2_dec_trigger.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module el2_dec_trigger
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/el2_dma_ctrl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module el2_dma_ctrl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/ifu/el2_ifu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module el2_ifu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/ifu/el2_ifu_aln_ctl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module el2_ifu_aln_ctl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/ifu/el2_ifu_bp_ctl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module el2_ifu_bp_ctl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/ifu/el2_ifu_compress_ctl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module el2_ifu_compress_ctl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/ifu/el2_ifu_ifc_ctl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module el2_ifu_ifc_ctl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/ifu/el2_ifu_mem_ctl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module el2_ifu_mem_ctl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/lib/el2_lib.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module el2_btb_tag_hash
+INFO: [VRFC 10-311] analyzing module el2_btb_tag_hash_fold
+INFO: [VRFC 10-311] analyzing module el2_btb_addr_hash
+INFO: [VRFC 10-311] analyzing module el2_btb_ghr_hash
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/lsu/el2_lsu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module el2_lsu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/lsu/el2_lsu_addrcheck.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module el2_lsu_addrcheck
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/lsu/el2_lsu_bus_buffer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module el2_lsu_bus_buffer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/lsu/el2_lsu_bus_intf.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module el2_lsu_bus_intf
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/lsu/el2_lsu_clkdomain.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module el2_lsu_clkdomain
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/lsu/el2_lsu_dccm_ctl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module el2_lsu_dccm_ctl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/lsu/el2_lsu_ecc.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module el2_lsu_ecc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/lsu/el2_lsu_lsc_ctl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module el2_lsu_lsc_ctl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/lsu/el2_lsu_stbuf.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module el2_lsu_stbuf
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/lsu/el2_lsu_trigger.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module el2_lsu_trigger
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/el2_pic_ctrl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module el2_pic_ctrl
+INFO: [VRFC 10-311] analyzing module el2_cmp_and_mux
+INFO: [VRFC 10-311] analyzing module el2_configurable_gw
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/el2_veer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module el2_veer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/exu/el2_exu_alu_ctl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module el2_exu_alu_ctl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/exu/el2_exu_div_ctl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module el2_exu_div_ctl
+INFO: [VRFC 10-311] analyzing module el2_exu_div_existing_1bit_cheapshortq
+INFO: [VRFC 10-311] analyzing module el2_exu_div_new_1bit_fullshortq
+INFO: [VRFC 10-311] analyzing module el2_exu_div_new_2bit_fullshortq
+INFO: [VRFC 10-311] analyzing module el2_exu_div_new_3bit_fullshortq
+INFO: [VRFC 10-311] analyzing module el2_exu_div_new_4bit_fullshortq
+INFO: [VRFC 10-311] analyzing module el2_exu_div_cls
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/exu/el2_exu_mul_ctl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module el2_exu_mul_ctl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/exu/el2_exu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module el2_exu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/include/axi/typedef.svh" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/include/axi/assign.svh" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/include/common_defines.vh" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/dmi/dmi_jtag_to_core_sync.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dmi_jtag_to_core_sync
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/include/axi/typedef.svh" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/include/axi/assign.svh" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/include/common_defines.vh" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/dmi/rvjtag_tap.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rvjtag_tap
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/include/axi/typedef.svh" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/include/axi/assign.svh" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/include/common_defines.vh" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/OtherSources/dmi/dmi_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dmi_wrapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/include/axi/typedef.svh" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/include/axi/assign.svh" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/include/common_defines.vh" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/accelerator_hackaton/accelerator.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module accelerator
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/accelerator_hackaton/accelerator_regs.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module accelerator_regs
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/accelerator_hackaton/accelerator_wb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module accelerator_wb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/accelerator_hackaton/accelerator_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module accelerator_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/include/axi/typedef.svh" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/include/axi/assign.svh" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/VeeR_EL2CoreComplex/include/common_defines.vh" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/uart/raminfr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module raminfr
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/uart/uart_receiver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_receiver
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/uart/uart_regs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_regs
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/uart/uart_rfifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_rfifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/uart/uart_sync_flops.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_sync_flops
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/uart/uart_tfifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_tfifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/uart/uart_transmitter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_transmitter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/uart/uart_wb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_wb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/VeeRwolf/Peripherals/uart/uart_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/rvfpgasim_fpga.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rvfpgasim_fpga
+WARNING: [VRFC 10-2096] empty statement in sequential block [C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/rtl/rvfpgasim_fpga.v:204]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/HP/Downloads/RVfpgaEL2_01/RVfpgaEL2_01/vivado/nexysA7card.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

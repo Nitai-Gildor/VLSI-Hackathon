@@ -1,0 +1,7 @@
+verilog xil_defaultlib -i "../../../../../rtl/OtherSources/pulp-platform.org__common_cells_1.20.0/include" -i "../../../../../rtl/VeeRwolf/Interconnect/AxiInterconnect/pulp-platform.org__axi_0.25.0/include" --include "../../../../nexysA7card.gen/sources_1/ip/ila_syscon/hdl/verilog" \
+"../../../../nexysA7card.gen/sources_1/ip/ila_syscon/sim/ila_syscon.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

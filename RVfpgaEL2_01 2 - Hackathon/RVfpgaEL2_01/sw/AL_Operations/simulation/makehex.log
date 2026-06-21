@@ -1,0 +1,17 @@
+item name <DirEntry 'AL_Operations.emProject'>
+project {'Name': 'AL_Operations'}
+bin file name AL_Operations
+bin file name ..\Output\Debug\Exe\AL_Operations.bin
+Binfile timestamp 1731036319.7242446
+*****************
+BinFileTimeStamp Date (Local time): 2024-11-08 05:25:19.724245
+AL_Operations.s
+File Name:  AL_Operations
+File Extension:  .s
+add and sort AL_Operations.s
+AL_Operations.s ..\Source\AL_Operations.s 258 1717331108.0
+*****************
+SourceFilesOldestTimeStamp: 1731036318
+source_time_list: [<DirEntry 'AL_Operations.s'>]
+SourceFilesOldestTimeStamp Date (Local time): 2024-06-02 15:25:08
+vhFile ===>  AL_Operations.vh
