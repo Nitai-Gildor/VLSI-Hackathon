@@ -1,5 +1,3 @@
-//Provided AS IS without any warranty of any kind nor EXPLICIT nor IMPLIED
-
 module accelerator (
     input  logic         clk,
     input  logic         wb_rst_i,
@@ -8,6 +6,11 @@ module accelerator (
     input  logic [31:0]  reg_query,
     input  logic [31:0]  reg_ref [8],
     output logic [31:0]  reg_result [8],
+    
+    // NEW: Ports for sequence lengths
+    input  logic [4:0]   reg_query_len,
+    input  logic [4:0]   reg_ref_len [8],
+    
     output logic         done
 );
 
@@ -15,11 +18,8 @@ module accelerator (
     assign rst_n = ~wb_rst_i;
 
     logic [7:0] core_done;
+    assign done = &core_done;
     
-    // The main done bit is high only when all 8 cores finish
-    assign done = &core_done; 
-
-    // Generate 8 concurrent Smith-Waterman engines
     genvar i;
     generate
         for (i = 0; i < 8; i++) begin : sw_cores
@@ -29,6 +29,8 @@ module accelerator (
                 .go         (go),
                 .query_seq  (reg_query),
                 .ref_seq    (reg_ref[i]),
+                .query_len  (reg_query_len),
+                .ref_len    (reg_ref_len[i]),
                 .score      (reg_result[i]),
                 .done       (core_done[i])
             );

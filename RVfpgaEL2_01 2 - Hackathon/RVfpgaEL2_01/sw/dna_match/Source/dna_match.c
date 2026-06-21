@@ -8,13 +8,16 @@
 #include <psp_api.h>
 #include <stdio.h>
 #include <stdint.h>
+#include <string.h>
 
 #define NUM_OF_REFS 8
 
 #define ACCELERATOR_REG_CTRL      0x80001300  
 #define ACCELERATOR_REG_QUERY     0x80001304  
 #define ACCELERATOR_REG_REF_BASE  0x80001308  
-#define ACCELERATOR_REG_RES_BASE  0x80001328  
+#define ACCELERATOR_REG_RES_BASE  0x80001328
+#define ACCELERATOR_REG_LEN_0     0x80001348
+#define ACCELERATOR_REG_LEN_1     0x8000134C
 
 #define READ_GPIO(dir) (*(volatile unsigned *)(dir))
 #define WRITE_GPIO(dir, value) { (*(volatile unsigned *)(dir)) = (value); }
@@ -61,6 +64,21 @@ int main(void)
     WRITE_GPIO(ACCELERATOR_REG_REF_BASE + 0x14, pack_sequence(references[5]));
     WRITE_GPIO(ACCELERATOR_REG_REF_BASE + 0x18, pack_sequence(references[6]));
     WRITE_GPIO(ACCELERATOR_REG_REF_BASE + 0x1C, pack_sequence(references[7]));
+
+    // Pack Sequence Lengths (max 16 requires 5 bits)
+    uint32_t len_pack_0 = strlen(query) | 
+                          (strlen(references[0]) << 5)  | 
+                          (strlen(references[1]) << 10) | 
+                          (strlen(references[2]) << 15) | 
+                          (strlen(references[3]) << 20) | 
+                          (strlen(references[4]) << 25);
+                          
+    uint32_t len_pack_1 = strlen(references[5]) | 
+                          (strlen(references[6]) << 5)  | 
+                          (strlen(references[7]) << 10);
+
+    WRITE_GPIO(ACCELERATOR_REG_LEN_0, len_pack_0);
+    WRITE_GPIO(ACCELERATOR_REG_LEN_1, len_pack_1);
 
     WRITE_GPIO(ACCELERATOR_REG_CTRL, 1);
 
