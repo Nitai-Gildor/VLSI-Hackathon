@@ -1,6 +1,6 @@
 -------------------------------------
 | Tool Version : Vivado v.2023.2
-| Date         : Sun Jun 21 21:49:30 2026
+| Date         : Sun Jun 21 23:25:39 2026
 | Host         : Nitais_Laptop
 | Design       : design_1
 | Device       : xc7a100t-csg324-1--

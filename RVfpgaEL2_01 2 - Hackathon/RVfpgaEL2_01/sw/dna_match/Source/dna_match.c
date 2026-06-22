@@ -44,15 +44,15 @@ int main(void)
         "ACGTACGTACGTACGT", "ACGTTCGTACGTACGT", "ACGTACGGACGTACGT", "TTTTTTTTTTTTTTTT",
         "ACGTACGTTCGTACGT", "ACGTACGTACGTACGA", "ACGTTTGTACGTACGT", "ACGTACGTGCGTACGT"
     };
-
+    
+    // Start timers
     int cyc_beg, cyc_end;
     pspMachinePerfMonitorEnableAll();
     pspMachinePerfCounterSet(D_PSP_COUNTER0, D_CYCLES_CLOCKS_ACTIVE);
     
-    // =========================================================
-    // TIMED EXECUTION BLOCK START
-    // =========================================================
     cyc_beg = pspMachinePerfCounterGet(D_PSP_COUNTER0);
+
+    // Pack and write registers
 
     WRITE_GPIO(ACCELERATOR_REG_QUERY, pack_sequence(query));
 

@@ -1,3 +1,5 @@
+
+
 module accelerator (
     input  logic         clk,
     input  logic         wb_rst_i,
@@ -7,7 +9,7 @@ module accelerator (
     input  logic [31:0]  reg_ref [8],
     output logic [31:0]  reg_result [8],
     
-    // NEW: Ports for sequence lengths
+    // Ports for sequence lengths
     input  logic [4:0]   reg_query_len,
     input  logic [4:0]   reg_ref_len [8],
     

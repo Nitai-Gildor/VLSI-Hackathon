@@ -2,13 +2,6 @@
 // Register addresses
 // Provided AS IS without any warranty of any kind nor EXPLICIT nor IMPLIED
 
-// Register addresses
-// 2-Bit Packed Architecture
-`define ACCELERATOR_REG_CTRL    8'h00   // [0] go, [31] done
-`define ACCELERATOR_REG_QUERY   8'h04   // 16 chars packed into 32 bits (2 bits/char)
-`define ACCELERATOR_REG_REF     8'h08   // 16 chars packed into 32 bits (2 bits/char)
-`define ACCELERATOR_REG_RESULT  8'h0C   // Output Best Score
-
 module accelerator_regs #(parameter SIM = 0) (
     input  logic         clk,
     input  logic         wb_rst_i,
@@ -24,7 +17,7 @@ module accelerator_regs #(parameter SIM = 0) (
     output logic [31:0]  reg_ref [8],
     input  logic [31:0]  reg_result [8],
     
-    // NEW: Length registers
+    // Length registers
     output logic [4:0]   reg_query_len,
     output logic [4:0]   reg_ref_len [8]
 );

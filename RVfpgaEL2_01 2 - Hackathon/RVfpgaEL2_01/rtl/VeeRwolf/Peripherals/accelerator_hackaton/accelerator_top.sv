@@ -36,7 +36,7 @@ module accelerator_top (
     logic        go;
     logic        done;
     
-    // NEW: Wires for passing lengths
+    // Wires for passing lengths
     logic [4:0]  reg_query_len;
     logic [4:0]  reg_ref_len [8];
 

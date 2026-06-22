@@ -5,7 +5,7 @@ module smith_waterman_core (
     input  logic [31:0]  query_seq,
     input  logic [31:0]  ref_seq,
     
-    // NEW: Dynamic boundaries
+    // Dynamic boundaries
     input  logic [4:0]   query_len,
     input  logic [4:0]   ref_len,
     
